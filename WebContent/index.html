@@ -35,7 +35,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container">
+	<div class="container" style="margin-bottom: 70px">
 
 		<div style="max-width: 1000px;">
 
@@ -64,15 +64,29 @@
 
 					<div class="page-header">
 						<h4>Why should I use Dynamic-LOD?</h4>
-						<div
-							style="float: right; border: 1px solid #d8d8d8; background-color: #f5f5f5">
-							<img alt="" src="resources/img/small.svg">
-						</div>
+						<div></div>
 					</div>
 					Dynamic-LOD uses Bloom filters to compare and count links between
 					datasets. Using Dynamic-LOD you can add your dataset in our cloud,
 					and after we analyze it, you can retrieve metadata using <b>void:Linkset</b>
 					format.
+
+					<div class="page-header">
+						<h4>Create your own diagram based on the linksets.</h4>
+					</div>
+
+					Dynamic-LOD uses <a href="http://d3js.org/"> Data Driven
+						Documents JS Library</a> to create a cloud-based diagram. Considering
+					that you can describe your datasets with different properties, our
+					tool provides filters to create customized SVG diagrams. The
+					following diagram shows all distribution of English DBpedia,
+					vocabularies and three NIF datasets.
+
+					<div
+						style="border: 1px solid #d8d8d8; background-color: #ffffff; margin-top: 40px">
+						<img alt="" src="resources/img/large3.svg">
+					</div>
+
 					<div class="page-header">
 						<h4>How to get Dynamic-LOD?</h4>
 					</div>
@@ -82,16 +96,19 @@
 						href="http://www.zv.uni-leipzig.de/">University of Leipzig</a>.
 					and you can download and deploy the project from our <a
 						href="https://github.com/AKSW/dynamiclod">source code</a>.
-
-					<div
-						style="float: right; border: 1px solid #d8d8d8; background-color: #f5f5f5">
-						<img alt="" src="resources/img/large.svg">
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">
+				Dynamic-LOD project. <a>AKSW</a> 2015.
+			</p>
+		</div>
+	</footer>
 
 </body>
 </html>
