@@ -44,31 +44,63 @@
 						large amount of big datasets, which are hosted in a decentralized
 						way, detecting and counting links requires a centralized index and
 						methods that are scalable enough to keep up-to-date. </p>
-					<p>
-Dynamic-LOD
-						uses Bloom filters to compare and count links between datasets.						Using Dynamic-LOD you can add your dataset in our cloud, and after
-						we analyze it, you can retrieve metadata using <b>void:Linkset</b>
-						format.
+						
+						
+					<p> Dynamic-LOD uses Bloom filters to compare and <b>count links between datasets.</b> How do we do that? <br>
+					<ul>
+					<li> 1. Dynamic-LOD parses your dataset description in different formats such as VoID, DCAT and DataID, and we stream your distributions (dump files) in order to create Bloom filters. </li>
+					<li> 2. We retrieve data about links (<b>void:linkset</b> format) of your dataset with multiple datasets already stored in our database.</li>
+					<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>
+					</ul>
 					</p>
-
+					<p>We provide an online demo which you can use to add your dataset, retrieve links and a customized diagram.</p>					
+					
 					<div class="page-header">
 						<h4>How can I add dataset to Dynamic-LOD?</h4>
-						<div>It's simple. You can add a dataset using our API, and you need to specify what's the file format. For instance, to add a file "http://myDomain.org/void.ttl" in turtle format, you must access: <br>
+					</div>
+						<div>It's simple. You can add a dataset using our API, and you need to specify what's the file format. <br>
+						For instance, to add a file "http://myDomain.org/void.ttl" in turtle format, you must access: <br>
 						<code>http://vmdbpedia.informatik.uni-leipzig.de:9999/api?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
 						<br>
 						The <code>addDataset</code> parameter accepts VoID, DCAT and DataID descriptions. Dynamic-LOD request the header "Accept: application/rdf+xml" in order to retrive data in RDF format. 
 						The <code>rdfFormat</code> parameter accept <b>"nt"</b>,<b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <code>addDataset</code> parameter.
 						</div>
+					
+					<div class="page-header">
+						<h4>How to check id my dataset was successfully added?</h4>
 					</div>
-
+						<div>To check the current status of your dataset, you can access: <br>
+						http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?datasetStatus=http://myDomain.org/myDataset
+						<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?datasetStatus=https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataid-dbpedia2014.ttl">This example</a> shows the current status for DBpedia dataset.</p>
+						You can check all possible status for your datasets and distributions <a href="#">here.</a>
+						</div>
+					
+					<div class="page-header">
+						<h4>How to retrieve <b>void:linkset</b> data to my dataset?</h4>
+						</div>
+						<div>To retrieve linksets of your dataset, you can access: <br>
+					http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?retrieveDataset=http://myDomain.org/myDataset	
+					<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?retrieveDataset=http://downloads.dbpedia.org/2014/commons/dataid.ttl#revision_meta_commons">This example</a> shows linksets for a DBpedia distribution.</p>
+						
+					</div>
+					
+					<div class="page-header">
+						<h4>How can I see a customized cloud for my dataset?</h4>
+						</div>
+						<div>To check the current status of your dataset, you can access: <br>
+						http://vmdbpedia.informatik.uni-leipzig.de:8080/WebContent/cloud.html?dataset=http://myDomain.org/myDataset
+					<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:8080/WebContent/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This example</a> shows a diagram for a DBpedia distribution.</p>
+					
+					</div>
+					
 
 					<div class="page-header">
 						<h4>Create your own diagram based on the linksets.</h4>
 					</div>
 			Considering
 					that you can describe your datasets with different properties, our
-					tool provides filters to create customized SVG diagrams. The
-					following diagram shows all distribution of English DBpedia,
+					API creates customized SVG diagrams. The
+					following example diagram shows all distribution of English DBpedia,
 					vocabularies and three NIF datasets.
 
 					<div
