@@ -29,7 +29,7 @@ makeGraph("");
 
 //console.log(getUrlParameter("dataset"));
 
-var requestLink = "http://localhost:8080/dataid/CreateD3JSONFormat?";
+var requestLink = "http://localhost:9999/dataid/CreateD3JSONFormat?";
 
 if(typeof getUrlParameter("getAllDistributions")!= 'undefined'){
 	requestLink = requestLink + "getAllDistributions="+"&";
