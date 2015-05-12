@@ -45,6 +45,8 @@
 						way, detecting and counting links requires a centralized index and
 						methods that are scalable enough to keep up-to-date. </p>
 						
+	<p>				A detailed description of this work can be found in <a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>. </p>
+						
 						
 					<p> Dynamic-LOD uses Bloom filters to compare and <b>count links between datasets.</b> How do we do that? <br>
 					<ul>
@@ -55,6 +57,14 @@
 					</p>
 					<p>We provide an online demo which you can use to add your dataset, retrieve links and a customized diagram.</p>					
 					
+					<div class="page-header">
+						<h4>How can I see a customized cloud for my dataset?</h4>
+						</div>
+						<div>After adding you dataset, to retrieve a customized cloud diagram you can access: <br>
+						http://vmdbpedia.informatik.uni-leipzig.de:8080/WebContent/cloud.html?dataset=http://myDomain.org/myDataset
+					<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This example</a> shows a diagram for a DBpedia distribution.</p>
+					
+					</div>
 					<div class="page-header">
 						<h4>How can I add dataset to Dynamic-LOD?</h4>
 					</div>
@@ -84,14 +94,6 @@
 						
 					</div>
 					
-					<div class="page-header">
-						<h4>How can I see a customized cloud for my dataset?</h4>
-						</div>
-						<div>To check the current status of your dataset, you can access: <br>
-						http://vmdbpedia.informatik.uni-leipzig.de:8080/WebContent/cloud.html?dataset=http://myDomain.org/myDataset
-					<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This example</a> shows a diagram for a DBpedia distribution.</p>
-					
-					</div>
 					
 
 					<div class="page-header">
@@ -118,7 +120,6 @@
 					and you can download and deploy the project from our <a
 						href="https://github.com/AKSW/dynamiclod">source code</a>. Dynamic-LOD uses <a href="http://d3js.org/"> Data Driven
 						Documents JS Library</a> to create a cloud-based diagram. 
-						A detailed description of this work can be found in <a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>.
 				</div>
 			</div>
 		</div>
