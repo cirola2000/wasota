@@ -9,18 +9,22 @@
 <link href="resources/css/dyn-lod.css" rel="stylesheet"></link>
 
 <style>
+table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 table tr th {
 	background-color: #ededee;
-	padding-left:7px;
-
+	padding-left: 7px;
 }
 
 table td {
-padding-left:7px;
-vertical-align: top;
-border-right: 1px dotted #A0A0A0;
-border-top: 1px dotted #A0A0A0;
-padding: 0.3em;
+	padding-left: 7px;
+	vertical-align: top;
+	border-right: 1px dotted #A0A0A0;
+	border-top: 1px dotted #A0A0A0;
+	padding: 0.3em;
 }
 
 table {
@@ -76,8 +80,7 @@ table {
 								<li>Checking your dataset status</li>
 								<li>Retrieving RDF VoID Linkset data</li>
 							</ul>
-							<li>Downloading and installing your stand-alone
-								Dynamic-LOD</li>
+							<li>Downloading and installing your stand-alone Dynamic-LOD</li>
 						</ul>
 					</div>
 
@@ -142,10 +145,15 @@ table {
 					<div class="page-header">
 						<h3>API usage</h3>
 					</div>
-					<div>Dynamic-LOD API has three main features, which consists
-						in add new dataset to the diagram, retrieve data about the
-						streaming status, and finally, retrieve RDF and a diagram about
-						related datasets. To add a dataset and retrieve the status, the API returns a <b>JSON Object</b> which contains a "message" field and a "success" filed with a boolean value. The following sections describe thw API usage.</div>
+					<div>
+						Dynamic-LOD API has three main features, which consists in add new
+						dataset to the diagram, retrieve data about the streaming status,
+						and finally, retrieve RDF and a diagram about related datasets. To
+						add a dataset and retrieve the status, the API returns a <b>JSON
+							Object</b> which contains a "message" field and a "success" filed
+						with a boolean value. The following sections describe thw API
+						usage.
+					</div>
 					<h4 style="margin-top: 30px">Adding dataset to diagram</h4>
 					<div>
 						Dynamic-LOD parses different description files, such as DataID,
@@ -167,7 +175,9 @@ table {
 								<td>link for your dataset description. Might be a list of
 									links.</td>
 								<td><b>Yes</b></td>
-								<td rowspan="2"><b>JSON Object</b> with a core message "API initialized" and (later, when the webpage is refreshed) a parser message with the number of distributions parsed.</td>
+								<td rowspan="2"><b>JSON Object</b> with a core message "API
+									initialized" and (later, when the webpage is refreshed) a
+									parser message with the number of distributions parsed.</td>
 							</tr>
 							<tr>
 								<td><code>rdfFormat</code></td>
@@ -192,95 +202,162 @@ table {
 							section for the datasetStatus parameter.</p>
 					</div>
 					<h4 style="margin-top: 30px">Checking your dataset status</h4>
-					<p>The API parameter used to verify the details of the
-						loading/streaming process for a dataset is:</p>
-					<table style="margin-top: 20px; margin-bottom: 20px">
-						<th>Parameter</th>
-						<th>Description</th>
-						<th>Accepts array?</th>
-						<th>Returns</th>
-						<tr>
-							<td><code>datasetStatus</code></td>
-							<td>link for your previouly added dataset.</td>
-							<td><b>No</b></td>
-							<td><b>JSON Object</b> (described in the next table)</td>
-						</tr>
-					</table>
-					
-					A detailed description for the returned <b>JSON Object</b> of the <code>datasetStatus</code> parameter is given by the next table.
-					
-					<table style="margin-top: 20px; margin-bottom: 20px">
-						<th style="width: 150px">Key</th>
-						<th>Description</th>
-						<th style="width: 350px; padding-left:10px">Possible values</th>
-						<tr>
-							<td>downloadURL</td>
-							<td>Identify the distributions which being dexcribed.</td>
-							<td>The distribution URL </td>
-						</tr>
-						<tr>
-							<td>success</td>
-							<td><b>boolean</b> value. Case value is false, an error occured and you can check the "lastErrorMessage" or the "message" value.</td>
-							<td><b>true</b> or <b>false</b></td>
-						</tr>
-						<tr>
-							<td>lastErrorMessage</td>
-							<td>A friendly message indicating the error case "success" field is <b>false</b>.</td>
-							<td>-</td>
-						</tr>						
-						<tr>
-							<td>message</td>
-							<td>General message returned from server.</td>
-							<td>-</td>
-						</tr>						
-						<tr>
-							<td>topDataset</td>
-							<td>Returns the top parent dataset of the described distribution.</td>
-							<td>Top dataset URI</td>
-						</tr>
-						<tr>
-							<td>status</td>
-							<td>The current status for the distribution.</td>
-							<td>Described in the next table</td>
-						</tr>							
-					</table>
-					
-					Even if you loaded tousands of distributions, the "status" key allows you to check individually the status of each of them. The next table details, in order, each possible "status" value.
-					
-					<table style="margin-top: 20px; margin-bottom: 20px">
-						<th>Value</th>
-						<th>Description</th>
-						<tr>
-							<td><code>WAITING_TO_DOWNLOAD</code></td>
-							<td>Your distribution is in the download queue and was not streamed yet.</td>
-						</tr>
-						<tr>
-							<td><code>DOWNLOADING</code></td>
-							<td>Your distribution being streamed/downloaded.</td>
-						</tr>
-						<tr>
-							<td><code>CREATING_BLOOM_FILTER</code></td>
-							<td>Your distribution was successfully streamed and Dynamic-LOD is creating the Bloom filter.</td>
-						</tr>
-						<tr>
-							<td><code>WAITING_TO_CREATE_LINKSETS</code></td>
-							<td>Shortly, the current distribution will be compared with other to count links between them.</td>
-						</tr>
-						<tr>
-							<td><code>CREATING_LINKSETS</code></td>
-							<td>Dynamic-LOD is comparing an counting links of the current distribution with distributions previoulsy stored in our server.</td>
-						</tr>
-						<tr>
-							<td><code>DONE</code></td>
-							<td>The process was complete with no errors.</td>
-						</tr>
-						<tr>
-							<td><code>ERROR</code></td>
-							<td>Something went wrong and the error is described in the "lastErrorMessage" field.</td>
-						</tr>
-					</table>
-	<pre>oisaosiajsaois</pre>
-		
+					<div>
+						<p>The API parameter used to verify the details of the
+							loading/streaming process for a dataset is:</p>
+						<table>
+							<th>Parameter</th>
+							<th>Description</th>
+							<th>Accepts array?</th>
+							<th>Returns</th>
+							<tr>
+								<td><code>datasetStatus</code></td>
+								<td>link for your previouly added dataset.</td>
+								<td><b>No</b></td>
+								<td><b>JSON Object</b> (described in the next table)</td>
+							</tr>
+						</table>
+
+						A detailed description for the returned <b>JSON Object</b> of the
+						<code>datasetStatus</code>
+						parameter is given by the next table.
+
+						<table>
+							<th style="width: 150px">Key</th>
+							<th>Description</th>
+							<th style="width: 350px; padding-left: 10px">Possible values</th>
+							<tr>
+								<td>downloadURL</td>
+								<td>Identify the distributions which being dexcribed.</td>
+								<td>The distribution URL</td>
+							</tr>
+							<tr>
+								<td>success</td>
+								<td><b>boolean</b> value. Case value is false, an error
+									occured and you can check the "lastErrorMessage" or the
+									"message" value.</td>
+								<td><b>true</b> or <b>false</b></td>
+							</tr>
+							<tr>
+								<td>lastErrorMessage</td>
+								<td>A friendly message indicating the error case "success"
+									field is <b>false</b>.
+								</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>message</td>
+								<td>General message returned from server.</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>topDataset</td>
+								<td>Returns the top parent dataset of the described
+									distribution.</td>
+								<td>Top dataset URI</td>
+							</tr>
+							<tr>
+								<td>status</td>
+								<td>The current status for the distribution.</td>
+								<td>Described in the next table</td>
+							</tr>
+						</table>
+
+						Even if you loaded tousands of distributions, the "status" key
+						allows you to check individually the status of each of them. The
+						next table details, in order, each possible "status" value.
+
+						<table>
+							<th>Value</th>
+							<th>Description</th>
+							<tr>
+								<td><code>WAITING_TO_DOWNLOAD</code></td>
+								<td>Your distribution is in the download queue and was not
+									streamed yet.</td>
+							</tr>
+							<tr>
+								<td><code>DOWNLOADING</code></td>
+								<td>Your distribution being streamed/downloaded.</td>
+							</tr>
+							<tr>
+								<td><code>CREATING_BLOOM_FILTER</code></td>
+								<td>Your distribution was successfully streamed and
+									Dynamic-LOD is creating the Bloom filter.</td>
+							</tr>
+							<tr>
+								<td><code>WAITING_TO_CREATE_LINKSETS</code></td>
+								<td>Shortly, the current distribution will be compared with
+									other to count links between them.</td>
+							</tr>
+							<tr>
+								<td><code>CREATING_LINKSETS</code></td>
+								<td>Dynamic-LOD is comparing an counting links of the
+									current distribution with distributions previoulsy stored in
+									our server.</td>
+							</tr>
+							<tr>
+								<td><code>DONE</code></td>
+								<td>The process was complete with no errors.</td>
+							</tr>
+							<tr>
+								<td><code>ERROR</code></td>
+								<td>Something went wrong and the error is described in the
+									"lastErrorMessage" field.</td>
+							</tr>
+						</table>
+
+						The following example was produced for a DBpedia description file,
+						and depicts the status for the "redirects_commons" ditribution:
+						<pre style="margin-top: 20px">
+	...
+	      { 
+        "http://downloads.dbpedia.org/2014/commons/redirects_commons.nt.bz2" : {
+            "DownloadUrl" : "http://downloads.dbpedia.org/2014/commons/redirects_commons.nt.bz2" ,
+            "message" : "Distribution: http://downloads.dbpedia.org/2014/commons/redirects_commons.nt.bz2 Status: DONE " ,
+            "status" : "DONE" ,
+            "success" : true ,
+            "topDataset" : "http://downloads.dbpedia.org/2014/commons/dataid.ttl#dataset"
+          }
+      } ,
+    ...
+	</pre>
+
+						<p>
+							Case all status are equal to
+							<code>DONE</code>
+							or
+							<code>ERROR</code>
+							, means that Dynamic-LOD already processed all of them, and there
+							is noting else to do. Case there are errors wich you can fix, you
+							might be able to send again your description file via
+							<code>addDataset</code>
+							parameter. Dynamic-LOD will not stream again distributions
+							already in the
+							<code>DONE</code>
+							status, unless its detected a change in the file size.
+							Dynamic-LOD do it requesting the "Content-Length" header and
+							comparing the previous distribution size.
+						</p>
+					</div>
+					<h4 style="margin-top: 30px">Retrieving RDF VoID Linkset data</h4>
+					<div>
+						The following table describes the
+						<code>retrieveDataset</code>
+						, which retrieves RDF data about counted links in the <b>VoID
+							Linkset</b> format.
+						<table>
+							<th>Parameter</th>
+							<th>Description</th>
+							<th>Accepts array?</th>
+							<th>Returns</th>
+							<tr>
+								<td><code>retrieveDataset</code></td>
+								<td>the dataset/distribution URI</td>
+								<td><b>No</b></td>
+								<td>RDF (turtle format) with linksets data.</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
