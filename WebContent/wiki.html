@@ -11,6 +11,16 @@
 <style>
 table tr th {
 	background-color: #ededee;
+	padding-left:7px;
+
+}
+
+table td {
+padding-left:7px;
+vertical-align: top;
+border-right: 1px dotted #A0A0A0;
+border-top: 1px dotted #A0A0A0;
+padding: 0.3em;
 }
 
 table {
@@ -67,7 +77,7 @@ table {
 								<li>Retrieving RDF VoID Linkset data</li>
 							</ul>
 							<li>Downloading and installing your stand-alone
-								Dynamic-Cloud</li>
+								Dynamic-LOD</li>
 						</ul>
 					</div>
 
@@ -188,13 +198,89 @@ table {
 						<th>Parameter</th>
 						<th>Description</th>
 						<th>Accepts array?</th>
+						<th>Returns</th>
 						<tr>
 							<td><code>datasetStatus</code></td>
 							<td>link for your previouly added dataset.</td>
 							<td><b>No</b></td>
+							<td><b>JSON Object</b> (described in the next table)</td>
 						</tr>
 					</table>
-
+					
+					A detailed description for the returned <b>JSON Object</b> of the <code>datasetStatus</code> parameter is given by the next table.
+					
+					<table style="margin-top: 20px; margin-bottom: 20px">
+						<th style="width: 150px">Key</th>
+						<th>Description</th>
+						<th style="width: 350px; padding-left:10px">Possible values</th>
+						<tr>
+							<td>downloadURL</td>
+							<td>Identify the distributions which being dexcribed.</td>
+							<td>The distribution URL </td>
+						</tr>
+						<tr>
+							<td>success</td>
+							<td><b>boolean</b> value. Case value is false, an error occured and you can check the "lastErrorMessage" or the "message" value.</td>
+							<td><b>true</b> or <b>false</b></td>
+						</tr>
+						<tr>
+							<td>lastErrorMessage</td>
+							<td>A friendly message indicating the error case "success" field is <b>false</b>.</td>
+							<td>-</td>
+						</tr>						
+						<tr>
+							<td>message</td>
+							<td>General message returned from server.</td>
+							<td>-</td>
+						</tr>						
+						<tr>
+							<td>topDataset</td>
+							<td>Returns the top parent dataset of the described distribution.</td>
+							<td>Top dataset URI</td>
+						</tr>
+						<tr>
+							<td>status</td>
+							<td>The current status for the distribution.</td>
+							<td>Described in the next table</td>
+						</tr>							
+					</table>
+					
+					Even if you loaded tousands of distributions, the "status" key allows you to check individually the status of each of them. The next table details, in order, each possible "status" value.
+					
+					<table style="margin-top: 20px; margin-bottom: 20px">
+						<th>Value</th>
+						<th>Description</th>
+						<tr>
+							<td><code>WAITING_TO_DOWNLOAD</code></td>
+							<td>Your distribution is in the download queue and was not streamed yet.</td>
+						</tr>
+						<tr>
+							<td><code>DOWNLOADING</code></td>
+							<td>Your distribution being streamed/downloaded.</td>
+						</tr>
+						<tr>
+							<td><code>CREATING_BLOOM_FILTER</code></td>
+							<td>Your distribution was successfully streamed and Dynamic-LOD is creating the Bloom filter.</td>
+						</tr>
+						<tr>
+							<td><code>WAITING_TO_CREATE_LINKSETS</code></td>
+							<td>Shortly, the current distribution will be compared with other to count links between them.</td>
+						</tr>
+						<tr>
+							<td><code>CREATING_LINKSETS</code></td>
+							<td>Dynamic-LOD is comparing an counting links of the current distribution with distributions previoulsy stored in our server.</td>
+						</tr>
+						<tr>
+							<td><code>DONE</code></td>
+							<td>The process was complete with no errors.</td>
+						</tr>
+						<tr>
+							<td><code>ERROR</code></td>
+							<td>Something went wrong and the error is described in the "lastErrorMessage" field.</td>
+						</tr>
+					</table>
+	<pre>oisaosiajsaois</pre>
+		
 				</div>
 			</div>
 		</div>
