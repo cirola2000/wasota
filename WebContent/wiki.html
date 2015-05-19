@@ -50,9 +50,13 @@ table {
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="panel-title"></div>
-					<img alt="" style="float: right; margin-top: 40px"
+					<div style="float: right; margin-top: 40px">
+					<img alt="" style="width:110px"
+						src="resources/img/DBpediaLogo.png">
+					<img alt="" style="padding-right:30px;"
 						src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png">
 					<div class="pull-right"></div>
+					</div>
 				</div>
 				<div class="panel-body">
 					<div class="page-header">
@@ -72,21 +76,21 @@ table {
 					</div>
 					<div>
 						<ul>
-							<li>Using our Online demo</li>
-							<li>Diagram Overview</li>
-							<li>API usage</li>
+							<li><a href="#onlineDemo">Using our Online demo</a></li>
+							<li><a href="#diagram">Diagram Overview</a></li>
+							<li><a href="#api">API usage</a></li>
 							<ul>
-								<li>Adding dataset to diagram</li>
-								<li>Checking your dataset status</li>
-								<li>Retrieving RDF VoID Linkset data</li>
+								<li><a href="#adding">Adding dataset to diagram</a></li>
+								<li><a href="#checking">Checking your dataset status</a></li>
+								<li><a href="#retrieving">Retrieving RDF VoID Linkset data</a></li>
 							</ul>
-							<li>Downloading and installing your stand-alone Dynamic-LOD</li>
+							<li><a href="#downloading">Downloading and installing your stand-alone Dynamic-LOD</a></li>
 						</ul>
 					</div>
 
 
 					<div class="page-header">
-						<h3>Using our Online demo</h3>
+						<h3><a name="onlineDemo"></a>Using our Online demo</h3>
 					</div>
 					<div>
 						We provide a free Online instance of Dynamic-LOD. The API is
@@ -99,7 +103,7 @@ table {
 					</div>
 
 					<div class="page-header">
-						<h3>Diagram Overview</h3>
+						<h3><a name="diagram"></a>Diagram Overview</h3>
 					</div>
 					<div>
 						<p>
@@ -143,7 +147,7 @@ table {
 					</div>
 
 					<div class="page-header">
-						<h3>API usage</h3>
+						<h3><a name="api"></a>API usage</h3>
 					</div>
 					<div>
 						Dynamic-LOD API has three main features, which consists in add new
@@ -154,7 +158,7 @@ table {
 						with a boolean value. The following sections describe thw API
 						usage.
 					</div>
-					<h4 style="margin-top: 30px">Adding dataset to diagram</h4>
+					<h4 style="margin-top: 30px"><a name="adding"></a>Adding dataset to diagram</h4>
 					<div>
 						Dynamic-LOD parses different description files, such as DataID,
 						VoID and DCAT. Thus, what you need to add your datasets is a link
@@ -201,7 +205,7 @@ table {
 							details about parsed distributions and datasets, check the next
 							section for the datasetStatus parameter.</p>
 					</div>
-					<h4 style="margin-top: 30px">Checking your dataset status</h4>
+					<h4 style="margin-top: 30px"><a name="checking"></a>Checking your dataset status</h4>
 					<div>
 						<p>The API parameter used to verify the details of the
 							loading/streaming process for a dataset is:</p>
@@ -339,7 +343,7 @@ table {
 							comparing the previous distribution size.
 						</p>
 					</div>
-					<h4 style="margin-top: 30px">Retrieving RDF VoID Linkset data</h4>
+					<h4 style="margin-top: 30px"><a name="retrieving"></a>Retrieving RDF VoID Linkset data</h4>
 					<div>
 						The following table describes the
 						<code>retrieveDataset</code>
@@ -358,6 +362,14 @@ table {
 							</tr>
 						</table>
 					</div>
+
+					<div class="page-header">
+						<h4 style="margin-top: 30px"><a name="downloading"></a>Downloading and installing your
+							stand-alone Dynamic-LOD</h4>
+					</div>
+					<div>
+					To deploy Dynamic-LOD in your own server, please check our <a href="https://github.com/AKSW/dynamiclod">GitHub page</a>.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -367,7 +379,7 @@ table {
 	<footer class="footer">
 		<div class="container">
 			<p class="text-muted">
-				Dynamic-LOD project. <a>AKSW</a> 2015.
+				Dynamic-LOD project, <a href="http://aksw.org/CiroBaron.html">Ciro Baron Neto</a>, <a href="http://aksw.org/SebastianHellmann.html">Sebastian Hellmann</a> - <a href="http://aksw.org/">AKSW</a> 2015.
 			</p>
 		</div>
 	</footer>
