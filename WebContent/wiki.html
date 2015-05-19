@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<script src="resources/js/jquery-2.1.0.js"></script>
+<script src="resources/jquery-ui/jquery-ui.js"></script>
+<link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="resources/bootstrap/css/bootstrap-theme.min.css"
+	rel="stylesheet"></link>
+<link href="resources/css/dyn-lod.css" rel="stylesheet"></link>
+
+<style>
+table tr th {
+	background-color: #ededee;
+}
+
+table {
+	border: 1px solid #A0A0A0;
+	border-spacing: 0;
+}
+</style>
+
+<body>
+
+	<script>
+		$(function() {
+			$("#menu").load("menu.html");
+		});
+	</script>
+
+	<div id="menu"></div>
+
+	<div class="container" style="margin-bottom: 70px">
+
+		<div style="max-width: 1000px;">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title"></div>
+					<img alt="" style="float: right; margin-top: 40px"
+						src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png">
+					<div class="pull-right"></div>
+				</div>
+				<div class="panel-body">
+					<div class="page-header">
+						<h2 style="">Dynamic-LOD Wiki</h2>
+					</div>
+					<p>
+						This page provides a basic guideline of Dynamic-LOD API usage.
+						Further information about the software architecture can be found
+						in <a
+							href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this
+							paper</a>.
+					</p>
+
+
+					<div class="page-header">
+						<h3>Contents</h3>
+					</div>
+					<div>
+						<ul>
+							<li>Using our Online demo</li>
+							<li>Diagram Overview</li>
+							<li>API usage</li>
+							<ul>
+								<li>Adding dataset to diagram</li>
+								<li>Checking your dataset status</li>
+								<li>Retrieving RDF VoID Linkset data</li>
+							</ul>
+							<li>Downloading and installing your stand-alone
+								Dynamic-Cloud</li>
+						</ul>
+					</div>
+
+
+					<div class="page-header">
+						<h3>Using our Online demo</h3>
+					</div>
+					<div>
+						We provide a free Online instance of Dynamic-LOD. The API is
+						available at the address <a
+							href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api">http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api</a>,
+						and for the diagram visualization, we provide the address <a
+							href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=">http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=</a>.
+						<br>
+
+					</div>
+
+					<div class="page-header">
+						<h3>Diagram Overview</h3>
+					</div>
+					<div>
+						<p>
+							Dynamic-LOD provides a <a
+								href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=">diagram</a>
+							which you can add your datasets, and find out whether your
+							dataset contain linkset to other datasets. Linksets are defined
+							as intersections of objects and subjects, which means that links
+							occurs when objects and subjects of distinct datasets are equals.
+							The visualization consists of two parts, which includes a tree of
+							datasets and an area which is updates with a SVG diagram
+							according to the selected datasets of the tree.
+						</p>
+						<p>The root of the tree contains the top datasets, i.e.
+							datasets which don't contains a parent dataset. The following
+							figure depicts the structure of DBpedia commons datasets:</p>
+						<div
+							style="text-align: center; margin-top: 25px; margin-bottom: 25px">
+							<img style="border: 1px solid #d8d8d8;" alt=""
+								src="resources/img/tree.png">
+						</div>
+
+						Notice that the top dataset named "DBpedia 2014 commons dumps
+						dataset" contains several subsets (categories, links, degrees,
+						etc), and each subset contains a dump file (distribution). You can
+						select one or more item to filter and create a customized graph.
+						The following figure depicts the generated diagram for the
+						selected distributions.
+
+						<div
+							style="text-align: center; margin-top: 25px; margin-bottom: 25px">
+							<img style="border: 1px solid #d8d8d8;" alt=""
+								src="resources/img/diagram_tree.png">
+						</div>
+						That there are three different nodes (bubbles) colors. The grey
+						nodes are the nodes selected from the tree, green nodes the
+						related datasets, and finally the orange nodes are ontologies. The
+						arrows represents the links direction between the nodes. Notice
+						that if your dataset has not been shown in the graph, means the
+						current dataset doesn't have more that 50 links.
+					</div>
+
+					<div class="page-header">
+						<h3>API usage</h3>
+					</div>
+					<div>Dynamic-LOD API has three main features, which consists
+						in add new dataset to the diagram, retrieve data about the
+						streaming status, and finally, retrieve RDF and a diagram about
+						related datasets. To add a dataset and retrieve the status, the API returns a <b>JSON Object</b> which contains a "message" field and a "success" filed with a boolean value. The following sections describe thw API usage.</div>
+					<h4 style="margin-top: 30px">Adding dataset to diagram</h4>
+					<div>
+						Dynamic-LOD parses different description files, such as DataID,
+						VoID and DCAT. Thus, what you need to add your datasets is a link
+						that contains the description file, and Dynamic-LOD will read it
+						and try to fetch distributions dump files. Considering that the
+						application requests header in the format
+						<code>"Accept: application/rdf+xml"</code>
+						it's also possible, for instance, to add your dataset via a CKAN
+						link.
+						<p>The API parameters used to add a dataset are:</p>
+						<table style="margin-top: 20px; margin-bottom: 20px">
+							<th>Parameter:</th>
+							<th>Description:</th>
+							<th>Accepts array?</th>
+							<th style="width: 300px">Returns:</th>
+							<tr>
+								<td><code>addDataset</code></td>
+								<td>link for your dataset description. Might be a list of
+									links.</td>
+								<td><b>Yes</b></td>
+								<td rowspan="2"><b>JSON Object</b> with a core message "API initialized" and (later, when the webpage is refreshed) a parser message with the number of distributions parsed.</td>
+							</tr>
+							<tr>
+								<td><code>rdfFormat</code></td>
+								<td>format of the added links in the <code>addDataset</code>
+									parameter. Formats are: <b>ttl</b>, <b>nt</b> or <b>rdfxml</b>.
+								</td>
+								<td><b>No</b></td>
+
+							</tr>
+						</table>
+
+						<p>
+							An generic example of a link to add a http://x.y.x/dataset.ttl
+							file in turtle is:
+							<code>vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?addDataset=http://x.y.x/dataset.ttl?rdfFormat=ttl</code>
+							.
+						</p>
+
+						<p>After adding the dataset, you should get a message
+							indicating if the API was successfully initiated. To check
+							details about parsed distributions and datasets, check the next
+							section for the datasetStatus parameter.</p>
+					</div>
+					<h4 style="margin-top: 30px">Checking your dataset status</h4>
+					<p>The API parameter used to verify the details of the
+						loading/streaming process for a dataset is:</p>
+					<table style="margin-top: 20px; margin-bottom: 20px">
+						<th>Parameter</th>
+						<th>Description</th>
+						<th>Accepts array?</th>
+						<tr>
+							<td><code>datasetStatus</code></td>
+							<td>link for your previouly added dataset.</td>
+							<td><b>No</b></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">
+				Dynamic-LOD project. <a>AKSW</a> 2015.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
