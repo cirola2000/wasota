@@ -24,7 +24,30 @@
 	ga('create', 'UA-62964541-1', 'auto');
 	ga('send', 'pageview');
 </script>
+<style>
+table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
+table tr th {
+	background-color: #ededee;
+	padding-left: 7px;
+}
+
+table td {
+	padding-left: 7px;
+	vertical-align: top;
+	border-right: 1px dotted #A0A0A0;
+	border-top: 1px dotted #A0A0A0;
+	padding: 0.3em;
+}
+
+table {
+	border: 1px solid #A0A0A0;
+	border-spacing: 0;
+}
+</style>
 <body>
 
 	<script>
@@ -69,10 +92,13 @@
 					<p>
 						A detailed description of this work can be found in <a
 							href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this
-							paper</a>.
+							paper</a>. The basic documentation is available in our <a
+							href="wiki.html">Wiki</a> page.
 					</p>
 
-
+					<div class="page-header">
+						<h4>A brief explanation...</h4>
+					</div>
 					<p>
 						Dynamic-LOD uses Bloom filters to compare and <b>count links
 							between datasets.</b> How do we do that? <br>
@@ -107,6 +133,93 @@
 						<img alt="" src="resources/img/cloud.png">
 					</div>
 
+					<div class="page-header">
+						<h4>How fast and reliable is Dynamic-LOD?</h4>
+					</div>
+					<div>
+
+						The following table shows 5 experiments. We added the 48 English <a
+							href="http://downloads.dbpedia.org/3.9/en/">DBpedia
+							distributions</a> and counted links among them. Then, we added all
+						358 vocabularies available in <a
+							href="http://lov.okfn.org/dataset/lov/">LOV</a> (referred as
+						round 2), and again we counted links among the vocabularies and
+						DBpedia distributions. In the last three experiments, we added
+						three NIF[9] converted corpora: Reuters128, RSS-500 and Brown
+						Corpus (which contains 123 distributions). We measured false
+						positive rate and time to count links.
+
+						<table>
+							<th>Round</th>
+							<th>Dataset</th>
+							<th>Dist.</th>
+							<th>Triples</th>
+							<th><i>tp</i></th>
+							<th><i>fp</i></th>
+							<th>Precision</th>
+							<th>F-Measure</th>
+							<th>Time</th>
+							<tr>
+								<td>1</td>
+								<td>English DBpedia</td>
+								<td>48</td>
+								<td>812M</td>
+								<td>9.013.302.727</td>
+								<td>1.354</td>
+								<td>0,99999985</td>
+								<td>0,999999925</td>
+								<td>01:43:20</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>LOV Vocabularies</td>
+								<td>358</td>
+								<td>862K</td>
+								<td>31.027.759</td>
+								<td>77</td>
+								<td>0,99999752</td>
+								<td>0.999998759</td>
+								<td>00:01:12</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Routers128</td>
+								<td>1</td>
+								<td>7k</td>
+								<td>2501</td>
+								<td>0</td>
+								<td>1</td>
+								<td>1</td>
+								<td>00:00:21</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>RSS-500</td>
+								<td>1</td>
+								<td>10k</td>
+								<td>1265</td>
+								<td>0</td>
+								<td>1</td>
+								<td>1</td>
+								<td>00:00:33</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Brown Corpus</td>
+								<td>123</td>
+								<td>3.4M</td>
+								<td>890.760</td>
+								<td>3</td>
+								<td>0.99999663</td>
+								<td>0.999998316</td>
+								<td>00:04:04</td>
+							</tr>
+						</table>
+						
+						We are not counting time to stream each dump file, only the time to compare and count links. 
+
+
+					</div>
 
 					<div class="page-header">
 						<h4>How can I see a customized cloud for my dataset?</h4>
@@ -120,6 +233,9 @@
 								href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This
 								example</a> shows a diagram for a DBpedia distribution.
 						</p>
+
+						Want more examples? Check our <a href="wiki.html#diagram">Wiki
+							page</a> and find out with details how to add datasets to the cloud.
 
 					</div>
 
@@ -142,6 +258,10 @@
 						is the format of the
 						<code>addDataset</code>
 						parameter.
+						<p>
+							Our <a href="wiki.html">Wiki</a> has the necessary documentation
+							that you need to add datasets in to the cloud.
+						</p>
 					</div>
 
 					<div class="page-header">
