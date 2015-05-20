@@ -9,14 +9,20 @@
 <link href="resources/css/dyn-lod.css" rel="stylesheet"></link>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js',
+			'ga');
 
-  ga('create', 'UA-62964541-1', 'auto');
-  ga('send', 'pageview');
-
+	ga('create', 'UA-62964541-1', 'auto');
+	ga('send', 'pageview');
 </script>
 
 <body>
@@ -37,11 +43,11 @@
 				<div class="panel-heading">
 					<div class="panel-title"></div>
 					<div style="float: right; margin-top: 40px">
-					<img alt="" style="width:110px"
-						src="resources/img/DBpediaLogo.png">
-					<img alt="" style="padding-right:30px;"
-						src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png">
-					<div class="pull-right"></div>
+						<img alt="" style="width: 110px"
+							src="resources/img/DBpediaLogo.png"> <img alt=""
+							style="padding-right: 30px;"
+							src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png">
+						<div class="pull-right"></div>
 					</div>
 				</div>
 				<div class="panel-body">
@@ -58,72 +64,117 @@
 						is the freshness of such an analysis. Especially in the case of
 						large amount of big datasets, which are hosted in a decentralized
 						way, detecting and counting links requires a centralized index and
-						methods that are scalable enough to keep up-to-date. </p>
-						
-	<p>				A detailed description of this work can be found in <a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>. </p>
-						
-						
-					<p> Dynamic-LOD uses Bloom filters to compare and <b>count links between datasets.</b> How do we do that? <br>
+						methods that are scalable enough to keep up-to-date.</p>
+
+					<p>
+						A detailed description of this work can be found in <a
+							href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this
+							paper</a>.
+					</p>
+
+
+					<p>
+						Dynamic-LOD uses Bloom filters to compare and <b>count links
+							between datasets.</b> How do we do that? <br>
 					<ul>
-					<li> 1. Dynamic-LOD parses your dataset description in different formats such as VoID, DCAT and DataID, and we stream your distributions (dump files) in order to create Bloom filters. </li>
-					<li> 2. We retrieve data about links (<b>void:linkset</b> format) of your dataset with multiple datasets already stored in our database.</li>
-					<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>
+						<li>1. Dynamic-LOD parses your dataset description in
+							different formats such as VoID, DCAT and DataID, and we stream
+							your distributions (dump files) in order to create Bloom filters.
+						</li>
+						<li>2. We retrieve data about links (<b>void:linkset</b>
+							format) of your dataset with multiple datasets already stored in
+							our database.
+						</li>
+						<li>3. A <b>LOD-Diagram</b> is provided showing the links
+							that we discovered of your datasets.
+						</li>
 					</ul>
 					</p>
-					<p>We provide an online demo which you can use to add your dataset, retrieve links and a customized diagram.</p>					
-					
-					<div class="page-header">
-						<h4>How can I see a customized cloud for my dataset?</h4>
-						</div>
-						<div>After adding you dataset, to retrieve a customized cloud diagram you can access: <br>
-						http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://myDomain.org/myDataset
-					<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This example</a> shows a diagram for a DBpedia distribution.</p>
-					
-					</div>
-					<div class="page-header">
-						<h4>How can I add dataset to Dynamic-LOD?</h4>
-					</div>
-						<div>It's simple. You can add a dataset using our API, and you need to specify what's the file format. <br>
-						For instance, to add a file "http://myDomain.org/void.ttl" in turtle format, you must access: <br>
-						<code>http://vmdbpedia.informatik.uni-leipzig.de:9090/api?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
-						<br>
-						The <code>addDataset</code> parameter accepts VoID, DCAT and DataID descriptions. Dynamic-LOD request the header "Accept: application/rdf+xml" in order to retrive data in RDF format. 
-						The <code>rdfFormat</code> parameter accept <b>"nt"</b>,<b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <code>addDataset</code> parameter.
-						</div>
-					
-					<div class="page-header">
-						<h4>How to check id my dataset was successfully added?</h4>
-					</div>
-						<div>To check the current status of your dataset, you can access: <br>
-						http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?datasetStatus=http://myDomain.org/myDataset
-						<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?datasetStatus=https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataid-dbpedia2014.ttl">This example</a> shows the current status for DBpedia dataset.</p>
-						You can check all possible status for your datasets and distributions <a href="#">here.</a>
-						</div>
-					
-					<div class="page-header">
-						<h4>How to retrieve <b>void:linkset</b> data to my dataset?</h4>
-						</div>
-						<div>To retrieve linksets of your dataset, you can access: <br>
-					http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?retrieveDataset=http://myDomain.org/myDataset	
-					<p><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?retrieveDataset=http://downloads.dbpedia.org/2014/commons/category_labels_commons.nt.bz2">This example</a> shows linksets for a DBpedia distribution.</p>
-						
-					</div>
-					
-					
+					<p>We provide an online demo which you can use to add your
+						dataset, retrieve links and a customized diagram.</p>
+
 
 					<div class="page-header">
 						<h4>Create your own diagram based on the linksets.</h4>
 					</div>
-			Considering
-					that you can describe your datasets with different properties, our
-					API creates customized SVG diagrams. The
-					following example diagram shows all distribution of English DBpedia,
+					Considering that you can describe your datasets with different
+					properties, our API creates customized SVG diagrams. The following
+					example diagram shows all distribution of English DBpedia,
 					vocabularies and three NIF datasets.
 
 					<div
-						style="border: 1px solid #d8d8d8; background-color: #ffffff; margin-top: 40px; text-align:center">
+						style="border: 1px solid #d8d8d8; background-color: #ffffff; margin-top: 40px; text-align: center">
 						<img alt="" src="resources/img/cloud.png">
 					</div>
+
+
+					<div class="page-header">
+						<h4>How can I see a customized cloud for my dataset?</h4>
+					</div>
+					<div>
+						After adding you dataset, to retrieve a customized cloud diagram
+						you can access: <br>
+						http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://myDomain.org/myDataset
+						<p>
+							<a
+								href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This
+								example</a> shows a diagram for a DBpedia distribution.
+						</p>
+
+					</div>
+
+					<div class="page-header">
+						<h4>How can I add dataset to Dynamic-LOD?</h4>
+					</div>
+					<div>
+						It's simple. You can add a dataset using our API, and you need to
+						specify what's the file format. <br> For instance, to add a
+						file "http://myDomain.org/void.ttl" in turtle format, you must
+						access: <br>
+						<code>http://vmdbpedia.informatik.uni-leipzig.de:9090/api?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
+						<br> The
+						<code>addDataset</code>
+						parameter accepts VoID, DCAT and DataID descriptions. Dynamic-LOD
+						request the header "Accept: application/rdf+xml" in order to
+						retrive data in RDF format. The
+						<code>rdfFormat</code>
+						parameter accept <b>"nt"</b>,<b>"ttl"</b>, or <b>"xmlrdf"</b> and
+						is the format of the
+						<code>addDataset</code>
+						parameter.
+					</div>
+
+					<div class="page-header">
+						<h4>How to check id my dataset was successfully added?</h4>
+					</div>
+					<div>
+						To check the current status of your dataset, you can access: <br>
+						http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?datasetStatus=http://myDomain.org/myDataset
+						<p>
+							<a
+								href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?datasetStatus=https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataid-dbpedia2014.ttl">This
+								example</a> shows the current status for DBpedia dataset.
+						</p>
+						You can check all possible status for your datasets and
+						distributions <a href="#">here.</a>
+					</div>
+
+					<div class="page-header">
+						<h4>
+							How to retrieve <b>void:linkset</b> data to my dataset?
+						</h4>
+					</div>
+					<div>
+						To retrieve linksets of your dataset, you can access: <br>
+						http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?retrieveDataset=http://myDomain.org/myDataset
+						<p>
+							<a
+								href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dataid/api?retrieveDataset=http://downloads.dbpedia.org/2014/commons/category_labels_commons.nt.bz2">This
+								example</a> shows linksets for a DBpedia distribution.
+						</p>
+
+					</div>
+
 
 					<div class="page-header">
 						<h4>How to get Dynamic-LOD?</h4>
@@ -133,8 +184,9 @@
 						href="http://aksw.org/About.html">AKSW</a> group from <a
 						href="http://www.zv.uni-leipzig.de/">University of Leipzig</a>.
 					and you can download and deploy the project from our <a
-						href="https://github.com/AKSW/dynamiclod">source code</a>. Dynamic-LOD uses <a href="http://d3js.org/"> Data Driven
-						Documents JS Library</a> to create a cloud-based diagram. 
+						href="https://github.com/AKSW/dynamiclod">source code</a>.
+					Dynamic-LOD uses <a href="http://d3js.org/"> Data Driven
+						Documents JS Library</a> to create a cloud-based diagram.
 				</div>
 			</div>
 		</div>
@@ -144,7 +196,9 @@
 	<footer class="footer">
 		<div class="container">
 			<p class="text-muted">
-				Dynamic-LOD project, <a href="http://aksw.org/CiroBaron.html">Ciro Baron Neto</a>, <a href="http://aksw.org/SebastianHellmann.html">Sebastian Hellmann</a> - <a href="http://aksw.org/">AKSW</a> 2015.
+				Dynamic-LOD project, <a href="http://aksw.org/CiroBaron.html">Ciro
+					Baron Neto</a>, <a href="http://aksw.org/SebastianHellmann.html">Sebastian
+					Hellmann</a> - <a href="http://aksw.org/">AKSW</a> 2015.
 			</p>
 		</div>
 	</footer>
