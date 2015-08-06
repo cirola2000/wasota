@@ -4,7 +4,7 @@
 <p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID).</p>
 <input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> <button ng-click="startAPI()">Start API</button>
 <span ng-show="showApiCall"><p>API call: {{apiAddress}}</p></span>
-<span ng-show="showApiResponse"><p>API response: {{apiResponse}}</p></span>
+<span  style="color: {{showApiResponseColor}}" ng-show="showApiResponse"><p>API response: {{apiResponse}}</p></span>
 
 <h2 style="margin-top: 35px">Step 2. Check the status.</h2>
 <p>Click in "Check Status" to retrieve information about dump files being processed.</p><button ng-click="checkStatus()">Check Status</button>
