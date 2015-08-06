@@ -1,0 +1,50 @@
+<h1>Quick start</h1>
+<p>Check whether you datasets contain links to external datasets in 5 steps.</p>
+<h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
+<p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID).</p>
+<input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> <button ng-click="startAPI()">Start API</button>
+<span ng-show="showApiCall"><p>API call: {{apiAddress}}</p></span>
+<span ng-show="showApiResponse"><p>API response: {{apiResponse}}</p></span>
+
+<h2 style="margin-top: 35px">Step 2. Check the status.</h2>
+<p>Click in "Check Status" to retrieve information about dump files being processed.</p><button ng-click="checkStatus()">Check Status</button>
+<div ng-show="showApiStatusResponse"><p>API status call: {{apiStatusCall}}</p>
+<p>API parser message: {{apiParserMessage}}</p>
+
+<table>
+	<th>Dataset</th><th style="margin-left: 30px">Status</th>
+	<tr ng-repeat="dist in distributions">
+		<td>{{dist.downloadUrl}} </td>
+		<td>{{dist.status}} </td>
+	</tr>
+</table>
+</div>
+
+<h2 style="margin-top: 35px">Step 3. Retrieve your dataset linksets.</h2>
+<p> Retrieve RDF data using void:Linkset format for each streamed dump file. Click in the API Link for each dump file.</p>
+<button ng-click="retrieveRDF()"> Retrieve RDF </button>
+
+<div ng-show="showRDF">
+<table>
+	<th>Distribution details:</th><th>Link details</th>
+	<tr ng-repeat="dist in distributions">
+		<td>
+			<div>Label: {{dist.title}}</div>
+			<div>This dataset is described by: 
+			<ul>
+				<li ng-repeat="defaultDataset in dist.defaultDatasets"> {{defaultDataset}}</li>
+			</ul>
+			
+			</div> 
+		</td>
+		<td>
+			
+		RDF description: 
+		<div ng-repeat="defaultDataset in dist.defaultDatasets"> <a href="{{serverURL}}api?retrieveDataset={{defaultDataset}}"> {{serverURL}}api?retrieveDataset={{defaultDataset}} </a> </div>
+		{{dist.linksOutdegree}} 
+		{{dist.datasetIndegree}} 
+		{{dist.datasetOutdegree}} 
+		<td>{{dist.datasetOutdegree}} </td>
+	</tr>
+</table>
+</div>

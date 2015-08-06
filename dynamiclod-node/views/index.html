@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <meta charset="utf-8">
+  <script src="/javascripts/jquery-1.11.3.min.js">
+</script>
+  <script src="javascripts/angular.min.js">
+</script>
+  <script src="javascripts/angular-route.min.js">
+</script>
+  <script src="javascripts/dynamiclod.js">
+</script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="javascripts/bootstrap.min.js"></script>
+  <title>Dynamic LOD</title>
+  
+  <body>
+    <div class="navbar navbar-fixed-top" role="navigation" style="margin-top:15px">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="http://mex.aksw.org/index.html" class="logo"><img src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#/home" style="color:black">
+                        Main page
+                    </a>
+            </li>
+            <li>
+              <a href="#/quick" style="color:black">
+                        Quick Start
+               </a>
+            </li>   
+            <li>
+              <a href="#/wiki" style="color:black">
+                        Wiki
+               </a>
+            </li>                        
+            <li>
+              <a href="http://aksw.org/About.html" style="color:black">
+                         AKSW Group
+                    </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper" style="margin-top: 75px">
+      <div ng-app="main" class="container">
+        <div ng-view></div>
+      </div>
+    </div>
+  </body>
+
+</html>
+<!-- extends layout block content p#title #{title} form#uploadForm(action="file", method="post", enctype="multipart/form-data")
+input(type="file", name="RDFFile") input(type='submit',value='Convert!',data-transition='fade', data-theme='c') -->
