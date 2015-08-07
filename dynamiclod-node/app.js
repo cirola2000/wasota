@@ -9,6 +9,8 @@ var routes = require('./routes/index');
 var quick = require('./routes/quick');
 var home = require('./routes/home');
 var wiki = require('./routes/wiki');
+var proxy = require('./routes/proxy');
+var stats = require('./routes/stats');
 
 var app = express();
 
@@ -30,6 +32,8 @@ app.use('/', routes);
 app.use('/partial/quick', quick);
 app.use('/partial/home', home);
 app.use('/partial/wiki', wiki);
+app.use('/partial/proxy', proxy);
+app.use('/partial/stats', stats);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

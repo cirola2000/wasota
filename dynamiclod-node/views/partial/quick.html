@@ -25,7 +25,7 @@
 <button ng-click="retrieveRDF()"> Retrieve RDF </button>
 
 <div ng-show="showRDF">
-<table>
+<table class="table">
 	<th>Distribution details:</th><th>Link details</th>
 	<tr ng-repeat="dist in distributions">
 		<td>
@@ -34,17 +34,15 @@
 			<ul>
 				<li ng-repeat="defaultDataset in dist.defaultDatasets"> {{defaultDataset}}</li>
 			</ul>
-			
 			</div> 
+			<div>Download URL: {{dist.downloadUrl}}</div>
 		</td>
 		<td>
 			
 		RDF description: 
-		<div ng-repeat="defaultDataset in dist.defaultDatasets"> <a href="{{serverURL}}api?retrieveDataset={{defaultDataset}}"> {{serverURL}}api?retrieveDataset={{defaultDataset}} </a> </div>
-		{{dist.linksOutdegree}} 
-		{{dist.datasetIndegree}} 
-		{{dist.datasetOutdegree}} 
-		<td>{{dist.datasetOutdegree}} </td>
+		<div> <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.resourceUri}}"> {{serverURL}}api?retrieveDataset={{dist.resourceUri}} </a> </div>
+		<div>Total links indegree: {{dist.indegreeLinksCount}}  ({{dist.indegreeDatasetCount}} datasets); </div>
+		<div>Total links outdegree: {{dist.outdegreeLinksCount}}  ({{dist.outdegreeDatasetCount}} datasets); </div>
 	</tr>
 </table>
 </div>
