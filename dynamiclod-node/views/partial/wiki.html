@@ -1,22 +1,22 @@
 <div class="panel-body">
 	<div class="page-header">
-		<h2 style="">Dynamic-LOD Wiki</h2>
+		<h1 style="">{{appName}} Wiki</h1>
 	</div>
-	<p>This page provides a basic guideline of Dynamic-LOD API usage. Further information about the software architecture can be
+	<p>This page provides a basic guideline of {{appName}} API usage. Further information about the software architecture can be
 		found in
 		<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this
 							paper</a>.</p>
 	<div class="page-header">
-		<h3>Contents</h3>
+		<h2>Contents</h2>
 	</div>
 	<div>
 		<ul>
-			<li>
+			<!--<li>
 				<a href="#onlineDemo">Using our Online demo</a>
-			</li>
-			<li>
+			</li>-->
+			<!--<li>
 				<a href="#diagram">Diagram Overview</a>
-			</li>
+			</li>-->
 			<li>
 				<a href="#api">API usage</a>
 			</li>
@@ -32,26 +32,26 @@
 				</li>
 			</ul>
 			<li>
-				<a href="#downloading">Downloading and installing your stand-alone Dynamic-LOD</a>
+				<a href="#downloading">Downloading and installing your stand-alone {{appName}}</a>
 			</li>
 		</ul>
 	</div>
-	<div class="page-header">
-		<h3>
-			<a name="onlineDemo"></a>Using our Online demo</h3>
+	<!--<div class="page-header">
+		<h2>
+			<a name="onlineDemo"></a>Using our Online demo</h2>
 	</div>
-	<div>We provide a free Online instance of Dynamic-LOD. The API is available at the address
-		<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api">http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api</a>, and for the diagram visualization, we provide the address
-		<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=">http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=</a>.
+	<div>We provide a free Online instance of {{appName}}. The API is available at the address
+		<a href="{{serverURL}}api">{{serverURL}}api</a>, and for the diagram visualization, we provide the address
+		<a href="{{serverURL}}cloud.html?dataset=">{{serverURL}}cloud.html?dataset=</a>.
 		<br>
 	</div>
 	<div class="page-header">
-		<h3>
-			<a name="diagram"></a>Diagram Overview</h3>
+		<h2>
+			<a name="diagram"></a>Diagram Overview</h2>
 	</div>
 	<div>
-		<p>Dynamic-LOD provides a
-			<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=">diagram</a>which you can add your datasets, and find out whether your dataset contain linkset to other datasets. Linksets are defined
+		<p>{{appName}} provides a
+			<a href="{{serverURL}}cloud.html?dataset=">diagram</a>which you can add your datasets, and find out whether your dataset contain linkset to other datasets. Linksets are defined
 			as intersections of objects and subjects, which means that links occurs when objects and subjects of distinct datasets are
 			equals. The visualization consists of two parts, which includes a tree of datasets and an area which is updates with a SVG
 			diagram according to the selected datasets of the tree.</p>
@@ -70,34 +70,34 @@
 		<p>Try now some of the following examples and check out the resulted diagram! In the top level of granularity, check out where
 			lod-cloud.net is connected with:</p>
 		<pre>
-			<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=http://lod-cloud.net/">http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=http://lod-cloud.net/</a>
+			<a href="{{serverURL}}cloud.html?dataset=http://lod-cloud.net/">{{serverURL}}cloud.html?dataset=http://lod-cloud.net/</a>
 		</pre>
 		<!-- p>
 						You can also choose a distribution level, in this case "DBpedia article categories" distribution:
 						</p>
-						<pre><a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2</a></pre -->
+						<pre><a href="{{serverURL}}cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">{{serverURL}}cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2</a></pre ->
 		<p>With no parameters, you can see a general overview of all datasets in a multiple granularity level:</p>
 		<pre>
-			<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html">http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=</a>
+			<a href="{{serverURL}}cloud.html">{{serverURL}}cloud.html?dataset=</a>
 		</pre>
-	</div>
+	</div>-->
 	<div class="page-header">
-		<h3>
-			<a name="api"></a>API usage</h3>
+		<h2>
+			<a name="api"></a>API usage</h2>
 	</div>
-	<div>Dynamic-LOD API has three main features, which consists in add new dataset to the diagram, retrieve data about the streaming
+	<div>{{appName}} API has three main features, which consists in add new dataset to the diagram, retrieve data about the streaming
 		status, and finally, retrieve RDF and a diagram about related datasets. To add a dataset and retrieve the status, the API
 		returns a
-		<b>JSON Object</b>which contains a "message" field and a "success" filed with a boolean value. The following sections describe
+		<b>JSON Object</b> which contains a "message" field and a "success" filed with a boolean value. The following sections describe
 		thw API usage.</div>
 	<h4 style="margin-top: 30px">
 		<a name="adding"></a>Adding dataset to diagram</h4>
-	<div>Dynamic-LOD parses different description files, such as DataID, VoID and DCAT. Thus, what you need to add your datasets
-		is a link that contains the description file, and Dynamic-LOD will read it and try to fetch distributions dump files. Considering
+	<div>{{appName}} parses different description files, such as DataID, VoID and DCAT. Thus, what you need to add your datasets
+		is a link that contains the description file, and {{appName}} will read it and try to fetch distributions dump files. Considering
 		that the application requests header in the format
 		<code>"Accept: application/rdf+xml"</code>it's also possible, for instance, to add your dataset via a CKAN link.
 		<p>The API parameters used to add a dataset are:</p>
-		<table style="margin-top: 20px; margin-bottom: 20px">
+		<table class="table" style="margin-top: 20px; margin-bottom: 20px">
 			<th>Parameter:</th>
 			<th>Description:</th>
 			<th>Accepts array?</th>
@@ -111,7 +111,7 @@
 					<b>Yes</b>
 				</td>
 				<td rowspan="2">
-					<b>JSON Object</b>with a core message "API initialized" and (later, when the webpage is refreshed) a parser message with the
+					<b>JSON Object</b> with a core message "API initialized" and (later, when the webpage is refreshed) a parser message with the
 					number of distributions parsed.</td>
 			</tr>
 			<tr>
@@ -137,7 +137,7 @@
 		<a name="checking"></a>Checking your dataset status</h4>
 	<div>
 		<p>The API parameter used to verify the details of the loading/streaming process for a dataset is:</p>
-		<table>
+		<table class="table">
 			<th>Parameter</th>
 			<th>Description</th>
 			<th>Accepts array?</th>
@@ -151,12 +151,12 @@
 					<b>No</b>
 				</td>
 				<td>
-					<b>JSON Object</b>(described in the next table)</td>
+					<b>JSON Object</b> (described in the next table)</td>
 			</tr>
 		</table>A detailed description for the returned
-		<b>JSON Object</b>of the
+		<b>JSON Object</b> of the
 		<code>datasetStatus</code>parameter is given by the next table.
-		<table>
+		<table class="table" >
 			<th style="width: 150px">Key</th>
 			<th>Description</th>
 			<th style="width: 350px; padding-left: 10px">Possible values</th>
@@ -168,9 +168,9 @@
 			<tr>
 				<td>success</td>
 				<td>
-					<b>boolean</b>value. Case value is false, an error occured and you can check the "lastErrorMessage" or the "message" value.</td>
+					<b>boolean</b> value. Case value is false, an error occured and you can check the "lastErrorMessage" or the "message" value.</td>
 				<td>
-					<b>true</b>or
+					<b>true</b> or
 					<b>false</b>
 				</td>
 			</tr>
@@ -197,7 +197,7 @@
 			</tr>
 		</table>Even if you loaded tousands of distributions, the "status" key allows you to check individually the status of each of them.
 		The next table details, in order, each possible "status" value.
-		<table>
+		<table class="table" >
 			<th>Value</th>
 			<th>Description</th>
 			<tr>
@@ -216,7 +216,7 @@
 				<td>
 					<code>CREATING_BLOOM_FILTER</code>
 				</td>
-				<td>Your distribution was successfully streamed and Dynamic-LOD is creating the Bloom filter.</td>
+				<td>Your distribution was successfully streamed and {{appName}} is creating the Bloom filter.</td>
 			</tr>
 			<tr>
 				<td>
@@ -228,7 +228,7 @@
 				<td>
 					<code>CREATING_LINKSETS</code>
 				</td>
-				<td>Dynamic-LOD is comparing an counting links of the current distribution with distributions previoulsy stored in our server.</td>
+				<td>{{appName}} is comparing an counting links of the current distribution with distributions previoulsy stored in our server.</td>
 			</tr>
 			<tr>
 				<td>
@@ -249,10 +249,10 @@
 			: "DONE" , "success" : true , "topDataset" : "http://downloads.dbpedia.org/2014/commons/dataid.ttl#dataset" } } , ...</pre>
 			<p>Case all status are equal to
 				<code>DONE</code>or
-				<code>ERROR</code>, means that Dynamic-LOD already processed all of them, and there is noting else to do. Case there are errors
+				<code>ERROR</code>, means that {{appName}} already processed all of them, and there is noting else to do. Case there are errors
 				wich you can fix, you might be able to send again your description file via
-				<code>addDataset</code>parameter. Dynamic-LOD will not stream again distributions already in the
-				<code>DONE</code>status, unless its detected a change in the file size. Dynamic-LOD do it requesting the "Content-Length" header
+				<code>addDataset</code>parameter. {{appName}} will not stream again distributions already in the
+				<code>DONE</code>status, unless its detected a change in the file size. {{appName}} do it requesting the "Content-Length" header
 				and comparing the previous distribution size.</p>
 	</div>
 	<h4 style="margin-top: 30px">
@@ -260,7 +260,7 @@
 	<div>The following table describes the
 		<code>retrieveDataset</code>, which retrieves RDF data about counted links in the
 		<b>VoID Linkset</b>format.
-		<table>
+		<table class="table" >
 			<th>Parameter</th>
 			<th>Description</th>
 			<th>Accepts array?</th>
@@ -279,8 +279,8 @@
 	</div>
 	<div class="page-header">
 		<h4 style="margin-top: 30px">
-			<a name="downloading"></a>Downloading and installing your stand-alone Dynamic-LOD</h4>
+			<a name="downloading"></a>Downloading and installing your stand-alone {{appName}}</h4>
 	</div>
-	<div>To deploy Dynamic-LOD in your own server, please check our
+	<div>To deploy {{appName}} in your own server, please check our
 		<a href="https://github.com/AKSW/dynamiclod">GitHub page</a>.</div>
 </div>
