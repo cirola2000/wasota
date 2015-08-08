@@ -1,5 +1,5 @@
-main.controller('homeCtrl', ['$scope', '$http', function ($scope, $http) {
+main.controller('homeCtrl', ['$scope', '$http', 'generalData', function ($scope, $http, $generalData) {
 
-$scope.appName = "Dynamic-LOD"; 
+$scope.appName = $generalData.appName;
 
 }]);

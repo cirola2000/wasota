@@ -1,9 +1,5 @@
 var main = angular.module('main', ["ngRoute"]);
 
-var serverURL = "http://localhost:9090/dynlod/api";
-// serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api";
-
-
 main.config(['$routeProvider',
   function ($routeProvider) {
     $routeProvider.
@@ -26,4 +22,15 @@ main.config(['$routeProvider',
       otherwise({
       redirectTo: '/home'
     });
-  }]);
+  }]
+);
+
+
+main.factory('generalData', function() {
+  return {
+      appName : 'Dynamic-LOD',
+      serverURL : 'http://localhost:9090/dynlod/api',
+      // serverURL : 'http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api',
+      
+  };
+});

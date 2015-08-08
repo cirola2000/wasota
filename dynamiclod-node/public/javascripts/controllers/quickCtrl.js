@@ -1,32 +1,43 @@
-main.controller('quickCtrl', ['$scope', '$http', function ($scope, $http) {
-  $scope.serverURL = serverURL;
+main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope, $http, $generalData) {
+  $scope.serverURL = $generalData.serverURL;
   $scope.formats = [
     { name: "turtle", format: "ttl" },
     { name: "rdf/xml", format: "rdfxml" },
-    { name: "n3", format: "n3" }
+    { name: "n3", format: "n3" },
+    { name: "datahub link", format: "rdfxml" }
   ];
   
-  var proxyURL = "/partial/proxy" + "?serverURL=" + serverURL;
+  $scope.choosenFormat =   $scope.formats[1];
+  
+  var proxyURL = "/partial/proxy" + "?serverURL=" + $scope.serverURL;
 
   $scope.datasetAddress = "http://datahub.io/dataset/news-100-nif-ner-corpus";
 
   $scope.startAPI = function () {
-    $scope.apiAddress = serverURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format;
+    $scope.apiResponse = {};
+    $scope.apiParserMessage = {};
+    $scope.distributions = {};
+    $scope.showApiStatusResponse = false;
+    $scope.showApiResponse = false;
+    $scope.showLoading = true;
+
+    $scope.apiAddress = $scope.serverURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format;
     $scope.showApiCall = true;
-    
-    console.log(proxyURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format);
 
     $http.get(proxyURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format).
       then(function (response) {
       if (typeof response.data.error == 'undefined') {
         $scope.apiResponse = response.data.resp.coreMsg;
+        $scope.apiParserMessage = response.data.resp.parserMsg;
         $scope.showApiResponseColor = "black";
         $scope.showApiResponse = true;
+        $scope.showLoading = false;
       }
       else {
         $scope.apiResponse = response.data.error.code;
         $scope.showApiResponseColor = "red";
         $scope.showApiResponse = true;
+        $scope.showLoading = false;
 
       }
     }, function (response) {

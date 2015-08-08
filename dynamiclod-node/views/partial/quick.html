@@ -1,17 +1,22 @@
 <h1>Quick start</h1>
 <p>Check whether you datasets contain links to external datasets in 5 steps.</p>
 <h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
-<p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID).</p>
-<input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> <button ng-click="startAPI()">Start API</button>
-<span ng-show="showApiCall"><p>API call: {{apiAddress}}</p></span>
-<span  style="color: {{showApiResponseColor}}" ng-show="showApiResponse"><p>API response: {{apiResponse}}</p></span>
+<p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID) and choose the RDF format.</p>
+<div><input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> </div>
+<div style="margin-top: 15px"><button ng-click="startAPI()">Start API</button></div>
+<div style="margin-top: 15px"><span ng-show="showApiCall"><p>API call: <a href="{{apiAddress}}" target="_blank">{{apiAddress}}</a></p></span></div>
+<span  style="color: {{showApiResponseColor}}" ng-show="showApiResponse">
+	<p>API response: {{apiResponse}}</p>
+	<p style="color: {{apiParserMessage.error ? 'red' : 'black'}}">API parser response: {{apiParserMessage.message}}</p>
+	</span>
+	<h5 ng-show="showLoading" class="label btn-success">Loading... </h5>
 
-<h2 style="margin-top: 35px">Step 2. Check the status.</h2>
+<h2 style="margin-top: 25px">Step 2. Check the status.</h2>
 <p>Click in "Check Status" to retrieve information about dump files being processed.</p><button ng-click="checkStatus()">Check Status</button>
-<div ng-show="showApiStatusResponse"><p>API status call: {{apiStatusCall}}</p>
-<p>API parser message: {{apiParserMessage}}</p>
+<div style="margin-top: 15px"  ng-show="showApiStatusResponse"><p>API status call: <a href="{{apiStatusCall}}" target="_blank">{{apiStatusCall}}</a> </p>
+<p>API parser message: {{apiParserMessage.message}}</p>
 
-<table>
+<table class="table">
 	<th>Dataset</th><th style="margin-left: 30px">Status</th>
 	<tr ng-repeat="dist in distributions">
 		<td>{{dist.downloadUrl}} </td>
@@ -24,7 +29,7 @@
 <p> Retrieve RDF data using void:Linkset format for each streamed dump file. Click in the API Link for each dump file.</p>
 <button ng-click="retrieveRDF()"> Retrieve RDF </button>
 
-<div ng-show="showRDF">
+<div style="margin-top: 15px" ng-show="showRDF">
 <table class="table">
 	<th>Distribution details:</th><th>Link details</th>
 	<tr ng-repeat="dist in distributions">
