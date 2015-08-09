@@ -55,7 +55,7 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     $http.get(proxyURL+ "?datasetStatus=" + $scope.datasetAddress).
       then(function (response) {
       // console.log(response.data.distributions);
-      $scope.apiParserMessage = response.data.resp.parserMsg;
+      // $scope.apiParserMessage = response.data.resp.parserMsg;
       $scope.distributions = response.data.resp.distributions;
       $scope.showApiStatusResponse = true;
     }, function (response) {

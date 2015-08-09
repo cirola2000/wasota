@@ -19,6 +19,10 @@ main.config(['$routeProvider',
       templateUrl: '/partial/stats',
       controller: 'statsCtrl'
     }).
+      when('/diagram', {
+      templateUrl: '/partial/diagram',
+      controller: 'diagramCtrl'
+    }).    
       otherwise({
       redirectTo: '/home'
     });

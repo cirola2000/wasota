@@ -1,4 +1,7 @@
-<h1>Quick start</h1>
+<div class="page-header">
+	<h1>Quick start</h1>
+</div>
+<!--<h1>Quick start</h1>-->
 <p>Check whether you datasets contain links to external datasets in 5 steps.</p>
 <h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
 <p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID) and choose the RDF format.</p>
@@ -17,10 +20,11 @@
 <p>API parser message: {{apiParserMessage.message}}</p>
 
 <table class="table">
-	<th>Dataset</th><th style="margin-left: 30px">Status</th>
+	<th>Dataset</th><th style="margin-left: 30px">Status</th><th></th>
 	<tr ng-repeat="dist in distributions">
 		<td>{{dist.downloadUrl}} </td>
 		<td>{{dist.status}} </td>
+		<td><i class="{{dist.status!='ERROR' ? 'glyphicon glyphicon-thumbs-up' : 'glyphicon glyphicon-thumbs-down' }}"></i></td>
 	</tr>
 </table>
 </div>
@@ -46,7 +50,7 @@
 			
 		RDF description: 
 		<div> <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.resourceUri}}"> {{serverURL}}api?retrieveDataset={{dist.resourceUri}} </a> </div>
-		<div>Total links indegree: {{dist.indegreeLinksCount}}  ({{dist.indegreeDatasetCount}} datasets); </div>
+		<div>Total links indegree: {{dist.indegreeLinksCount}}  ({{dist.indegreeDatasetCount}} dataset{{dist.indegreeDatasetCount>1 ? 's' : ''}}); </div>
 		<div>Total links outdegree: {{dist.outdegreeLinksCount}}  ({{dist.outdegreeDatasetCount}} datasets); </div>
 	</tr>
 </table>
