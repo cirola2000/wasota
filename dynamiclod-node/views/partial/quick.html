@@ -24,7 +24,12 @@
 	<tr ng-repeat="dist in distributions">
 		<td>{{dist.downloadUrl}} </td>
 		<td>{{dist.status}} </td>
-		<td><i class="{{dist.status!='ERROR' ? 'glyphicon glyphicon-thumbs-up' : 'glyphicon glyphicon-thumbs-down' }}"></i></td>
+		<td><i class="{{dist.status=='ERROR' ? 'glyphicon glyphicon-thumbs-down' : 
+					 (dist.status=='STREAMING' ? 'glyphicon glyphicon-forward' :
+					 (dist.status=='DONE' ? 'glyphicon glyphicon-thumbs-up' :
+					 (dist.status=='WAITING_TO_STREAM' ? 'glyphicon glyphicon-pause' : 'glyphicon glyphicon-question-sign')))
+					 
+					   }}"></i></td>
 	</tr>
 </table>
 </div>
