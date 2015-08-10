@@ -16,20 +16,24 @@
 
 <h2 style="margin-top: 25px">Step 2. Check the status.</h2>
 <p>Click in "Check Status" to retrieve information about dump files being processed.</p><button ng-click="checkStatus()">Check Status</button>
-<div style="margin-top: 15px"  ng-show="showApiStatusResponse"><p>API status call: <a href="{{apiStatusCall}}" target="_blank">{{apiStatusCall}}</a> </p>
-<p>API parser message: {{apiParserMessage.message}}</p>
+<div style="margin-top: 15px"  ng-show="showApiStatusResponse"><p>Check the complete API output for your dump files here: 
+	<div><a href="{{apiStatusCall}}" target="_blank">{{apiStatusCall}}</a> </div> </p>
+<!--<p>API parser message: {{apiParserMessage.message}}</p>-->
 
-<table class="table">
-	<th>Dataset</th><th style="margin-left: 30px">Status</th><th></th>
+<table class="table" style="margin-top: 35px">
+	<th>Dataset</th><th style="margin-left: 30px">Status</th><th>Vocab. Links</th><th>Links</th>
 	<tr ng-repeat="dist in distributions">
 		<td>{{dist.downloadUrl}} </td>
 		<td>{{dist.status}} </td>
-		<td><i class="{{dist.status=='ERROR' ? 'glyphicon glyphicon-thumbs-down' : 
+		<td> <i class="{{hasVocabularyLinks(dist)}}"</i></td>
+        <td> <i class="{{hasLinks(dist)}}"</i></td>
+		<!--<td>{{hasLinks(dist)}}</td>-->
+		<!--<td><i class="{{
+					  dist.status=='ERROR' ? 'glyphicon glyphicon-thumbs-down' : 
 					 (dist.status=='STREAMING' ? 'glyphicon glyphicon-forward' :
 					 (dist.status=='DONE' ? 'glyphicon glyphicon-thumbs-up' :
 					 (dist.status=='WAITING_TO_STREAM' ? 'glyphicon glyphicon-pause' : 'glyphicon glyphicon-question-sign')))
-					 
-					   }}"></i></td>
+					  }}"></i></td>-->
 	</tr>
 </table>
 </div>

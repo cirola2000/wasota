@@ -6,9 +6,9 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     { name: "n3", format: "n3" },
     { name: "datahub link", format: "rdfxml" }
   ];
-  
-  $scope.choosenFormat =   $scope.formats[1];
-  
+
+  $scope.choosenFormat = $scope.formats[1];
+
   var proxyURL = "/partial/proxy" + "?serverURL=" + $scope.serverURL;
 
   $scope.datasetAddress = "http://datahub.io/dataset/news-100-nif-ner-corpus";
@@ -52,7 +52,7 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     $scope.showApiStatusCall = true;
     $scope.apiStatusCall = $scope.serverURL + "?datasetStatus=" + $scope.datasetAddress;
 
-    $http.get(proxyURL+ "?datasetStatus=" + $scope.datasetAddress).
+    $http.get(proxyURL + "?datasetStatus=" + $scope.datasetAddress).
       then(function (response) {
       // console.log(response.data.distributions);
       // $scope.apiParserMessage = response.data.resp.parserMsg;
@@ -68,5 +68,46 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     $scope.showRDF = true;
 
   };
+
+
+  $scope.hasVocabularyLinks = function (distribution) {
+     var vocab = "glyphicon glyphicon-thumbs-down";
+    for (var a in distribution.indegree) {
+      if (distribution.indegree[a].isVocabulary){
+        vocab = "glyphicon glyphicon-thumbs-up";
+        break;
+      }
+    }
+
+    for (var a in distribution.outdegree) {
+      if (distribution.outdegree[a].isVocabulary){
+        vocab = "glyphicon glyphicon-thumbs-up";
+        break;
+      }
+    }
+
+    return vocab;
+  };
   
-  }]);
+  
+  $scope.hasLinks = function (distribution) {
+    var vocab = "glyphicon glyphicon-thumbs-down";
+    for (var a in distribution.indegree) {
+      if (!distribution.indegree[a].isVocabulary){
+        vocab = "glyphicon glyphicon-thumbs-up";
+                break;
+      }
+    }
+
+    for (var a in distribution.outdegree) {
+      if (!distribution.outdegree[a].isVocabulary){
+        vocab = "glyphicon glyphicon-thumbs-up";
+                break;
+      }
+    }
+
+    return vocab;
+  };
+
+
+}]);
