@@ -2,7 +2,7 @@
 	<h1>Quick start</h1>
 </div>
 <!--<h1>Quick start</h1>-->
-<p>Check whether you datasets contain links to external datasets in 5 steps.</p>
+<p>Check whether you datasets contain links to external datasets in this onlone deme. With 3 simple steps, you can retrieve links of your datasets in RDF (<a href="http://www.w3.org/TR/void/#linkset" target="_blank">void:linkset</a>) format.</p>
 <h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
 <p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID) and choose the RDF format.</p>
 <div><input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> </div>
@@ -35,23 +35,27 @@
 
 <div style="margin-top: 15px" ng-show="showRDF">
 <table class="table">
-	<th>Distribution details:</th><th>Link details</th>
+	<th>Distribution details:</th>
+	<!--<th>Link details</th>-->
 	<tr ng-repeat="dist in distributions">
 		<td>
 			<div>Label: {{dist.title}}</div>
-			<div>This dataset is described by: 
+			<!--<div>This dataset is described by: 
 			<ul>
 				<li ng-repeat="defaultDataset in dist.defaultDatasets"> {{defaultDataset}}</li>
 			</ul>
-			</div> 
+			</div> -->
 			<div>Download URL: {{dist.downloadUrl}}</div>
-		</td>
-		<td>
+		<!--</td>
+		<td>-->
 			
-		RDF description: 
-		<div> <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.resourceUri}}"> {{serverURL}}api?retrieveDataset={{dist.resourceUri}} </a> </div>
-		<div>Total links indegree: {{dist.indegreeLinksCount}}  ({{dist.indegreeDatasetCount}} dataset{{dist.indegreeDatasetCount>1 ? 's' : ''}}); </div>
-		<div>Total links outdegree: {{dist.outdegreeLinksCount}}  ({{dist.outdegreeDatasetCount}} datasets); </div>
+		<div> RDF description links:  </div>
+		<ul>
+			<li>By parent dataset:  <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.resourceUri}}">{{serverURL}}api?retrieveDataset={{dist.resourceUri}} </a> </li>
+			<li>By distribution:  <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.resourceUri}}">{{serverURL}}api?retrieveDataset={{dist.downloadUrl}} </a></li>
+		</ul>
+		<!--<div>Total links indegree: {{dist.indegreeLinksCount}}  ({{dist.indegreeDatasetCount}} dataset{{dist.indegreeDatasetCount>1 ? 's' : ''}}); </div>
+		<div>Total links outdegree: {{dist.outdegreeLinksCount}}  ({{dist.outdegreeDatasetCount}} datasets); </div>-->
 	</tr>
 </table>
 </div>
