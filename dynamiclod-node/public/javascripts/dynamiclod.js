@@ -31,10 +31,13 @@ main.config(['$routeProvider',
 
 
 main.factory('generalData', function() {
+  var serverURL = 'http://localhost:9090/dynlod/api';
+      // serverURL : 'http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api',
+  
   return {
       appName : 'Dynamic-LOD',
-      // serverURL : 'http://localhost:9090/dynlod/api',
-      serverURL : 'http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api',
+      serverURL : serverURL,
+      proxyUrl : "/partial/proxy" + "?serverURL=" + serverURL, 
       
   };
 });

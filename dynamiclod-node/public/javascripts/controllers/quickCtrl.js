@@ -9,7 +9,7 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
 
   $scope.choosenFormat = $scope.formats[1];
 
-  var proxyURL = "/partial/proxy" + "?serverURL=" + $scope.serverURL;
+  var proxyURL = $generalData.proxyUrl;
 
   $scope.datasetAddress = "http://datahub.io/dataset/news-100-nif-ner-corpus";
 
@@ -27,8 +27,8 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     $http.get(proxyURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format).
       then(function (response) {
       if (typeof response.data.error == 'undefined') {
-        $scope.apiResponse = response.data.resp.coreMsg;
-        $scope.apiParserMessage = response.data.resp.parserMsg;
+        $scope.apiResponse = response.data.coreMsg;
+        $scope.apiParserMessage = response.data.parserMsg;
         $scope.showApiResponseColor = "black";
         $scope.showApiResponse = true;
         $scope.showLoading = false;
@@ -56,7 +56,7 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
       then(function (response) {
       // console.log(response.data.distributions);
       // $scope.apiParserMessage = response.data.resp.parserMsg;
-      $scope.distributions = response.data.resp.distributions;
+      $scope.distributions = response.data.distributions;
       $scope.showApiStatusResponse = true;
     }, function (response) {
         $scope.apiResponse = "Error: " + response;
