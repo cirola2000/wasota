@@ -2,7 +2,7 @@
 	<h1>Quick start</h1>
 </div>
 <!--<h1>Quick start</h1>-->
-<p>Check whether you datasets contain links to external datasets in this onlone deme. With 3 simple steps, you can retrieve links of your datasets in RDF (<a href="http://www.w3.org/TR/void/#linkset" target="_blank">void:linkset</a>) format.</p>
+<p>Check whether you datasets contain links to external datasets in this onlone deme. With 2 simple steps, you can retrieve links of your datasets in RDF (<a href="http://www.w3.org/TR/void/#linkset" target="_blank">void:linkset</a>) format.</p>
 <h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
 <p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID) and choose the RDF format.</p>
 <div><input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> </div>
@@ -21,12 +21,13 @@
 <!--<p>API parser message: {{apiParserMessage.message}}</p>-->
 
 <table class="table" style="margin-top: 35px">
-	<th>Dataset</th><th style="margin-left: 30px">Status</th><th>Vocab. Links</th><th>Links</th>
+	<th>Dataset</th><th style="margin-left: 30px">Status</th><th>Vocab. Links</th><th>Links</th><th></th>
 	<tr ng-repeat="dist in distributions">
 		<td>{{dist.downloadUrl}} </td>
 		<td>{{dist.status}} </td>
 		<td> <i class="{{hasVocabularyLinks(dist)}}"</i></td>
         <td> <i class="{{hasLinks(dist)}}"</i></td>
+        <td> <a h target="_blank" href="{{serverURL}}?retrieveDataset={{dist.downloadUrl}}" ><img src="images/rdf.24" > </a> </td>
 		<!--<td>{{hasLinks(dist)}}</td>-->
 		<!--<td><i class="{{
 					  dist.status=='ERROR' ? 'glyphicon glyphicon-thumbs-down' : 
@@ -38,33 +39,25 @@
 </table>
 </div>
 
-<h2 style="margin-top: 35px">Step 3. Retrieve your dataset linksets.</h2>
+<!--<h2 style="margin-top: 35px">Step 3. Retrieve your dataset linksets.</h2>
 <p> Retrieve RDF data using void:Linkset format for each streamed dump file. Click in the API Link for each dump file.</p>
 <button ng-click="retrieveRDF()"> Retrieve RDF </button>
 
 <div style="margin-top: 15px" ng-show="showRDF">
 <table class="table">
 	<th>Distribution details:</th>
-	<!--<th>Link details</th>-->
 	<tr ng-repeat="dist in distributions">
 		<td>
 			<div>Label: {{dist.title}}</div>
-			<!--<div>This dataset is described by: 
-			<ul>
-				<li ng-repeat="defaultDataset in dist.defaultDatasets"> {{defaultDataset}}</li>
-			</ul>
-			</div> -->
+
 			<div>Download URL: {{dist.downloadUrl}}</div>
-		<!--</td>
-		<td>-->
+		
 			
 		<div> RDF description links:  </div>
 		<ul>
 			<li>By parent dataset:  <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.resourceUri}}">{{serverURL}}?retrieveDataset={{dist.resourceUri}} </a> </li>
 			<li>By distribution:  <a  target="_blank" href="{{serverURL}}?retrieveDataset={{dist.downloadUrl}}">{{serverURL}}?retrieveDataset={{dist.downloadUrl}} </a></li>
 		</ul>
-		<!--<div>Total links indegree: {{dist.indegreeLinksCount}}  ({{dist.indegreeDatasetCount}} dataset{{dist.indegreeDatasetCount>1 ? 's' : ''}}); </div>
-		<div>Total links outdegree: {{dist.outdegreeLinksCount}}  ({{dist.outdegreeDatasetCount}} datasets); </div>-->
-	</tr>
+			</tr>
 </table>
-</div>
+</div>-->
