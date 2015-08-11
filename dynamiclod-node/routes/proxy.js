@@ -28,9 +28,10 @@ router.get('/', function (req, res, next) {
 router.get('/tables', function (req, res, next) {
   
   //http://localhost:9090/dynlod/api?listDistributions&skip=2&limit=4
+  //http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api
   
   console.log(req.query.start);
-  var query = "http://localhost:9090/dynlod/api?listDistributions&skip="+req.query.start+"&limit="+req.query.length;
+  var query = "http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?listDistributions&skip="+req.query.start+"&limit="+req.query.length;
   
   var resp;
   var data;
