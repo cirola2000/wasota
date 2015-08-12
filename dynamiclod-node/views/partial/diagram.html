@@ -1,17 +1,19 @@
 <script src="javascripts/d3.v3.min.js"></script>
-<script src="javascripts/diagram.js"></script>
 <script src="javascripts/jstree/src/jstree.js"></script>
 <script src="javascripts/jstree/src/jstree.checkbox.js"></script>
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<div class="panel-title"></div>
-		<img alt="" style="float: right; margin-top: 40px" src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png">
-		<div class="pull-right"></div>
-	</div>
+<script src="javascripts/diagram.js"></script>
+
+<link rel="stylesheet"
+	href="javascripts/jstree/dist/themes/default/style.min.css" />
+
+<div class="page-header">
+<!--<img src="images/Beta-Image.jpg" width="70" height="70" style="float: right">-->
+	<h1 style="">LOD-Diagram</h1>
+</div>
+<p>This diagram generator is still in a beta version. </p> 
+
+
 	<div class="panel-body">
-		<div class="page-header">
-			<h2>LOD-Diagram</h2>
-		</div>
 		<div class="row">
 			<div class="col-md-3">
 				<div>
@@ -44,7 +46,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+
 <script type="text/javascript">
 	(function ($, undefined) {
 	    "use strict";
@@ -87,7 +89,7 @@
 		  $('#myInput').focus()
 		})
 	
-	$.post("ResourceTree", function(data) {
+	$.post("/partial/proxy/ResourceTree", function(data) {
 		$('#tree').jstree({
 			"core" : {"data": data,
 				 'animation' : 0,
