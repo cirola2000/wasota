@@ -2,7 +2,8 @@
 	<h1 style="">{{appName}} Wiki</h1>
 </div>
 <p>This page provides a basic guideline of {{appName}} API usage. Further information about the software architecture can be
-	found in <a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>.</p>
+	found in
+	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>.</p>
 <div class="page-header">
 	<h2>Contents</h2>
 </div>
@@ -82,16 +83,18 @@
 	<h2>
 		<a name="api"></a>API usage</h2>
 </div>
-<div>{{appName}} API has three main features, which consists in add new dataset to the diagram, retrieve data about the streaming
-	status, and finally, retrieve RDF and a diagram about related datasets. To add a dataset and retrieve the status, the API
-	returns a
+<div>{{appName}} API has three main features, which consists in add new dataset to be streamed, retrieve data about the streaming
+	status, and finally, retrieve RDF file. To add a dataset and retrieve the status, the API returns a
 	<b>JSON Object</b>which contains a "message" field and a "success" filed with a boolean value. The following sections describe
-	thw API usage.</div>
-<h4 style="margin-top: 30px">
-	<a name="adding"></a>Adding dataset to diagram</h4>
-<div>{{appName}} parses different description files, such as DataID, VoID and DCAT. Thus, what you need to add your datasets
-	is a link that contains the description file, and {{appName}} will read it and try to fetch distributions dump files. Considering
-	that the application requests header in the format
+	the API usage.</div>
+<h3 style="margin-top: 30px">
+	<a name="adding"></a>Adding new dataset to be streamed</h3>
+<div>{{appName}} parses different description files, according to the vocabularies
+	<a href="http://wiki.dbpedia.org/projects/dbpedia-dataid-unit"
+	target="_blank">DataID</a>,
+	<a href="http://www.w3.org/TR/void/" target="_blank">VoID</a>and
+	<a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">DCAT</a>. Thus, what you need to add your datasets is a link that contains the description file and {{appName}} will read it and
+	try to fetch dump files. Considering that the application requests header in the format
 	<code>"Accept: application/rdf+xml"</code>it's also possible, for instance, to add your dataset via a CKAN link.
 	<p>The API parameters used to add a dataset are:</p>
 	<table class="table" style="margin-top: 20px; margin-bottom: 20px">
@@ -108,8 +111,7 @@
 				<b>Yes</b>
 			</td>
 			<td rowspan="2">
-				<b>JSON Object</b>with a core message "API initialized" and (later, when the webpage is refreshed) a parser message with the
-				number of distributions parsed.</td>
+				<b>JSON Object</b>with a core message "API initialized" and a parser message with the number of dump files founded.</td>
 		</tr>
 		<tr>
 			<td>
@@ -129,10 +131,11 @@
 	<p>An generic example of a link to add a http://x.y.x/dataset.ttl file in turtle is:
 		<code>vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?addDataset=http://x.y.x/dataset.ttl?rdfFormat=ttl</code>.</p>
 	<p>After adding the dataset, you should get a message indicating if the API was successfully initiated. To check details about
-		parsed distributions and datasets, check the next section for the datasetStatus parameter.</p>
+		parsed distributions and datasets, check the next section for the
+		<i>datasetStatus</i>parameter.</p>
 </div>
-<h4 style="margin-top: 30px">
-	<a name="checking"></a>Checking your dataset status</h4>
+<h3 style="margin-top: 30px">
+	<a name="checking"></a>Checking your dataset status</h3>
 <div>
 	<p>The API parameter used to verify the details of the loading/streaming process for a dataset is:</p>
 	<table class="table">
@@ -149,12 +152,13 @@
 				<b>No</b>
 			</td>
 			<td>
-				<b>JSON Object</b>(described in the next table)</td>
+				<b>JSON Object</b>
+			</td>
 		</tr>
 	</table>A detailed description for the returned
 	<b>JSON Object</b>of the
 	<code>datasetStatus</code>parameter is given by the next table.
-	<table class="table">
+	<!--<table class="table">
 		<th style="width: 150px">Key</th>
 		<th>Description</th>
 		<th style="width: 350px; padding-left: 10px">Possible values</th>
@@ -193,20 +197,20 @@
 			<td>The current status for the distribution.</td>
 			<td>Described in the next table</td>
 		</tr>
-	</table>Even if you loaded tousands of distributions, the "status" key allows you to check individually the status of each of them.
+	</table>-->Even if you loaded tousands of distributions, the "status" key allows you to check individually the status of each of them.
 	The next table details, in order, each possible "status" value.
 	<table class="table">
 		<th>Value</th>
 		<th>Description</th>
 		<tr>
 			<td>
-				<code>WAITING_TO_DOWNLOAD</code>
+				<code>WAITING_TO_STREAM</code>
 			</td>
 			<td>Your distribution is in the download queue and was not streamed yet.</td>
 		</tr>
 		<tr>
 			<td>
-				<code>DOWNLOADING</code>
+				<code>STREAMING</code>
 			</td>
 			<td>Your distribution being streamed/downloaded.</td>
 		</tr>
@@ -215,18 +219,6 @@
 				<code>CREATING_BLOOM_FILTER</code>
 			</td>
 			<td>Your distribution was successfully streamed and {{appName}} is creating the Bloom filter.</td>
-		</tr>
-		<tr>
-			<td>
-				<code>WAITING_TO_CREATE_LINKSETS</code>
-			</td>
-			<td>Shortly, the current distribution will be compared with other to count links between them.</td>
-		</tr>
-		<tr>
-			<td>
-				<code>CREATING_LINKSETS</code>
-			</td>
-			<td>{{appName}} is comparing an counting links of the current distribution with distributions previoulsy stored in our server.</td>
 		</tr>
 		<tr>
 			<td>
@@ -253,10 +245,9 @@
 			<code>DONE</code>status, unless its detected a change in the file size. {{appName}} do it requesting the "Content-Length" header
 			and comparing the previous distribution size.</p>
 </div>
-<h4 style="margin-top: 30px">
-	<a name="retrieving"></a>Retrieving RDF VoID Linkset data</h4>
-<div>The following table describes the
-	<code>retrieveDataset</code>, which retrieves RDF data about counted links in the
+<h3 style="margin-top: 30px">
+	<a name="retrieving"></a>Retrieving RDF VoID Linkset data</h3>
+<div>The following table describes the <code>retrieveDataset</code>, which retrieves RDF data about counted links in the
 	<b>VoID Linkset</b>format.
 	<table class="table">
 		<th>Parameter</th>

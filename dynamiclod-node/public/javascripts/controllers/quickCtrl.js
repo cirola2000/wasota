@@ -3,7 +3,7 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.formats = [
     { name: "turtle", format: "ttl" },
     { name: "rdf/xml", format: "rdfxml" },
-    { name: "n3", format: "n3" },
+    { name: "nt", format: "nt" },
     { name: "datahub link", format: "rdfxml" }
   ];
 

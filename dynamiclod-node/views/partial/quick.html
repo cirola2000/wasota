@@ -6,7 +6,7 @@
 <h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
 <p>Paste the URL of your CKAN's dataset or the URL for your description file (DCAT, VoID or DATAID) and choose the RDF format.</p>
 <div><input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> </div>
-<div style="margin-top: 15px"><button ng-click="startAPI()">Start API</button></div>
+<div style="margin-top: 15px"><button ng-click="startAPI()">Stream File</button></div>
 <div style="margin-top: 15px"><span ng-show="showApiCall"><p>API call: <a href="{{apiAddress}}" target="_blank">{{apiAddress}}</a></p></span></div>
 <span  style="color: {{showApiResponseColor}}" ng-show="showApiResponse">
 	<p>API response: {{apiResponse}}</p>
