@@ -431,22 +431,12 @@ function init() {
 		return "translate(" + d.x + "," + d.y + ")";
 	}); 
 	  
-	//	  g.append("circle")
-	//      // if (d.size) -- d.size > 0 when d is a group node.      
-	//      .attr("r", function(d) { return d.size ? d.size + dr : dr+1; })
-	//      .style("fill", function(d) { return fill(d.group); })
-	//      .on("click", function(d) {
-	//console.log("node click", d, arguments, this, expand[d.group]);
-	//        expand[d.group] = !expand[d.group];
-	//    init();
-	//      }); stroke="black" stroke-width="3"
-	  
 	g.append("circle")
 	// if (d.size) -- d.size > 0 when d is a group node.      
 		.attr("r", function (d) { return d.size ? 36 : d.radius; })
-		.style("stroke", function (d) { if (d.size > 0) return "rgb(144, 209, 228)" })
+		.style("stroke", function (d) { if (d.size > 0) return "rgb(144, 209, 228)"; })
 		.style("stroke-width", function (d) { if (d.size > 0) return 5; })
-
+		.style("cursor",  function (d) { if (d.size > 0) return "pointer"; })
 		.style("fill", function (d) { if (d.name) return d.color; else return fill(d.group); })
 		.on("click", function (d) {
 		if (d3.event.defaultPrevented) return; // click suppressed
@@ -473,11 +463,11 @@ function init() {
 		.html(
 		function (d) {
 			if (d['text']) {
-				return "<div style=\"font-size: 8px; text-align:center\">"
+				return "<div style=\"font-size: 8px; pointer-events:none; cursor:pointer; text-align:center\">"
 					+ d.text + "</div>";
 			}
 			else {
-				return "<div style=\"font-size: 8px; text-align:center\">"
+				return "<div style=\"font-size: 8px; pointer-events:none; cursor:pointer; text-align:center\">"
 					+ d.group_name + "</div>";
 			}
 		});
