@@ -1,0 +1,30 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/webnmasunotraveler">
+    <owl:sameAs rdf:resource="urn:uuid:e6a90993-6766-48f2-a6b3-2eeaf4c525b7"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>format-opmo</dcat:keyword>
+        <dcat:keyword>format-pos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/webnmasunotraveler"></foaf:homepage>
+    <rdfs:label>webnmasunotraveler</rdfs:label>
+    <dct:identifier>webnmasunotraveler</dct:identifier>
+    <dct:title>webnmasunotraveler</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://webenemasuno.linkeddata.es/elviajero/resource/Organization/PRISA_DIGITAL"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>examlple/rdf</rdf:value>
+                            <rdfs:label>examlple/rdf</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example Resource</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:elviajero</rdfs:label>
+            <rdf:value>22</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

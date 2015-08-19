@@ -1,0 +1,48 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/data-bnf-fr">
+    <owl:sameAs rdf:resource="urn:uuid:df8da537-d4d9-497d-be5c-8b226c147f71"></owl:sameAs>
+    <dct:description>data.bnf.fr gathers data from the different databases of the Bibliothèque nationale de France, so as to create Web pages about Works, Authors, Subjects and Places together with a RDF view on the extracted data. 
+
+There are links to id.loc.gov for languages and nationalities, to dewey.info  for subjects, and to DCMI type for types.
+
+The authors and subjects are matched to Agrovoc,Geonames, DBpedia, Wikipedia, VIAF, Stitch, Dewey, ISNI, the library of Congress, and the German national library.
+
+We use SKOS, FOAF, DC and RDA vocabularies, in a FRBR model.</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/data-bnf-fr"></foaf:homepage>
+    <rdfs:label>data-bnf-fr</rdfs:label>
+    <dct:identifier>data-bnf-fr</dct:identifier>
+    <dct:title>data.bnf.fr - Bibliothèque nationale de France</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>data.bnf.fr project team - French national Library</foaf:name>
+        <foaf:mbox rdf:resource="mailto:data@bnf.fr"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>data.bnf.fr project team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:data@bnf.fr"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>5a17452b-a0e8-42a5-ad4c-76c2cb2a611c</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

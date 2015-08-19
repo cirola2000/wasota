@@ -1,0 +1,217 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ce4r">
+    <owl:sameAs rdf:resource="urn:uuid:33b52bf9-147d-4553-b4f8-d77e030819b2"></owl:sameAs>
+    <dct:description>&lt;p&gt; Knowledge plataform launched by Corporate Excellence – Centre for reputation leadership, a new think tank to professionalize management of intangible assets and contribute to the development of strong brands with good reputation and able to compete in to the global market. In this community, members will be able to access to a lot of contents as article, thesis, insights, cases and so on, related to intangible management. In addition, It is possible to share knowledge and make comments.&lt;/p&gt;
+&lt;p&gt;CE4R works with &lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.&lt;/p&gt;
+
+&lt;p&gt; Plataforma de conocimiento impulsada por Corporate Excellence – Centre for reputation leadership, un laboratorio de ideas para profesionalizar la gestión de los activos intangibles y para contribuir al desarrollo de marcas con una reputación excelente capaces de competir en los mercados globales. En la comunidad podrás acceder a numerosos contenidos (artículos, casos, noticias, tesis, insights, etc.) en torno a la gestión de intangibles, así como comentarlos y compartirlos.&lt;/p&gt;
+&lt;p&gt;CE4R trabaja con &lt;a href="http://gnoss.com/"&gt;software de GNOSS (RIAM Intelearning Lab)&lt;/a&gt;. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.&lt;/p&gt;</dct:description>
+        <dcat:keyword>Brand</dcat:keyword>
+        <dcat:keyword>Corporate gobernance</dcat:keyword>
+        <dcat:keyword>RSC</dcat:keyword>
+        <dcat:keyword>asuntos públicos</dcat:keyword>
+        <dcat:keyword>centre for reputation leadership</dcat:keyword>
+        <dcat:keyword>communication</dcat:keyword>
+        <dcat:keyword>comunicación</dcat:keyword>
+        <dcat:keyword>corporate Excellence</dcat:keyword>
+        <dcat:keyword>corporate excellence</dcat:keyword>
+        <dcat:keyword>country reputation</dcat:keyword>
+        <dcat:keyword>country-spain</dcat:keyword>
+        <dcat:keyword>country.es</dcat:keyword>
+        <dcat:keyword>dc</dcat:keyword>
+        <dcat:keyword>economía de la reputación</dcat:keyword>
+        <dcat:keyword>foaf</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-dcam</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdfg</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-wot</dcat:keyword>
+        <dcat:keyword>gobierno corporativo</dcat:keyword>
+        <dcat:keyword>intangible assets</dcat:keyword>
+        <dcat:keyword>intangibles</dcat:keyword>
+        <dcat:keyword>laboratorio de ideas</dcat:keyword>
+        <dcat:keyword>language-spa</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>marca</dcat:keyword>
+        <dcat:keyword>marca país</dcat:keyword>
+        <dcat:keyword>metrics</dcat:keyword>
+        <dcat:keyword>métricas</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>public affairs</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>reputación</dcat:keyword>
+        <dcat:keyword>reputación país</dcat:keyword>
+        <dcat:keyword>reputation</dcat:keyword>
+        <dcat:keyword>reputation economy</dcat:keyword>
+        <dcat:keyword>schemata</dcat:keyword>
+        <dcat:keyword>scr</dcat:keyword>
+        <dcat:keyword>sioc</dcat:keyword>
+        <dcat:keyword>skos</dcat:keyword>
+        <dcat:keyword>socialweb</dcat:keyword>
+        <dcat:keyword>sp</dcat:keyword>
+        <dcat:keyword>spain</dcat:keyword>
+        <dcat:keyword>usergeneratedcontent</dcat:keyword>
+        <dcat:keyword>wrapper</dcat:keyword>
+        <dcat:keyword>ética</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ce4r"></foaf:homepage>
+    <rdfs:label>ce4r</rdfs:label>
+    <dct:identifier>ce4r</dct:identifier>
+    <dct:title>CE4R Knowledge Centre Corporate Excellence – Centre for Reputation Leadership</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://corporateexcellence.net/en/community/patronato/resource/Tesis-Creacion-de-una-nueva-metodologia-multistak/46f6bdff-6268-4b82-9ed7-7359c4036285"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://corporateexcellence.net/en/community/patronato/resource/Study-The-Chief-Communications-Officer-Korn-Ferr/b032b83c-93f7-4200-ba8b-2d5be7389247?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example 2</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://corporateexcellence.net/en/community/patronato/advanced-search/tag/stakeholders?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML search example </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://gnoss.com/gnoss.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/owl</rdf:value>
+                            <rdfs:label>meta/owl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Gnoss Ontology</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://museos.gnoss.com/voidLaboratorioDeIdeas.n3"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD description</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>http://gnoss.com/en/terms-of-use</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>181 </rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:freebase</rdfs:label>
+            <rdf:value>169</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:gnoss</rdfs:label>
+            <rdf:value>144</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:nytimes-linked-open-data</rdfs:label>
+            <rdf:value>178</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:prospect-and-trends-gnoss</rdfs:label>
+            <rdf:value>128</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://corporateexcellence.net/en/community/patronato</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>CE4R</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>4866</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4649c719-c874-4d2b-bba2-7b59ef906871</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

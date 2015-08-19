@@ -1,0 +1,51 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/wals">
+    <owl:sameAs rdf:resource="urn:uuid:58013bcf-2951-4eb9-baab-44b8f862cc98"></owl:sameAs>
+    <dct:description>### About
+
+From website:
+
+&gt; WALS is a large database of structural (phonological, grammatical, lexical) properties of languages gathered from descriptive materials (such as reference grammars) by a team of more than 40 authors (many of them the leading authorities on the subject).
+
+&gt; WALS consists of 141 maps with accompanying texts on diverse features (such as vowel inventory size, noun-genitive order, passive constructions, and "hand"/"arm" polysemy), each of which is the responsibility of a single author (or team of authors). Each map shows between 120 and 1370 languages, each language being represented by a symbol, and different symbols showing different values of the feature. Altogether 2,650 languages are shown on the maps, and more than 58,000 datapoints give information on features in particular languages. 
+
+### Openness
+
+Not open. Under a BY-NC-ND license.</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/wals"></foaf:homepage>
+    <rdfs:label>wals</rdfs:label>
+    <dct:identifier>wals</dct:identifier>
+    <dct:title>World Atlas of Language Structuctures (WALS) Online</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Max Planck Digital Library</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Robert Forkel</foaf:name>
+        <foaf:mbox rdf:resource="mailto:robert_forkel@eva.mpg.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>b547f093-7202-4c3a-9992-5354316cb0b2</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,291 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eprtr">
+    <owl:sameAs rdf:resource="urn:uuid:e4b2c39b-5904-413b-b31d-c4c3e2e5438f"></owl:sameAs>
+    <dct:description>The European Pollutant Release and Transfer Register (E-PRTR) is a Europe-wide register that provides easily accessible key environmental data from industrial facilities in European Union Member States and in Iceland, Liechtenstein, Norway, Serbia and Switzerland.</dct:description>
+        <dcat:keyword>environment</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>pollution</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>waste</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eprtr"></foaf:homepage>
+    <rdfs:label>eprtr</rdfs:label>
+    <dct:identifier>eprtr</dct:identifier>
+    <dct:title>European Pollutant Release and Transfer Register (E-PRTR)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/Facility.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Facilities</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/Activity.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Activities</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/CompetentAuthority.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Competent authorities</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/FacilityReport.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Facility reports</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/FacilityID_Changes.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Facility ID changes</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/lookuptables.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Lookup tables</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/PollutantRelease.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Pollutant releases</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/PollutantReleaseMethodUsed.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Pollutant release methods used</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/PollutantTransfer.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Pollutant transfers</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/PollutantTransferMethodUsed.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Pollutant transfer methods used</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/UploadedReports.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Uploaded reports</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/WasteTransfer.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Waste transfers</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/WasteTransferMethodUsed.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Waste transfer methods used</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/ExternalLinks.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>External links</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/void.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD description</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://prtr.ec.europa.eu/rdf/facility/11338"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example resource</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://cr.eionet.europa.eu/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Søren Roug</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>317</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:eea-rod</rdfs:label>
+            <rdf:value>66</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:eionet-rdf</rdfs:label>
+            <rdf:value>3222</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:eurostat-linked-data</rdfs:label>
+            <rdf:value>2833</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:telegraphis</rdfs:label>
+            <rdf:value>69</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://prtr.ec.europa.eu/rdf/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>E-PRTR</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>14500000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>b350a3da-2a55-4758-97af-69fc4f232079</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

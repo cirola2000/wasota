@@ -1,0 +1,67 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/licensedb">
+    <owl:sameAs rdf:resource="urn:uuid:6e5cba3f-3359-41d2-8925-d514e4df0c7b"></owl:sameAs>
+    <dct:description> Welcome to the License Database project (aka LicenseDB). Our goal is to build a structured database of all copyright (and related rights) licenses used in the free software / open source / free culture communities.
+
+Various tools can benefit from a full set of machine-readable licenses, including tools which we haven't thought of yet. Feel free to contact us if you have ideas to make this project useful for a particular use-case. </dct:description>
+        <dcat:keyword>format-json</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>license</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>license-metadata linked-data</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/licensedb"></foaf:homepage>
+    <rdfs:label>licensedb</rdfs:label>
+    <dct:identifier>licensedb</dct:identifier>
+    <dct:title>The License Database</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://licensedb.org/dl/license-database.tar.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>json-ld</rdf:value>
+                            <rdfs:label>json-ld</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>License Database</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://licensedb.org/id/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>License Database</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Kuno Woudt</foaf:name>
+        <foaf:mbox rdf:resource="mailto:kuno@frob.nl"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>7477e887-67d0-4598-a6ef-0d312b0124bc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

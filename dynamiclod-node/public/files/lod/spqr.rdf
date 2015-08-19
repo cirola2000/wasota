@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/spqr">
+    <owl:sameAs rdf:resource="urn:uuid:3b1282dd-94e0-440f-9e47-2d3e757c48aa"></owl:sameAs>
+    <dct:description>SPQR addresses the integration of heterogeneous datasets in the humanities, specifically data relating to classical antiquity, using a linked data approach and based on the recently published Europeana Data Model (EDM). Published data includes:
+
+* The Heidelberger Gesamtverzeichnis der griechischen Papyrusurkunden Aegyptens (HGV), a collection of metadata records for 65,000 Greek papyri from Egypt.
+* Projet Volterra, a database of Roman legal texts, currently in the low tens of thousands but very much work in progress, stored in a series of themed tables in Microsoft Access.
+* The Inscriptions of Aphrodisias (InsAph), a corpus of 2,000 ancient Greek inscriptions from the Roman city of Aphrodisias.
+
+RDF dumps and a SPARQL endpoint are available. At this time the project does not use resolvable URIs.</dct:description>
+        <dcat:keyword>ancient-history</dcat:keyword>
+        <dcat:keyword>archeology</dcat:keyword>
+        <dcat:keyword>europeana</dcat:keyword>
+        <dcat:keyword>history</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>sparql</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/spqr"></foaf:homepage>
+    <rdfs:label>spqr</rdfs:label>
+    <dct:identifier>spqr</dct:identifier>
+    <dct:title>SPQR</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://spqr.cerch.kcl.ac.uk/wp-uploads/2011/10/hgv.tar.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XML</rdf:value>
+                            <rdfs:label>XML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF dump, part 1</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://spqr.cerch.kcl.ac.uk/wp-uploads/2011/10/iAphIRT_RDF.tar.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XML</rdf:value>
+                            <rdfs:label>XML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF dump, part 2</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://triples.cerch.kcl.ac.uk:51515/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>SPARQL</rdf:value>
+                            <rdfs:label>SPARQL</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>King’s College London; Humboldt-Universität Berlin; University of Edinburgh</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2e8144c7-07e6-4a5c-be56-8f3d3f27d6ea</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

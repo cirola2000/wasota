@@ -1,0 +1,112 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/rxnorm">
+    <owl:sameAs rdf:resource="urn:uuid:227c5e71-c983-482f-9db1-5db82545a78d"></owl:sameAs>
+    <dct:description>RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software.
+
+Notes on accessbility:
+* Example URI does not return RDF. Needs to go through a describe.
+* Download of zip needs authentication (NLM license: https://uts.nlm.nih.gov/license.html)
+
+</dct:description>
+        <dcat:keyword>library</dcat:keyword>
+        <dcat:keyword>lifesciences</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.needsfixing</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>medical</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/rxnorm"></foaf:homepage>
+    <rdfs:label>rxnorm</rdfs:label>
+    <dct:identifier>rxnorm</dct:identifier>
+    <dct:title>RxNorm</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.nlm.nih.gov/umls/kss/rxnorm/RxNorm_full_02072011.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>ZIP</rdf:value>
+                            <rdfs:label>ZIP</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://link.informatics.stonybrook.edu/sparql/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://link.informatics.stonybrook.edu/rxnorm/RXCUI"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://link.informatics.stonybrook.edu/sparql/?default-graph-uri=http%3A//nlm.nih.gov/research/umls/rxnorm/&amp;query=construct%20{%20%3Chttp%3A//link.informatics.stonybrook.edu/rxnorm/RXCUI%3E%20%3Fp%20%3Fo%20}%20{%3Chttp%3A//link.informatics.stonybrook.edu/rxnorm/RXCUI%3E%20%3Fp%20%3Fo}&amp;format=text/plain"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/ntriples</rdf:value>
+                            <rdfs:label>example/ntriples</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>US National Library of Medicine</foaf:name>
+        <foaf:mbox rdf:resource="mailto:rxnorminfo@nlm.nih.gov"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Janos G. Hajagos</foaf:name>
+        <foaf:mbox rdf:resource="mailto:janos.hajagos@stonybrook.edu"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>https://uts.nlm.nih.gov/license.html</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://link.informatics.stonybrook.edu/rxnorm/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>9bc2006b-99f8-41fb-b5e4-d63243d7ec56</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

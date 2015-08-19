@@ -1,0 +1,133 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/agrinepaldata">
+    <owl:sameAs rdf:resource="urn:uuid:d8c4cee1-8e85-47eb-897c-a56eba6aca25"></owl:sameAs>
+    <dct:description>Ontology Based Data Access and Integration for Improving the Effectiveness of Farming in Nepal</dct:description>
+        <dcat:keyword>aksw</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/agrinepaldata"></foaf:homepage>
+    <rdfs:label>agrinepaldata</rdfs:label>
+    <dct:identifier>agrinepaldata</dct:identifier>
+    <dct:title>AgriNepalData</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agrinepaldata.com/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Sparql End Point</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agrinepaldata.com/"></dcat:accessURL>
+               <dct:title>agrinepaldata web site</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agrinepaldata.com/downloads/agrinepal.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>rdf-turtle</rdf:value>
+                            <rdfs:label>rdf-turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Dataset dump</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agrinepaldata.com/download/agrinepaldataont.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/owl</rdf:value>
+                            <rdfs:label>meta/owl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>agrinepaldata ontology</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agrinepaldata.com/download/void.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>metadata void</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Mohamed Sherif</foaf:name>
+        <foaf:mbox rdf:resource="mailto:sherif@informatic.uni-leipzig.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Suresh Pokharel</foaf:name>
+        <foaf:mbox rdf:resource="mailto:pokharel@informatik.uni-leipzig.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:agrovoc</rdfs:label>
+            <rdf:value>32294</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>38469</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://agrinepaldata.com/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>state</rdfs:label>
+            <rdf:value>active</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>1433631</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>version</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>73d4b5de-d0c6-4064-a23c-9fc7b261e1bc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

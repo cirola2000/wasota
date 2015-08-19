@@ -1,0 +1,143 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/un-hazardous-numbers">
+    <owl:sameAs rdf:resource="urn:uuid:6899b69d-f520-4093-a973-e68cb4b4d26c"></owl:sameAs>
+    <dct:description>UN Numbers are categories of harzardous materials.  See http://en.wikipedia.org/wiki/UN_numbers for more details.</dct:description>
+        <dcat:keyword>dc</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/un-hazardous-numbers"></foaf:homepage>
+    <rdfs:label>un-hazardous-numbers</rdfs:label>
+    <dct:identifier>un-hazardous-numbers</dct:identifier>
+    <dct:title>UN Hazardous Materials Numbers</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://api.kasabi.com/dataset/un-hazardous-material-numbers/apis/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Sparql</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.kasabi.com/dataset/un-hazardous-material-numbers/1203.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.kasabi.com/dataset/un-hazardous-material-numbers"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.kasabi.com/dataset/un-hazardous-material-numbers/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.w3.org/2002/07/owl#"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.w3.org/2000/01/rdf-schema#"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://purl.org/dc/elements/1.1/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://data.kasabi.com/dataset/un-hazardous-material-numbers</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>26550</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>0f16a454-373f-4c61-8ee6-a7358f7b5659</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

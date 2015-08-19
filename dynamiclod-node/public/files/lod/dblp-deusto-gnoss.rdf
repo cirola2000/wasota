@@ -1,0 +1,187 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dblp-deusto-gnoss">
+    <owl:sameAs rdf:resource="urn:uuid:5cf3cff0-e3be-42ad-916c-b0d270fd3e8b"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;a href="http://researchgroups.gnoss.com/"&gt;DBLP Research Groups (University of Deusto-GNOSS) &lt;/a&gt;
+is the platform for creating research communities enriched with scientific contexts from
+&lt;a href="http://www.informatik.uni-trier.de/~ley/db/"&gt;DBLP&lt;/a&gt;
+. The recommendation contexts of Deusto-GNOSS Research Groups are a part of an index with over two million scientific publications in IT developed by GNOSS in collaboration with the
+&lt;a href="http://www.deusto.es/"&gt;University of Deusto&lt;/a&gt;
+. You can use the contexts for your community or research group.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://researchgroups.gnoss.com/"&gt;DBLP Research Groups (University of Deusto-GNOSS) &lt;/a&gt;
+works with
+&lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;
+. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. GNOSS works within the philosophy of Open Data and proposes a solution so that data can be linked (Linked Data). Data are expressed in OWL-RDF files. We are implementing semantic technology in Education (educational communities and social learning), semantic catalogs for companies, corporate e-commerce portals and platforms to realize the concept of Open Government and Enterprise 2.0 (corporate social networks).
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>computer science</dcat:keyword>
+        <dcat:keyword>country-spain</dcat:keyword>
+        <dcat:keyword>country.es</dcat:keyword>
+        <dcat:keyword>dblp</dcat:keyword>
+        <dcat:keyword>dc</dcat:keyword>
+        <dcat:keyword>deusto</dcat:keyword>
+        <dcat:keyword>foaf</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-dcam</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdfg</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-wot</dcat:keyword>
+        <dcat:keyword>indice científico</dcat:keyword>
+        <dcat:keyword>informática</dcat:keyword>
+        <dcat:keyword>language-spa</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>schemata</dcat:keyword>
+        <dcat:keyword>sioc</dcat:keyword>
+        <dcat:keyword>skos</dcat:keyword>
+        <dcat:keyword>socialweb</dcat:keyword>
+        <dcat:keyword>sp</dcat:keyword>
+        <dcat:keyword>spain</dcat:keyword>
+        <dcat:keyword>usergeneratedcontent</dcat:keyword>
+        <dcat:keyword>wrapper</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dblp-deusto-gnoss"></foaf:homepage>
+    <rdfs:label>dblp-deusto-gnoss</rdfs:label>
+    <dct:identifier>dblp-deusto-gnoss</dct:identifier>
+    <dct:title>DBLP Research Groups (University of Deusto-GNOSS)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://researchgroups.gnoss.com/comunidad/publicaciones/recurso/Linked-Open-Data-Perspectives-Incorporating-Linke/4995cbcb-0543-40b5-b5af-05e6d04acc09?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://researchgroups.gnoss.com/comunidad/publicaciones/recurso/A-reasonable-Semantic-Web/5ac2b9d8-534c-4cca-b6e2-a5ff4758fc83?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example 2</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://researchgroups.gnoss.com/en/community/publicaciones/advanced-search/tag/web?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML search example </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://gnoss.com/gnoss.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/owl</rdf:value>
+                            <rdfs:label>meta/owl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Gnoss Ontology</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://researchgroups.gnoss.com/voidDBLPDeustoResearchGroupsGNOSS.n3"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD description</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>http://gnoss.com/en/terms-of-use</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>72</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:freebase</rdfs:label>
+            <rdf:value>582</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>72</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://researchgroups.gnoss.com</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>Deusto GNOSS DBLP</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>222375855</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>d146bf12-cec2-4b7e-9fbc-829a4c74b9ab</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

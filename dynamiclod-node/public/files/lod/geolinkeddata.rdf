@@ -1,0 +1,121 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/geolinkeddata">
+    <owl:sameAs rdf:resource="urn:uuid:80c5f770-34ac-4fd8-8fa7-72a603b4800d"></owl:sameAs>
+    <dct:description>GeoLinkedData (.es) is an open initiative whose aim is to enrich the Web of Data with Spanish geospatial data. This initiative started off by publishing diverse information sources belonging to the National Geographic Institute of Spain. Such sources are made available as RDF (Resource Description Framework) knowledge bases according to the Linked Data principles. These data are interlinked with other knowledge bases belonging to the Linking Open Data Initiative.</dct:description>
+        <dcat:keyword>country-spain</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>geodata</dcat:keyword>
+        <dcat:keyword>geographic</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>sparql</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/geolinkeddata"></foaf:homepage>
+    <rdfs:label>geolinkeddata</rdfs:label>
+    <dct:identifier>geolinkeddata</dct:identifier>
+    <dct:title>GeoLinkedData</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geo.linkeddata.es/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geo.linkeddata.es/source/rdf/NOMGEO/NOMGEO_provincias.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>application/x-ntriples</rdf:value>
+                            <rdfs:label>application/x-ntriples</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geo.linkeddata.es/source/rdf/ontology/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geo.linkeddata.es/resource/Provincia/Madrid"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid.</foaf:name>
+        <foaf:mbox rdf:resource="mailto:admin_linkeddata@delicias.dia.fi.upm.es"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GeoLinkedData Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:admin_linkeddata@delicias.dia.fi.upm.es"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>51</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>51</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://geo.linkeddata.es/resource/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>21564199</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2a86edaa-2223-4b4d-8e4c-45451392d22a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

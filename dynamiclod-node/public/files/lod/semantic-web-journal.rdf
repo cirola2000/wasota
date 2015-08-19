@@ -1,0 +1,45 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/semantic-web-journal">
+    <owl:sameAs rdf:resource="urn:uuid:98a6baff-4b4f-4b57-b57a-48526c7f71b5"></owl:sameAs>
+    <dct:description>Data from and about the Semantic Web journal containing information about papers, editors, reviewers, decisions, acceptance rates, paper types, reviews, and much more.  See also http://semantic-web-journal.com/SWJPortal/ for an interactive version and http://semantic-web-journal.net/ for the journal's website. </dct:description>
+        <dcat:keyword>Linked Data</dcat:keyword>
+        <dcat:keyword>Scientometrics</dcat:keyword>
+        <dcat:keyword>Semantic Web</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/semantic-web-journal"></foaf:homepage>
+    <rdfs:label>semantic-web-journal</rdfs:label>
+    <dct:identifier>semantic-web-journal</dct:identifier>
+    <dct:title>semantic-web-journal</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://semantic-web-journal.com:3030/sparql.tpl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Semantic Web Journal SPARQL Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4e61ed5e-0429-4e22-87d0-8f1da450aea8</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

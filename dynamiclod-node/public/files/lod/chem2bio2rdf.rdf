@@ -1,0 +1,132 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/chem2bio2rdf">
+    <owl:sameAs rdf:resource="urn:uuid:81a66e0a-70e4-4d62-ac0b-fd039db7179b"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>chemogenomics</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>lifesciences</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>void-sparql-endpoint</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/chem2bio2rdf"></foaf:homepage>
+    <rdfs:label>chem2bio2rdf</rdfs:label>
+    <dct:identifier>chem2bio2rdf</dct:identifier>
+    <dct:title>Chem2Bio2RDF</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://chem2bio2rdf.org/download"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://cheminfov.informatics.indiana.edu:8080/sitemap.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/sitemap</rdf:value>
+                            <rdfs:label>meta/sitemap</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://chem2bio2rdf.org/bindingdb/resource/bindingdb_ligand/1"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>David Wild, Ying Ding</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dingying@indiana.edu"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Bin Chen</foaf:name>
+        <foaf:mbox rdf:resource="mailto:binchen@indiana.edu"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bio2rdf-cas</rdfs:label>
+            <rdf:value>408326</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bio2rdf-geneid</rdfs:label>
+            <rdf:value>25867</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bio2rdf-mesh</rdfs:label>
+            <rdf:value>609612</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bio2rdf-omim</rdfs:label>
+            <rdf:value>27658</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bio2rdf-pubmed</rdfs:label>
+            <rdf:value>109876</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bio2rdf-taxon</rdfs:label>
+            <rdf:value>111384</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://chem2bio2rdf.org/bindingdb/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>82925998</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>661a34eb-33a8-45c9-ab34-68b152d2d708</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

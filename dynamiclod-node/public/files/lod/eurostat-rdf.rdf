@@ -1,0 +1,24 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eurostat-rdf">
+    <owl:sameAs rdf:resource="urn:uuid:b93f71f1-909c-473c-8e5a-ccb512957b86"></owl:sameAs>
+    <dct:description>Three RDF datasets:
+
+* Eurostat country codes
+* Eurostat NUTS statistical regions (2008)
+* Database of Eurostat-related legal acts
+
+Each is available as an RDF dump. URIs resolve directly into the RDF dump. The country codes are linked to Geonames, to package:fu-berlin-eurostat, and to Telegraphis (40 links each).</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eurostat-rdf"></foaf:homepage>
+    <rdfs:label>eurostat-rdf</rdfs:label>
+    <dct:identifier>eurostat-rdf</dct:identifier>
+    <dct:title>Eurostat RDF datasets</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Søren Roug (EAA)</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+  </dcat:Dataset>
+</rdf:RDF>

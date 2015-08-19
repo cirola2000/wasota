@@ -1,0 +1,46 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/glottolog">
+    <owl:sameAs rdf:resource="urn:uuid:7a5b0bca-b957-4885-8582-b48e60d8d0e9"></owl:sameAs>
+    <dct:description>Glottolog provides information about descriptive literature for all the world's languages. It also provides a language classification as well as knowledge bases for names, codes, and locations.
+The licence is CC-SA</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/glottolog"></foaf:homepage>
+    <rdfs:label>glottolog</rdfs:label>
+    <dct:identifier>glottolog</dct:identifier>
+    <dct:title>Glottolog</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Sebastian Nordhoff and Harald Hammarström</foaf:name>
+        <foaf:mbox rdf:resource="mailto:glottolog@eva.mpg.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Max Planck Institute for Evolutionary Anthropology</foaf:name>
+        <foaf:mbox rdf:resource="mailto:glottolog@eva.mpg.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by-sa"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>8f721c4c-97e9-429b-b7da-8c290a24fdef</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

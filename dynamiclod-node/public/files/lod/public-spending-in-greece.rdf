@@ -1,0 +1,220 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/public-spending-in-greece">
+    <owl:sameAs rdf:resource="urn:uuid:78c7f4a3-9bad-4f65-9572-8a155b144915"></owl:sameAs>
+    <dct:description>The “publingspending” initiative is a free, open, neutral and objective web application. It aims to provide efficient visualizations along with research data of the Hellenic public expenditure.</dct:description>
+        <dcat:keyword>Greece</dcat:keyword>
+        <dcat:keyword>linked-open-data</dcat:keyword>
+        <dcat:keyword>linkedopendata</dcat:keyword>
+        <dcat:keyword>public spending</dcat:keyword>
+        <dcat:keyword>spending</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/public-spending-in-greece"></foaf:homepage>
+    <rdfs:label>public-spending-in-greece</rdfs:label>
+    <dct:identifier>public-spending-in-greece</dct:identifier>
+    <dct:title>Public Spending in Greece</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://publicspending.medialab.ntua.gr/sparql"></dcat:accessURL>
+               <dct:title>Public spending in Greece</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://publicspending.medialab.ntua.gr/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL Endpoint (updated daily)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2012-11-12T112247/dump2010valid.csv"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>CSV</rdf:value>
+                            <rdfs:label>CSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2010 Greek Public Spending data in CSV format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2012-11-12T115323/dump2010.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2010 Greek Public Spending data in RDF/XML Format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-30T131017/2012-q4.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2012 (4th quarter) Greek Public Spending data in RDF format </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-30T151730/2012-q3.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2012 (3rd quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-30T154723/2012-q2.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2012 (2nd quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-30T165441/2012-q1.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2012 (1st quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-31T104422/2011-q4.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2011 (4th quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-31T104845/2011-q3.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2011 (3rd quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-31T105525/2011-q2.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2011 (2nd quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-31T105843/2011-q1.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2011 (1st quarter) Greek Public Spending data in RDF format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Marios Meimaris</foaf:name>
+        <foaf:mbox rdf:resource="mailto:m.meimaris@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Marios Meimaris</foaf:name>
+        <foaf:mbox rdf:resource="mailto:m.meimaris@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-odbl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>402</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia-el</rdfs:label>
+            <rdf:value>402</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames</rdfs:label>
+            <rdf:value>402</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:weso</rdfs:label>
+            <rdf:value>9454</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://publicspending.medialab.ntua.gr/resource/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>PSGR</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>26937449-c5b4-48a8-b003-21a9ab5a2d5c</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

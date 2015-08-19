@@ -1,0 +1,117 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/de-gaap-ontology-lexicon">
+    <owl:sameAs rdf:resource="urn:uuid:068ee5ac-f9b7-47a6-a190-433b07ee0a0c"></owl:sameAs>
+    <dct:description>The dataset is a German-English financial ontology-lexicon with 728 bilingual annotated phrases with Constituent and Part-Of-Speech Tags in &lt;a href="http://lexinfo.net/"&gt;lexinfo&lt;/a&gt;/&lt;a href="http://lemon-model.net/"&gt;lemon&lt;/a&gt; format. The ontology lexicon was generated from the rdf version (using xbrl2rdf by Dennis Spohr) of the German &lt;a href="http://xbrl.de"&gt;XBRL&lt;/a&gt; HGB Taxonomy V4.1 which describes financial concepts used in German reporting. Special thanks to Noëmi Aepli for the part-of-speech annotions. All work was done within the &lt;a href="http://monnet-project.eu/"&gt;MONNET (Multilingual Ontologies for Networked Knowledge Project&lt;/a&gt;.The ontology-lexicon and its ontology be downloaded here.</dct:description>
+        <dcat:keyword>lemon</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>multilingual</dcat:keyword>
+        <dcat:keyword>ontology</dcat:keyword>
+        <dcat:keyword>ontology-lexicon</dcat:keyword>
+        <dcat:keyword>parse tree</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/de-gaap-ontology-lexicon"></foaf:homepage>
+    <rdfs:label>de-gaap-ontology-lexicon</rdfs:label>
+    <dct:identifier>de-gaap-ontology-lexicon</dct:identifier>
+    <dct:title>de-gaap-ontology-lexicon</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-09-24T124029/de-gaap-ontology-lexicon-data-set-description.pdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>PDF</rdf:value>
+                            <rdfs:label>PDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>data-set-description.pdf</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://lemon-model.net/lexica/de-gaap/lexicon.en"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>English de-gaap ontology-lexicon </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://lemon-model.net/lexica/de-gaap/lexicon.de"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>German de-gaap ontology-lexicon</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://lemon-model.net/lexica/de-gaap/de/Lizenzen+an+Rechten+und+Werten"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example of annotation: Lizenzen and Rechten und Werten</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2012-10-18T110739/model.lemon.rdf.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>ZIP</rdf:value>
+                            <rdfs:label>ZIP</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Model as file</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Tobias Wunner</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:lexinfo</rdfs:label>
+            <rdf:value>43727</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>size</rdfs:label>
+            <rdf:value>246522</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>246522</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>fd2bcda5-5d2b-4f02-9300-decd8ce5583a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

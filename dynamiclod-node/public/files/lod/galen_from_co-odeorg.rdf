@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/galen_from_co-odeorg">
+    <owl:sameAs rdf:resource="urn:uuid:c7aee6ac-164d-4e9f-bb0b-9777fedf675f"></owl:sameAs>
+    <dct:description>Data exposed: Galen from co-ode.org
+
+Size of dump and data set: 1.9 MB
+
+Notes: released without contract
+
+### Openness: ?
+
+No license specified on home page though generic (restrictive) copyright provisions linked at bottom of page.</dct:description>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>ontology</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/galen_from_co-odeorg"></foaf:homepage>
+    <rdfs:label>galen_from_co-odeorg</rdfs:label>
+    <dct:identifier>galen_from_co-odeorg</dct:identifier>
+    <dct:title>Galen from co-ode.org</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>8153e8a0-9b13-4d7f-88f9-d0c20576bc10</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

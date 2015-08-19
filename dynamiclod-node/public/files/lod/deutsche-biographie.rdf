@@ -1,0 +1,41 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/deutsche-biographie">
+    <owl:sameAs rdf:resource="urn:uuid:710edb03-d313-43fc-9936-e00495d0fbfc"></owl:sameAs>
+    <dct:description>Presents some of the results of the LOD2 PUBLINK activity in cooperation with the AKSW group and the group of the Neue Deutsche Biographie of the Historical Commission at the Bavarian Academy of Sciences and Humanities. Within this project meta-data about 46,000 biographies and related 42,000 additional people and 12,000 locations has been made available as Linked Data and RDF triple. We used the vocabulary of the German National Library for the GND and adapted it by a few additional classes and relations. In addition to the representation in RDF, we offer a OntoWiki instance to provide the ability for browsing an querying the dataset. With the help of the Relationshipfinder tool relations between two or more persons, may visualized using this SPARQL endpoint. </dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/deutsche-biographie"></foaf:homepage>
+    <rdfs:label>deutsche-biographie</rdfs:label>
+    <dct:identifier>deutsche-biographie</dct:identifier>
+    <dct:title>Deutsche Biographie</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>deutsche-biographie.de</foaf:name>
+        <foaf:mbox rdf:resource="mailto:info@deutsche-biographie.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Thomas Riechert</foaf:name>
+        <foaf:mbox rdf:resource="mailto:riechert@informatik.uni-leipzig.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f87773be-4bcc-4ff3-bee6-26bada9c1b05</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,199 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/aemet">
+    <owl:sameAs rdf:resource="urn:uuid:c914d16d-91e2-4e0f-8f45-47c52302c38b"></owl:sameAs>
+    <dct:description>AemetLinked Data (.es) is an open initiative of the Ontology Engineering Group (OEG) whose aim is to enrich the Web of Data with Spanish geospatial data. This initiative started off by publishing diverse information sources belonging to the Spanish Meteorological Agency.</dct:description>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-geo</dcat:keyword>
+        <dcat:keyword>format-geobuddies</dcat:keyword>
+        <dcat:keyword>format-hartigprov</dcat:keyword>
+        <dcat:keyword>format-prvt</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-ssn</dcat:keyword>
+        <dcat:keyword>format-w3c-owl-time</dcat:keyword>
+        <dcat:keyword>geographic</dcat:keyword>
+        <dcat:keyword>linked-sensor-data</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>meteorology</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>spain</dcat:keyword>
+        <dcat:keyword>ssn-ontology</dcat:keyword>
+        <dcat:keyword>vocab-mappings</dcat:keyword>
+        <dcat:keyword>weather</dcat:keyword>
+        <dcat:keyword>weather-forecasts</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/aemet"></foaf:homepage>
+    <rdfs:label>aemet</rdfs:label>
+    <dct:identifier>aemet</dct:identifier>
+    <dct:title>AEMET metereological dataset</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/sparql_en.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>rdf/xml, html, json</rdf:value>
+                            <rdfs:label>rdf/xml, html, json</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/browser_en.html"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/resource/WeatherStation/id08001"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example in RDF/XML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/resource/WeatherStation/id08001?output=ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/x-turtle</rdf:value>
+                            <rdfs:label>example/x-turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example in turtle</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/source/rdf/data.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>application/x-ntriples</rdf:value>
+                            <rdfs:label>application/x-ntriples</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/files/aemetontologynetworkv2.rar"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/files/aemet%20ontology%20network%20v2.rar"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>mapping/owl</rdf:value>
+                            <rdfs:label>mapping/owl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://aemet.linkeddata.es/metadata/aemetvoid.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid.</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dgarijov@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Daniel Garijo, Jose Mora and Boris Villazón-Terrazas</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dgarijov@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4cd7e063-4a45-45e3-bfd9-54bfe8f3cbd6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:DBpedia</rdfs:label>
+            <rdf:value>82</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geolinkeddata</rdfs:label>
+            <rdf:value>153</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://aemet.linkeddata.es/resource/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>62932032</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4cd7e063-4a45-45e3-bfd9-54bfe8f3cbd6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/neurocommons">
+    <owl:sameAs rdf:resource="urn:uuid:6065447a-e76a-4c51-be49-608f90d106b0"></owl:sameAs>
+    <dct:description>From the website:
+
+&gt; The NeuroCommons project seeks to make all scientific research materials - research articles, annotations, data, physical materials - as available and as useable as they can be. We do this by both fostering practices that render information in a form that promotes uniform access by computational agents - sometimes called "interoperability". We want knowledge sources to combine meaningfully, enabling semantically precise queries that span multiple information sources.
+
+&gt; Our work covers general data and knowledge sources used in computational biology as well as sources specific to neuroscience and neuromedicine. The practices that we develop and promote are designed to play well on the Semantic Web. We view our technical work not as creating a new service or content library, although we do both, but rather as helping to promote the growth of semantically linked scientific information. </dct:description>
+        <dcat:keyword>access-bulk</dcat:keyword>
+        <dcat:keyword>neurology</dcat:keyword>
+        <dcat:keyword>neuromedicine</dcat:keyword>
+        <dcat:keyword>neuroscience</dcat:keyword>
+        <dcat:keyword>publicdomain</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>science</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/neurocommons"></foaf:homepage>
+    <rdfs:label>neurocommons</rdfs:label>
+    <dct:identifier>neurocommons</dct:identifier>
+    <dct:title>NeuroCommons</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e1b61da5-dde9-4f50-a5ea-a0f574c8335b</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dws-group">
+    <owl:sameAs rdf:resource="urn:uuid:280445a6-a99c-4c86-83b4-8e2f9b9d1256"></owl:sameAs>
+    <dct:description>Information about people and publications from the Research Group Data and Web Science at University of Mannheim</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-void</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dws-group"></foaf:homepage>
+    <rdfs:label>dws-group</rdfs:label>
+    <dct:identifier>dws-group</dct:identifier>
+    <dct:title>DWS-Group</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>8</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>14</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:semantic-web-dog-food</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:semanticweb-org</rdfs:label>
+            <rdf:value>20</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

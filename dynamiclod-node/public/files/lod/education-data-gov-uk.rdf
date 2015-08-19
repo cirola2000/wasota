@@ -1,0 +1,169 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/education-data-gov-uk">
+    <owl:sameAs rdf:resource="urn:uuid:3609e173-ed25-45b6-b991-ad0c98fe1109"></owl:sameAs>
+    <dct:description>Linked data about schools, nurseries and universities within the UK:
+
+* [Namespace for research institutionhttp://education.data.gov.uk/doc/institutions](http://education.data.gov.uk/doc/institution); populated with institutions that recently received BIS research funding
+* Edubase data on schools, nurseries
+* 2009 school statistics on local authority level: number of teachers; vacancies; pupil-teacher ratios (SCOVO)
+
+Part of package:data-gov-uk.
+
+### REST API
+
+The Edubase data is also available [through a REST API](http://education.data.gov.uk/doc/school). See also [Jeni Tennison's blog post](http://data.gov.uk/blog/guest-post-developers-guide-linked-data-apis-jeni-tennison).</dct:description>
+        <dcat:keyword>broken_link</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>edubase</dcat:keyword>
+        <dcat:keyword>education</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-geo</dcat:keyword>
+        <dcat:keyword>format-vcard</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>linked-data-api</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>nurseries</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>schools</dcat:keyword>
+        <dcat:keyword>ukgov</dcat:keyword>
+        <dcat:keyword>university</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/education-data-gov-uk"></foaf:homepage>
+    <rdfs:label>education-data-gov-uk</rdfs:label>
+    <dct:identifier>education-data-gov-uk</dct:identifier>
+    <dct:title>education.data.gov.uk</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://education.data.gov.uk/id/school/520965"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://services.data.gov.uk/education/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://services.data.gov.uk/education/search"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/search</rdf:value>
+                            <rdfs:label>api/search</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://source.data.gov.uk/data/education/edubase/2009-08-14/edubase-rdf-r2rc3.tgz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://source.data.gov.uk/data/education/pupil-teacher/2009-09-30/education-statistics.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://education.data.gov.uk/doc/institution"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://education.data.gov.uk/doc/school"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/linked-data</rdf:value>
+                            <rdfs:label>api/linked-data</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>UK Government</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>1697</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:research-data-gov-uk</rdfs:label>
+            <rdf:value>379</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statistics-data-gov-uk</rdfs:label>
+            <rdf:value>400000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://education.data.gov.uk/doc/institution</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>6619847</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>6641abe8-0748-4126-80f2-e0c9b9a39844</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

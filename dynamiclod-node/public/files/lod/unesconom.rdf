@@ -1,0 +1,18 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/unesconom">
+    <owl:sameAs rdf:resource="urn:uuid:6e7fea35-a679-43aa-99e3-cb0dc98f0028"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/unesconom"></foaf:homepage>
+    <rdfs:label>unesconom</rdfs:label>
+    <dct:identifier>unesconom</dct:identifier>
+    <dct:title>unesconom</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://skos.um.es/unesco6/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

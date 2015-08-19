@@ -1,0 +1,42 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/instance-hub-people">
+    <owl:sameAs rdf:resource="urn:uuid:24eee86c-3acb-4284-9023-ce75b32e392f"></owl:sameAs>
+    <dct:description>URIs for People as used in Open Government Data.</dct:description>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/instance-hub-people"></foaf:homepage>
+    <rdfs:label>instance-hub-people</rdfs:label>
+    <dct:identifier>instance-hub-people</dct:identifier>
+    <dct:title>Instance Hub People</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://logd.tw.rpi.edu/source/twc-rpi-edu/file/instance-hub-people/version/2012-Mar-14/conversion/twc-rpi-edu-instance-hub-people-2012-Mar-14.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>ttl</rdf:value>
+                            <rdfs:label>ttl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Instance Hub People Turtle</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>48110048-b187-4dd6-9c32-e1ff948a80fa</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

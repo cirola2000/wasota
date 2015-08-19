@@ -1,0 +1,157 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/biographical-directory-of-the-united-states-congress">
+    <owl:sameAs rdf:resource="urn:uuid:439ca316-f2a1-477d-997e-88410fe35216"></owl:sameAs>
+    <dct:description>Names, positions, state, party, and congress number of members of US Congress 1774-present.
+
+Scraped from http://bioguide.congress.gov/biosearch/biosearch.asp 
+by https://scraperwiki.com/scrapers/biographical_directory_usc/#</dct:description>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/biographical-directory-of-the-united-states-congress"></foaf:homepage>
+    <rdfs:label>biographical-directory-of-the-united-states-congress</rdfs:label>
+    <dct:identifier>biographical-directory-of-the-united-states-congress</dct:identifier>
+    <dct:title>Biographical Directory of the United States Congress</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-states-congress-2012-Jan-04.void.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD file </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-state s-congress-2012-Jan-04.ttl.tgz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Turtle download </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-states-congress-2012-Jan-04.e1.sample.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/turtle</rdf:value>
+                            <rdfs:label>example/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Turtle example link </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://logd.tw.rpi.edu/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Rensselaer LOGD SPARQL Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>dataset referencer</rdfs:label>
+            <rdf:value>http://tw.rpi.edu/instances/JohnErickson</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>dataset referencer 2</rdfs:label>
+            <rdf:value>http://purl.org/twc/id/person/TimLebo</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>50</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>50</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:govtrack</rdfs:label>
+            <rdf:value>56</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://logd.tw.rpi.edu/source/congress-gov/dataset/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>preferredURI</rdfs:label>
+            <rdf:value>http://logd.tw.rpi.edu/source/congress-gov/dataset/biographical-directory-of-the-united-states-congress/version/2012-Jan-04</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>rdfization implementer</rdfs:label>
+            <rdf:value>http://purl.org/twc/id/person/TimLebo</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>scraper implementer</rdfs:label>
+            <rdf:value>https://scraperwiki.com/profiles/owl/#person</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>US Congress Directory</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>source organization</rdfs:label>
+            <rdf:value>http://dbpedia.org/resource/United_States_Congress</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>2042215</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>abe15f72-c3ec-4975-ae96-ea975b9751a8</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

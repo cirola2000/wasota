@@ -1,0 +1,50 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/texai_lexicon">
+    <owl:sameAs rdf:resource="urn:uuid:41aa337f-84c9-4f15-82b3-beaa51835129"></owl:sameAs>
+    <dct:description>Data exposed: machine readable dictionary derived from WordNet 2.1, Wiktionary, the CMU Pronouncing Dictionary and the OpenCyc lexicon.  Each lexicon word sense entry contains links back to the source dictionary entry, and also to OpenCyc if the entry is has been mapped to the Cyc ontology.
+Size of dump and data set: Size?</dct:description>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>dictionary</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.needsfixing</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>ontology</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>wordnet</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/texai_lexicon"></foaf:homepage>
+    <rdfs:label>texai_lexicon</rdfs:label>
+    <dct:identifier>texai_lexicon</dct:identifier>
+    <dct:title>Texai Lexicon</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://sourceforge.net/projects/texai/files/"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Stephen Reed</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>59ba48d8-1fc1-4916-af60-0d15ab363d59</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

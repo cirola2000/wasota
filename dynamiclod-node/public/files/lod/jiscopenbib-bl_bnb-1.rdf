@@ -1,0 +1,136 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/jiscopenbib-bl_bnb-1">
+    <owl:sameAs rdf:resource="urn:uuid:80a9b3df-d1aa-48ae-b68d-20ce26516fe6"></owl:sameAs>
+    <dct:description>British Library British National Bibliography package, with records of all new books published in the UK since 1950.
+
+Use of Data: This data is being made available under a Creative Commons CC0 1.0 Universal Public Domain Dedication licence. This means that the British Library Board makes no copyright, related or neighbouring rights claims to the data and does not apply any restrictions on subsequent use and reuse of the data. The British Library accepts no liability for damages from any use of the supplied data. For more detail please see the terms of the licence.
+
+Support: The British Library is committed to providing high quality services and accurate data. If you have any queries or identify any problems with the data please contact metadata@bl.uk.
+
+Share knowledge: We are also very interested to hear the ways in which you have used this data so we can understand more fully the benefits of sharing it and improve our services. Please contact metadata@bl.uk if you wish to share your experiences with us and those that are using this service.
+
+Give Credit Where Credit is Due: The British Library has a responsibility to maintain its bibliographic data on the nation’s behalf. Please credit all use of this data to the British Library and link back to www.bl.uk/bibliographic/datafree.html in order that this information can be shared and developed with today’s Internet users as well as future generations.
+
+Duplicate of package:bluk-bnb</dct:description>
+        <dcat:keyword>bibliographic</dcat:keyword>
+        <dcat:keyword>bibliography</dcat:keyword>
+        <dcat:keyword>cc0</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-xhtml</dcat:keyword>
+        <dcat:keyword>format-xml</dcat:keyword>
+        <dcat:keyword>library</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>meta.duplicate</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>publications</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/jiscopenbib-bl_bnb-1"></foaf:homepage>
+    <rdfs:label>jiscopenbib-bl_bnb-1</rdfs:label>
+    <dct:identifier>jiscopenbib-bl_bnb-1</dct:identifier>
+    <dct:title>JISC Open Bibliography British National Bibliography dataset</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://openbiblio.commondatastorage.googleapis.com/BL-BNB-dataset.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://bnb.data.bl.uk/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.bl.uk/bibliographic/pdfs/british_library_data_model_v1-00.pdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>PDF</rdf:value>
+                            <rdfs:label>PDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.bl.uk/bibliographic/datafree.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://bnb.data.bl.uk/id/agent/%C3%89ditionsdeLaMartini%C3%A8re"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>British Library</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Mark MacGillivray</foaf:name>
+        <foaf:mbox rdf:resource="mailto:mark.macgillivray@okfn.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://bnb.bibliographica.org/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>BNB</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>18376419</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>d3651020-340a-4582-b989-e70d19910ccd</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

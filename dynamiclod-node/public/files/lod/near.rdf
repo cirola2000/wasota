@@ -1,0 +1,147 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/near">
+    <owl:sameAs rdf:resource="urn:uuid:ed5459df-b143-452a-93bd-4c0d2b0778e0"></owl:sameAs>
+    <dct:description>The Near dataset provides "near" links connecting points of interest that are geographically close to each other. The data set currently cross-links items in DBpedia, Geonames and Edubase.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>geodata</dcat:keyword>
+        <dcat:keyword>geographic</dcat:keyword>
+        <dcat:keyword>geography</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>near</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>proximity</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>requires-auth</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/near"></foaf:homepage>
+    <rdfs:label>near</rdfs:label>
+    <dct:identifier>near</dct:identifier>
+    <dct:title>Near</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://rdfize.com/geo/point/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api</rdf:value>
+                            <rdfs:label>api</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://rdfize.com/geo/point/52.467358/-1.7167/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://archive.org/download/kasabi/near.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>gzip::nquads</rdf:value>
+                            <rdfs:label>gzip::nquads</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Dataset export</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Tom Heath</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Tom Heath</foaf:name>
+        <foaf:mbox rdf:resource="mailto:tom.heath@theodi.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by-sa"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>crosslinks:dbpedia-edubase</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>crosslinks:dbpedia-geonames</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>crosslinks:edubase-dbpedia</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>crosslinks:edubase-geonames</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>crosslinks:geonames-dbpedia</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>crosslinks:geonames-edubase</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:edubase</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>tbc</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>335022481</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>5dc803a2-6b76-4b44-a799-8c2d4c2df825</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

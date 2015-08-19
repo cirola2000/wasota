@@ -1,0 +1,57 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/the-kazan-university-museum-as-linked-open-data-in-the-europeana-data-model">
+    <owl:sameAs rdf:resource="urn:uuid:bb94c46a-edef-4004-a356-b6819f9dad53"></owl:sameAs>
+    <dct:description>The Kazan University Museum dataset describes more than 10.000 cultural heritage objects related to the history of Kazan University described by the museum.</dct:description>
+        <dcat:keyword>edm</dcat:keyword>
+        <dcat:keyword>linked data</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>museum</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/the-kazan-university-museum-as-linked-open-data-in-the-europeana-data-model"></foaf:homepage>
+    <rdfs:label>the-kazan-university-museum-as-linked-open-data-in-the-europeana-data-model</rdfs:label>
+    <dct:identifier>the-kazan-university-museum-as-linked-open-data-in-the-europeana-data-model</dct:identifier>
+    <dct:title>The Kazan University Museum as Linked Open Data in the Europeana Data Model</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.cll.niimm.ksu.ru/mhku.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF data of the Kazan University Museum</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Rustem Takalov</foaf:name>
+        <foaf:mbox rdf:resource="mailto:jr.pathfinder@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Rustem Takalov</foaf:name>
+        <foaf:mbox rdf:resource="mailto:jr.pathfinder@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by-sa"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>dcf44ee8-0172-4112-aa1a-b47b023cc51e</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

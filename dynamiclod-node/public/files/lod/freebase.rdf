@@ -1,0 +1,186 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/freebase">
+    <owl:sameAs rdf:resource="urn:uuid:de4874c1-d8a1-44fe-a3d0-3481ecc3dca6"></owl:sameAs>
+    <dct:description>### Description
+
+"Freebase is an open database of the world’s information. It is built by the community and for the community—free for anyone to query, contribute to, built applications on top of, or integrate into their websites."
+
+### Openness: OPEN
+
+  * License: CC-BY for data.  Variety of open source licenses (or PD) for text blurbs &amp; images.
+  * Access: API + bulk.&lt;http://www.freebase.com/view/allDomains&gt;
+    * bulk: yes. &lt;http://download.freebase.com/&gt;
+    * api: yes. &lt;http://www.freebase.com/view/freebase/api&gt;
+
+Triple count and link statistics provided by Freebase contributor Tom Morris
+
+### RDF data and URIs
+
+Freebase has [an RDF service](http://rdf.freebase.com/) that exposes URIs and generates RDF descriptions for all Freebase topics.</dct:description>
+        <dcat:keyword>access-api</dcat:keyword>
+        <dcat:keyword>access-bulk</dcat:keyword>
+        <dcat:keyword>access-www</dcat:keyword>
+        <dcat:keyword>broken_link</dcat:keyword>
+        <dcat:keyword>crossdomain</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>encylopaedia</dcat:keyword>
+        <dcat:keyword>format-dcterms</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lld</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>size-large</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/freebase"></foaf:homepage>
+    <rdfs:label>freebase</rdfs:label>
+    <dct:identifier>freebase</dct:identifier>
+    <dct:title>Freebase</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.freebase.com/datadumps/"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.freebase.com/datadumps/latest/freebase-datadump-quadruples.tsv.bz2"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>TSV</rdf:value>
+                            <rdfs:label>TSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.freebase.com/datadumps/latest/freebase-datadump-tsv.tar.bz2"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>TSV</rdf:value>
+                            <rdfs:label>TSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.freebase.com/datadumps/latest/browse/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>TSV</rdf:value>
+                            <rdfs:label>TSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.freebase.com/datadumps/latest/freebase-simple-topic-dump.tsv.bz2"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>TSV</rdf:value>
+                            <rdfs:label>TSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://freebase.com/api/service/search"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/search</rdf:value>
+                            <rdfs:label>api/search</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://rdf.freebase.com/ns/en.blade_runner"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Google</foaf:name>
+        <foaf:mbox rdf:resource="mailto:freebase-discuss@freebase.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Shawn Simister</foaf:name>
+        <foaf:mbox rdf:resource="mailto:simister@google.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bbc-music</rdfs:label>
+            <rdf:value>350110</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>3348530</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geospecies</rdfs:label>
+            <rdf:value>100000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:nytimes-linked-open-data</rdfs:label>
+            <rdf:value>9930</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:sec-rdfabout</rdfs:label>
+            <rdf:value>120626</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://rdf.freebase.com/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>337203427</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e83b3858-18a8-43ef-a427-e20e410ed563</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

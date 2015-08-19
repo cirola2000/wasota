@@ -1,0 +1,60 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/qualitywebdata-org">
+    <owl:sameAs rdf:resource="urn:uuid:92dcb5a6-414f-4118-b5b3-940abb03c742"></owl:sameAs>
+    <dct:description>Here we gather resources regarding the quality of Web Data, especially concerning Linked Data.
+
+We have plenty of data available in the Linked Open Data cloud, but also have a lot issues regarding data quality. Here we gather resources regarding the quality of Web Data, especially concerning Linked Data, and hence provide a dashboard for anyone interested to produce and/or consume Quality Web Data. </dct:description>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/qualitywebdata-org"></foaf:homepage>
+    <rdfs:label>qualitywebdata-org</rdfs:label>
+    <dct:identifier>qualitywebdata-org</dct:identifier>
+    <dct:title>qualitywebdata.org</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.w3.org/2007/08/pyRdfa/extract?format=turtle&amp;uri=http://qualitywebdata.org"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDFa in Turtle</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.w3.org/2007/08/pyRdfa/extract?uri=http://qualitywebdata.org"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDFa in RDF/XML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Michael Hausenblas</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>d1a86385-0436-4786-9152-1bedbb481249</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,190 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/environment-agency-bathing-water-quality">
+    <owl:sameAs rdf:resource="urn:uuid:254f5d23-140d-4ca9-9e01-5874a199e720"></owl:sameAs>
+    <dct:description>Bathing water quality assessment data for England and Wales from the Environment Agency.</dct:description>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>environment</dcat:keyword>
+        <dcat:keyword>format-admingeo</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/environment-agency-bathing-water-quality"></foaf:homepage>
+    <rdfs:label>environment-agency-bathing-water-quality</rdfs:label>
+    <dct:identifier>environment-agency-bathing-water-quality</dct:identifier>
+    <dct:title>Environment Agency Bathing Water Quality</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/data/bathing-water-quality.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Environment Agency Bathing Water Quality Compliance Dataset</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/sparql/bwq/query"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Environment Agency Bathing Water Quality Data SPARQL Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>In-Season Sample Assessments (10) (RDF/XML)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/turtle</rdf:value>
+                            <rdfs:label>example/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>In-Season Sample Assessments (10) (TTL)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>In-Season Sample Assessments (10) (HTML)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/sources/bwq/output/in-season_2011_BWQ_BASELINE.nt.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Baseline In-Season Sample Assessments Dump</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/sources/bwq/output/annual-compliance_2011_BWQ_BASELINE.nt.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Baseline Annual Compliance Assessments Dump</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/sources/def/bathing-water-quality.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Bathing Water Quality Vocabulary (RDF/XML Source)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://environment.data.gov.uk/sources/def/bathing-water-quality.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/rdf-schema</rdf:value>
+                            <rdfs:label>meta/rdf-schema</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Bathing Water Quality Vocabulary (TTL Source)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Environment Agency</foaf:name>
+        <foaf:mbox rdf:resource="mailto:Alex.Coley@environment-agency.gov.uk"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Stuart Williams</foaf:name>
+        <foaf:mbox rdf:resource="mailto:skw@epimorphics.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://reference.data.gov.uk/id/open-government-licence"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:ordnance-survey-linked-data</rdfs:label>
+            <rdf:value>1010</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:reference-data-gov-uk</rdfs:label>
+            <rdf:value>400000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statistics-data-gov-uk</rdfs:label>
+            <rdf:value>505</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://environment.data.gov.uk/data/bathing-water-quality/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>8735962</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>aa1224c6-6eda-4a42-b1dd-e90766e3e215</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

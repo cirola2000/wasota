@@ -1,0 +1,20 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-planning-decisions-major-and-minor-development-type-all">
+    <owl:sameAs rdf:resource="urn:uuid:23e22c33-7d99-4f66-9411-00914cf93c93"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>format-cube</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-planning-decisions-major-and-minor-development-type-all"></foaf:homepage>
+    <rdfs:label>opendatacommunities-planning-decisions-major-and-minor-development-type-all</rdfs:label>
+    <dct:identifier>opendatacommunities-planning-decisions-major-and-minor-development-type-all</dct:identifier>
+    <dct:title>opendatacommunities-planning-decisions-major-and-minor-development-type-all</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/data/planning/decisions/major-and-minor-development-type/all</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

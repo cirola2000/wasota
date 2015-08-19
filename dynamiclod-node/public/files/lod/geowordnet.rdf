@@ -1,0 +1,162 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/geowordnet">
+    <owl:sameAs rdf:resource="urn:uuid:5181ad7d-816d-4f5e-b163-a5d1030fdcad"></owl:sameAs>
+    <dct:description>GeoWordNet is a semantic resource built from the full integration of WordNet, GeoNames and the Italian part of MultiWordNet.
+
+GeoWordNet Public Dataset contains 3,698,238 entities, 3,698,237 part-of relations between entities, 334 concepts, 182 relations between concepts, 3,698,238 relations between instances and concepts, and 13,562 (English and Italian) alternative entity names.
+
+CC-BY licence, please refer to 
+Giunchiglia, Fausto and Maltese, Vincenzo and Farazi, Feroz and Dutta, Biswanath. GeoWordNet: A Resource for Geo-spatial Applications. Technical Report DIT-09-071, Department of Information Engineering and Computer Science, University of Trento. In Proc. of 7th Extended Semantic Web Conference, ESWC 2010, Heraklion, Crete, Greece, pp. 121-136.</dct:description>
+        <dcat:keyword>english</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-vu-wordnet</dcat:keyword>
+        <dcat:keyword>format-w3c-wordnet</dcat:keyword>
+        <dcat:keyword>format-wn20schema</dcat:keyword>
+        <dcat:keyword>format-wordnet</dcat:keyword>
+        <dcat:keyword>geographic</dcat:keyword>
+        <dcat:keyword>geonames</dcat:keyword>
+        <dcat:keyword>italian</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>linguistic</dcat:keyword>
+        <dcat:keyword>linguistics</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>nlp</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>wordnet</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/geowordnet"></foaf:homepage>
+    <rdfs:label>geowordnet</rdfs:label>
+    <dct:identifier>geowordnet</dct:identifier>
+    <dct:title>GeoWordNet</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geowordnet.semanticmatching.org/void.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://sourceforge.net/projects/s-match/files/datasets/geowordnet-rdf-20110330.zip/download"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geowordnet.semanticmatching.org/sitemap.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/sitemap</rdf:value>
+                            <rdfs:label>meta/sitemap</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://sourceforge.net/projects/s-match/files/datasets/geowordnet-public-20101123.zip/download"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>CSV</rdf:value>
+                            <rdfs:label>CSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geowordnet.semanticmatching.org/synset-dependent_political_entity-noun-1.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geowordnet.semanticmatching.org/synset-dependent_political_entity-noun-1.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://sourceforge.net/projects/s-match/files/datasets/geowordnet-dict-full-20110330.zip/download"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>wordnet</rdf:value>
+                            <rdfs:label>wordnet</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Fausto Giunchiglia</foaf:name>
+        <foaf:mbox rdf:resource="mailto:http://disi.unitn.it/~fausto/"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Aliaksandr Autayeu</foaf:name>
+        <foaf:mbox rdf:resource="mailto:http://autayeu.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link </rdfs:label>
+            <rdf:value>http://creativecommons.org/licenses/by/3.0/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>7396476</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:vu-wordnet</rdfs:label>
+            <rdf:value>2054873</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://geowordnet.semanticmatching.org/3.0/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>GeoWordNet</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>53390969</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

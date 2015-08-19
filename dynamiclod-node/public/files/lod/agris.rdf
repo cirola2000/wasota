@@ -1,0 +1,121 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/agris">
+    <owl:sameAs rdf:resource="urn:uuid:975ecab9-0a50-46dc-aa7d-aead72b24967"></owl:sameAs>
+    <dct:description>AGRIS is one of the most important world-wide information systems in the area of the agricultural sciences. AGRIS is an initiative that was set up by FAO of the United Nations in 1974 to make information on agriculture research globally available. The historical overall objective of AGRIS is to improve access and exchange of information serving “the information needs of developed and developing countries on a partnership basis”.</dct:description>
+        <dcat:keyword>agriculture</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>fisheries</dcat:keyword>
+        <dcat:keyword>forestry</dcat:keyword>
+        <dcat:keyword>hunger</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>publications</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/agris"></foaf:homepage>
+    <rdfs:label>agris</rdfs:label>
+    <dct:identifier>agris</dct:identifier>
+    <dct:title>AGRIS</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://202.45.142.113:10035/repositories/agris"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Sparql Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agris.fao.org/aos/records/data/JP2010001379?output=xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example RDFXML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="ftp://ext-ftp.fao.org/GI/Reserved/Agris/LOD/RDF_Output.tar.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>application/x-tgz</rdf:value>
+                            <rdfs:label>application/x-tgz</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF Dump</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://agris.fao.org/void.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>VoID description</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>FAO OEKC</foaf:name>
+        <foaf:mbox rdf:resource="mailto:agris@fao.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>FAO-OEKC</foaf:name>
+        <foaf:mbox rdf:resource="mailto:fabrizio.celli@fao.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:agrovoc-skos</rdfs:label>
+            <rdf:value>10000000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>3000000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:fao-geopolitical-ontology</rdfs:label>
+            <rdf:value>500000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>112500000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>1dbe25ff-a4a1-4af3-8fc3-ad22bc00fe31</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

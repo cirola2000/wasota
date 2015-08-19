@@ -1,0 +1,96 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/open-data-thesaurus">
+    <owl:sameAs rdf:resource="urn:uuid:f66e0fa8-ce6e-4100-b2bf-482a701bab7b"></owl:sameAs>
+    <dct:description>The Open Data Thesaurus is a collection of key concepts and entities, their definitions and semantic links. Following the principle of “eat your own dog food” this thesaurus is available in machine-readable form based on open W3C standards and under a Creative Commons license. The thesaurus can thus be integrated into other applications, such as for creating mashups, or for indexing of documents. The thesaurus is available in English and German.</dct:description>
+        <dcat:keyword>crossdomain</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>ogd</dcat:keyword>
+        <dcat:keyword>opendata</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>technology</dcat:keyword>
+        <dcat:keyword>thesaurus</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/open-data-thesaurus"></foaf:homepage>
+    <rdfs:label>open-data-thesaurus</rdfs:label>
+    <dct:identifier>open-data-thesaurus</dct:identifier>
+    <dct:title>Open Data Thesaurus</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://vocabulary.semantic-web.at/PoolParty/sparql/OpenData"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://vocabulary.semantic-web.at/OpenData/CKAN"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ckan.net/storage/f/file/12be3509-4cd1-4fc5-8c95-d0d3a7121766"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>application/x-ntriples</rdf:value>
+                            <rdfs:label>application/x-ntriples</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>OGD Austria</foaf:name>
+        <foaf:mbox rdf:resource="mailto:office@semantic-web.at"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Andreas Blumauer</foaf:name>
+        <foaf:mbox rdf:resource="mailto:a.blumauer@semantic-web.at"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by-sa"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>50</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:freebase</rdfs:label>
+            <rdf:value>40</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://vocabulary.semantic-web.at/OpenData/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>OpenData Thesaurus</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>8000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

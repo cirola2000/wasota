@@ -1,0 +1,43 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linked-open-piracy">
+    <owl:sameAs rdf:resource="urn:uuid:f50ced03-1fca-48b9-8d57-ba3e5b9f50ac"></owl:sameAs>
+    <dct:description>Maritime piracy event descriptions from the International Chamber of Commerce International Maritime Bureau
+
+## Accessing the dataset
+
+* SPARQL query form
+* No dereferenceable URIs for the RDF data</dct:description>
+        <dcat:keyword>format-pos</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sem</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linked-open-piracy"></foaf:homepage>
+    <rdfs:label>linked-open-piracy</rdfs:label>
+    <dct:identifier>linked-open-piracy</dct:identifier>
+    <dct:title>Linked Open Piracy</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Willem Robert van Hage</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e1f12988-1aee-45ef-a7ef-6d79d44aeb7c</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

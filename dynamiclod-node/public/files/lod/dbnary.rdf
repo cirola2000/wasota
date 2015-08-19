@@ -1,0 +1,102 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dbnary">
+    <owl:sameAs rdf:resource="urn:uuid:14d8fae9-483e-4a26-b15d-d0c7b5e1e0c9"></owl:sameAs>
+    <dct:description>Extracts of wiktionary data for several languages, structured as an RDF graph, based mainly on the LEMON model. English, Finnish, French, German, Greek, Italian, Japanese, Portuguese, Russian and Turkish.</dct:description>
+        <dcat:keyword>Linguistic Dataset LOD RDF</dcat:keyword>
+        <dcat:keyword>english</dcat:keyword>
+        <dcat:keyword>finnish</dcat:keyword>
+        <dcat:keyword>french</dcat:keyword>
+        <dcat:keyword>german</dcat:keyword>
+        <dcat:keyword>greek</dcat:keyword>
+        <dcat:keyword>italian</dcat:keyword>
+        <dcat:keyword>japanese</dcat:keyword>
+        <dcat:keyword>lexical-resources</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>portuguese</dcat:keyword>
+        <dcat:keyword>russian</dcat:keyword>
+        <dcat:keyword>turkish</dcat:keyword>
+        <dcat:keyword>wiktionary</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dbnary"></foaf:homepage>
+    <rdfs:label>dbnary</rdfs:label>
+    <dct:identifier>dbnary</dct:identifier>
+    <dct:title>dbnary</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-01-16T130120/dictionnaire.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/turtle</rdf:value>
+                            <rdfs:label>example/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>French entry "dictionnaire" in LEMON format</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaiko.getalp.org/dbnary/fra/dictionnaire"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>linked data</rdf:value>
+                            <rdfs:label>linked data</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Sample French entry "dictionnaire" </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaiko.getalp.org/about-dbnary/lemon/latest/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Download URL for latest versions</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaiko.getalp.org/about-dbnary/lemon/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Download URL for all versions</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaiko.getalp.org/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL Endpoint for dbnary</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Gilles Sérasset</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by-sa"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:lexinfo</rdfs:label>
+            <rdf:value>1260491</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>35249544</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

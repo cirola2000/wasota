@@ -1,0 +1,49 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/reference-data-gov-uk">
+    <owl:sameAs rdf:resource="urn:uuid:10d71720-307a-48fd-9ce5-94e39b086b53"></owl:sameAs>
+    <dct:description>Reference data for linked UK government data:
+
+* People
+* Departments
+* Namespace for various time intervals (separate sub-package package:data-gov-uk-time-intervals)
+
+### Linked Data API
+
+Roots:
+
+http://reference.data.gov.uk/doc/department
+http://reference.data.gov.uk/doc/mp</dct:description>
+        <dcat:keyword>format-intervals</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-time</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/reference-data-gov-uk"></foaf:homepage>
+    <rdfs:label>reference-data-gov-uk</rdfs:label>
+    <dct:identifier>reference-data-gov-uk</dct:identifier>
+    <dct:title>reference.data.gov.uk</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Data.gov.uk Team</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e78f86f6-cf21-4976-a168-352ce91529fb</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

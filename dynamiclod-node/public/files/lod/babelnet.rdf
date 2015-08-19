@@ -1,0 +1,151 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/babelnet">
+    <owl:sameAs rdf:resource="urn:uuid:e0251c89-f18c-46cf-8a5e-fe6df95a8b27"></owl:sameAs>
+    <dct:description>BabelNet is both a multilingual encyclopedic dictionary, with lexicographic and encyclopedic coverage of terms, and an ontology which connects concepts and named entities in a very large network of semantic relations, made up of 9,348,287 millions of nodes, called Babel synsets. Each Babel synset represents a given meaning and contains all the synonyms which in different languages express that meaning. The BabelNet resource is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported license. The different resources from which BabelNet originates are made available under different licenses, as follows: WordNet: http://wordnet.princeton.edu/wordnet/license/, Wikipedia: Creative Commons Attribution-ShareAlike 3.0 Unported license, OmegaWiki: Creative Commons Attribution 2.5 Generic license or higher, and Open Multilingual WordNet: different licenses according to the language, as indicated at http://casta-net.jp/~kuribayashi/multi/. When applicable, specific license rights are specified through the property dcterms:license. Please make sure of using data in compliance with their respective licenses.</dct:description>
+        <dcat:keyword>access-web</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>ldl-2014</dcat:keyword>
+        <dcat:keyword>lemon</dcat:keyword>
+        <dcat:keyword>lexical-resources</dcat:keyword>
+        <dcat:keyword>lexico</dcat:keyword>
+        <dcat:keyword>linquistics</dcat:keyword>
+        <dcat:keyword>llod</dcat:keyword>
+        <dcat:keyword>void-sparql-endpoint</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/babelnet"></foaf:homepage>
+    <rdfs:label>babelnet</rdfs:label>
+    <dct:identifier>babelnet</dct:identifier>
+    <dct:title>BabelNet</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://babelnet.org/data/babelnet-2.0-lemon-IRIs.tar.xz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>BabelNet in Lemon RDF format (IRIs) version 2.0 (March 2014)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://babelnet.org/data/babelnet-2.0-lemon-URIs.tar.xz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>BabelNet in Lemon RDF format (URIs) version 2.0</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://babelnet.org:8084/sparql/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://babelnet.org/2.0/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Linked Data interface</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://babelnet.org"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>BabelNet interface</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Roberto Navigli</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>Author Website</rdfs:label>
+            <rdf:value>http://wwwusers.di.uniroma1.it/~navigli/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>Version</rdfs:label>
+            <rdf:value>2.0 - March 2014</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>19210914</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:lemon-wordnet</rdfs:label>
+            <rdf:value>117657</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:lemonUby</rdfs:label>
+            <rdf:value>15140</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:wikipedia</rdfs:label>
+            <rdf:value>81305156</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://babelnet.org/2.0/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>1138337378</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f8f8cb9c-8e90-4255-9c18-526c9871d142</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

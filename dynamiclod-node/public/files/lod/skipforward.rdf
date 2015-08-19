@@ -1,0 +1,26 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/skipforward">
+    <owl:sameAs rdf:resource="urn:uuid:0c1137b4-dc8d-447b-ba7f-9a96a7bd17f0"></owl:sameAs>
+    <dct:description>Skipforward is a distributed recommendation system using a lightweight ontology approach for formalizing opinions about item features. Items can be things such as songs or board games; example item features are the genre of a song or the degree of chance in a board game. Every user of the system is free to add new items and statements about existing items to the system. Naturally, opinions may differ between users---the system even encourages people to express dissent by supporting negation for item features. Skipforward allows discussions for any item feature as well as displaying these discussions in a way similar to web forums.
+
+There exist some demo installation with custom data and data from DBTropes</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/skipforward"></foaf:homepage>
+    <rdfs:label>skipforward</rdfs:label>
+    <dct:identifier>skipforward</dct:identifier>
+    <dct:title>Skipforward</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://skipforward.net/skipforward/resource/gunnar/feature-81288475"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+  </dcat:Dataset>
+</rdf:RDF>

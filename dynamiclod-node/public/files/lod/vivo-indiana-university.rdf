@@ -1,0 +1,43 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/vivo-indiana-university">
+    <owl:sameAs rdf:resource="urn:uuid:438bbe0e-4f2a-4021-b238-a34e5bf31c74"></owl:sameAs>
+    <dct:description>Information about Indiana University faculty and staff across, available as RDF dump and Linked Data. Currently populated with information about members of the VIVO team at IU, it will eventually be expanded to contain information about other participating researchers, departments, and centers at IU. This is a part of package:vivo.</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-vivo</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/vivo-indiana-university"></foaf:homepage>
+    <rdfs:label>vivo-indiana-university</rdfs:label>
+    <dct:identifier>vivo-indiana-university</dct:identifier>
+    <dct:title>VIVO Indiana</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Indiana University</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Han Jia</foaf:name>
+        <foaf:mbox rdf:resource="mailto:hanjia@indiana.edu"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2ee853e3-6981-4b9b-8038-d48940ac346d</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

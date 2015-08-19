@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/miguiadeviajes-gnoss">
+    <owl:sameAs rdf:resource="urn:uuid:b3928c3b-67a4-4ecc-9be8-e7ce8e94fe72"></owl:sameAs>
+    <dct:description>&lt;a href="http://miguiadeviajes.net/"&gt;MiGuiadeViajes.net&lt;/a&gt;
+is a semantic collection of travel guides, sightseeing tours and trips especially recommended for tourists, travellers and backpackers. The community allows you to find where to go, where to eat or sleep in different countries, regions and cities with the GNOSS facet-based search engine.
+&lt;a href="http://gnoss.com/"&gt;GNOSS&lt;/a&gt;
+promotes this community based on the standards of the Semantic Web and Linked Open Data. MiGuiadeViajes.net offers a selection of 3,533 resources (November 2012). The content of Miguiadeviajes.net belongs to 
+&lt;a href="http://thedatahub.org/dataset/webnmasunotraveler"&gt;El Viajero's tourism dataset&lt;/a&gt;
+, that integrates the various contents from newspapers and digital platforms belonging to the Prisa Digital Group in the domain of news and blogs about travel.
+&lt;/p&gt;
+
+&lt;p&gt;
+Guías de viaje, rutas turísticas y escapadas componen 
+&lt;a href="http://miguiadeviajes.net/"&gt;MiGuiadeViajes.net&lt;/a&gt;
+, una selección de recomendaciones para viajeros, turistas y aventureros. La comunidad permite buscar dónde ir, dónde
+&lt;strong&gt; &lt;/strong&gt;
+comer o dónde dormir por países, regiones y ciudades gracias al 
+&lt;a href="http://gnoss.com/comunidad/nextweb/recurso/Busquedas-facetadas-o-razonadas/13fd22d5-704d-412c-b35f-31ddc4b7238e"&gt;buscador facetado de GNOSS&lt;/a&gt;
+.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://gnoss.com/"&gt;GNOSS&lt;/a&gt;
+ promueve esta comunidad  desarrollada y fundamentada en los estándares de la Web Semántica y de los Datos Abiertos Enlazados (Linked Open Data). MiGuiadeViajes.net dispone en la actualidad de 3.533 recursos (Noviembre 2012). El contenido procede del
+&lt;a href="http://thedatahub.org/dataset/webnmasunotraveler"&gt;dataset de El Viajero&lt;/a&gt;
+, que integra artículos, guías y reportajes turísticos de los periódicos y plataformas digitales del Grupo Prisa.
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-tsioc</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/miguiadeviajes-gnoss"></foaf:homepage>
+    <rdfs:label>miguiadeviajes-gnoss</rdfs:label>
+    <dct:identifier>miguiadeviajes-gnoss</dct:identifier>
+    <dct:title>Mi Guía de Viajes, colección de guías de viaje para viajeros (GNOSS)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>0b9d31a9-8ab9-4cc5-b387-05db73727f11</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

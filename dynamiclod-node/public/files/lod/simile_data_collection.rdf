@@ -1,0 +1,43 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/simile_data_collection">
+    <owl:sameAs rdf:resource="urn:uuid:ae8f8b7e-5432-468c-9d51-ee38ef622583"></owl:sameAs>
+    <dct:description>### About
+
+Data exposed: various data sets including CIA's World Factbook, Library of Congress' Thesaurus of Graphic Materials, National Cancer Institute's cancer thesaurus, Web Consortium's Technical Reports
+Size of dump and data set: Size?
+
+### Openness
+
+Terms of reuse vary for different datasets. Some are in the public domain, some cannot be redistributed.</dct:description>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>library</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/simile_data_collection"></foaf:homepage>
+    <rdfs:label>simile_data_collection</rdfs:label>
+    <dct:identifier>simile_data_collection</dct:identifier>
+    <dct:title>SIMILE Data Collection</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>51bf5dda-f369-4c5d-bb8f-2a4bf3f707ea</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

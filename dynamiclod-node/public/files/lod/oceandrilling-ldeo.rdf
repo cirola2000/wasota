@@ -1,0 +1,107 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/oceandrilling-ldeo">
+    <owl:sameAs rdf:resource="urn:uuid:e1ea1bb1-0edf-4851-93a1-74c6a5648f85"></owl:sameAs>
+    <dct:description>LDEO log files as data (TEST leg 218 only)
+
+
+We are still in a development mode and working in particular and the namespace URI's and their hosting. So some elements here will change as we tweak responsibility for maintaining namespaces and curating them. You are welcome (encouraged) to explore our sparql endpoint (http://data.oceandrilling.org/sparql) and engage us, comment and criticize. (Doug)
+
+This site is guided by the linked data pattern (http://linkeddata.org/). Information on this effort and the steps being taken to expose data in this approach are described here.
+
+This data represents only a small percentage of the data available but is sufficient for testing at this time. Additional data related to log files from LDEO, timescales from CHRONOS and data from TAMU are yet to be loaded. </dct:description>
+        <dcat:keyword>drilling</dcat:keyword>
+        <dcat:keyword>geographic</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>ocean</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/oceandrilling-ldeo"></foaf:homepage>
+    <rdfs:label>oceandrilling-ldeo</rdfs:label>
+    <dct:identifier>oceandrilling-ldeo</dct:identifier>
+    <dct:title>Ocean Drilling - LDEO log files as data (TEST leg 218 only)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.oceandrilling.org/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.oceandrilling.org/codices/drillsite/209/1275"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdfa</rdf:value>
+                            <rdfs:label>example/rdfa</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Consortium for Ocean Leadership</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dfils@oceanleadership.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Bob Arko</foaf:name>
+        <foaf:mbox rdf:resource="mailto:arko@ldeo.columbia.edu"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>default_graph</rdfs:label>
+            <rdf:value>http://data.oceandrilling.org/source/ldeo/dataset/logs/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>lincese_link</rdfs:label>
+            <rdf:value>http://www.iodp.org/program-policies/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://data.oceandrilling.org/source/ldeo/dataset/logs/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>LDEO Logs</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>24489366</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>3227499d-ffee-42ca-b8b7-f9e6c6e5ae5e</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

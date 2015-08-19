@@ -1,0 +1,56 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/aspire-roehampton">
+    <owl:sameAs rdf:resource="urn:uuid:390a693b-c2ae-46da-8047-889e43bd556f"></owl:sameAs>
+    <dct:description>Course reading lists from Roehampton University. </dct:description>
+        <dcat:keyword>academic</dcat:keyword>
+        <dcat:keyword>bibliographic</dcat:keyword>
+        <dcat:keyword>format-aiiso</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-resource</dcat:keyword>
+        <dcat:keyword>library</dcat:keyword>
+        <dcat:keyword>reading-lists</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/aspire-roehampton"></foaf:homepage>
+    <rdfs:label>aspire-roehampton</rdfs:label>
+    <dct:identifier>aspire-roehampton</dct:identifier>
+    <dct:title>Talis Aspire - Roehampton University</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://resourcelists.roehampton.ac.uk/lists/CB05FC97-2D5B-C51A-E8D1-CAAC70BDF2D8.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdfa</rdf:value>
+                            <rdfs:label>example/rdfa</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Link to example resource list in RDFa</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://resourcelists.roehampton.ac.uk/lists/CB05FC97-2D5B-C51A-E8D1-CAAC70BDF2D8.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Link to example resource list in RDF/XML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:doi</rdfs:label>
+            <rdf:value>50</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:open-library</rdfs:label>
+            <rdf:value>4</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

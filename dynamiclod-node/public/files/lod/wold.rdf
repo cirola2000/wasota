@@ -1,0 +1,53 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/wold">
+    <owl:sameAs rdf:resource="urn:uuid:34909384-1c7f-4a3c-ad67-521aa58bfcb1"></owl:sameAs>
+    <dct:description>The World Loanword Database, edited by Martin Haspelmath and Uri Tadmor, is a scientific publication by the Max Planck Digital Library, Munich (2009). 
+
+It provides vocabularies (mini-dictionaries of about 1000-2000 entries) of 41 languages from around the world, with comprehensive information about the loanword status of each word. It allows users to find loanwords, source words and donor languages in each of the 41 languages, but also makes it easy to compare loanwords across languages. 
+
+Each vocabulary was contributed by an expert on the language and its history. An accompanying book is being published by Mouton de Gruyter (Loanwords in the World's Languages: A Comparative Handbook, edited by Martin Haspelmath &amp; Uri Tadmor). 
+
+The World Loanword Database 2009 consists of vocabularies contributed by 41 different authors or author teams. When citing material from the database, please cite the corresponding vocabulary (or vocabularies). 
+
+The database can be accessed by language, by meaning, by author, or by reference. 
+
+The World Loanword Database 2009 is the result of a collaborative project coordinated by Uri Tadmor and Martin Haspelmath between 2004 and 2008, called the Loanword Typology Project (LWT). Most of the contributors took part in workshops at which the procedures for selecting and annotating words were discussed extensively. The list of 1460 meanings on which the vocabularies are based is called the Loanword Typology meaning list, and it is in turn based on the list of the Intercontinental Dictionary Series., LOD</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-wn20schema</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/wold"></foaf:homepage>
+    <rdfs:label>wold</rdfs:label>
+    <dct:identifier>wold</dct:identifier>
+    <dct:title>World Loanword Database</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Hans-Jörg Bibiko</foaf:name>
+        <foaf:mbox rdf:resource="mailto:bibiko@eva.mpg.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Robert Forkel</foaf:name>
+        <foaf:mbox rdf:resource="mailto:forkel@eva.mpg.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>3a691939-6029-4b37-8bfa-ccabc937f137</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

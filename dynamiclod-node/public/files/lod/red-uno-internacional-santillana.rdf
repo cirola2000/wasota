@@ -1,0 +1,84 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/red-uno-internacional-santillana">
+    <owl:sameAs rdf:resource="urn:uuid:d0f4d75e-97b3-47d6-b6cf-0b85287710f9"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;a href="http://reduno-internacional.com/comunidad/unoi"&gt;Red UNO Internacional (Santillana) &lt;/a&gt; is a support community for teachers of Sistema UNO, an educational project that manages the digitization of school, the training of the entire school community and the evaluation of their actions. The proposal provides everything needed to satisfy the standard parameters set by UNESCO and achieves the highest levels of educational quality indicators as PISA ranking.
+&lt;/p&gt;
+&lt;p&gt;
+Red Uno Internacional (Grupo Santillana) works with &lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Red Uno Internacional (Santillana) offers a selection of 69 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://reduno-internacional.com/comunidad/unoi"&gt;Red UNO Internacional (Santillana)&lt;/a&gt;
+es un comunidad de apoyo a los docentes que participan en &lt;a href="http://www.sistemauno.com"&gt;Sistema UNO&lt;/a&gt;, proyecto educativo que gestiona la digitalización de la escuela, la formación permanente de toda la comunidad educativa y la evaluación constante de sus acciones. La propuesta provee de todo lo necesario para cumplir con los parámetros establecidos por la UNESCO y alcanzar los más altos niveles de calidad educativa que marcan los indicadores internacionales como PISA.
+&lt;/p&gt;
+&lt;p&gt;
+Red Uno Internacional (Santillana) trabaja con &lt;a href="http://gnoss.com/"&gt;software de GNOSS (RIAM Intelearning Lab)&lt;/a&gt;. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Red Uno Internacional (Santillana) ofrece en este caso una selección de 69 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/red-uno-internacional-santillana"></foaf:homepage>
+    <rdfs:label>red-uno-internacional-santillana</rdfs:label>
+    <dct:identifier>red-uno-internacional-santillana</dct:identifier>
+    <dct:title>Red Uno Internacional (Santillana)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>814f5b44-3c37-4fbe-b71a-fd0053ad314b</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://reduno-internacional.com/en/community/UNOi</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>814f5b44-3c37-4fbe-b71a-fd0053ad314b</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

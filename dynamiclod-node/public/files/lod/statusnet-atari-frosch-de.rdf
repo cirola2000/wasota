@@ -1,0 +1,73 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/statusnet-atari-frosch-de">
+    <owl:sameAs rdf:resource="urn:uuid:8931bf3f-381a-4c6e-9ba0-376fc292dc51"></owl:sameAs>
+    <dct:description>StatusNet instance hosted at http://atari-frosch.de</dct:description>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/statusnet-atari-frosch-de"></foaf:homepage>
+    <rdfs:label>statusnet-atari-frosch-de</rdfs:label>
+    <dct:identifier>statusnet-atari-frosch-de</dct:identifier>
+    <dct:title>statusnet-atari-frosch-de</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>2</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-bka-li</rdfs:label>
+            <rdf:value>4</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-kaimi-cc</rdfs:label>
+            <rdf:value>5</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-morphtown-de</rdfs:label>
+            <rdf:value>2</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-opensim-chat-eu</rdfs:label>
+            <rdf:value>5</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-postblue-info</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-quitter-se</rdfs:label>
+            <rdf:value>48</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-schiessle-org</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statusnet-skilledtests-com</rdfs:label>
+            <rdf:value>7</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://statusnet.atari-frosch.de</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

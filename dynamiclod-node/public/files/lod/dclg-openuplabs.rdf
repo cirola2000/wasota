@@ -1,0 +1,53 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dclg-openuplabs">
+    <owl:sameAs rdf:resource="urn:uuid:c7152336-f6cd-4f70-8e4b-636ef5e34052"></owl:sameAs>
+    <dct:description>DCLG’s data portfolio includes a whole raft of statistics on key socio-economic issues. This includes topics such as housing and planning, levels of deprivation in local areas, local government finance and fire incidents. There is also more detailed operational and transaction data again on topics such as housing, planning appeals and applications, but also more recently, detailed information on expenditure over £500, our organisational structures, and staffing numbers and pay.</dct:description>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.needsfixing</dcat:keyword>
+        <dcat:keyword>lodcloud.needsinfo</dcat:keyword>
+        <dcat:keyword>lodcloud.needstriplecount</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dclg-openuplabs"></foaf:homepage>
+    <rdfs:label>dclg-openuplabs</rdfs:label>
+    <dct:identifier>dclg-openuplabs</dct:identifier>
+    <dct:title>OpenUpLabs DCLG</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://gov.tso.co.uk/dclg/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>The Stationery Office Limited</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://reference.data.gov.uk/id/open-government-licence"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e56d8e0f-fb73-4844-beca-23fafe3c16b0</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

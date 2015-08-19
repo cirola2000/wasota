@@ -1,0 +1,92 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dbtune-myspace">
+    <owl:sameAs rdf:resource="urn:uuid:8a934083-8540-4685-a011-ce9f00e3245f"></owl:sameAs>
+    <dct:description>This service provides a live RDF representation of [Myspace](http://myspace.com/) users. If the user is also an artist, then the corresponding tracks in the streaming audio cache are included in the RDF. Note that only the top friends of the target Myspace user are included in the RDF.
+
+This representations is designed using the Music Ontology, FOAF, and a small Myspace Ontology.
+
+### Issues
+
+Triple count is a wild guess based on assumption of 10 triples for each of the 66M MySpace users.
+
+All the links are down, marking for removal.
+
+As of July 21, 2011:
+Unfortunately due to changes in the MySpace pages, the DBtune MySpace service will be down indefinitely. Sorry for inconvenience. If you have time to help fix the service you can join the MoTools project of SF or email kurtjx at gmail.</dct:description>
+        <dcat:keyword>dbtune</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.needsfixing</dcat:keyword>
+        <dcat:keyword>media</dcat:keyword>
+        <dcat:keyword>music</dcat:keyword>
+        <dcat:keyword>myspace</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>socialnetwork</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dbtune-myspace"></foaf:homepage>
+    <rdfs:label>dbtune-myspace</rdfs:label>
+    <dct:identifier>dbtune-myspace</dct:identifier>
+    <dct:title>DBTune.org MySpace RDF Service</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://dbtune.org/myspace/sparql/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Kurt Jacobson</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>232</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://dbtune.org/myspace/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>MySpace (DBtune)</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>660000000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>a7c2db1f-89f9-4b7e-99f6-e2f31f07e1e1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

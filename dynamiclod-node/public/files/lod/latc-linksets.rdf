@@ -1,0 +1,62 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/latc-linksets">
+    <owl:sameAs rdf:resource="urn:uuid:9e9253f0-bf82-48da-8992-6b7c7990e6c8"></owl:sameAs>
+    <dct:description>This dataset consists solely of triples linking items in one Linked Data dataset with items in another. The triples are generated as part of [the LATC project](http://latc-project.eu/), using the [SILK Linking Framework](http://www4.wiwiss.fu-berlin.de/bizer/silk/)</dct:description>
+        <dcat:keyword>latc</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>linkedopendata</dcat:keyword>
+        <dcat:keyword>links</dcat:keyword>
+        <dcat:keyword>linksets</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/latc-linksets"></foaf:homepage>
+    <rdfs:label>latc-linksets</rdfs:label>
+    <dct:identifier>latc-linksets</dct:identifier>
+    <dct:title>LATC Linksets</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kwijibo.talis.com/latc-linksets/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://github.com/LATC/24-7-platform/tree/master/link-specifications"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-pddl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>project_homepage</rdfs:label>
+            <rdf:value>http://latc-project.eu/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>920a0ec0-27a9-4ca9-a1f1-5e8b39c0cccd</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

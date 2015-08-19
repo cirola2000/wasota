@@ -1,0 +1,106 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/lemonwordnet">
+    <owl:sameAs rdf:resource="urn:uuid:c5018bf9-8398-43cb-bac4-477449ea6070"></owl:sameAs>
+    <dct:description>The WordNet 2.0 model in the [lemon](http://www.lemon-model.net/) format</dct:description>
+        <dcat:keyword>crossdomain</dcat:keyword>
+        <dcat:keyword>lemon</dcat:keyword>
+        <dcat:keyword>linguistic</dcat:keyword>
+        <dcat:keyword>linguistics</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>wordnet</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/lemonwordnet"></foaf:homepage>
+    <rdfs:label>lemonwordnet</rdfs:label>
+    <dct:identifier>lemonwordnet</dct:identifier>
+    <dct:title>LemonWordNet</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://monnetproject.deri.ie/lemonsource/wordnet"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>xhtml, rdf/xml, turtle</rdf:value>
+                            <rdfs:label>xhtml, rdf/xml, turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>WordNet (Lexicon URI)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://monnetproject.deri.ie/lemonsource/Special:Dump/wordnet.zip"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>ZIP</rdf:value>
+                            <rdfs:label>ZIP</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>WordNet (Zipped Dump)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://monnetproject.deri.ie/lemonsource/wordnet/cat-noun"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>xhtml</rdf:value>
+                            <rdfs:label>xhtml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Cat (Example Entry, Content Negotiation)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://monnetproject.deri.ie/lemonsource/wordnet/cat-noun.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>ttl</rdf:value>
+                            <rdfs:label>ttl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Cat (Example Entry, Turtle)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://monnetproject.deri.ie/lemonsource/wordnet/cat-noun.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Cat (Example Entry, RDF/XML)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://monnetproject.deri.ie/lemonsource_query/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:lexinfo</rdfs:label>
+            <rdf:value>178809</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:w3c-wordnet</rdfs:label>
+            <rdf:value>358349</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>1493380</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

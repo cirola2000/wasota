@@ -1,0 +1,133 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/mondial">
+    <owl:sameAs rdf:resource="urn:uuid:c751bffa-55f5-48e7-8f17-027a766c3731"></owl:sameAs>
+    <dct:description>From home page:
+
+&gt; The MONDIAL database has been compiled from geographical Web data sources listed below:
+&gt; 
+&gt;   * CIA World Factbook,
+&gt;   * a predecessor of Global Statistics which has been collected by Johan van der Heijden.
+&gt;   * additional textual sources for coordinates,
+&gt;   * the International Atlas by Kümmerly &amp; Frey, Rand McNally, and Westermann,
+&gt;   * and some geographical data of the Karlsruhe TERRA database.
+
+### Openness: OPEN (?)
+
+  * Most data is PD (but not all ...). Clearly intended for reuse but no explicit license given.</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-sql</dcat:keyword>
+        <dcat:keyword>format-xml</dcat:keyword>
+        <dcat:keyword>size-large</dcat:keyword>
+        <dcat:keyword>todo-contact</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/mondial"></foaf:homepage>
+    <rdfs:label>mondial</rdfs:label>
+    <dct:identifier>mondial</dct:identifier>
+    <dct:title>The Mondial Database</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/Mondial-RDF/mondial.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XML</rdf:value>
+                            <rdfs:label>XML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial-schema.sql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/sql</rdf:value>
+                            <rdfs:label>text/sql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial-inputs.sql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/sql</rdf:value>
+                            <rdfs:label>text/sql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial-schema-mysql.sql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/sql</rdf:value>
+                            <rdfs:label>text/sql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial-inputs-mysql.sql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/sql</rdf:value>
+                            <rdfs:label>text/sql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial-schema-postgresql-2010.sql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/sql</rdf:value>
+                            <rdfs:label>text/sql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.dbis.informatik.uni-goettingen.de/Mondial/mondial-inputs-postgresql-2010.sql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/sql</rdf:value>
+                            <rdfs:label>text/sql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>611a16e1-fc9a-4d7a-8665-dfd0a079672a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

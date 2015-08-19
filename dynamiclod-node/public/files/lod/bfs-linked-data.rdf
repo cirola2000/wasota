@@ -1,0 +1,47 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/bfs-linked-data">
+    <owl:sameAs rdf:resource="urn:uuid:9d75b971-dfd3-4031-bb9f-672dad8be60e"></owl:sameAs>
+    <dct:description>Bundesamt für Statistik - Swiss Federal Statistical Office data. Currently contains only the classifications.</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-dctypes</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-xkos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/bfs-linked-data"></foaf:homepage>
+    <rdfs:label>bfs-linked-data</rdfs:label>
+    <dct:identifier>bfs-linked-data</dct:identifier>
+    <dct:title>Bundesamt für Statistik (BFS) - Swiss Federal Statistical Office (FSO) Linked Data</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Sarven Capadisli</foaf:name>
+        <foaf:mbox rdf:resource="mailto:info@csarven.ca"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Sarven Capadisli</foaf:name>
+        <foaf:mbox rdf:resource="mailto:info@csarven.ca"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>00e7be42-265f-40a9-8d08-54aae4745ac3</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

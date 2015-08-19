@@ -1,0 +1,54 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/openlylocal">
+    <owl:sameAs rdf:resource="urn:uuid:3637fc69-0a33-480c-8c30-8afdaa666b3e"></owl:sameAs>
+    <dct:description>The project provides a unified way of accessing UK Local Government information. It has information on (as per 2011-12-03):
+
+* 163 councils
+* 11,418 councillors
+* 6,728 committees
+* 77,830 committee meetings
+* 498 hyperlocal sites
+* 44,855 documents
+* Over 270,956 pieces of data
+* 2,368,794 financial transactions
+
+Most of the data is accessible as XML, JSON and RDF through a simple API (just add .json or .xml to the URL). There is also a Google Gadget, an app for Hyperlocal sites using Ning, and a javascript widget.
+
+### Openness
+
+  * Open. CC-BY-SA and ODbL. See [license info](http://openlylocal.com/info/licence_info) page.
+  * No bulk download though API access to most of the underlying data.</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-dctypes</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/openlylocal"></foaf:homepage>
+    <rdfs:label>openlylocal</rdfs:label>
+    <dct:identifier>openlylocal</dct:identifier>
+    <dct:title>Openly Local :: Making Local Government More Transparent</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Chris Taggart http://countculture.wordpress.com/</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-odbl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>9b0733c6-8ff9-48d9-b8e4-a6ccb428343f</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

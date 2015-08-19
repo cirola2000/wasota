@@ -1,0 +1,102 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/webdatacommons">
+    <owl:sameAs rdf:resource="urn:uuid:627fdb92-0777-4b2a-b36f-c3855995f525"></owl:sameAs>
+    <dct:description>More and more websites have started to embed structured data describing products, people, organizations, places, events into their HTML pages using markup standards such as RDFa, Microdata and Microformats.
+The Web Data Commons project extracts this data from several billion web pages. The project provides the extracted data for download and publishes statistics about the deployment of the different formats. 
+Latest extraction was done in August 2012. The extraction contains over 7 billion triple which are available as download (http://webdatacommons.org/2012-08/stats/how_to_get_the_data.html). 1,416 files with a total size of 101 GB are provided.</dct:description>
+        <dcat:keyword>common crawl</dcat:keyword>
+        <dcat:keyword>microdata</dcat:keyword>
+        <dcat:keyword>microformats</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>rdfa</dcat:keyword>
+        <dcat:keyword>web data</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/webdatacommons"></foaf:homepage>
+    <rdfs:label>webdatacommons</rdfs:label>
+    <dct:identifier>webdatacommons</dct:identifier>
+    <dct:title>WebDataCommons</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://webdatacommons.org/downloads/2012-08/nquads/files.list"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>list</rdf:value>
+                            <rdfs:label>list</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Quad File List Extraction Aug 2012</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://webdatacommons.org/downloads/2012-08/nquads/html-rdfa.nq.index.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>gz:nq</rdf:value>
+                            <rdfs:label>gz:nq</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDFa Quad Index</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://webdatacommons.org/downloads/2012-08/nquads/html-microdata.nq.index.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>gz:nq</rdf:value>
+                            <rdfs:label>gz:nq</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Microdata Quad Index</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://webdatacommons.org/2012-08/stats/how_to_get_the_data.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Data Download Instructions</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://groups.google.com/forum/?fromgroups=#!forum/web-data-commons"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Google Group</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>datasource</rdfs:label>
+            <rdf:value>common crawl</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f7fb5fbf-d96d-45ad-9b73-3c42cc15de96</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

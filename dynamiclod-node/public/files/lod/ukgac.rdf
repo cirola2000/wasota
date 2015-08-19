@@ -1,0 +1,52 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ukgac">
+    <owl:sameAs rdf:resource="urn:uuid:2b688e42-6b15-49aa-a7ce-70fa32dd3190"></owl:sameAs>
+    <dct:description>A screen-scraped RDF/SPARQL database of artworks in various UK government collections.
+
+See here for details of how the data was assembled:
+
+[http://blog.kasabi.com/2011/09/22/hacking-on-culture-data/](http://blog.kasabi.com/2011/09/22/hacking-on-culture-data/).
+.
+
+</dct:description>
+        <dcat:keyword>art</dcat:keyword>
+        <dcat:keyword>collection</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>sparql</dcat:keyword>
+        <dcat:keyword>uk</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ukgac"></foaf:homepage>
+    <rdfs:label>ukgac</rdfs:label>
+    <dct:identifier>ukgac</dct:identifier>
+    <dct:title>UK Government Art Collection</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Leigh Dodds</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>kasabi.com</foaf:name>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://reference.data.gov.uk/id/open-government-licence"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>63179591-2009-4b9d-97ec-4cd7c76d63a5</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

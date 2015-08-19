@@ -1,0 +1,54 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/braziliancities">
+    <owl:sameAs rdf:resource="urn:uuid:bda1ab80-0096-4b91-990a-f15f365f5dc2"></owl:sameAs>
+    <dct:description>Dataset about Brazilian cities. It contains informatios as population total, area total and founding date.</dct:description>
+        <dcat:keyword>brazil</dcat:keyword>
+        <dcat:keyword>city</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/braziliancities"></foaf:homepage>
+    <rdfs:label>braziliancities</rdfs:label>
+    <dct:identifier>braziliancities</dct:identifier>
+    <dct:title>BrazilianCities</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://geo.linkeddata.es/brasil/sparql"></dcat:accessURL>
+               <dct:title>Brazilian cities sparql endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ftp://geoftp.ibge.gov.br/organizacao_territorial/municipios_criados_e_instalados/a_legislacao_municipal_municipios_vigentes.xls"></dcat:accessURL>
+               <dct:title>legislacao municipal municipios vigentes Brazil</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ftp://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/Sinopse/Unidades_da_Federacao/"></dcat:accessURL>
+               <dct:title>Censo Demografico 2010 Sinopse Unidades da Federacao</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>María Poveda</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>ef2fead7-7ed3-426c-8bcd-6820096cacf6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

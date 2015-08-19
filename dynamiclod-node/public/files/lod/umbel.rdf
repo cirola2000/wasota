@@ -1,0 +1,48 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/umbel">
+    <owl:sameAs rdf:resource="urn:uuid:48e000f2-88b6-4705-bfbe-5f47c5d5edcb"></owl:sameAs>
+    <dct:description>A lightweight, reference structure of 28,000 subject concepts for the Web. UMBEL is jointly developed and maintained by [Structured Dynamics LLC](http://structureddynamics.com) and [Ontotext AD](http://www.ontotext.com/).
+
+There is a total of 46,173 external data links.</dct:description>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-umbel</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/umbel"></foaf:homepage>
+    <rdfs:label>umbel</rdfs:label>
+    <dct:identifier>umbel</dct:identifier>
+    <dct:title>UMBEL (Upper Mapping and Binding Exchange Layer)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Michael K Bergman</foaf:name>
+        <foaf:mbox rdf:resource="mailto:mike@mkbergman.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Frédérick Giasson</foaf:name>
+        <foaf:mbox rdf:resource="mailto:fred@fgiasson.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>1b5257fd-8103-42d4-8970-781325398d6d</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

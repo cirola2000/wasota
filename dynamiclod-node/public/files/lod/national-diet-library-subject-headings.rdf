@@ -1,0 +1,45 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/national-diet-library-subject-headings">
+    <owl:sameAs rdf:resource="urn:uuid:4221058b-fa88-44fb-8e5d-cc590d20d009"></owl:sameAs>
+    <dct:description>duplicate:national-diet-library-authorities</dct:description>
+        <dcat:keyword>format-dcndl</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-skosxl</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/national-diet-library-subject-headings"></foaf:homepage>
+    <rdfs:label>national-diet-library-subject-headings</rdfs:label>
+    <dct:identifier>national-diet-library-subject-headings</dct:identifier>
+    <dct:title>National Diet Library of Japan subject headings</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Kanzaki Masahide</foaf:name>
+        <foaf:mbox rdf:resource="mailto:mkanzaki@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Kanzaki Masahide</foaf:name>
+        <foaf:mbox rdf:resource="mailto:mkanzaki@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>386ca7fa-b52e-45f0-b2e0-1972932ee6c6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

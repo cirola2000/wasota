@@ -1,0 +1,111 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/london-gazette">
+    <owl:sameAs rdf:resource="urn:uuid:8eb93371-896e-4923-aefa-37d21048cba8"></owl:sameAs>
+    <dct:description>## About
+
+From website:
+
+&gt; The London Gazette, Official Newspaper of Record for the United Kingdom plays a major role in the information infrastructure for government, with 175,000 notices published in 2007.
+
+&gt; A wide range of notices, the majority of which are mandatory by law appear in the following broad categories (bold = very high numbers of notices): State, Parliament, Ecclesiastical, Public Finance, Transport, Planning, Health, Environment, Water, Agriculture &amp; Fisheries, Energy, Post &amp; Telecom., Other Notices, Competition, Corporate Insolvency, Personal Insolvency, Companies &amp; Financial Regulation, Partnerships, Societies Regulation, Personal Legal.
+
+&gt; Plans are in place to further upgrade the tagging but any change in mark up for the London Gazette (and sister newspapers the Edinburgh and Belfast Gazettes) will be backwards compatible. Different types of notice presently have very different degrees of mark up.
+
+&gt; The quality of the information in the London Gazette is excellent. Content is published primarily on behalf of solicitors, government, insolvency practitioners and other known stakeholders. Accuracy is absolutely key.
+
+&gt; Data can be made available on an ongoing basis in XML, Excel and other formats. RDFa will launch shortly for some categories.
+
+&gt; The two files on this web page enable you to explore the content:
+
+&gt; 1. An XML file of all published notices from mid February 2007 to end May 2008.
+&gt; 2. A list and order of notice types.
+
+## Format
+
+XML
+
+## Re-use
+
+Website says "Please treat the data as Crown Copyright."</dct:description>
+        <dcat:keyword>companies</dcat:keyword>
+        <dcat:keyword>competition</dcat:keyword>
+        <dcat:keyword>country-uk</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>environment</dcat:keyword>
+        <dcat:keyword>finance</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>gov</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>health</dcat:keyword>
+        <dcat:keyword>insolvency</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>newspaper</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>parliament</dcat:keyword>
+        <dcat:keyword>planning</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>state</dcat:keyword>
+        <dcat:keyword>transport</dcat:keyword>
+        <dcat:keyword>uk</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/london-gazette"></foaf:homepage>
+    <rdfs:label>london-gazette</rdfs:label>
+    <dct:identifier>london-gazette</dct:identifier>
+    <dct:title>The London Gazette - Gazettes Data</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.london-gazette.co.uk/mashup/LondonGazetteData.zip"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.london-gazette.co.uk/issues/59535/notices/1196300"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdfa</rdf:value>
+                            <rdfs:label>example/rdfa</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://www.london-gazette.co.uk/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>London Gazette</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>12000000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>379d3a72-cc4f-409e-821f-4cbf80cc77c8</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

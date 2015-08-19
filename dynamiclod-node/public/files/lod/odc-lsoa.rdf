@@ -1,0 +1,108 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/odc-lsoa">
+    <owl:sameAs rdf:resource="urn:uuid:4c33e0cb-d419-409b-8a18-3178b017a792"></owl:sameAs>
+    <dct:description>This dataset describes the 'Lower layer Super Output Areas' used by the Office for National Statistics for many of its statistical outputs. 
+
+Example resource:
+http://opendatacommunities.org/id/geography/lsoa/E01000001
+
+Download
+http://opendatacommunities-downloads.s3.amazonaws.com/lsoa.ttl.zip</dct:description>
+        <dcat:keyword>format-osadm</dcat:keyword>
+        <dcat:keyword>format-osspr</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-pos</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-spatial</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/odc-lsoa"></foaf:homepage>
+    <rdfs:label>odc-lsoa</rdfs:label>
+    <dct:identifier>odc-lsoa</dct:identifier>
+    <dct:title>Open Data Communities - Lower layer Super Output Areas</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>http://www.ons.gov.uk</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://reference.data.gov.uk/id/open-government-licence"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>default_graph</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/id/graph/geography/lsoa</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>35e7b90e-4a4e-4bf8-8f93-38b4116169c9</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>http://www.nationalarchives.gov.uk/doc/open-government-licence/open-government-licence.htm</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:statistics-data-gov-uk</rdfs:label>
+            <rdf:value>1458</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:stats</rdfs:label>
+            <rdf:value>32482</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/id/geography/lsoa/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>ODC-LSOA</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>341894</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>35e7b90e-4a4e-4bf8-8f93-38b4116169c9</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

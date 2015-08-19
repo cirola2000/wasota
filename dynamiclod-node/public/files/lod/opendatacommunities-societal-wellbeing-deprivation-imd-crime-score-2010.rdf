@@ -1,0 +1,19 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-crime-score-2010">
+    <owl:sameAs rdf:resource="urn:uuid:f707761e-a8fb-4f2a-a5e4-0a58279114b0"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>format-cube</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-crime-score-2010"></foaf:homepage>
+    <rdfs:label>opendatacommunities-societal-wellbeing-deprivation-imd-crime-score-2010</rdfs:label>
+    <dct:identifier>opendatacommunities-societal-wellbeing-deprivation-imd-crime-score-2010</dct:identifier>
+    <dct:title>opendatacommunities-societal-wellbeing-deprivation-imd-crime-score-2010</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-crime-score-2010</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,204 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/biblioteca-escolar-digital-cita">
+    <owl:sameAs rdf:resource="urn:uuid:64ff830c-a660-41c7-8793-cabd9e8a7ca9"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;a href="http://red.gnoss.com/comunidad/Biblioteca-Escolar-Digital"&gt;Biblioteca Escolar Digital&lt;/a&gt; is an educational tool for teachers, students, parents, educators and researchers in the world of education created by the &lt;a href="http://cita.fundaciongsr.com/"&gt;Centro Internacional de Tecnologías Avanzadas (CITA)&lt;/a&gt; of the foundation in Peñaranda de Bracamonte (Salamanca, España).
+&lt;/p&gt;
+&lt;p&gt;
+The Biblioteca Escolar Digital’s repository works with &lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. The project includes a faceted-based search engine and enriched contexts. Both are developments by GNOSS.
+&lt;/p&gt;
+
+&lt;p&gt;
+La &lt;a href="http://red.gnoss.com/comunidad/Biblioteca-Escolar-Digital"&gt;Biblioteca Escolar Digital&lt;/a&gt; es una herramienta didáctica para profesores, alumnos, padres, pedagogos e investigadores del mundo de la educación creada por el &lt;a href="http://cita.fundaciongsr.com/"&gt;Centro Internacional de Tecnologías Avanzadas (CITA)&lt;/a&gt; de la Fundación en Peñaranda de Bracamonte (Salamanca, España).
+&lt;/p&gt;
+&lt;p&gt;
+El repositorio trabaja con &lt;a href="http://gnoss.com/"&gt;software de GNOSS (RIAM Intelearning Lab)&lt;/a&gt;. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto incluye un buscador facetado y contextos enriquecidos.
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>Biblioteca Escolar Digital</dcat:keyword>
+        <dcat:keyword>CITA</dcat:keyword>
+        <dcat:keyword>Centro Internacional de Tecnologías Avanzadas</dcat:keyword>
+        <dcat:keyword>alumnos</dcat:keyword>
+        <dcat:keyword>corporate excellence</dcat:keyword>
+        <dcat:keyword>country-spain</dcat:keyword>
+        <dcat:keyword>country.es</dcat:keyword>
+        <dcat:keyword>dc</dcat:keyword>
+        <dcat:keyword>foaf</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-dcam</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdfg</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-wot</dcat:keyword>
+        <dcat:keyword>gnoss</dcat:keyword>
+        <dcat:keyword>laboratorio de ideas</dcat:keyword>
+        <dcat:keyword>language-spa</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>padres</dcat:keyword>
+        <dcat:keyword>pedagogos</dcat:keyword>
+        <dcat:keyword>profesores</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>recursos educativos</dcat:keyword>
+        <dcat:keyword>schemata</dcat:keyword>
+        <dcat:keyword>sioc</dcat:keyword>
+        <dcat:keyword>skos</dcat:keyword>
+        <dcat:keyword>socialweb</dcat:keyword>
+        <dcat:keyword>sp</dcat:keyword>
+        <dcat:keyword>spain</dcat:keyword>
+        <dcat:keyword>usergeneratedcontent</dcat:keyword>
+        <dcat:keyword>wrapper</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/biblioteca-escolar-digital-cita"></foaf:homepage>
+    <rdfs:label>biblioteca-escolar-digital-cita</rdfs:label>
+    <dct:identifier>biblioteca-escolar-digital-cita</dct:identifier>
+    <dct:title>Biblioteca Escolar Digital CITA</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://gnoss.com/gnoss.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Gnoss Ontology</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://red.gnoss.com/voidCITA.n3"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD description</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://red.gnoss.com/en/community/Biblioteca-Escolar-Digital/resource/Aprendemos-a-cuidarnos/cf7c7aaa-9a5f-4241-b07d-2134fe0fdc79?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://red.gnoss.com/en/community/Biblioteca-Escolar-Digital/resource/El-caracol-Serafin/cd673145-1ecc-4c17-be5d-e4aa59e7543a?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example 2</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://red.gnoss.com/en/community/Biblioteca-Escolar-Digital/advanced-search/tag/clase?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>http://gnoss.com/en/terms-of-use</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>4367</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:didactalia</rdfs:label>
+            <rdf:value>30000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:freebase</rdfs:label>
+            <rdf:value>12355</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>96</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:nytimes-linked-open-data</rdfs:label>
+            <rdf:value>4148</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://red.gnoss.com/comunidad/Biblioteca-Escolar-Digital</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>Biblioteca Escolar CITA</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>930765</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>3e5ccad6-fe87-45eb-88f4-c8a1c9f6cf5d</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

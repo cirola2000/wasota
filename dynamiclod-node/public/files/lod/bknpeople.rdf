@@ -1,0 +1,34 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/bknpeople">
+    <owl:sameAs rdf:resource="urn:uuid:a9cec70f-5445-4834-9fe4-8fbdb1aeecd9"></owl:sameAs>
+    <dct:description>BKN People is a growing collection of bibliographic data focused on authors. You can browse and search raw data on the website, use an API to export data (JSON, XML, or RDF), or download complete datasets (JSON).</dct:description>
+        <dcat:keyword>authors</dcat:keyword>
+        <dcat:keyword>bibliographic</dcat:keyword>
+        <dcat:keyword>bibliographies</dcat:keyword>
+        <dcat:keyword>json</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>xml</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/bknpeople"></foaf:homepage>
+    <rdfs:label>bknpeople</rdfs:label>
+    <dct:identifier>bknpeople</dct:identifier>
+    <dct:title>Academic Authors (API for rdf, xml, json and bluk downloads)</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>1ed8b67c-7a2d-4daf-937a-281ca3f99175</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,25 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/cpan-data-ontologi-es">
+    <owl:sameAs rdf:resource="urn:uuid:cb18fddb-a93c-43e8-a47f-13b97e4e19ff"></owl:sameAs>
+    <dct:description>Comprehensive Perl Archive Network - DOAP data</dct:description>
+        <dcat:keyword>format-doap</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>usergeneratedcontent</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/cpan-data-ontologi-es"></foaf:homepage>
+    <rdfs:label>cpan-data-ontologi-es</rdfs:label>
+    <dct:identifier>cpan-data-ontologi-es</dct:identifier>
+    <dct:title>CPAN-Data (Ontologi.es)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://purl.org/NET/cpan-uri/person/gwilliams"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,182 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/rkb-explorer-wordnet">
+    <owl:sameAs rdf:resource="urn:uuid:aa1bf6f5-1363-4ce7-aa48-abe8c0ad469c"></owl:sameAs>
+    <dct:description>This is one of several semantic repositories that contains and publishes RDF linked data and co-reference information, forming the underlying distributed storage model behind the RKB Explorer initiative.
+
+The data published here comes from the dataset of [Wordnet](http://wordnet.princeton.edu/) published as part of the Billion Triple Challenge.
+
+Services offered —
+
+All URIs on this domain are resolvable, and deliver html or RDF, depending on content negotiation
+Browse interface for viewing and navigating RDF triples
+Query interface providing access via the SPARQL query language for RDF
+Coreference Resolution Service, which identifies and manages duplicate URIs
+The URL of the RDF file in which each URI can be found is also available, under the "Source" column when browsing.
+The semantic sitemap is available.
+A voiD description is available.
+A typical URI you can try resolving is http://wordnet.rkbexplorer.com/id/synset-odd-toed_ungulate-noun-1.
+
+The RDF is presented in accordance with the AKT Reference Ontology.
+
+Current statistics for this RDF repository (http://wordnet.rkbexplorer.com/sparql/) —
+
+Last data assertion  2011-04-13 00:14:43
+Number of triples    2727068
+Number of symbols    1306694
+Size of RDF dataset  851M
+      
+Current statistics for this CRS (http://wordnet.rkbexplorer.com/crs/) —
+
+Last data assertion   2009-11-14 17:25:07
+Number of URIs        227
+Number of bundles     416
+of which active       38
+
+      
+The major funding for the RKB Explorer Initiative was provided by the ReSIST EU-funded Network of Excellence (contract number 026764).
+
+These services are hosted by the School of Electronics and Computer Science at the University of Southampton (UK).
+
+If you have any enquiries, please email the administrator of this repository.</dct:description>
+        <dcat:keyword>crossdomain</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>void-sparql-endpoint</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/rkb-explorer-wordnet"></foaf:homepage>
+    <rdfs:label>rkb-explorer-wordnet</rdfs:label>
+    <dct:identifier>rkb-explorer-wordnet</dct:identifier>
+    <dct:title>WordNet (RKBExplorer)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://wordnet.rkbexplorer.com/sparql/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://wordnet.rkbexplorer.com/sitemap.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/sitemap</rdf:value>
+                            <rdfs:label>meta/sitemap</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://wordnet.rkbexplorer.com/models/void.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://wordnet.rkbexplorer.com/id/synset-odd-toed_ungulate-noun-1"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://wordnet.rkbexplorer.com/id/synset-odd-toed_ungulate-noun-1"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://wordnet.rkbexplorer.com/models/dump.tgz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Download (tar gzip of RDF)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Hugh Glaser</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>http://wordnet.princeton.edu/wordnet/license/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>38</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:lingvoj</rdfs:label>
+            <rdf:value>38</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:opencyc</rdfs:label>
+            <rdf:value>37</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:rkb-explorer-courseware</rdfs:label>
+            <rdf:value>38</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:w3c-wordnet</rdfs:label>
+            <rdf:value>38</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://wordnet.rkbexplorer.com/id/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>WordNet (RKBExplorer)</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>2727001</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

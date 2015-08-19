@@ -1,0 +1,59 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/corscheck">
+    <owl:sameAs rdf:resource="urn:uuid:baf41d87-6cf1-4867-b430-0c1d55b6f7a8"></owl:sameAs>
+    <dct:description>Cross-Origin Resource Sharing (CORS) is a specification that enables a true open access across domain-boundaries. More information about what this means and why it is useful is available at the Enable CORS website.
+
+This dataset is produced by a script which effects an HTTP HEAD request for each sparqlEndpoint and exampleResource in the CKAN RDF Dataset and records the HTTP headers that are returned.</dct:description>
+        <dcat:keyword>access-http</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-void</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/corscheck"></foaf:homepage>
+    <rdfs:label>corscheck</rdfs:label>
+    <dct:identifier>corscheck</dct:identifier>
+    <dct:title>CORS Check - HTTP Header Logs for Linked Open Data</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://eris.okfn.org/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>William Waites</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-odbl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>dcterms:accrualPeriodicity</rdfs:label>
+            <rdf:value>daily</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>32bf37c7-d3cb-479b-b406-21b1609f0ccd</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

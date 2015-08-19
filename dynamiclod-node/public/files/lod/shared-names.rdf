@@ -1,0 +1,40 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/shared-names">
+    <owl:sameAs rdf:resource="urn:uuid:1bf8f8e7-7903-4808-86fb-ef0c6a076159"></owl:sameAs>
+    <dct:description>### About
+
+From wiki:
+
+&gt; Community-wide use of shared names for records from public databases could have a significant effect on the practice of bioinformatics by making it easier to share and link data sets and tools across projects. While publishing data in RDF is appealing to many organizations, the mechanics of selecting and maintaining identifiers is a major obstacle to deployment. A growing body of experience emphasizes that for any solution to be generally adopted it must not only be technically sound, but also serve the practical needs of curators and other users. The Shared Names initiative has as its mission to assign URIs as names for publicly available biomedical information records and establish a community managed shared infrastructure for providing durable access to documentation about these names, as described in a set of requirements. The scope of resources under consideration is initially limited to records in databases, such as those mentioned in the external links (dbxrefs) from the Gene Ontology (GO), for records from Enzyme or Pfam. A proposed implementation uses federated PURL servers that provide RDF-encoded metadata that clearly specifies what the URI denotes and that links the shared names to alternative encodings and associated information about the records.</dct:description>
+        <dcat:keyword>bioinformatics</dcat:keyword>
+        <dcat:keyword>biology</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>science</dcat:keyword>
+        <dcat:keyword>semantic</dcat:keyword>
+        <dcat:keyword>semanticweb</dcat:keyword>
+        <dcat:keyword>uri</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/shared-names"></foaf:homepage>
+    <rdfs:label>shared-names</rdfs:label>
+    <dct:identifier>shared-names</dct:identifier>
+    <dct:title>Shared Names</dct:title>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>1166fe95-7f64-4a7c-86a1-c3612715b422</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,81 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/fu-berlin-ec-competition">
+    <owl:sameAs rdf:resource="urn:uuid:d4f0dea1-3bb0-47e5-9a61-b4e84876478c"></owl:sameAs>
+    <dct:description>Case database of antitrust cases, cartels, mergers, and state aid, maintained by the European Commission. Republished as Linked Data.</dct:description>
+        <dcat:keyword>antitrust</dcat:keyword>
+        <dcat:keyword>business</dcat:keyword>
+        <dcat:keyword>cartels</dcat:keyword>
+        <dcat:keyword>competition</dcat:keyword>
+        <dcat:keyword>ec</dcat:keyword>
+        <dcat:keyword>eccompetition</dcat:keyword>
+        <dcat:keyword>europe</dcat:keyword>
+        <dcat:keyword>europeanunion</dcat:keyword>
+        <dcat:keyword>latc</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>mergers</dcat:keyword>
+        <dcat:keyword>stateaid</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/fu-berlin-ec-competition"></foaf:homepage>
+    <rdfs:label>fu-berlin-ec-competition</rdfs:label>
+    <dct:identifier>fu-berlin-ec-competition</dct:identifier>
+    <dct:title>European Commission Competition data set (FU Berlin)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www4.wiwiss.fu-berlin.de/eccompetition/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www4.wiwiss.fu-berlin.de/eccompetition/resource/Merger/M.10"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example merger (RDF/XML)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Anja Jentzsch</foaf:name>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://www4.wiwiss.fu-berlin.de/eccompetition/resource/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>582579</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>b5ef3bfc-7837-4623-b34c-5fba7f5dd7e2</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

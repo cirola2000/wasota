@@ -1,0 +1,65 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/allen-brain-atlas">
+    <owl:sameAs rdf:resource="urn:uuid:7d88b01e-f3f4-4d49-89bc-6790d98f0614"></owl:sameAs>
+    <dct:description>### About
+
+The Allen Mouse Brain Atlas is an interactive, genome-wide image database of gene expression.
+
+Data exposed: Science Commons extract from ABA Web site, on or shortly before 26 Feb 2007
+Size of dump and data set: 51 MB
+Notes: terms of use
+
+### Openness
+
+Not open as there are noncommercial restrictions. [Terms of Use](http://alleninstitute.org/content/terms_of_use.htm):
+
+&gt; Any of your use of the data and tools (including creation of derivative works of the data and tools) must be for noncommercial use unless otherwise agreed to by the Allen Institute;</dct:description>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>lifesciences</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/allen-brain-atlas"></foaf:homepage>
+    <rdfs:label>allen-brain-atlas</rdfs:label>
+    <dct:identifier>allen-brain-atlas</dct:identifier>
+    <dct:title>Allen Brain Atlas</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://purl.org/hcls/2007/kb-sources/aba-2007-08-07.tgz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Allen Institute for Brain Science</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>3a64c153-2472-413f-84ea-79574303f7ec</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

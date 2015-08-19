@@ -1,0 +1,150 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/traditional-korean-medicine">
+    <owl:sameAs rdf:resource="urn:uuid:aa0e5181-b87c-49af-9f66-cf61fd0d3135"></owl:sameAs>
+    <dct:description>Traditional Korean medicine (Hangul: 한의학, Hanja: 韓醫學) developed with the influence of other traditional medicine. Its techniques in treatment and diagnosis are both similar and unique to other traditional medicine. (Visit Wikipedia, http://en.wikipedia.org/wiki/Traditional_Korean_medicine.)
+
+"Ontology-based Traditional Korean Medicine Knowledge Framework" project is systematization of core knowledge of TKM and enhancing the applicability of the knowledge. This project is supported by Korean government and Korea Institute of Oriental Medicine is pursuing this project since 2009.
+
+To achieve this, our group is constructing ontology for TKM, in particular, patient status and medicinal treatment for them. The center is conceptualizing disease, pattern, symptom and medical test result to define patient status and medicinal materials, formulas, acupuncture and moxibustion for treatment method.
+
+For information about terms of traditional medicine in the area of East Asia, read this WHO standard, http://tkm.kiom.re.kr/ontology/doc/WHO-IST.pdf. This paper can be found at http://www.wpro.who.int/publications/PUB_9789290612487.htm. (Last check: Dec. 17th, 2009)
+
+As a first step for construction, the center is focusing on medicinal materials including biological materials (plants and animals), minerals (stone and metal resources).</dct:description>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-ncbitaxon</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>lifesciences</dcat:keyword>
+        <dcat:keyword>linked-data</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>medicines</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/traditional-korean-medicine"></foaf:homepage>
+    <rdfs:label>traditional-korean-medicine</rdfs:label>
+    <dct:identifier>traditional-korean-medicine</dct:identifier>
+    <dct:title>Traditional Korean Medicine Ontology</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://tkm.kiom.re.kr/ontology/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ontology.kiom.re.kr/ontology/ginseng_example.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example (Panax ginseng) (file)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ontology.kiom.re.kr/ontology/lod.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML file download</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://tkm.kiom.re.kr/ontology/get?query=MM%E4%BA%BA%E8%94%98"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example (Panax ginseng) (RDF/XML)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Hyunchul Jang</foaf:name>
+        <foaf:mbox rdf:resource="mailto:hcjang@kiom.re.kr"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Sang-Kyun Kim</foaf:name>
+        <foaf:mbox rdf:resource="mailto:skkim@kiom.re.kr"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/gfdl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>5c6a9396-82f9-4b43-acd6-13b4239187c6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bioportal-ncbitaxon</rdfs:label>
+            <rdf:value>2119</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://tkm.kiom.re.kr/tkmedicine</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>KM</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>51932</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>5c6a9396-82f9-4b43-acd6-13b4239187c6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

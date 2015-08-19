@@ -1,0 +1,38 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linking-open-drug-data">
+    <owl:sameAs rdf:resource="urn:uuid:6d0ccc84-6ba9-4ffe-8c3a-87df4d275a06"></owl:sameAs>
+    <dct:description>This project focuses on linking the various sources of drug data together to answer interesting scientific and business questions.
+The data sets that have been published and interlinked by the project so far, within the Linked Data cloud.
+Collectively, the data sets consist of over 8 million RDF triples, which are interlinked by more than 370,000 RDF links (As of August 2009).</dct:description>
+        <dcat:keyword>dataset-collection</dcat:keyword>
+        <dcat:keyword>lifesciences</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linking-open-drug-data"></foaf:homepage>
+    <rdfs:label>linking-open-drug-data</rdfs:label>
+    <dct:identifier>linking-open-drug-data</dct:identifier>
+    <dct:title>Linking Open Drug Data (LODD)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://esw.w3.org/topic/HCLSIG/LODD/Data"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e382269e-38c3-4d98-9205-441450cb64ea</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

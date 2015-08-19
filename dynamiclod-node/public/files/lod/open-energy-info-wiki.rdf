@@ -1,0 +1,61 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/open-energy-info-wiki">
+    <owl:sameAs rdf:resource="urn:uuid:68a728c6-b0f3-4b8b-b1f7-410381eff166"></owl:sameAs>
+    <dct:description>### About
+
+From website:
+
+&gt; Open Energy Info is a platform to connect the world’s energy data. It is a linked open data platform bringing together energy information to provide improved analyses, unique visualizations, and real-time access to data. OpenEI follows guidelines set by the White House’s Open Government Initiative , which is focused on transparency, collaboration, and participation. OpenEI strives to provide open access to this energy information, which will spur creativity and drive innovation in the energy sector.
+
+### Openness
+
+Project representatives confirmed [via email](http://lists.w3.org/Archives/Public/public-egov-ig/2010Mar/0008.html):
+
+&gt; The default license for all information in OpenEI I Creative Commons Zero (http://wiki.creativecommons.org/CC0_FAQ).  You can see this documented in a notice shown in the site's editing interface for any page (e.g. http://en.openei.org/w/index.php?title=Colorado&amp;action=edit).
+
+### Access
+
+Project representatives confirmed [via email](http://lists.w3.org/Archives/Public/public-egov-ig/2010Mar/0008.html):
+
+&gt; As for bulk downloads of data...  We currently offer the following:
+
+&gt;&gt; * "Download CSV" links are present on certain pages (e.g. http://en.openei.org/wiki/Map_of_Clean_Energy_Companies)
+&gt;&gt; * A SPARQL endpoint for querying data (http://en.openei.org/sparql), plus a few examples of its use (http://en.openei.org/resources/)
+&gt;&gt; * RDF Exports of any given page via the "browse properties" link (e.g. http://en.openei.org/wiki/Special:ExportRDF/Colorado)
+
+&gt; We realize that we could be doing more in this area, though.  A few things we're planning to do:
+
+&gt;&gt; * Provide a bulk download of our complete RDF (similar to how one can get complete dbpedia exports)
+&gt;&gt; * Provide a better way to find various datasets (and download them in various formats, such as RDF and CSV)
+&gt;&gt; * Provide a mechanism for submitting bulk datasets which is separate from, but complementary to, our Wiki)</dct:description>
+        <dcat:keyword>format-swivt</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/open-energy-info-wiki"></foaf:homepage>
+    <rdfs:label>open-energy-info-wiki</rdfs:label>
+    <dct:identifier>open-energy-info-wiki</dct:identifier>
+    <dct:title>OpenEI - Open Energy Info</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>OpenEI.org</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>8693cab6-f804-4f5f-8a0a-c3a1055ac5f9</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

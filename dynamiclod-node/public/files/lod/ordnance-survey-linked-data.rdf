@@ -1,0 +1,59 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ordnance-survey-linked-data">
+    <owl:sameAs rdf:resource="urn:uuid:1a275884-2eb1-4e52-b563-20136e6c0bd7"></owl:sameAs>
+    <dct:description>See also package:ordnance_survey.
+
+### Published data
+
+* Geographical data about England, Wales, and Scotland
+* Provides identifiers for counties, cities, wards, census areas
+* Provides identifiers for postcodes
+* Relationships between geographical areas (containment, borders)
+
+### Licence
+
+OS Open Data Licence
+
+&gt; The following attribution statement applies to this licence:
+&gt; Contains Ordnance Survey data © Crown copyright and database right 2010
+&gt; These terms have been aligned to be interoperable with any Creative Commons Attribution 3.0
+Licence.
+</dct:description>
+        <dcat:keyword>format-osadm</dcat:keyword>
+        <dcat:keyword>format-osspr</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ordnance-survey-linked-data"></foaf:homepage>
+    <rdfs:label>ordnance-survey-linked-data</rdfs:label>
+    <dct:identifier>ordnance-survey-linked-data</dct:identifier>
+    <dct:title>Ordnance Survey Linked Data</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Ordnance Survey</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Ordnance Survey</foaf:name>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2cf7f87f-97e5-4b76-a9db-8aa98945416a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

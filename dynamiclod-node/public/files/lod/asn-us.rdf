@@ -1,0 +1,39 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/asn-us">
+    <owl:sameAs rdf:resource="urn:uuid:33f96c79-5f2d-4884-bb49-39c28c84ac5f"></owl:sameAs>
+    <dct:description>The [Achievement Standards Network](http://asn.jesandco.org "Achievement Standards Network") (ASN) provides open access to machine-readable representations of learning objectives published by education agencies and organizations. This is the ASN:US dataset of "published" learning objectives.  The ASN is also used in Australia [(ASN:AU)](http://www.australiancurriculum.edu.au/Technical/Introduction "ASN:AU").
+
+The ASN is is funded in part by the [Bill &amp; Melinda Gates Foundation](http://gatesfoundation.org "Bill &amp; Melinda Gates Foundation") and was initially funded by the [National Science Foundation](http://www.nsf.gov/ "National Science Foundation").</dct:description>
+        <dcat:keyword>format-asn</dcat:keyword>
+        <dcat:keyword>format-cc</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/asn-us"></foaf:homepage>
+    <rdfs:label>asn-us</rdfs:label>
+    <dct:identifier>asn-us</dct:identifier>
+    <dct:title>ASN:US</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>JES &amp; Co.</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>ca9c4aa9-ddc1-4ccb-8035-251c5ae68d82</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

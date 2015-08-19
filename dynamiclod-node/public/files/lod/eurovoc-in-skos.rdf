@@ -1,0 +1,72 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eurovoc-in-skos">
+    <owl:sameAs rdf:resource="urn:uuid:03ff94e2-2bb0-41e3-8fa3-db8a93b0495e"></owl:sameAs>
+    <dct:description>[EuroVoc](http://eurovoc.europa.eu/drupal/) is a multilingual, multidisciplinary thesaurus covering the activities of the EU, the European Parliament in particular. It contains terms in 22 EU languages. EuroVoc is managed by the EU Publications Office, which moved forward to ontology-based thesaurus management. EuroVoc users include the European Parliament, the Publications Office, national and regional parliaments in Europe, plus national governments and private users around the world.
+
+This dataset is a conversion of EuroVoc to SKOS, published as a SPARQL endpoint by [CTIC](http://fundacionctic.org/) with permission from the original data owner. There are no resolvable URIs or dumps, as the Publications Office reserves the exclusive right to machine-readable representations of the thesaurus.
+
+(A SKOS version of EuroVoc is also available directly from the Publications Office after written application.)</dct:description>
+        <dcat:keyword>ctic</dcat:keyword>
+        <dcat:keyword>europe</dcat:keyword>
+        <dcat:keyword>eurovoc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>lld</dcat:keyword>
+        <dcat:keyword>lodcloud.candidate</dcat:keyword>
+        <dcat:keyword>lodcloud.unresolvable</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>skos</dcat:keyword>
+        <dcat:keyword>sparql</dcat:keyword>
+        <dcat:keyword>thesaurus</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eurovoc-in-skos"></foaf:homepage>
+    <rdfs:label>eurovoc-in-skos</rdfs:label>
+    <dct:identifier>eurovoc-in-skos</dct:identifier>
+    <dct:title>EUROVOC in SKOS</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://idi.fundacionctic.org/classifications_endpoint/eurovoc"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-03-03T233034/eurovoc.csv"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>CSV</rdf:value>
+                            <rdfs:label>CSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>eurovoc flat file</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Office for Official Publications of the European Communities</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>394c2504-41b3-4013-a748-7f09858a3345</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

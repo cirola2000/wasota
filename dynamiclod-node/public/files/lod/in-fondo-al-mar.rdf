@@ -1,0 +1,38 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/in-fondo-al-mar">
+    <owl:sameAs rdf:resource="urn:uuid:c5381d37-48f5-4c23-8ac0-b0a37284f678"></owl:sameAs>
+    <dct:description>in.fondo.al.mar (under the sea) is an info-visualisation project about a series of sinkings and incidents in the Mediterranean Sea, involving ships which are suspected of having carried toxic and radioactive waste. 
+The project wants "to bring the poisons afloat", to spread information and to support the ongoing investigations on the case. </dct:description>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>mediterraneansea</dcat:keyword>
+        <dcat:keyword>radioactivity</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/in-fondo-al-mar"></foaf:homepage>
+    <rdfs:label>in-fondo-al-mar</rdfs:label>
+    <dct:identifier>in-fondo-al-mar</dct:identifier>
+    <dct:title>in.fondo.al.mar</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://infondoalmar.info/dataset.php?lang=en"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-odbl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>425063bf-7d47-4a3a-a122-293e8e0f40dd</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/nuts-geovocab">
+    <owl:sameAs rdf:resource="urn:uuid:8e42e719-1c86-45b7-8f5e-56dfd2918970"></owl:sameAs>
+    <dct:description>The NUTS (Nomenclature of Territorial Units for Statistics)  is a classification defined by the Eurostat office of the European Union. Here we present the NUTS regions along with geographic information as a sample use of the NeoGeo RDF Vocabulary for GeoData. </dct:description>
+        <dcat:keyword>format-pos</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/nuts-geovocab"></foaf:homepage>
+    <rdfs:label>nuts-geovocab</rdfs:label>
+    <dct:identifier>nuts-geovocab</dct:identifier>
+    <dct:title>NUTS (GeoVocab)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Eurostat</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Juan Salas</foaf:name>
+        <foaf:mbox rdf:resource="mailto:jmsalas@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>9691bf55-4a5f-4fd3-953a-82129264e422</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

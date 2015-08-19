@@ -1,0 +1,55 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/sudocfr">
+    <owl:sameAs rdf:resource="urn:uuid:febe4da9-5874-4411-a7da-b497fdebf739"></owl:sameAs>
+    <dct:description>Source : [Sudoc](http://www.sudoc.abes.fr)
+
+Sudoc is the French academic union catalogue, maintained by ABES
+
+Size : 10 millions bibliographic records
+
+[Documentation](http://documentation.abes.fr/sudoc/manuels/administration/sudoc_rdf/index.html)
+
+Vocabularies : Dublin Core, FOAF, BIBO, RDA, ISBD, etc.
+
+Licensing : Licence ouverte / Open licence (http://www.etalab.gouv.fr/pages/Licence_ouverte_Open_licence-5899923.html)
+</dct:description>
+        <dcat:keyword>format-bibo</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/sudocfr"></foaf:homepage>
+    <rdfs:label>sudocfr</rdfs:label>
+    <dct:identifier>sudocfr</dct:identifier>
+    <dct:title>Sudoc bibliographic data</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>ABES</foaf:name>
+        <foaf:mbox rdf:resource="mailto:apisudoc@abes.fr"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Yann NICOLAS</foaf:name>
+        <foaf:mbox rdf:resource="mailto:nicolas@abes.fr"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>9edf40a2-a0b2-4f91-b507-3a5962b94374</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

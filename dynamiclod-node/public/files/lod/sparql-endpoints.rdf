@@ -1,0 +1,35 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/sparql-endpoints">
+    <owl:sameAs rdf:resource="urn:uuid:de1d69c4-869d-45f9-a8f5-b8634f6567db"></owl:sameAs>
+    <dct:description>List of sparql endpoints (which therefore implicitly list datasets).</dct:description>
+        <dcat:keyword>access-api</dcat:keyword>
+        <dcat:keyword>package-type-listing</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>semanticweb</dcat:keyword>
+        <dcat:keyword>sparql</dcat:keyword>
+        <dcat:keyword>sparql-endpoint</dcat:keyword>
+        <dcat:keyword>todo-list-datasets</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/sparql-endpoints"></foaf:homepage>
+    <rdfs:label>sparql-endpoints</rdfs:label>
+    <dct:identifier>sparql-endpoints</dct:identifier>
+    <dct:title>SparqlEndpoints - ESW Wiki</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>754c3a1d-ed3e-476f-ac99-8cefdd32c72f</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>
