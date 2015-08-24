@@ -7,11 +7,11 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     { name: "datahub link", format: "rdfxml" }
   ];
 
-  $scope.choosenFormat = $scope.formats[1];
+  $scope.choosenFormat = $scope.formats[0];
 
   var proxyURL = $generalData.proxyUrl;
 
-  $scope.datasetAddress = "http://datahub.io/dataset/news-100-nif-ner-corpus";
+  $scope.datasetAddress = "https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataid-reuters128.ttl";
 
   $scope.startAPI = function () {
     $scope.apiResponse = {};
