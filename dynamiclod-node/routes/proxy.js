@@ -74,6 +74,8 @@ router.get('/tablesOntologies', function (req, res, next) {
 router.post('/ResourceTree', function (req, res, next) {
   
   var query = serverURL+"/ResourceTree";
+  if(req.query.linkedDatasets)
+    query = query + "?linkedDatasets=true";
   var resp;
 
   request(query, function (error, response, body) {

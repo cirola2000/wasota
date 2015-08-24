@@ -7,14 +7,16 @@ var h = window.innerHeight || document.documentElement.clientHeight
 // var width = w - 240;
 // var height = h - 240;
 
-var width = 740, // svg width
-	height = 650, // svg height
+var width = $('#diagram').width(), // svg width
+	height = $('#diagram').height(), // svg height
 	dr = 4, // default point radius
 	off = 39, // cluster hull offset
 	expand = {}, // expanded clusters
 	data, net, force, hullg, hull, linkg, link, nodeg, node;
 
 var level = 4;
+
+var svgContainer;
 
 
 //start grouping functions
@@ -217,7 +219,7 @@ function makeGraph(param) {
 	if (showAll) {
 		requestLink = baseRequestLink + "getAllDistributions=" + "&";
 	}
-	console.log(param);
+	// console.log(param);
 
 	var color = d3.scale.category20();
 
@@ -231,19 +233,32 @@ function makeGraph(param) {
 			$("#filter").prop('disabled', false);
 						
 			// Create the SVG Viewport
-			var svgContainer = d3.select("#diagram").append("svg")
+			svgContainer = d3.select("#diagram").append("svg")
 				.attr("width", width).attr("height", height)
 				.attr("pointer-events", "all")
 			// .append('svg:g')
 				.call(d3.behavior.zoom().on("zoom", redraw))
 				.append('svg:g');
-
+				
 			svgContainer.append('svg:rect').attr('width', w).attr(
 				'height', h).attr('fill', 'white');
+				
+			// // 		 			// build the arrow.
+			// svgContainer.append("svg:defs").selectAll("marker")
+			// 	.data(["end"]).enter().append("svg:marker")
+			// 	.attr("id", String)
+			// 	.attr("viewBox","0 -5 10 10")
+			// 	.attr("refX", 43)
+			// 	.attr("refY", 0)
+			// 	.attr("markerWidth", 4)
+			// 	.attr("markerHeight", 4)
+			// 	.attr("orient", "auto")
+			// 	.append("svg:path")
+			// 	.attr("d", "M0,-5L10,0L0,5");
 						
 			// start grouping nodes
-			for (i in data.links) {
-				o = data.links[i];
+			for (var i in data.links) {
+				var o = data.links[i];
 				o.source = getByValue2(data.nodes, o.source);
 				o.target = getByValue2(data.nodes, o.target);
 				o.value = data.links[i].value;
@@ -258,28 +273,28 @@ function makeGraph(param) {
 				.duration(1000)
 				.attr("opacity", 1);
 
-			// build the arrow.
-			svgContainer.append("svg:defs").selectAll("marker")
-				.data(["end"]).enter().append("svg:marker")
-				.attr("id", String).attr("viewBox",
-				"0 -5 10 10").attr("refX", 60).attr(
-				"refY", -1).attr("markerWidth", 6)
-				.attr("markerHeight", 6).attr("orient", "auto")
-				.append("svg:path").attr("d", "M0,-5L10,0L0,5");
-
-
-
-
 			function redraw() {
-				console.log("here", d3.event.translate,
-					d3.event.scale);
+				// console.log("here", d3.event.translate,
+				// 	d3.event.scale);
 				svgContainer.attr("transform", "translate("
 					+ d3.event.translate + ")" + " scale("
 					+ d3.event.scale + ")");
 			}
-
-
-
+				
+				// 		 			// build the arrow.
+			svgContainer.append("svg:defs").selectAll("marker")
+				.data(["end2"]).enter().append("svg:marker")
+				.attr("id", String)
+				.attr("viewBox","0 -5 10 10")
+				.attr("refX", 45)
+				.attr("refY", 0)
+				.attr("markerWidth", 4)
+				.attr("markerHeight", 4)
+				.attr("orient", "auto")
+				.append("svg:path")
+				.attr("d", "M0,-5L10,0L0,5");
+				
+				
 			init();
 
 
@@ -380,7 +395,7 @@ function init() {
 		.style("fill", function (d) { return fill(d.group); })
 		.on("click", function (d) {
 	    	  if (d3.event.defaultPrevented) return; // click suppressed
-	    	  console.log("hull click", d, arguments, this, expand[d.group]);
+	    	  // console.log("hull click", d, arguments, this, expand[d.group]);
 	    	  expand[d.group] = false; init();
 	});
 
@@ -391,17 +406,22 @@ function init() {
 		.attr("y1", function (d) { return d.source.y; })
 		.attr("x2", function (d) { return d.target.x; })
 		.attr("y2", function (d) { return d.target.y; })
-		.style("stroke-width", function (d) { return 1; })
-	//	      .style("stroke-width", function(d) { return d.size || 1; })
+		.style("stroke-width", function (d) { return 2.3; })
+		.style("stroke", function (d) {
+			if (d.value > 0)
+				return "rgb(253, 141, 60)";
+			else
+				return "#666";
+		})
 		.attr("class", "link")
 		.on("mouseover", function (d) {
-		d3.select(this).style("stroke", "red");
-		if (d.value > 0)
-			tooltip.text("Links: " + d.value);
-		else
-			tooltip.text("a dcat:subset .");
-		return tooltip.style("visibility", "visible");
-	})
+			d3.select(this).style("stroke", "red");
+			if (d.value > 0)
+				tooltip.text("Links: " + d.value);
+			else
+				tooltip.text("a dcat:subset .");
+			return tooltip.style("visibility", "visible");
+		})
 		.on(
 		"mousemove",
 		function () {
@@ -412,14 +432,36 @@ function init() {
 				(d3.event.pageX + 10)
 				+ "px");
 		}).on("mouseout", function () {
-		d3.select(this).style("stroke", function (d) {
-			if (d.value > 0)
-				return "#699";
-			else
-				return "#666";
+			d3.select(this).style("stroke", function (d) {
+				if (d.value > 0)
+					return "rgb(253, 141, 60)";
+				else
+					return "#666";
 		});
 		return tooltip.style("visibility", "hidden");
-	}).attr("marker-end", function (d) { if (d.source.x != d.target.x) { return "url(#end)" } else return ""; });
+	}).attr("marker-end", function (d) {
+		 	// if (d.source.x != d.target.x) {
+			// 	  	return "url(#end)"; 
+			// 	  } else 
+			// 	  	return "url(#end)"; 
+			
+			if( typeof d.target['group_name'] != "undefined"){
+				if (d.source != d.target) {
+				  	return "url(#end2)"; 
+				  } else 
+				  	return ""; 
+				
+			}
+			else{
+				if (d.source != d.target) {
+				  	return "url(#end)"; 
+				  } else 
+				  	return ""; 
+			}
+			// d.target['text']
+			
+
+		});
 
 	node = nodeg.selectAll("g.node").data(net.nodes, nodeid);
 	node.exit().remove();
@@ -433,19 +475,46 @@ function init() {
 	  
 	g.append("circle")
 	// if (d.size) -- d.size > 0 when d is a group node.      
-		.attr("r", function (d) { return d.size ? 36 : d.radius; })
-		.style("stroke", function (d) { if (d.size > 0) return "rgb(144, 209, 228)"; })
-		.style("stroke-width", function (d) { if (d.size > 0) return 5; })
-		.style("cursor",  function (d) { if (d.size > 0) return "pointer"; })
-		.style("fill", function (d) { if (d.name) return d.color; else return fill(d.group); })
-		.on("click", function (d) {
+		.attr("r", function (d) { return d.size ? 33 : d.radius; })
+		.style("stroke", function (d) {
+			// vocab stroke
+			if(typeof d.nodes != "undefined")
+				if(d.nodes[0].isVocab){
+					return "rgb(253, 174, 107)";
+				}
+			if (d.size > 0) 
+				return "rgb(144, 209, 228)"; 
+				})
+		.style("stroke-width", function (d) { if (d.size > 0) return 2; })
+		.style("cursor",  function (d) { if (true) return "pointer"; })
+		// .style("fill", function (d) { if (d.name) return d.color; else return fill(d.group); })
+		.style("fill", function (d) {
+			
+			// vocab color
+			if(typeof d.nodes != "undefined")
+				if(d.nodes[0].isVocab){
+					return "rgb(253, 174, 107)";
+				}
+			 if (d.name) return d.color; 
+			 else return "rgb(107, 174, 214)"; })
+			.on("click", function (d) {
+				
+				// vocab click
+				if(typeof d.nodes != "undefined")
+					if(d.nodes[0].isVocab){
+					return ;
+				}
 		if (d3.event.defaultPrevented) return; // click suppressed
-		console.log("node click", d, arguments, this, expand[d.group]);
+		// console.log("node click", d, arguments, this, expand[d.group]);
+		if(d.group_data){
+			// alert("oie");
+		   return;	
+		};
 		expand[d.group] = !expand[d.group];
 		init();
 	});
 
-		  var text = g.append("foreignObject")
+		var text = g.append("foreignObject")
 		.attr('width', function (d) {
 		if (d.radius)
 			return d.radius + 15;
@@ -456,10 +525,10 @@ function init() {
 		if (d.radius)
 			return d.radius + 14;
 		else
-			return d.size + 34;
+			return d.size + 41;
 	})
-		.attr("x", function (d) { return "-22px"; })
-		.attr("y", function (d) { return "-20px"; })
+		.attr("x", function (d) { return "-24px"; })
+		.attr("y", function (d) { return "-22px"; })
 		.html(
 		function (d) {
 			if (d['text']) {
@@ -472,23 +541,9 @@ function init() {
 			}
 		});
 	  
-	  
-	  
-	  
-	  
-	  
-	  
-	//	  g.append("text")
-	//	      .attr("fill","black")
-	//	  .text(function(d,i){
-	//	      if (d['name']){          
-	//	          return d['name'];
-	//	      }
-	//	      else
-	//	    	  return d['group'];
-	//	  });
 
 	node.call(force.drag);
+	
 
 	force.on("tick", function () {
 		var q = d3.geom
