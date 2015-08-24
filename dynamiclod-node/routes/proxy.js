@@ -21,7 +21,12 @@ router.get('/', function (req, res, next) {
 
   request(query, function (error, response, body) {
     if (!error && response.statusCode == 200) {
+      try{
+        
       res.send(JSON.parse(body.toString()));
+      }catch (E){
+        console.log(E);
+      }
     }
     else {
       console.log(error);
