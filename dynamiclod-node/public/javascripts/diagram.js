@@ -548,15 +548,22 @@ function init() {
 	force.on("tick", function () {
 		var q = d3.geom
 			.quadtree(data.nodes), i = 0, n = data.nodes.length;
+			var n2 = net.nodes.length;
+			var q2 = d3.geom
+			.quadtree(net.nodes);
 		//   	  
-		while (++i < n)
-			q.visit(collide(data.nodes[i]));
 
 		if (!hull.empty()) {
 			hull.data(convexHulls(net.nodes, getGroup, off))
 				.attr("d", drawCluster);
 		}
 
+		while (++i < n)
+			q.visit(collide(data.nodes[i]));
+			 i = 0;
+		while (++i < n2)
+			q2.visit(collide(net.nodes[i]));
+			
 		link.attr("x1", function (d) { return d.source.x; })
 			.attr("y1", function (d) { return d.source.y; })
 			.attr("x2", function (d) { return d.target.x; })
