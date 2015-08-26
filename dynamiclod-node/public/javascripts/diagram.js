@@ -333,7 +333,7 @@ function init() {
 		// nodes of another group or other group node or between two group nodes.
 		//
 		// The latter was done to keep the single-link groups ('blue', rose, ...) close.
-		return 30 +
+		return 190 +
 			Math.min(20 * Math.min((n1.size || (n1.group != n2.group ? n1.group_data.size : 0)),
 				(n2.size || (n1.group != n2.group ? n2.group_data.size : 0))),
 				-30 +
@@ -343,14 +343,14 @@ function init() {
 		//return 150;
 	})
 		.linkStrength(function (l, i) {
-		return 0.1;
+		return 0.01;
 	})
 	//	    .gravity(0.05)   // gravity+charge tweaked to ensure good 'grouped' view (e.g. green group not smack between blue&orange, ...
 	//	    .charge(-600)    // ... charge is important to turn single-linked groups to the outside
 	//	    .friction(0.5)   // friction adjusted to get dampened display: less bouncy bouncy ball [Swedish Chef, anyone?]
-		.friction(0.4)
+		.friction(0.14)
 		.charge(-255)
-		.gravity(0.00001)
+		.gravity(0.01)
 		.theta(1.9)
 		.alpha(1.9)
 		.start();
