@@ -4,8 +4,8 @@ var w = window.innerWidth || document.documentElement.clientWidth
 var h = window.innerHeight || document.documentElement.clientHeight
 	|| document.body.clientHeight;
 
-// var width = w - 240;
-// var height = h - 240;
+// var width = 1300;
+// var height = 800,
 
 var width = $('#diagram').width(), // svg width
 	height = $('#diagram').height(), // svg height
@@ -357,6 +357,11 @@ function init() {
 	  
 	//		HERE
 	function collide(node) {
+		
+		if(typeof node.radius == "undefined"){
+			node.radius = 31;
+		}
+		
 		var r = node.radius + 16, nx1 = node.x - r, nx2 = node.x
 			+ r, ny1 = node.y - r, ny2 = node.y + r;
 		return function (quad, x1, y1, x2, y2) {
@@ -561,9 +566,17 @@ function init() {
 		while (++i < n)
 			q.visit(collide(data.nodes[i]));
 			 i = 0;
-		while (++i < n2)
-			q2.visit(collide(net.nodes[i]));
+		while (++i < n2){	
+				
+					
+					q2.visit(collide(net.nodes[i]));
+				
 			
+				
+			// q2.visit(collide(net.nodes[i].nodes[i2]));
+			}
+			
+		
 		link.attr("x1", function (d) { return d.source.x; })
 			.attr("y1", function (d) { return d.source.y; })
 			.attr("x2", function (d) { return d.target.x; })
