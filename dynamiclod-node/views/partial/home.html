@@ -13,9 +13,9 @@
 	<h3>Do you have a RDF dump file published on the web?</h3>
 </div>
 	
-	<p> Click in the <a href="#/quick">"Quick Start"</a> menu and check how easy is to use our API to verify links (indegree and outdegree) of your dump file.</p>
+	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API to verify links (indegree and outdegree) of your dump file. After streamed if your dataset contain links to external resources, they will be shown at our <a href="#/diagram"> diagram </a> page.</p>
 <p>A detailed description of this work can be found in
-	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>. The basic documentation is available in our <a href="wiki.html">Wiki</a> page.</p>
+	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>. The basic documentation is available in our <a href="#/wiki">Wiki</a> page.</p>
 <div class="page-header">
 	<h3>A brief explanation...</h3>
 </div>
@@ -29,16 +29,15 @@
 		<li>3. You can use a REST API to retrieve links indegree and outdegree of your dump files.</li>
 	</ul>
 </p>
-<p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use {{appName}}.</p> 
+<p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use add datasets to {{appName}}.</p> 
 
 <!--you can use to add your dataset, retrieve links and a customized diagram.</p>-->
-<!--<div class="page-header">
-	<h4>Create your own diagram based on the linksets.</h4>
-</div>Considering that you can describe your datasets with different properties, our API creates customized SVG diagrams. The
-following example diagram shows all distribution of English DBpedia, vocabularies and three NIF datasets.
-<div style="border: 1px solid #d8d8d8; background-color: #ffffff; margin-top: 40px; text-align: center">
-	<img alt="" src="resources/img/cloud.png">
-</div>-->
+<div class="page-header">
+	<h3>Create your own diagram based on the linksets.</h3>
+<div style="border: 1px solid #d8d8d8; background-color: #ffffff; margin-top: 40px; text-align: center; width: 40%; float: right">
+	<img width="90%" alt="" src="images/graph.png">
+</div>
+</div>Our API creates customized output for <a href="http://d3js.org/"> Data Driven Documents JS Library (D3)</a> to create a cloud-based diagram. We provide an online demo at our <a href="#/diagram"> diagram </a> webpage. 
 <div class="page-header">
 	<h3>How fast and reliable is {{appName}}?</h3>
 </div>
@@ -134,9 +133,8 @@ following example diagram shows all distribution of English DBpedia, vocabularie
 	<code>http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
 	<br>The
 	<code>addDataset</code> parameter accepts VoID, DCAT and DataID descriptions. {{appName}} request the header "Accept: application/rdf+xml"
-	in order to retrive data in RDF format. The
-	<code>rdfFormat</code> parameter accept <b>"nt"</b>, <b>"ttl"</b>, or <b>"xmlrdf"</b>and is the format of the <code>addDataset</code> parameter.
-	<p>Our <a href="wiki.html">Wiki</a> has the necessary documentation that you need to add datasets in to the cloud.</p>
+	in order to retrive data in RDF format. The <code>rdfFormat</code> parameter accepts <b>"nt"</b>, <b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <code>addDataset</code> parameter.
+	<p>Our <a href="#/wiki">Wiki</a> has the necessary documentation that you need to add datasets in to the cloud.</p>
 </div>
 <div class="page-header">
 	<h3>How to check id my dataset was successfully added?</h3>

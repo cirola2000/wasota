@@ -169,8 +169,6 @@ function uncheck(a){
 function submitMe() {
 	var level = $("#level").val();
 		var result = "";
-	$("#loading_gif").show();
-	$("#filter").prop('disabled', true);
 	
 	$('#tree').jstree('get_checked').forEach(function(l) {
 		// if(isValidURL(l))
@@ -178,7 +176,8 @@ function submitMe() {
 	});
 		if (result != "") {
 		result = result.substring(0, result.length - 9);
-	}
+	$("#loading_gif").show();
+	$("#filter").prop('disabled', true);
 	
 	// get options
 	if($("#distributions").is(":checked"))
@@ -189,6 +188,7 @@ function submitMe() {
 	result = result + "&level="+level;
 		
 	makeGraph(result);
+	}
 	
 }
 
