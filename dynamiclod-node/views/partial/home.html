@@ -21,17 +21,17 @@
 <div class="page-header">
 	<h3>A brief explanation...</h3>
 </div>
-<p>{{appName}} uses Bloom filters (BF) to compare and <b>count links between RDF dump files in the streamming process.</b> How do we do that?
+<p>{{appName}} uses Bloom filters (BF) to compare and <b>count links between RDF dump files in the streaming process.</b> How do we do that?
 	<br>
 	<ul>
 		<li>1. {{appName}} parses your dataset description file that might be in different serialization format such as VoID, DCAT and DataID. Then, we stream your distributions
-			(dump files) in order to extract links and compare with different Bloom filters wich contains index for other dump files.</li>
+			(dump files) in order to extract links and compare with different Bloom filters which contains index for other dump files.</li>
 		<li>2. We retrieve RDF data about links (<b>void:linkset</b> format) of your dataset and we create new Bloom filters representing your dump file. Later these Bloom filters will be used to compare your dump file with other distributions.</li>
 		<!--<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>-->
 		<li>3. You can use a REST API to retrieve links indegree and outdegree of your dump files.</li>
 	</ul>
 </p>
-<p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use add datasets to {{appName}}. After that, go to our <a href="#/diagram"> diagram </a> page to vizualise the linked resources.</p> 
+<p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use add datasets to {{appName}}. After that, go to our <a href="#/diagram"> diagram </a> page to visualize the linked resources.</p> 
 
 <!--you can use to add your dataset, retrieve links and a customized diagram.</p>-->
 <div class="page-header">
@@ -132,17 +132,16 @@
 <div>It's simple. You can add a dataset using our API, and you need to specify what's the serialization file format.
 	<br>For instance, to add a file "http://myDomain.org/void.ttl" in turtle format, you shoould access:
 	<br>
-	<code>{{serverURL}}?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
-	<br>The
-	<code>addDataset</code> parameter accepts VoID, DCAT and DataID descriptions. {{appName}} request the header "Accept: application/rdf+xml"
-	in order to retrive data in RDF format, thus you might add CKAN's addresses as well. The <code>rdfFormat</code> parameter accepts <b>"nt"</b>, <b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <code>addDataset</code> parameter.
+	<samp>{{serverURL}}?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</samp>
+	<br>The <samp>addDataset</samp> parameter accepts VoID, DCAT and DataID descriptions. {{appName}} request the header "Accept: application/rdf+xml"
+	in order to retrieve data in RDF format, thus you might add CKAN's addresses as well. The <samp>rdfFormat</samp> parameter accepts <b>"nt"</b>, <b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <samp>addDataset</samp> parameter.
 	<p>Our <a href="#/wiki">Wiki</a> has the necessary documentation that you need to add datasets in to the cloud.</p>
 </div>
 <div class="page-header">
 	<h3>How to check whether my dataset was successfully added?</h3>
 </div>
-<div>To check the current status of your dataset, you can access:
-	<br>{{serverURL}}?datasetStatus=http://myDomain.org/myDataset
+<div> <p>To check the current status of your dataset, you can access: </p>
+	<p><samp>{{serverURL}}?datasetStatus=http://myDomain.org/myDataset </samp></p>
 	<p>
 		<a href="{{serverURL}}?datasetStatus=https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataidDbpediaEnglish.ttl">This example</a> shows the current status for DBpedia dataset.</p>
 </div>
@@ -150,8 +149,8 @@
 	<h3>How to retrieve RDF
 		<b>void:linkset</b> data to my dataset?</h3>
 </div>
-<div>To retrieve linksets of your dataset, you can access:
-	<br>{{serverURL}}?retrieveDataset=http://myDomain.org/myDataset
+<div><p>To retrieve linksets of your dataset, you can access:</p>
+	<p><samp>{{serverURL}}?retrieveDataset=http://myDomain.org/myDataset</samp></p>
 	<p>
 		<a href="{{serverURL}}?retrieveDataset=http://downloads.dbpedia.org/3.9/en/labels_en.nt.bz2">This example</a> shows linksets for a DBpedia distribution.</p>
 </div>
