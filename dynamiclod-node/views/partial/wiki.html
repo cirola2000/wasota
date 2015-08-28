@@ -1,9 +1,8 @@
 <div class="page-header">
 	<h1 style="">{{appName}} Wiki</h1>
 </div>
-<p>This page provides a basic guideline of {{appName}} API usage. Further information about the software architecture can be
-	found in
-	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>.</p>
+<p>This page provides a basic guideline for {{appName}} API usage. Further information about the software architecture can be
+	found in <a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>.</p>
 <div class="page-header">
 	<h2>Contents</h2>
 </div>
@@ -83,19 +82,54 @@
 	<h2>
 		<a name="api"></a>API usage</h2>
 </div>
-<div>{{appName}} API has three main features, which consists in add new dataset to be streamed, retrieve data about the streaming
-	status, and finally, retrieve RDF file. To add a dataset and retrieve the status, the API returns a
-	<b>JSON Object</b>which contains a "message" field and a "success" filed with a boolean value. The following sections describe
-	the API usage.</div>
+<div><p>{{appName}} API has four main features, which consists:</p>
+	<ul>
+		<li>Add new dataset to be streamed.</li>
+		<li>Retrieve status about the current streaming.</li>
+		<li>Retrieve RDF using <samp>void:linkset</samp> fotmat.</li>
+		<li>Retrieve JSON data for diagram generation.</li>
+	</ul>
+	
+	<p>For all four features, the API returns a JSON object. The following sections describe the API usage.</p></div>
+	
 <h3 style="margin-top: 30px">
-	<a name="adding"></a>Adding new dataset to be streamed</h3>
+	<a name="adding"></a>Adding new dataset to be streamed.</h3>
 <div>{{appName}} parses different description files, according to the vocabularies
 	<a href="http://wiki.dbpedia.org/projects/dbpedia-dataid-unit"
 	target="_blank">DataID</a>,
-	<a href="http://www.w3.org/TR/void/" target="_blank">VoID</a>and
-	<a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">DCAT</a>. Thus, what you need to add your datasets is a link that contains the description file and {{appName}} will read it and
-	try to fetch dump files. Considering that the application requests header in the format
-	<code>"Accept: application/rdf+xml"</code>it's also possible, for instance, to add your dataset via a CKAN link.
+	<a href="http://www.w3.org/TR/void/" target="_blank">VoID</a> and
+	<a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">DCAT</a>. Thus, basically what you need to add your datasets is a link that contains the description file of your dataset in one of the above formats. {{appName}} will read it and try to fetch dump files described by the properties <samp>dcat:downloadURL</samp>, <samp>dcat:accessURL</samp> and <samp>void:dataDump</samp>. 
+	<p>The following basic RDF code describes using the <a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">DCAT</a> vocabulary the News-100 NIF dataset: </p>
+	<pre>
+
+@prefix dcat: &lt;http://www.w3.org/ns/dcat#> .
+@prefix void: &lt;http://rdfs.org/ns/void#> .
+@prefix sd: &lt;http://www.w3.org/ns/sparql-service-description#> .
+@prefix prov: &lt;http://www.w3.org/ns/prov#> .
+@prefix dc: &lt;http://purl.org/dc/terms/> .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/> .
+
+&lt;http://gerbil.aksw.org/gerbil/dataId/corpora/N3-News-100#dataset>
+  a dcat:Dataset ;
+  dc:title "News-100 NIF NER Corpus" ;
+  rdfs:label "News-100 NIF NER Corpus" ;
+  dcat:distribution &lt;https://raw.githubusercontent.com/AKSW/n3-collection/master/News-100.nt> .
+
+
+&lt;https://raw.githubusercontent.com/AKSW/n3-collection/master/News-100.nt>
+  a dcat:Distribution ;
+  dc:title "Complete corpus" ;
+  dc:description "Complete corpus file in turtle format" ;
+  dcat:downloadURL "https://raw.githubusercontent.com/AKSW/n3-collection/master/News-100.nt" ;
+  dc:format "text/ntriples" .
+ </pre>
+ 
+ <p>The parser will fetch all properties from <samp>dcat:Dataset</samp> and then will follow <samp>dcat:distribution</samp> resource. In this case, the property <samp>dcat:downloadURL</samp> is available and the parser will try to stream the content located at the <samp> https://raw.githubusercontent.com/AKSW/n3-collection/master/News-100.nt </samp> address.</p> 
+
+	 Considering that the application requests header in the format <samp>"Accept: application/rdf+xml"</samp> it is also possible, for instance, to add your dataset via CKAN link.
+	
 	<p>The API parameters used to add a dataset are:</p>
 	<table class="table" style="margin-top: 20px; margin-bottom: 20px">
 		<th>Parameter:</th>
@@ -104,7 +138,7 @@
 		<th style="width: 300px">Returns:</th>
 		<tr>
 			<td>
-				<code>addDataset</code>
+				<samp>addDataset</samp>
 			</td>
 			<td>link for your dataset description. Might be a list of links.</td>
 			<td>
@@ -115,10 +149,10 @@
 		</tr>
 		<tr>
 			<td>
-				<code>rdfFormat</code>
+				<samp>rdfFormat</samp>
 			</td>
 			<td>format of the added links in the
-				<code>addDataset</code>parameter. Formats are:
+				<samp>addDataset</samp>parameter. Formats are:
 				<b>ttl</b>,
 				<b>nt</b>or
 				<b>rdfxml</b>.</td>
@@ -129,7 +163,7 @@
 		</tr>
 	</table>
 	<p>An generic example of a link to add a http://x.y.x/dataset.ttl file in turtle is:
-		<code>vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?addDataset=http://x.y.x/dataset.ttl?rdfFormat=ttl</code>.</p>
+		<samp>vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?addDataset=http://x.y.x/dataset.ttl?rdfFormat=ttl</samp>.</p>
 	<p>After adding the dataset, you should get a message indicating if the API was successfully initiated. To check details about
 		parsed distributions and datasets, check the next section for the
 		<i>datasetStatus</i>parameter.</p>
@@ -145,7 +179,7 @@
 		<th>Returns</th>
 		<tr>
 			<td>
-				<code>datasetStatus</code>
+				<samp>datasetStatus</samp>
 			</td>
 			<td>link for your previouly added dataset.</td>
 			<td>
@@ -157,7 +191,7 @@
 		</tr>
 	</table>A detailed description for the returned
 	<b>JSON Object</b>of the
-	<code>datasetStatus</code>parameter is given by the next table.
+	<samp>datasetStatus</samp>parameter is given by the next table.
 	<!--<table class="table">
 		<th style="width: 150px">Key</th>
 		<th>Description</th>
@@ -204,31 +238,31 @@
 		<th>Description</th>
 		<tr>
 			<td>
-				<code>WAITING_TO_STREAM</code>
+				<samp>WAITING_TO_STREAM</samp>
 			</td>
 			<td>Your distribution is in the download queue and was not streamed yet.</td>
 		</tr>
 		<tr>
 			<td>
-				<code>STREAMING</code>
+				<samp>STREAMING</samp>
 			</td>
 			<td>Your distribution being streamed/downloaded.</td>
 		</tr>
 		<tr>
 			<td>
-				<code>CREATING_BLOOM_FILTER</code>
+				<samp>CREATING_BLOOM_FILTER</samp>
 			</td>
 			<td>Your distribution was successfully streamed and {{appName}} is creating the Bloom filter.</td>
 		</tr>
 		<tr>
 			<td>
-				<code>DONE</code>
+				<samp>DONE</samp>
 			</td>
 			<td>The process was complete with no errors.</td>
 		</tr>
 		<tr>
 			<td>
-				<code>ERROR</code>
+				<samp>ERROR</samp>
 			</td>
 			<td>Something went wrong and the error is described in the "lastErrorMessage" field.</td>
 		</tr>
@@ -238,16 +272,16 @@
 		, "message" : "Distribution: http://downloads.dbpedia.org/2014/commons/redirects_commons.nt.bz2 Status: DONE " , "status"
 		: "DONE" , "success" : true , "topDataset" : "http://downloads.dbpedia.org/2014/commons/dataid.ttl#dataset" } } , ...</pre>
 		<p>Case all status are equal to
-			<code>DONE</code>or
-			<code>ERROR</code>, means that {{appName}} already processed all of them, and there is noting else to do. Case there are errors
+			<samp>DONE</samp>or
+			<samp>ERROR</samp>, means that {{appName}} already processed all of them, and there is noting else to do. Case there are errors
 			wich you can fix, you might be able to send again your description file via
-			<code>addDataset</code>parameter. {{appName}} will not stream again distributions already in the
-			<code>DONE</code>status, unless its detected a change in the file size. {{appName}} do it requesting the "Content-Length" header
+			<samp>addDataset</samp>parameter. {{appName}} will not stream again distributions already in the
+			<samp>DONE</samp>status, unless its detected a change in the file size. {{appName}} do it requesting the "Content-Length" header
 			and comparing the previous distribution size.</p>
 </div>
 <h3 style="margin-top: 30px">
 	<a name="retrieving"></a>Retrieving RDF VoID Linkset data</h3>
-<div>The following table describes the <code>retrieveDataset</code>, which retrieves RDF data about counted links in the
+<div>The following table describes the <samp>retrieveDataset</samp>, which retrieves RDF data about counted links in the
 	<b>VoID Linkset</b>format.
 	<table class="table">
 		<th>Parameter</th>
@@ -256,7 +290,7 @@
 		<th>Returns</th>
 		<tr>
 			<td>
-				<code>retrieveDataset</code>
+				<samp>retrieveDataset</samp>
 			</td>
 			<td>the dataset/distribution URI</td>
 			<td>

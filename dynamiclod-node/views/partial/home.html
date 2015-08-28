@@ -2,34 +2,36 @@
 	<h1 style="">{{appName}}</h1>
 </div>
 <div style="float: right"><img src="images/Streaming.svg"></div>
-<p>The amount of datasets in the world of Linked Data is growing each day. Yet, extracting and counting links in a efficient manner was one of the challenges which the community still struggles to solve. <!-- The creation of diagrams which
+<p>The amount of datasets in the world of Linked Data is growing each day. Yet, extracting and counting links in a efficient manner was one of the challenges which the community still struggles to solve. 
+	Moreover, the visualization of such links helps to demonstrate how strongly datasets are connected.
+	<!-- The creation of diagrams which
 	visualize the Data Web with a rich level of meta-data is a hard task and a crucial challenge of any analysis is to provide
 	accurate methods to analyze links between data. A second challenge is the freshness of such an analysis. Especially in the
 	case of large amount of big datasets, which are hosted in a decentralized way, detecting and counting links requires a centralized
-	index and methods that are scalable enough to keep up-to-date. --> {{appName}} closes this gap providing a service that extract and count links among RDF dump files in the streaming process. </p>
+	index and methods that are scalable enough to keep up-to-date. --> {{appName}} closes this gap providing an API that extract and count links among RDF dump files in the streaming process. Finally, the API provides structured JSON data for creation of diagrams. Our <a href="#/diagram"> diagram </a> page shows a demo using <a href="http://d3js.org/"> Data Driven Documents JS Library (D3)</a>. </p>
 	
 	
 	<div class="page-header" style="width: 600px">
 	<h3>Do you have a RDF dump file published on the web?</h3>
 </div>
 	
-	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API to verify links (indegree and outdegree) of your dump file. After streamed if your dataset contain links to external resources, they will be shown at our <a href="#/diagram"> diagram </a> page.</p>
+	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API to extract links (indegree and outdegree) of your dump file. After streamed, if your dataset contain links to external resources, they will be shown at our <a href="#/diagram"> diagram </a> page.</p>
 <p>A detailed description of this work can be found in
-	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf">this paper</a>. The basic documentation is available in our <a href="#/wiki">Wiki</a> page.</p>
+	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf",target="_blank">this paper</a>. The basic documentation is available in our <a href="#/wiki">Wiki</a> page.</p>
 <div class="page-header">
 	<h3>A brief explanation...</h3>
 </div>
 <p>{{appName}} uses Bloom filters (BF) to compare and <b>count links between RDF dump files in the streamming process.</b> How do we do that?
 	<br>
 	<ul>
-		<li>1. {{appName}} parses your dataset description file that might be in different formats such as VoID, DCAT and DataID. Then, we stream your distributions
+		<li>1. {{appName}} parses your dataset description file that might be in different serialization format such as VoID, DCAT and DataID. Then, we stream your distributions
 			(dump files) in order to extract links and compare with different Bloom filters wich contains index for other dump files.</li>
-		<li>2. We retrieve data about links (<b>void:linkset</b> format) of your dataset and we create new Bloom filters representing your dump file. Later these Bloom filters will be used to compare with other distributions.</li>
+		<li>2. We retrieve RDF data about links (<b>void:linkset</b> format) of your dataset and we create new Bloom filters representing your dump file. Later these Bloom filters will be used to compare your dump file with other distributions.</li>
 		<!--<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>-->
 		<li>3. You can use a REST API to retrieve links indegree and outdegree of your dump files.</li>
 	</ul>
 </p>
-<p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use add datasets to {{appName}}.</p> 
+<p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use add datasets to {{appName}}. After that, go to our <a href="#/diagram"> diagram </a> page to vizualise the linked resources.</p> 
 
 <!--you can use to add your dataset, retrieve links and a customized diagram.</p>-->
 <div class="page-header">
@@ -38,7 +40,7 @@
 	<img width="90%" alt="" src="images/graph.png">
 </div>
 </div>Our API creates customized output for <a href="http://d3js.org/"> Data Driven Documents JS Library (D3)</a> to create a cloud-based diagram. We provide an online demo at our <a href="#/diagram"> diagram </a> webpage. 
-<div class="page-header">
+<div class="page-header" style="width: 50%">
 	<h3>How fast and reliable is {{appName}}?</h3>
 </div>
 <div>The following table shows 5 experiments. We added the 48 English <a href="http://downloads.dbpedia.org/3.9/en/">DBpedia distributions (dump files)</a> and counted links among them. Then, we added all 358 vocabularies available in
@@ -113,7 +115,7 @@
 			<td>0.999998316</td>
 			<td>00:04:04</td>
 		</tr>
-	</table>We are not the counting time to stream each dump file, only the time to compare and count links.</div>
+	</table>We are not the considering the time to stream each dump file, only the time to compare and extract links.</div>
 <!--div class="page-header">
 	<h3>How can I see a customized cloud for my dataset?</h3>
 </div>
@@ -127,31 +129,31 @@
 <div class="page-header">
 	<h3>How can I add dataset to {{appName}}?</h3>
 </div>
-<div>It's simple. You can add a dataset using our API, and you need to specify what's the file format.
-	<br>For instance, to add a file "http://myDomain.org/void.ttl" in turtle format, you must access:
+<div>It's simple. You can add a dataset using our API, and you need to specify what's the serialization file format.
+	<br>For instance, to add a file "http://myDomain.org/void.ttl" in turtle format, you shoould access:
 	<br>
-	<code>http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
+	<code>{{serverURL}}?addDataset=http://myDomain.org/void.ttl&rdfFormat=ttl</code>
 	<br>The
 	<code>addDataset</code> parameter accepts VoID, DCAT and DataID descriptions. {{appName}} request the header "Accept: application/rdf+xml"
-	in order to retrive data in RDF format. The <code>rdfFormat</code> parameter accepts <b>"nt"</b>, <b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <code>addDataset</code> parameter.
+	in order to retrive data in RDF format, thus you might add CKAN's addresses as well. The <code>rdfFormat</code> parameter accepts <b>"nt"</b>, <b>"ttl"</b>, or <b>"xmlrdf"</b> and is the format of the <code>addDataset</code> parameter.
 	<p>Our <a href="#/wiki">Wiki</a> has the necessary documentation that you need to add datasets in to the cloud.</p>
 </div>
 <div class="page-header">
-	<h3>How to check id my dataset was successfully added?</h3>
+	<h3>How to check whether my dataset was successfully added?</h3>
 </div>
 <div>To check the current status of your dataset, you can access:
-	<br>http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?datasetStatus=http://myDomain.org/myDataset
+	<br>{{serverURL}}?datasetStatus=http://myDomain.org/myDataset
 	<p>
-		<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?datasetStatus=https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataidDbpediaEnglish.ttl">This example</a> shows the current status for DBpedia dataset.</p>
+		<a href="{{serverURL}}?datasetStatus=https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataidDbpediaEnglish.ttl">This example</a> shows the current status for DBpedia dataset.</p>
 </div>
 <div class="page-header">
-	<h3>How to retrieve
+	<h3>How to retrieve RDF
 		<b>void:linkset</b> data to my dataset?</h3>
 </div>
 <div>To retrieve linksets of your dataset, you can access:
-	<br>http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?retrieveDataset=http://myDomain.org/myDataset
+	<br>{{serverURL}}?retrieveDataset=http://myDomain.org/myDataset
 	<p>
-		<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api?retrieveDataset=http://downloads.dbpedia.org/3.9/en/labels_en.nt.bz2">This example</a> shows linksets for a DBpedia distribution.</p>
+		<a href="{{serverURL}}?retrieveDataset=http://downloads.dbpedia.org/3.9/en/labels_en.nt.bz2">This example</a> shows linksets for a DBpedia distribution.</p>
 </div>
 <div class="page-header">
 	<h3>How to get {{appName}}?</h3>
