@@ -501,23 +501,32 @@ function init() {
 					return "rgb(253, 174, 107)";
 				}
 			 if (d.name) return d.color; 
-			 else return "rgb(107, 174, 214)"; })
-			.on("click", function (d) {
-				
-				// vocab click
-				if(typeof d.nodes != "undefined")
-					if(d.nodes[0].isVocab){
-					return ;
-				}
-		if (d3.event.defaultPrevented) return; // click suppressed
-		// console.log("node click", d, arguments, this, expand[d.group]);
-		if(d.group_data){
-			// alert("oie");
-		   return;	
-		};
-		expand[d.group] = !expand[d.group];
-		init();
-	});
+			 else return "rgb(107, 174, 214)"; 
+			 })
+		.on("click", function (d) {
+		
+			// vocab click
+			if(typeof d.nodes != "undefined")
+				if(d.nodes[0].isVocab){
+				return ;
+			}
+			
+			if (d3.event.defaultPrevented) return; // click suppressed
+			// console.log("node click", d, arguments, this, expand[d.group]);
+			if(d.group_data){
+				// alert("oie");
+			   return;	
+			};
+			expand[d.group] = !expand[d.group];
+			init();
+		})
+		.on("contextmenu", function(data, index) {
+    		 //handle right click
+    		 //stop showing browser menu
+    		 d3.event.preventDefault();
+			//  alert(data);
+		
+		});
 
 		var text = g.append("foreignObject")
 		.attr('width', function (d) {
