@@ -18,6 +18,9 @@ var level = 4;
 
 var svgContainer;
 
+var linkColor;
+
+
 
 //start grouping functions
 
@@ -224,6 +227,13 @@ function makeGraph(param) {
 	var color = d3.scale.category20();
 
 	var nodeMap = {};
+	
+	if($('#invalidLinks').is(":checked")){
+		linkColor = "rgb(255, 0, 0)";
+	}
+	else
+		linkColor = "rgb(253, 141, 60)";
+	
 
 	$.post(requestLink,
 		function (circleData) {
@@ -413,15 +423,15 @@ function init() {
 		.attr("y2", function (d) { return d.target.y; })
 		.style("stroke-width", function (d) { return 2.3; })
 		.style("stroke", function (d) {
-			if (d.value > 0)
-				return "rgb(253, 141, 60)";
+			if (d.value != "S")
+				return linkColor;
 			else
 				return "#666";
 		})
 		.attr("class", "link")
 		.on("mouseover", function (d) {
 			d3.select(this).style("stroke", "red");
-			if (d.value > 0)
+			if (d.value != "S")
 				tooltip.text("Links: " + d.value);
 			else
 				tooltip.text("a dcat:subset .");
@@ -438,8 +448,8 @@ function init() {
 				+ "px");
 		}).on("mouseout", function () {
 			d3.select(this).style("stroke", function (d) {
-				if (d.value > 0)
-					return "rgb(253, 141, 60)";
+				if (d.value != "S")
+					return linkColor;
 				else
 					return "#666";
 		});
