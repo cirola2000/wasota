@@ -24,7 +24,8 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     $scope.apiAddress = $scope.serverURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format;
     $scope.showApiCall = true;
 
-    $http.get(proxyURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format).
+    $http.get("/partial/proxy?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format).
+    // $http.get(proxyURL + "?addDataset=" + $scope.datasetAddress + "&rdfFormat=" + $scope.choosenFormat.format).
       then(function (response) {
       if (typeof response.data.error == 'undefined') {
         $scope.apiResponse = response.data.coreMsg;
@@ -52,7 +53,8 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
     $scope.showApiStatusCall = true;
     $scope.apiStatusCall = $scope.serverURL + "?datasetStatus=" + $scope.datasetAddress;
 
-    $http.get(proxyURL + "?datasetStatus=" + $scope.datasetAddress).
+    $http.get("/partial/proxy?datasetStatus=" + $scope.datasetAddress).
+    // $http.get(proxyURL + "?datasetStatus=" + $scope.datasetAddress).
       then(function (response) {
       // console.log(response.data.distributions);
       // $scope.apiParserMessage = response.data.resp.parserMsg;

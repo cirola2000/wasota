@@ -1,68 +1,243 @@
 <script src="javascripts/jquery.dataTables.min.js"></script>
 <script src="javascripts/dataTables.bootstrap.js"></script>
+<script src="javascripts/d3.v3.min.js"></script>
+<!--<script src="javascripts/histogram-chart.js"></script>-->
+<script src="javascripts/pie-chart.js"></script>
+<style type="text/css">
+/*svg {
+   font: 10px sans-serif;
+}
+.bar {
+   stroke: white;
+   fill: steelBlue;
+}
+.axis path, .axis line {
+   fill: none;
+   stroke: #000;
+   shape-rendering: crispEdges;
+}
+rect.mover {
+   stroke: lightSteelBlue;
+   stroke-opacity: 0.3;
+   fill: lightSteelBlue;
+   fill-opacity: 0.1;
+}*/
+
+/*body {
+  font: 10px sans-serif;
+}*/
+
+.arc path {
+  stroke: #fff;
+}
+
+
+</style>
 <div class="page-header">
-    <h1>{{appName}} Statistics</h1>
+  <h1>{{appName}} Statistics</h1>
 </div>
-
-<p>Here you can find a list of streamed datasets and vocabularies. </p>
-
+<p>Here you can find a list of streamed datasets and vocabularies.</p>
 <p>Datasets: {{stats.numberOfDatasets}}</p>
 <p>Vocabularies: {{stats.numberOfVocabularies}}</p>
 <p>Triples: {{stats.numberOfTriples}}</p>
-
 <div class="page-header">
-    <h3>List of streamed datasets: </h3>
+  <h3>List of streamed datasets:</h3>
 </div>
-
 <table id="distributions" class="table table-striped table-bordered" cellspacing="0" style="max-width: 100%; table-layout: fixed; word-wrap:break-word;">
-    <thead>
-        <tr>
-            <th>Dataset</th>
-            <th>Dump File</th>
-            <th style="width: 180px">Status</th>
-            <th style="width: 160px">Last Time Streamed</th>
-            <th style="width: 125px">API Response</th>
-        </tr>
-    </thead>
-   
-    <tbody></tbody>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Dump File</th>
+      <th style="width: 180px">Status</th>
+      <th style="width: 160px">Last Time Streamed</th>
+      <th style="width: 165px">Options</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<div class="page-header">
+  <h3>List of streamed vocabularies:</h3>
+</div>
+<table id="ontologies" class="table table-striped table-bordered" cellspacing="0" style="max-width: 100%; table-layout: fixed; word-wrap:break-word;">
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Dump File</th>
+      <th style="width: 180px">Status</th>
+      <th style="width: 160px">Last Time Streamed</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
 </table>
 
-<div class="page-header">
-    <h3>List of streamed vocabularies: </h3>
+<!-- Compare dataset modal -->
+<div id="datasetCompareModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Comparing dataset:</b> <i>{{datasetTitle}}</i></h4>
+      </div>
+      <div class="modal-body">
+        <p> Here you can compare the dataset <i>{{datasetTitle}}</i> with multiple others datasets regarding to number of links and similarities.
+        <p>Dataset Title: {{datasetTitle}}</p>
+        <p>Distribution Title: {{distributionTitle}}</p>
+        <p>Dump file: {{modalDataset}}</p>
+        Compare the top <input ng-change="getDatasetSimilarityStatistics()" type="text" ng-model="top" size="3"> regarding to <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalOptions"></select> .
+        <table class="table" style="margin-top: 20px">
+          <th>Dataset</th>
+          <th>{{option.label}}</th>
+          <th ng-show="(option.value!='strength') && (option.value!='links')">Options</th>
+          <tr ng-repeat="val in modalTopLinks">
+            <td>
+              <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
+            </td>
+            <td>{{ val[1] }}</td>
+            <td ng-show="(option.value!='strength') && (option.value!='links')">
+              <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4], val[0])">List</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<table id="ontologies" class="table table-striped table-bordered" cellspacing="0" style="max-width: 100%; table-layout: fixed; word-wrap:break-word;">
-    <thead>
-        <tr>
-            <th>Dataset</th>
-            <th>Dump File</th>
-            <th style="width: 180px">Status</th>
-            <th style="width: 160px">Last Time Streamed</th>
-        </tr>
-    </thead>
-   
-    <tbody></tbody>
-</table>
+
+
+<!-- Table modal -->
+<div id="chartModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Comparing:</b> <i>{{distributionTitle}}</i> <b>with</b> <i>{{similarityTableDataset2Title}}</i></h4>
+      </div>
+      <div class="modal-body">
+        <!--<p>Dump file 1: {{distributionTitle}}</p>
+        <p>Dump file 2: {{similarityTableDataset2Title}}</p>-->
+        <table class="table" style="margin-top: 20px">
+          <th>Predicate </th>
+          <th> {{distributionTitle}}</th>
+          <th>{{similarityTableDataset2Title}}</th>
+          <tr ng-repeat="val in similarityTableData">
+            <td>
+              {{val.val}}
+            </td>
+            <td>              
+              {{val.dataset1}}
+            <td>
+              {{val.dataset2}}
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dataset Detail -->
+<div id="datasetDetailModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Dataset: {{datasetTitle}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>Dataset Title: {{datasetTitle}}</p>
+        <p>Distribution Title: {{distributionTitle}}</p>
+        <p>Dump file: {{modalDataset}}</p>
+        <input ng-change="getDatasetStatistics()" type="text" ng-model="top" size="3">
+        <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalOptions"></select>
+        <table class="table" style="margin-top: 20px">
+          <th>Dataset</th>
+          <th>{{option.label}}</th>
+          <th>Options</th>
+          <tr ng-repeat="val in modalTopLinks">
+            <td>
+              <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
+            </td>
+            <td>{{ val[1] }}</td>
+            <td>
+              <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4])">List</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script>
-    $(document).ready(function() {
-        $('#ontologies').dataTable({
-                "searching": false,
-                "ordering":  false,
-   		        "processing": true,
-                "serverSide": true,
-                "ajax": "/partial/proxy/tablesOntologies"    		
-    	});
-    } );
-   $(document).ready(function() {
-        $('#distributions').dataTable({
-                "searching": false,
-                "ordering":  false,
-   		        "processing": true,
-                "serverSide": true,
-                "ajax": "/partial/proxy/tables"    		
-    	});
-    } );
+  $(document).ready(function() {
+     $('#ontologies').dataTable({
+              "searching": false,
+              "ordering":  false,
+  	        "processing": true,
+              "serverSide": true,
+              "ontologies": true,
+              "ajax": {
+                  "url": "/partial/proxy/list",
+                  "data": function ( d ) {
+                  d.isVocabulary = true;
+                  }
+              }		
+  	   });
+  
+     var table = $('#distributions').dataTable({
+              "searching": true,
+              "ordering":  false,
+              "processing": true,
+              "serverSide": true,
+              "ontologies":  false,
+              "ajax": {
+                  "url": "/partial/proxy/list",
+                  "data": function ( d ) {
+                  d.isVocabulary = false;
+                  }
+              },
+              "columnDefs": [ {
+              "targets": -1,
+              "data": null,
+              // "defaultContent": "<button>Compare datasets</button> <button id='detail'>Dataset Detail</button>"
+              "defaultContent": "<button>Compare datasets</button>"
+           }
+            ],
+           
+      });
+     
+      $('#distributions tbody').on( 'click', 'button', function () {
+         var scope = angular.element("#datasetCompareModal").scope();
+         scope.modalDataset = $(this).parents('tr').children("td:eq(1)").text(); 
+         scope.getDatasetSimilarityStatistics();
+         scope.$apply();
+         
+         $('#datasetCompareModal').modal({
+          show: 'false'
+      }); 
+    });
+    
+    
+      $('#distributions #detail').on( 'click', 'button', function () {
+         var scope = angular.element("#datasetDetailModal").scope();
+         scope.modalDataset = $(this).parents('tr').children("td:eq(1)").text(); 
+         scope.getDatasetStatistics();
+         scope.$apply();
+         
+         $('#datasetDetailModal').modal({
+          show: 'false'
+      }); 
+    });
+  });
 </script>

@@ -19,14 +19,10 @@
 </script>
   <script src="javascripts/controllers/diagramCtrl.js">
 </script>
-
-
-<!--<script src="javascripts/d3.v3.min.js"></script>
+  <!--<script src="javascripts/d3.v3.min.js"></script>
 <script src="javascripts/jstree/src/jstree.js"></script>
 <script src="javascripts/jstree/src/jstree.checkbox.js"></script>
 <script src="javascripts/diagram.js"></script>-->
-
-
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
@@ -56,10 +52,18 @@
                         Wiki
                </a>
             </li>
-            <li>
-              <a href="#/stats" style="color:black">
+            <li class="dropdown">
+              <a style="color:black; cursor: pointer" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Statistics
                </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li>
+                  <a href="#/stats">Inserted Datasets</a>
+                </li>
+                <li>
+                  <a href="#/similarities">Dataset Similarities</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#/diagram" style="color:black">
