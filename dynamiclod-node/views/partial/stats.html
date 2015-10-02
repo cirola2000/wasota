@@ -4,7 +4,7 @@
 <!--<script src="javascripts/histogram-chart.js"></script>-->
 <script src="javascripts/pie-chart.js"></script>
 <style type="text/css">
-/*svg {
+  /*svg {
    font: 10px sans-serif;
 }
 .bar {
@@ -22,16 +22,13 @@ rect.mover {
    fill: lightSteelBlue;
    fill-opacity: 0.1;
 }*/
-
-/*body {
+  /*body {
   font: 10px sans-serif;
 }*/
-
-.arc path {
-  stroke: #fff;
-}
-
-
+  
+  .arc path {
+    stroke: #fff;
+  }
 </style>
 <div class="page-header">
   <h1>{{appName}} Statistics</h1>
@@ -43,6 +40,29 @@ rect.mover {
 <div class="page-header">
   <h3>List of streamed datasets:</h3>
 </div>
+<div style="margin-bottom: 20px; margin-top: 20px;">
+  <a style="cursor: pointer " id="advancedSearch"> Advanced Search </a>
+  <div id="advancedSearchForm" class="well hidden">
+    <div class="form-group">
+          <label for="searchSubject">Subject</label>
+          <input class="form-control" id="searchSubject" type="text" size="50">
+          <p class="help-block">E.g. http://dbpedia.org/resource/Hawaii .</p>
+     </div>
+     <div class="form-group">
+          <label for="searchProperty">Property</label>
+
+          <input class="form-control" id="searchProperty" type="text" size="50">
+          <p class="help-block">E.g. http://open.vocab.org/terms/defines .</p>          
+     </div>
+     <div class="form-group">
+          <label for="searchObject">Object</label>
+
+          <input class="form-control" id="searchObject" type="text" size="50">
+          <p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           
+     </div>
+     <button onclick="updateTable()">Update Table</button>
+  </div>
+</div>
 <table id="distributions" class="table table-striped table-bordered" cellspacing="0" style="max-width: 100%; table-layout: fixed; word-wrap:break-word;">
   <thead>
     <tr>
@@ -50,7 +70,7 @@ rect.mover {
       <th>Dump File</th>
       <th style="width: 180px">Status</th>
       <th style="width: 160px">Last Time Streamed</th>
-      <th style="width: 165px">Options</th>
+      <th style="width: 175px">Options</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -79,25 +99,28 @@ rect.mover {
         <h4 class="modal-title"><b>Comparing dataset:</b> <i>{{datasetTitle}}</i></h4>
       </div>
       <div class="modal-body">
-        <p> Here you can compare the dataset <i>{{datasetTitle}}</i> with multiple others datasets regarding to number of links and similarities.
-        <p>Dataset Title: {{datasetTitle}}</p>
-        <p>Distribution Title: {{distributionTitle}}</p>
-        <p>Dump file: {{modalDataset}}</p>
-        Compare the top <input ng-change="getDatasetSimilarityStatistics()" type="text" ng-model="top" size="3"> regarding to <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalOptions"></select> .
-        <table class="table" style="margin-top: 20px">
-          <th>Dataset</th>
-          <th>{{option.label}}</th>
-          <th ng-show="(option.value!='strength') && (option.value!='links')">Options</th>
-          <tr ng-repeat="val in modalTopLinks">
-            <td>
-              <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
-            </td>
-            <td>{{ val[1] }}</td>
-            <td ng-show="(option.value!='strength') && (option.value!='links')">
-              <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4], val[0])">List</a>
-            </td>
-          </tr>
-        </table>
+        <p> Here you can compare the dataset <i>{{datasetTitle}}</i> with multiple datasets regarding to number of links and
+          similarities.
+          <p>Dataset Title: {{datasetTitle}}</p>
+          <p>Distribution Title: {{distributionTitle}}</p>
+          <p>Dump file: {{dumpFile}}</p>
+          Compare the top
+          <input ng-change="getDatasetSimilarityStatistics()" type="text" ng-model="top" size="3"> regarding to
+          <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalSimilaritiesOptions"></select> .
+          <table class="table" style="margin-top: 20px">
+            <th>Dataset</th>
+            <th>{{option.label}}</th>
+            <th ng-show="(option.value!='strength') && (option.value!='links')">Options</th>
+            <tr ng-repeat="val in modalTopLinks">
+              <td>
+                <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
+              </td>
+              <td>{{ val[1] }}</td>
+              <td ng-show="(option.value!='strength') && (option.value!='links')">
+                <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4], val[0])">Details</a>
+              </td>
+            </tr>
+          </table>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -108,7 +131,7 @@ rect.mover {
 
 
 
-<!-- Table modal -->
+<!-- Dataset Similarities table compare modal -->
 <div id="chartModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -127,11 +150,11 @@ rect.mover {
             <td>
               {{val.val}}
             </td>
-            <td>              
-              {{val.dataset1}}
             <td>
-              {{val.dataset2}}
-            </td>
+              {{val.dataset1}}
+              <td>
+                {{val.dataset2}}
+              </td>
           </tr>
         </table>
       </div>
@@ -142,8 +165,8 @@ rect.mover {
   </div>
 </div>
 
-<!-- Dataset Detail -->
-<div id="datasetDetailModal" class="modal fade" role="dialog">
+<!-- Dataset Details -->
+<div id="datasetDetailsModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -153,21 +176,19 @@ rect.mover {
       <div class="modal-body">
         <p>Dataset Title: {{datasetTitle}}</p>
         <p>Distribution Title: {{distributionTitle}}</p>
-        <p>Dump file: {{modalDataset}}</p>
-        <input ng-change="getDatasetStatistics()" type="text" ng-model="top" size="3">
-        <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalOptions"></select>
+        <p>Dump file: {{dumpFile}}</p>
+        <input ng-change="getDatasetDetailsStatistics()" type="text" ng-model="detailsTop" size="3">
+        <select ng-model="optionDetails" ng-change="getDatasetDetailsStatistics()" ng-options="item.label for item in modalDetailsOptions"></select>
         <table class="table" style="margin-top: 20px">
           <th>Dataset</th>
-          <th>{{option.label}}</th>
-          <th>Options</th>
+          <th>{{optionDetails.label}}</th>
           <tr ng-repeat="val in modalTopLinks">
             <td>
-              <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
+               {{ val[0] }} 
             </td>
-            <td>{{ val[1] }}</td>
             <td>
-              <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4])">List</a>
-            </td>
+              {{ val[1] }}
+              </td>
           </tr>
         </table>
       </div>
@@ -180,6 +201,15 @@ rect.mover {
 
 
 <script>
+  
+    $('#advancedSearch').click(function (event) {
+        $('#advancedSearchForm').toggleClass('hidden show');
+    });
+  
+  var updateTable = function(){
+     $('#distributions').DataTable().ajax.reload();
+  }
+  
   $(document).ready(function() {
      $('#ontologies').dataTable({
               "searching": false,
@@ -190,7 +220,10 @@ rect.mover {
               "ajax": {
                   "url": "/partial/proxy/list",
                   "data": function ( d ) {
-                  d.isVocabulary = true;
+                      d.isVocabulary = true;
+                      d.searchSubject = $('#searchSubject').val();
+                      d.searchObject = $('#searchObject').val();
+                      d.searchProperty = $('#searchProperty').val();
                   }
               }		
   	   });
@@ -204,40 +237,40 @@ rect.mover {
               "ajax": {
                   "url": "/partial/proxy/list",
                   "data": function ( d ) {
-                  d.isVocabulary = false;
+                      d.isVocabulary = false;
+                      d.searchSubject = $('#searchSubject').val();
+                      d.searchObject = $('#searchObject').val();
+                      d.searchProperty = $('#searchProperty').val();
                   }
               },
               "columnDefs": [ {
               "targets": -1,
               "data": null,
-              // "defaultContent": "<button>Compare datasets</button> <button id='detail'>Dataset Detail</button>"
-              "defaultContent": "<button>Compare datasets</button>"
+              "defaultContent": "<button id='similarities'>Links and Similarities</button> <button id='detail'>Dataset Details</button>"
            }
-            ],
-           
+        ],   
       });
-     
+      
       $('#distributions tbody').on( 'click', 'button', function () {
+         if($(this).attr("id") == 'similarities'){
          var scope = angular.element("#datasetCompareModal").scope();
-         scope.modalDataset = $(this).parents('tr').children("td:eq(1)").text(); 
-         scope.getDatasetSimilarityStatistics();
-         scope.$apply();
-         
-         $('#datasetCompareModal').modal({
+           scope.dumpFile = $(this).parents('tr').children("td:eq(1)").text(); 
+           scope.getDatasetSimilarityStatistics();
+           scope.$apply();
+           $('#datasetCompareModal').modal({
+            show: 'false',
+        }); 
+       }
+       else{
+          var scope = angular.element("#datasetDetailsModal").scope();
+           scope.dumpFile = $(this).parents('tr').children("td:eq(1)").text(); 
+           scope.getDatasetDetailsStatistics();
+           scope.$apply();
+           $('#datasetDetailsModal').modal({
           show: 'false'
-      }); 
-    });
-    
-    
-      $('#distributions #detail').on( 'click', 'button', function () {
-         var scope = angular.element("#datasetDetailModal").scope();
-         scope.modalDataset = $(this).parents('tr').children("td:eq(1)").text(); 
-         scope.getDatasetStatistics();
-         scope.$apply();
-         
-         $('#datasetDetailModal').modal({
-          show: 'false'
-      }); 
+      });  
+       }
     });
   });
+
 </script>
