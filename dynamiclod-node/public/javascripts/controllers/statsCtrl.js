@@ -10,7 +10,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.similarityTableDataset2;
   $scope.similarityTableDataset2Title;  
   $scope.similarityTableData = [];
-
+  $scope.searchVocabularies = 2; 
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },
