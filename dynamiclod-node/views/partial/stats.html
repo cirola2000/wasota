@@ -71,7 +71,7 @@ rect.mover {
 
          <div><input id="0" value="0" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="0">Search only Vocabularies</label> </div>
          <div><input id="1" value="1" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="1">Search only Datasets</label> </div>
-         <div><input id="2" value="2" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="2">Search Datasets and Vocabularies</label></div>
+         <div><input id="2" value="2" type="radio" name="searchVocabularies" ng-model="searchVocabularies" checked> <label for="2">Search Datasets and Vocabularies</label></div>
           <!--<p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           -->
      </div>
      
@@ -212,7 +212,6 @@ rect.mover {
   }
   
   $(document).ready(function() {
-  
      var table = $('#distributions').dataTable({
               "searching": true,
               "ordering":  false,
@@ -227,6 +226,7 @@ rect.mover {
                       d.searchSubject = $('#searchSubject').val();
                       d.searchObject = $('#searchObject').val();
                       d.searchProperty = $('#searchProperty').val();
+                      d.searchVocabularies = $('input:radio[name=searchVocabularies]:checked').val();
                   }
               },
               "columnDefs": [ {
