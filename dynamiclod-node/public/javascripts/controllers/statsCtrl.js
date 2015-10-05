@@ -11,6 +11,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.similarityTableDataset2Title;  
   $scope.similarityTableData = [];
   $scope.searchVocabularies = 2; 
+  $scope.distributionList; 
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },
@@ -91,8 +92,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
     $http.get(query).then(function (response) {
       if (typeof response.data.error == 'undefined') {
         $scope.modalTopLinks = response.data.distributionList.distributions;
-        $scope.datasetTitle = response.data.distributionList.datasetTitle;
-        $scope.distributionTitle = response.data.distributionList.distributionTitle;
+        $scope.distributionList = response.data.distributionList;
       }
     });
   };

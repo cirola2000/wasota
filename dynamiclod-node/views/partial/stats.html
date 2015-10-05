@@ -75,7 +75,7 @@ rect.mover {
           <!--<p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           -->
      </div>
      
-     <button onclick="updateTable()">Update Table</button>
+     <button onclick="updateTable()">Update</button>
   </div>
 </div>
 <table id="distributions" class="table table-striped table-bordered" cellspacing="0" style="max-width: 100%; table-layout: fixed; word-wrap:break-word;">
@@ -175,14 +175,15 @@ rect.mover {
         <h4 class="modal-title">Dataset: {{datasetTitle}}</h4>
       </div>
       <div class="modal-body">
-        <p>Dataset Title: {{datasetTitle}}</p>
-        <p>Distribution Title: {{distributionTitle}}</p>
+        <p>Dataset Title: {{distributionList.datasetTitle}}</p>
+        <p>Distribution Title: {{distributionList.distributionTitle}}</p>
+        <p>Number of triples: {{distributionList.distributionTriples}}</p>
+        <p>Is vocabulary: {{distributionList.isVocabulary}}</p>
         <p>Dump file: {{dumpFile}}</p>
-        <input ng-change="getDatasetDetailsStatistics()" type="text" ng-model="detailsTop" size="3">
-        <select ng-model="optionDetails" ng-change="getDatasetDetailsStatistics()" ng-options="item.label for item in modalDetailsOptions"></select>
+        <p>Show top <input ng-change="getDatasetDetailsStatistics()" type="text" ng-model="detailsTop" size="3"> <select ng-model="optionDetails" ng-change="getDatasetDetailsStatistics()" ng-options="item.label for item in modalDetailsOptions"></select> .</p>
         <table class="table" style="margin-top: 20px">
           <th>Dataset</th>
-          <th>{{optionDetails.label}}</th>
+          <th>Number of {{optionDetails.label}}</th>
           <tr ng-repeat="val in modalTopLinks">
             <td>
                {{ val[0] }} 
