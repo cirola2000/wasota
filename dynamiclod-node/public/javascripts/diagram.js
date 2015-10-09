@@ -228,7 +228,7 @@ function makeGraph(param) {
 
 	var nodeMap = {};
 	
-	if($('#invalidLinks').is(":checked")){
+	if($('input[name=linkType]:checked').val()=="showDarkLOD"){
 		linkColor = "rgb(255, 0, 0)";
 	}
 	else

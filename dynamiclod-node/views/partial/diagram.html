@@ -37,6 +37,7 @@
 						<div><label style="font-weight: normal !important" for="showLinks"><input ng-click="showWhat='Links'" type="radio" name="linkType" checked value="showLinks" id="showLinks"> Show number of links</label></div>
 						<div><label style="font-weight: normal !important" for="showLinksStrength"><input ng-click="showWhat='Link strength'" type="radio" name="linkType" value="showLinksStrength" id="showLinksStrength"> Show link strength</label></div>
 						<div><label style="font-weight: normal !important" for="showSimilarity"><input ng-click="showWhat='Link similarity'" type="radio" name="linkType" value="showSimilarity" id="showSimilarity"> Show similarities</label></div>
+						<div><label style="font-weight: normal !important" for="showDarkLOD"><input ng-click="showWhat='Dark LOD'" type="radio" name="linkType" value="showDarkLOD" id="showDarkLOD"> Show Dark LOD</label></div>
 						<div ng-show="showWhat=='Link strength' || showWhat=='Link similarity'">{{showWhat}} range:
 							<div>
 								<input style="width: 55px" type="number" class="linkStrength" value="0.5" min="0" max="1" step="0.001" id="linkFrom">To
