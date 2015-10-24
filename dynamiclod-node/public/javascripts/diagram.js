@@ -237,6 +237,8 @@ function makeGraph(param) {
 
 	$.post(requestLink,
 		function (circleData) {
+			data = {};
+			expand = {};
 			d3.select("svg").remove();
 			data = circleData;
 			$("#loading_gif").hide();
@@ -527,6 +529,11 @@ function init() {
 				// alert("oie");
 			   return;	
 			};
+			
+			// check whether the diagram represents bad links
+			if(showingDarkLOD){
+				return;
+			}
 			expand[d.group] = !expand[d.group];
 			init();
 		})

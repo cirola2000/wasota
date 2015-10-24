@@ -73,6 +73,8 @@
 </div>
 <!--</div>-->
 <script type="text/javascript">
+	var showingDarkLOD = false;
+
 	function selectAll(){
 		if($('#selectAll').is(":checked"))
 			$('#tree').jstree("select_all");
@@ -215,6 +217,13 @@
 		addParameter("linkType", $('input[name=linkType]:checked').val());
 		addParameter("linkFrom", $('#linkFrom').val());
 		addParameter("linkTo", $('#linkTo').val());
+		
+		// check whether the diaram is showing the dark lod
+			if(($('input[name=linkType]:checked').val() == "showDarkLOD")){
+				showingDarkLOD = true;
+			}
+			else
+				showingDarkLOD = false;
 			
 		makeGraph(result);
 		}
