@@ -2,10 +2,10 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 
-var serverURL = "http://localhost:9090/dynlod";
+// var serverURL = "http://localhost:9090/LODVader";
 
-// var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod";
-
+// var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9092/LODVader";
+var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod";
 
 
 router.get('/', function (req, res, next) {

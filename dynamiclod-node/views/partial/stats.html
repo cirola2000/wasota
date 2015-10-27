@@ -35,12 +35,12 @@ rect.mover {
    }
 </style>
 <div class="page-header">
-  <h1>{{appName}} Statistics</h1>
+  <h1>{{appName}} Search and Analysis </h1>
 </div>
-<p>Here you can find a list of streamed datasets and vocabularies.</p>
-<p>Datasets: {{stats.numberOfDatasets}}</p>
-<p>Vocabularies: {{stats.numberOfVocabularies}}</p>
-<p>Triples: {{stats.numberOfTriples}}</p>
+<p>Here you can find datasets and vocabularies. Moreover, you can fetch for statistical data w.r.t. dataset similarities and top N resources.</p>
+<p>Number of datasets: {{stats.numberOfDatasets}}</p>
+<p>Number of vocabularies: {{stats.numberOfVocabularies}}</p>
+<p>Number of triples loaded: {{stats.numberOfTriples}}</p>
 <div class="page-header">
   <h3>List of streamed datasets:</h3>
 </div>
@@ -233,7 +233,7 @@ rect.mover {
               "columnDefs": [ {
               "targets": -1,
               "data": null,
-              "defaultContent": "<button id='similarities'>Links and Similarities</button> <button id='detail'>Dataset Details</button>"
+              "defaultContent": "<button id='similarities'>Links and Similarities</button> <button id='detail'>Distribution Details</button>"
            }
         ],   
       });

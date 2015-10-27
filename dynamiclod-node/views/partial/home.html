@@ -1,34 +1,51 @@
 <div class="page-header">
 	<h1 style="">{{appName}}</h1>
+	<h4 style="">LOD Visualization, Analytics and DiscovEry in Real-time.</h4>
 </div>
 <div style="float: right"><img src="images/Streaming.svg"></div>
-<p>The amount of datasets in the world of Linked Data is growing each day. Yet, extracting and counting links in a efficient manner was one of the challenges which the community still struggles to solve. 
-	Moreover, the visualization of such links helps to demonstrate how strongly datasets are connected.
-	<!-- The creation of diagrams which
-	visualize the Data Web with a rich level of meta-data is a hard task and a crucial challenge of any analysis is to provide
-	accurate methods to analyze links between data. A second challenge is the freshness of such an analysis. Especially in the
-	case of large amount of big datasets, which are hosted in a decentralized way, detecting and counting links requires a centralized
-	index and methods that are scalable enough to keep up-to-date. --> {{appName}} closes this gap providing an API that extract and count links among RDF dump files in the streaming process. Finally, the API provides structured JSON data for creation of diagrams. Our <a href="#/diagram"> diagram </a> page shows a demo using <a href="http://d3js.org/"> Data Driven Documents JS Library (D3)</a>. </p>
+<p> The Linked Open Data (LOD) cloud is in danger of becoming a black box. Simple questions such as "What kind of datasets are in the LOD cloud?", "In what way(s) are these datasets connected?" -- albeit frequently asked -- are at the moment still difficult to answer due to the lack of proper tooling support. The infrequent update of the static LOD cloud diagram adds to the current dilemma, since there is neither reliable nor timely-updated information to perform an interactive search, analysis or in particular visualization in order to gain insight into the current state of Linked Open Data. </p> 
+	<p><b>Why LODVader is so special?</b> Here, we propose a new hybrid system which combines LOD Visualisation, Analytics and DiscovEry to aid in answering the above questions. Moreover, we count valid and invalid links among datasets, creating a regular LOD diagram and a "dark LOD diagram".
+ {{appName}} is also eqquiped with a search engine, where it's fast to find subjects, properties and objects among billions of triples. Our <a href="#/diagram"> diagram </a> page shows a demo using <a href="http://d3js.org/"> Data Driven Documents JS Library (D3)</a>. </p>
 	
 	
 	<div class="page-header" style="width: 600px">
-	<h3>Do you have a RDF dump file published on the web?</h3>
+	<h3>Do you have a RDF data published on the web?</h3>
 </div>
 	
-	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API to extract links (indegree and outdegree) of your dump file. After streamed, if your dataset contain links to external resources, they will be shown at our <a href="#/diagram"> diagram </a> page.</p>
-<p>A detailed description of this work can be found in
-	<a href="http://svn.aksw.org/papers/2015/ISWC_DynLOD/public.pdf",target="_blank">this paper</a>. The basic documentation is available in our <a href="#/wiki">Wiki</a> page.</p>
+	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API. After we load all your data, you can use LODVader to:</p>
+	<ul>
+		<li>
+			Discover what datasets contains indegree/outdegree links.
+		</li>
+		<li>
+			Check your dataset in our <a href="#/diagram"> diagram </a> page.
+		</li>
+		<li>
+			Visualize our <a href="#/diagram">Dark LOD diagram</a> showing datasets brokens links.
+		</li>
+		<li>
+			Check our <a href="#/stats">Serach Module</a> to find datasets based on Subject, Properties and Objects.
+		</li>
+		<li>
+			Verify the top N data (owl:Class, rdf:type and others) of datasets.
+		</li>
+		<li>
+			Verify datasets similarity based on owl:Class, rdf:type and all predicates.
+		</li>		
+	</ul>
+<p> Also, we are working on the basic documentation is available in our <a href="#/wiki">Wiki</a> page.</p>
 <div class="page-header">
 	<h3>A brief explanation...</h3>
 </div>
 <p>{{appName}} uses Bloom filters (BF) to compare and <b>count links between RDF dump files in the streaming process.</b> How do we do that?
 	<br>
 	<ul>
-		<li>1. {{appName}} parses your dataset description file that might be in different serialization format such as VoID, DCAT and DataID. Then, we stream your distributions
-			(dump files) in order to extract links and compare with different Bloom filters which contains index for other dump files.</li>
-		<li>2. We retrieve RDF data about links (<b>void:linkset</b> format) of your dataset and we create new Bloom filters representing your dump file. Later these Bloom filters will be used to compare your dump file with other distributions.</li>
-		<!--<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>-->
-		<li>3. You can use a REST API to retrieve links indegree and outdegree of your dump files.</li>
+		<li>1. {{appName}} parses your dataset description file that might be in different formats such as VoID, DCAT and DataID. Then, we stream your RDF data
+			in order to extract links and compare with different Bloom filters which contains index for other dump files.</li>
+		<li>2. We retrieve RDF data about links (<b>void:linkset</b> format) of your dataset and we create new Bloom filters representing your dataset. Later these Bloom filters will be used to compare your datasets with previously loaded datasets.</li>
+		<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>
+		<li>4. We fetch statistical data using Jaccard Index and top N approaches. </li>
+		<li>5. You can use a REST API to retrieve links indegree and outdegree of your dump files.</li>
 	</ul>
 </p>
 <p>We provide an online demo which uses our API. Click in <a href="#/quick">"Quick Start"</a> and check how easy is to use add datasets to {{appName}}. After that, go to our <a href="#/diagram"> diagram </a> page to visualize the linked resources.</p> 
@@ -59,7 +76,6 @@
 		</th>
 		<th>Precision</th>
 		<th>F-Measure</th>
-		<th>Time</th>
 		<tr>
 			<td>1</td>
 			<td>English DBpedia</td>
@@ -69,7 +85,6 @@
 			<td>1.354</td>
 			<td>0,99999985</td>
 			<td>0,999999925</td>
-			<td>01:43:20</td>
 		</tr>
 		<tr>
 			<td>2</td>
@@ -80,7 +95,6 @@
 			<td>77</td>
 			<td>0,99999752</td>
 			<td>0.999998759</td>
-			<td>00:01:12</td>
 		</tr>
 		<tr>
 			<td>3</td>
@@ -91,7 +105,6 @@
 			<td>0</td>
 			<td>1</td>
 			<td>1</td>
-			<td>00:00:21</td>
 		</tr>
 		<tr>
 			<td>4</td>
@@ -102,7 +115,6 @@
 			<td>0</td>
 			<td>1</td>
 			<td>1</td>
-			<td>00:00:33</td>
 		</tr>
 		<tr>
 			<td>5</td>
@@ -113,19 +125,9 @@
 			<td>3</td>
 			<td>0.99999663</td>
 			<td>0.999998316</td>
-			<td>00:04:04</td>
 		</tr>
-	</table>We are not the considering the time to stream each dump file, only the time to compare and extract links.</div>
-<!--div class="page-header">
-	<h3>How can I see a customized cloud for my dataset?</h3>
-</div>
-<div>After adding you dataset, to retrieve a customized cloud diagram you can access:
-	<br>http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=http://myDomain.org/myDataset
-	<p>
-		<a href="http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/cloud.html?dataset=http://downloads.dbpedia.org/2014/commons/article_categories_commons.nt.bz2">This
-								example</a>shows a diagram for a DBpedia distribution.</p>Want more examples? Check our
-	<a href="wiki.html#diagram">Wiki
-							page</a>and find out with details how to add datasets to the cloud.</div -->
+	</table></div>
+<!--
 <div class="page-header">
 	<h3>How can I add dataset to {{appName}}?</h3>
 </div>
@@ -154,6 +156,8 @@
 	<p>
 		<a href="{{serverURL}}?retrieveDataset=http://downloads.dbpedia.org/3.9/en/labels_en.nt.bz2">This example</a> shows linksets for a DBpedia distribution.</p>
 </div>
+-->
+
 <div class="page-header">
 	<h3>How to get {{appName}}?</h3>
 </div>{{appName}} is an open-source project and it's maintained by the
