@@ -130,9 +130,13 @@ function network(data, prev, index, expand) {
 			gm[u].link_count++;
 			gm[v].link_count++;
 		}
+		
 		u = expand[u] ? nm[e.source.name] : nm[u];
 		v = expand[v] ? nm[e.target.name] : nm[v];
-		var i = (u < v ? u + "|" + v : v + "|" + u), l = lm[i] || (lm[i] = {
+		// var i = (u < v ? u + "|" + v : v + "|" + u);
+		var i = u + "|" + v ;
+		
+		l = lm[i] || (lm[i] = {
 			source: u,
 			target: v,
 			value: value,
@@ -143,6 +147,7 @@ function network(data, prev, index, expand) {
 	}
 	for (i in lm) {
 		links.push(lm[i]);
+		console.log(lm[i]);
 	}
 
 	return {
@@ -416,7 +421,12 @@ function init() {
 	    	  expand[d.group] = false; init();
 	});
 
+
+
+// creating links
 	link = linkg.selectAll("line.link").data(net.links, linkid);
+	//ciro
+	
 	link.exit().remove();
 	link.enter().append("line")
 		.attr("x1", function (d) { return d.source.x; })
@@ -603,10 +613,10 @@ function init() {
 			}
 			
 		
-		link.attr("x1", function (d) { return d.source.x; })
-			.attr("y1", function (d) { return d.source.y; })
-			.attr("x2", function (d) { return d.target.x; })
-			.attr("y2", function (d) { return d.target.y; });
+		link.attr("x1", function (d) { return d.source.x+3; })
+			.attr("y1", function (d) { return d.source.y+3; })
+			.attr("x2", function (d) { return d.target.x-3; })
+			.attr("y2", function (d) { return d.target.y-3; });
 
 
 		node.attr("transform", function (d) {

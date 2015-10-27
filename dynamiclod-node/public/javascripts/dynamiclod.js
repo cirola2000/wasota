@@ -36,7 +36,7 @@ main.factory('generalData', function() {
       // serverURL : 'http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod/api',
   
   return {
-      appName : 'Dynamic-LOD',
+      appName : 'LODVader',
       serverURL : serverURL,
       proxyUrl : "/partial/proxy" + "?serverURL=" + serverURL, 
       
