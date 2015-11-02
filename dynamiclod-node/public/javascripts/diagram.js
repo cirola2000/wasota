@@ -124,6 +124,7 @@ function network(data, prev, index, expand) {
 	}
 
 	// determine links
+	console.log();
 	for (k = 0; k < data.links.length; ++k) {
 		var e = data.links[k], u = index(e.source), v = index(e.target), value = e.value;
 		if (u != v) {
@@ -133,6 +134,7 @@ function network(data, prev, index, expand) {
 		
 		u = expand[u] ? nm[e.source.name] : nm[u];
 		v = expand[v] ? nm[e.target.name] : nm[v];
+
 		// var i = (u < v ? u + "|" + v : v + "|" + u);
 		var i = u + "|" + v ;
 		
@@ -147,7 +149,6 @@ function network(data, prev, index, expand) {
 	}
 	for (i in lm) {
 		links.push(lm[i]);
-		console.log(lm[i]);
 	}
 
 	return {
@@ -441,10 +442,13 @@ function init() {
 				return "#666";
 		})
 		.attr("class", "link")
+		.on("click", function (d) {
+			// openLinkDialog();
+		})
 		.on("mouseover", function (d) {
 			d3.select(this).style("stroke", "red");
 			if (d.value != "S")
-				tooltip.text("Links: " + d.value);
+				tooltip.text("Links: " + d.value+" (click for details)");
 			else
 				tooltip.text("a dcat:subset .");
 			return tooltip.style("visibility", "visible");

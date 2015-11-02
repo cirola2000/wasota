@@ -25,7 +25,7 @@ rect.mover {
   /*body {
   font: 10px sans-serif;
 }*/
-  
+  th.hide_me, td.hide_me {display: none;}
   .arc path {
     stroke: #fff;
   }
@@ -85,6 +85,7 @@ rect.mover {
       <th>Dump File</th>
       <th style="width: 180px">Status</th>
       <th style="width: 160px">Last Time Streamed</th>
+      <th></th>
       <th style="width: 175px">Options</th>
     </tr>
   </thead>
@@ -234,14 +235,23 @@ rect.mover {
               "targets": -1,
               "data": null,
               "defaultContent": "<button id='similarities'>Links and Similarities</button> <button id='detail'>Distribution Details</button>"
+           },{
+                "targets":  4 ,
+                "sClass": "hide_me",
+                // "visible": false,
+                // "searchable": false
            }
         ],   
       });
       
+      // $('#distributions tr > *:nth-child(4)').hide();
+      
+      // $('#distributions th > *:nth-child(4)').hide();
+      
       $('#distributions tbody').on( 'click', 'button', function () {
          if($(this).attr("id") == 'similarities'){
          var scope = angular.element("#datasetCompareModal").scope();
-           scope.dumpFile = $(this).parents('tr').children("td:eq(1)").text(); 
+           scope.dumpFile = $(this).parents('tr').children("td:eq(4)").text(); 
            scope.getDatasetSimilarityStatistics();
            scope.$apply();
            $('#datasetCompareModal').modal({
@@ -250,7 +260,7 @@ rect.mover {
        }
        else{
           var scope = angular.element("#datasetDetailsModal").scope();
-           scope.dumpFile = $(this).parents('tr').children("td:eq(1)").text(); 
+           scope.dumpFile = $(this).parents('tr').children("td:eq(4)").text(); 
            scope.getDatasetDetailsStatistics();
            scope.$apply();
            $('#datasetDetailsModal').modal({
