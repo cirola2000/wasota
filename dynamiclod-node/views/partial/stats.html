@@ -1,31 +1,9 @@
 <script src="javascripts/jquery.dataTables.min.js"></script>
 <script src="javascripts/dataTables.bootstrap.js"></script>
 <script src="javascripts/d3.v3.min.js"></script>
-<!--<script src="javascripts/histogram-chart.js"></script>-->
 <script src="javascripts/pie-chart.js"></script>
 <style type="text/css">
-  /*svg {
-   font: 10px sans-serif;
-}
-.bar {
-   stroke: white;
-   fill: steelBlue;
-}
-.axis path, .axis line {
-   fill: none;
-   stroke: #000;
-   shape-rendering: crispEdges;
-}
-rect.mover {
-   stroke: lightSteelBlue;
-   stroke-opacity: 0.3;
-   fill: lightSteelBlue;
-   fill-opacity: 0.1;
-}*/
-  /*body {
-  font: 10px sans-serif;
-}*/
-  th.hide_me, td.hide_me {display: none;}
+   th.hide_me, td.hide_me {display: none;}
   .arc path {
     stroke: #fff;
   }
@@ -112,14 +90,17 @@ rect.mover {
           <table class="table" style="margin-top: 20px">
             <th>Dataset</th>
             <th>{{option.label}}</th>
-            <th ng-show="(option.value!='strength') && (option.value!='links')">Options</th>
+            <th ng-show="(option.value!='strength')">Options</th>
             <tr ng-repeat="val in modalTopLinks">
               <td>
                 <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
               </td>
               <td>{{ val[1] }}</td>
-              <td ng-show="(option.value!='strength') && (option.value!='links')">
+              <td ng-show="(option.value!='strength') && (option.value!='links')&& (option.value!='badLinks')">
                 <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4], val[0])">Details</a>
+              </td>
+              <td ng-show="(option.value=='links') || (option.value=='badLinks')">
+                <a data-toggle="modal" style="cursor: pointer" data-target="#topNLinksModal" ng-click="createTopNModal(val[4], val[0])">Top 100</a>
               </td>
             </tr>
           </table>
@@ -166,6 +147,43 @@ rect.mover {
     </div>
   </div>
 </div>
+
+
+
+
+<!-- TOP N Links Modal-->
+<div id="topNLinksModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Top N links from:</b> <i>{{distributionTitle}}</i> <b>to</b> <i>{{similarityTableDataset2Title}}</i></h4>
+      </div>
+      <div class="modal-body">
+        <!--<p>Dump file 1: {{distributionTitle}}</p>
+        <p>Dump file 2: {{similarityTableDataset2Title}}</p>-->
+        <table class="table" style="margin-top: 20px">
+          <th>Resource</th>
+          <th>Number of Links</th>
+          <tr ng-repeat="val in topNLinksTableData">
+            <td>
+              {{val.resource}}
+            </td>
+            <td>
+              {{val.amount}}
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <!-- Dataset Details -->
 <div id="datasetDetailsModal" class="modal fade" role="dialog">
@@ -238,15 +256,9 @@ rect.mover {
            },{
                 "targets":  4 ,
                 "sClass": "hide_me",
-                // "visible": false,
-                // "searchable": false
            }
         ],   
       });
-      
-      // $('#distributions tr > *:nth-child(4)').hide();
-      
-      // $('#distributions th > *:nth-child(4)').hide();
       
       $('#distributions tbody').on( 'click', 'button', function () {
          if($(this).attr("id") == 'similarities'){

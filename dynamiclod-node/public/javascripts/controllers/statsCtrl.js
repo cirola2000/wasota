@@ -10,11 +10,13 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.similarityTableDataset2;
   $scope.similarityTableDataset2Title;  
   $scope.similarityTableData = [];
+  $scope.topNLinksTableData = [];
   $scope.searchVocabularies = 2; 
   $scope.distributionList; 
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },
+    { "label": "Number of bad links", "value": "badLinks" },
     { "label": "Number of links (normalized)", "value": "strength" },
     { "label": "Similarity by predicates", "value": "predicates" },
     { "label": "Similarity by rdf:type", "value": "type" },
@@ -85,6 +87,29 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
     });   
   }
   
+  
+  
+  
+    $scope.createTopNModal = function (datasetSimilarity2ID, datasetSimilarity2Title) {
+    $scope.similarityTableDataset2=datasetSimilarity2ID;
+    $scope.similarityTableDataset2Title=datasetSimilarity2Title;
+    $scope.topNLinksTableData = [];
+    var query = "/partial/proxy?topNLinks&compareDataset1=" + $scope.similarityTableDataset1 + "&compareDataset2=" + $scope.similarityTableDataset2 + "&type=" + $scope.option.value +  "&topN=10" ;
+    $http.get(query).then(function (response) {
+      if (typeof response.data.error == 'undefined') {
+        var data = response.data.distributionList.topNLinks;
+        for(var i in data){
+           $scope.topNLinksTableData.push({
+            "resource": data[i].url,
+            "amount": data[i].amount,
+          }); 
+        }
+      }
+    });   
+  }
+  
+  
+
   
   $scope.getDatasetDetailsStatistics = function () {
     var query = "/partial/proxy?datasetDetailsStatistics&dumpFile=" + 

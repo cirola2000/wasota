@@ -4,29 +4,22 @@ var router = express.Router();
 
 
 // var serverURL = "http://localhost:9090/LODVader";
-var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9091/LODVader";
+var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9092/LODVader";
 // var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod";
 
 
 router.get('/', function (req, res, next) {
 
-   var queryUrl = req.url.replace('/','');
-  queryUrl = queryUrl.replace('?','&');
-  var query = serverURL+"/api?" + queryUrl;    
-
-  console.log( "ali"+query);
-  // temporary solution
-  // if (typeof req.query.rdfFormat != 'undefined') {
-  //   query = query + "&rdfFormat=" + req.query.rdfFormat;
-  // }
-  
+  var queryUrl = req.url.replace('/', '');
+  queryUrl = queryUrl.replace('?', '&');
+  var query = serverURL + "/api?" + queryUrl;
 
   request(query, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      try{
-        
-      res.send(JSON.parse(body.toString()));
-      }catch (E){
+      try {
+
+        res.send(JSON.parse(body.toString()));
+      } catch (E) {
         console.log(E);
       }
     }
@@ -38,12 +31,11 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/list', function (req, res, next) {  
-  // var query = serverURL+"/api?listDistributions&skip=" + req.query.start + "&limit=" + req.query.length;
   
-  var queryUrl = req.url.replace('/','');
-  queryUrl = queryUrl.replace('?','&');
-  var query = serverURL+"/api?" + queryUrl;      
-    // return;
+  var queryUrl = req.url.replace('/', '');
+  queryUrl = queryUrl.replace('?', '&');
+  var query = serverURL + "/api?" + queryUrl;      
+
   var resp;
   var data;
   var total;
@@ -53,9 +45,9 @@ router.get('/list', function (req, res, next) {
       resp = JSON.parse(body);
       
       // add a column for API response
-      for (var i in resp.distributionList.distributions){
+      for (var i in resp.distributionList.distributions) {
         resp.distributionList.distributions[i].push(
-          "<a target=\"_blank\" class=\"glyphicon glyphicon-link\" href=\" "+serverURL+"/api?datasetStatus="+ resp.distributionList.distributions[i][0]+" \"></a>");
+          "<a target=\"_blank\" class=\"glyphicon glyphicon-link\" href=\" " + serverURL + "/api?datasetStatus=" + resp.distributionList.distributions[i][0] + " \"></a>");
       }
       data = resp.distributionList.distributions;
       total = resp.distributionList.totalDistributions;
@@ -69,9 +61,9 @@ router.get('/list', function (req, res, next) {
 
 
 router.post('/ResourceTree', function (req, res, next) {
-  
-  var query = serverURL+"/ResourceTree";
-  if(req.query.linkedDatasets)
+
+  var query = serverURL + "/ResourceTree";
+  if (req.query.linkedDatasets)
     query = query + "?linkedDatasets=true";
   var resp;
 
@@ -89,11 +81,11 @@ router.post('/ResourceTree', function (req, res, next) {
 
 
 router.post('/CreateD3JSONFormat2', function (req, res, next) {
-  
+
   var query = serverURL;
   var resp;
 
-  request(query+req.url, function (error, response, body) {
+  request(query + req.url, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       // console.log(body);
       resp = JSON.parse(body);
@@ -106,7 +98,7 @@ router.post('/CreateD3JSONFormat2', function (req, res, next) {
 });
 
 router.get('/GetServerURL', function (req, res, next) {
-  res.send({"serverURL":serverURL});
+  res.send({ "serverURL": serverURL });
 });
 
 
