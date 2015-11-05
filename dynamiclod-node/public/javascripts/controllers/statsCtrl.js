@@ -3,6 +3,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.appName = $generalData.appName;
   $scope.serverURL = $generalData.serverURL;
   $scope.dumpFile = "";
+  $scope.dumpFileURL = "";
   $scope.top = 10;
   $scope.detailsTop = 10;
   $scope.datasetTitle;

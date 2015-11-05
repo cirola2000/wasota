@@ -98,7 +98,7 @@
           similarities.
           <p>Dataset Title: {{datasetTitle}}</p>
           <p>Distribution Title: {{distributionTitle}}</p>
-          <p>Dump file: {{dumpFile}}</p>
+          <p>Dump file: {{dumpFileURL}}</p>
           Compare the top
           <input ng-change="getDatasetSimilarityStatistics()" type="text" ng-model="top" size="3"> regarding to
           <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalSimilaritiesOptions"></select> .
@@ -213,7 +213,8 @@
         <p>Distribution Title: {{distributionList.distributionTitle}}</p>
         <p>Number of triples: {{distributionList.distributionTriples}}</p>
         <p>Is vocabulary: {{distributionList.isVocabulary}}</p>
-        <p>Dump file: {{dumpFile}}</p>
+        <p>VoID Linkset description: <a target="_blank" href="{{distributionList.rdfURL}}" style="width:400px">{{distributionList.rdfURL}}</a></p>
+        <p>Dump file: {{dumpFileURL}}</p>
         <p>Show top <input ng-change="getDatasetDetailsStatistics()" type="text" ng-model="detailsTop" size="3"> <select ng-model="optionDetails" ng-change="getDatasetDetailsStatistics()" ng-options="item.label for item in modalDetailsOptions"></select> .</p>
         <table class="table" style="margin-top: 20px">
           <th>Dataset</th>
@@ -291,6 +292,7 @@
          if($(this).attr("id") == 'similarities'){
          var scope = angular.element("#datasetCompareModal").scope();
            scope.dumpFile = $(this).parents('tr').children("td:eq(4)").text(); 
+           scope.dumpFileURL = $(this).parents('tr').children("td:eq(1)").text(); 
            scope.getDatasetSimilarityStatistics();
            scope.$apply();
            $('#datasetCompareModal').modal({
@@ -300,6 +302,7 @@
        else{
           var scope = angular.element("#datasetDetailsModal").scope();
            scope.dumpFile = $(this).parents('tr').children("td:eq(4)").text(); 
+           scope.dumpFileURL = $(this).parents('tr').children("td:eq(1)").text(); 
            scope.getDatasetDetailsStatistics();
            scope.$apply();
            $('#datasetDetailsModal').modal({
