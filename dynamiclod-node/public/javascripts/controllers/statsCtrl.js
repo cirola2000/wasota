@@ -13,6 +13,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.topNLinksTableData = [];
   $scope.searchVocabularies = 2; 
   $scope.distributionList; 
+  $scope.searchStatus = 0;
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },

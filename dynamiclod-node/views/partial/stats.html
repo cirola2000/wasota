@@ -42,6 +42,7 @@
           <input class="form-control" id="searchObject" type="text" size="50">
           <p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam </p>           
      </div>
+     <div>
      <div class="form-group">
          <div>
            <label>Type of search:</label>
@@ -52,10 +53,23 @@
          <div><input id="2" value="2" type="radio" name="searchVocabularies" ng-model="searchVocabularies" checked> <label for="2">Search Datasets and Vocabularies</label></div>
           <!--<p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           -->
      </div>
+     <div class="form-group">
+     <!--<div style="top:-120px; left: 370px; position: relative" class="form-group">-->
+         <div>
+           <label>Status:</label>
+         </div>
+         <div><input id="searchStatus0" value="0" type="radio" name="searchStatus" ng-model="searchStatus" checked> <label for="searchStatus0">Done</label> </div>
+         <div><input id="searchStatus1" value="1" type="radio" name="searchStatus" ng-model="searchStatus"> <label for="searchStatus1">Waiting to Stream</label> </div>
+         <div><input id="searchStatus2" value="2" type="radio" name="searchStatus" ng-model="searchStatus"> <label for="searchStatus2">Error</label> </div>
+     </div>
+     </div>
      
      <button onclick="updateTable()">Update</button>
   </div>
 </div>
+
+
+<!-- LIST -->
 <table id="distributions" class="table table-striped table-bordered" cellspacing="0" style="max-width: 100%; table-layout: fixed; word-wrap:break-word;">
   <thead>
     <tr>
@@ -65,6 +79,7 @@
       <th style="width: 160px">Last Time Streamed</th>
       <th></th>
       <th style="width: 175px">Options</th>
+      <th></th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -233,6 +248,14 @@
   
   $(document).ready(function() {
      var table = $('#distributions').dataTable({
+       "fnRowCallback": function(nRow, aData, iDisplayIndex){
+        if($("td:eq(2)",nRow).html() == "ERROR"){
+           var statusMsg = $("td:eq(2)",nRow).html();
+           var errorMsg = $("td:eq(5)",nRow).html();
+           var html = statusMsg+"<a data-toggle=\"tooltip\" title=\" "+errorMsg+"\"> <i class=\"glyphicon glyphicon-exclamation-sign\"></i> </a>";
+           $("td:eq(2)",nRow).html(html);
+        }
+       },
               "searching": true,
               "ordering":  false,
               "processing": true,
@@ -247,6 +270,7 @@
                       d.searchObject = $('#searchObject').val();
                       d.searchProperty = $('#searchProperty').val();
                       d.searchVocabularies = $('input:radio[name=searchVocabularies]:checked').val();
+                      d.searchStatus = $('input:radio[name=searchStatus]:checked').val();
                   }
               },
               "columnDefs": [ {
@@ -255,6 +279,9 @@
               "defaultContent": "<button id='similarities'>Links and Similarities</button> <button id='detail'>Distribution Details</button>"
            },{
                 "targets":  4 ,
+                "sClass": "hide_me",
+           },{
+                "targets":  5 ,
                 "sClass": "hide_me",
            }
         ],   
