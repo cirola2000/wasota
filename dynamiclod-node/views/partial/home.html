@@ -3,8 +3,8 @@
 	<h4 style="">LOD Visualization, Analytics and DiscovEry in Real-time.</h4>
 </div>
 <div style="float: right"><img src="images/Streaming.svg"></div>
-<p> The Linked Open Data (LOD) cloud is in danger of becoming a black box. Simple questions such as "What kind of datasets are in the LOD cloud?", "In what way(s) are these datasets connected?" -- albeit frequently asked -- are at the moment still difficult to answer due to the lack of proper tooling support. The infrequent update of the static LOD cloud diagram adds to the current dilemma, since there is neither reliable nor timely-updated information to perform an interactive search, analysis or in particular visualization in order to gain insight into the current state of Linked Open Data. </p> 
-	<p><b>Why does LODVader is so special?</b> Here, we propose a new hybrid system which combines LOD Visualisation, Analytics and DiscovEry to aid in answering the above questions. Moreover, we count valid and invalid links among datasets, creating a regular LOD diagram and a "dark LOD diagram".
+<!--p> The Linked Open Data (LOD) cloud is in danger of becoming a black box. Simple questions such as "What kind of datasets are in the LOD cloud?", "In what way(s) are these datasets connected?" -- albeit frequently asked -- are at the moment still difficult to answer due to the lack of proper tooling support. The infrequent update of the static LOD cloud diagram adds to the current dilemma, since there is neither reliable nor timely-updated information to perform an interactive search, analysis or in particular visualization in order to gain insight into the current state of Linked Open Data. </p--> 
+	<p> {{appName}} a new hybrid system which combines LOD Visualisation, Analytics and DiscovEry to aid in answering questions as "What kind of datasets are in the LOD cloud?", "In what way(s) are these datasets connected?". Moreover, {{appName}} indexes and count valid and invalid links among datasets, creating a regular LOD diagram and a "dark LOD diagram".
  {{appName}} is also equipped with a search engine, where it's fast to find subjects, properties and objects among billions of triples. Our <a href="#/diagram"> diagram </a> page shows a demo using <a href="http://d3js.org/"> Data Driven Documents JS Library (D3)</a>. </p>
 	
 	
@@ -12,7 +12,7 @@
 	<h3>Do you have a RDF data published on the web?</h3>
 </div>
 	
-	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API. After we load all your data, you can use LODVader to:</p>
+	<p> Click on <a href="#/quick">Quick Start</a> menu and check how easy is to use our API. After we index your data, you can use LODVader to:</p>
 	<ul>
 		<li>
 			Discover what datasets contains indegree/outdegree links.
@@ -27,7 +27,7 @@
 			Check our <a href="#/stats">Search Module</a> to find datasets based on Subject, Properties and Objects.
 		</li>
 		<li>
-			Verify the top N data (owl:Class, rdf:type and others) of datasets.
+			Verify the <i>top N</i> data (owl:Class, rdf:type and others) of datasets.
 		</li>
 		<li>
 			Verify datasets similarity based on owl:Class, rdf:type and all predicates.
@@ -37,14 +37,14 @@
 <div class="page-header">
 	<h3>A brief explanation...</h3>
 </div>
-<p>{{appName}} uses Bloom filters (BF) to compare and <b>count links between RDF distributions in the streaming process.</b> How do we do that?
+<p>{{appName}} uses Bloom filters (BF) to compare, index and <b>count links between RDF distributions in the streaming process.</b> How do we do that?
 	<br>
 	<ul>
 		<li>1. {{appName}} parses your dataset description file that might be in different formats such as VoID, DCAT and DataID. Then, we stream your RDF data
-			in order to extract links and compare with different Bloom filters which contains index for other distributions.</li>
+			in order to extract resources and compare with different Bloom filters which contains index for other distributions.</li>
 		<li>2. We retrieve RDF data about links (<b>void:linkset</b> format) of your dataset and we create new Bloom filters representing your dataset. Later these Bloom filters will be used to compare your datasets with previously loaded datasets.</li>
 		<li>3. A <b>LOD-Diagram</b> is provided showing the links that we discovered of your datasets.</li>
-		<li>4. We fetch statistical data using Jaccard Index and top N approaches. </li>
+		<li>4. We fetch statistical data using Jaccard Index and <i>top N</i> approaches. </li>
 		<li>5. You can use a REST API to retrieve links indegree and outdegree of your RDF data.</li>
 	</ul>
 </p>

@@ -4,7 +4,7 @@
 <!--<h1>Quick start</h1>-->
 <p>Check whether you datasets contain links to external datasets using this online demo. You can retrieve links of your datasets in RDF (<a href="http://www.w3.org/TR/void/#linkset" target="_blank">void:linkset</a>) format.</p>
 <h2 style="margin-top: 35px">Step 1. Add your dataset address.</h2>
-<p>Paste the URL of your CKAN's dataset or the URL for your description file (<a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">DCAT</a>, <a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">VoID</a> or <a href="http://dbpedia.org/projects/dbpedia-dataid-unit" target="_blank">DATAID</a>) and choose the RDF format.</p>
+<p>Paste the URL of your CKAN's dataset or the URL for your description file (<a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">DCAT</a>, <a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">VoID</a> or <a href="http://dbpedia.org/projects/dbpedia-dataid-unit" target="_blank">DataID</a>) and choose the RDF format.</p>
 <div><input type="text" ng-model="datasetAddress" size="80"> <select ng-model="choosenFormat" ng-options="a.name for a in formats"> <option value="">-- format --</option> </select> </div>
 <div style="margin-top: 15px"><button ng-click="startAPI()">Stream File</button></div> 
 <div style="margin-top: 15px"><span ng-show="showApiCall"><p>API call: <a href="{{apiAddress}}" target="_blank">{{apiAddress}}</a></p></span></div>
@@ -15,7 +15,7 @@
 	<h5 ng-show="showLoading" class="label btn-success">Loading... </h5>
 
 <h2 style="margin-top: 25px">Step 2. Check the status.</h2>
-<p>If your dataset had already been downloaded or is still streaming, click in "Check Status" to retrieve information about dump files being processed.</p><button ng-click="checkStatus()">Check Status</button>
+<p>Click in "Check Status" to retrieve information about dump files being processed.</p><button ng-click="checkStatus()">Check Status</button>
 <div style="margin-top: 15px"  ng-show="showApiStatusResponse"><p>Check the complete API response for your dump files here: 
 	<div><a href="{{apiStatusCall}}" target="_blank">{{apiStatusCall}}</a> </div> </p>
 <!--<p>API parser message: {{apiParserMessage.message}}</p>-->
@@ -41,7 +41,7 @@
 
 
 	<h2 style="margin-top: 35px">Step 3. Access the diagram.</h2>
-	<p>Does your dataset is connected to other ones? Check our <a href="/#/diagram">diagram</a> page to get a cool diagram visualization.</p>
+	<p>Is your dataset connected to other datasets? Check our <a href="/#/diagram">diagram</a> page to get a cool diagram visualization.</p>
 	
 	<!--
 <p> Retrieve RDF data using void:Linkset format for each streamed dump file. Click in the API Link for each dump file.</p>
