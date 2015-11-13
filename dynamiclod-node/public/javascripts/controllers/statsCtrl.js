@@ -18,7 +18,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },
-    { "label": "Number of bad links", "value": "badLinks" },
+//    { "label": "Number of bad links", "value": "badLinks" },
     { "label": "Number of links (normalized)", "value": "strength" },
     { "label": "Similarity by predicates", "value": "predicates" },
     { "label": "Similarity by rdf:type", "value": "type" },
