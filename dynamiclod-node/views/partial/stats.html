@@ -49,8 +49,8 @@
          </div>
 
          <div><input id="0" value="0" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="0">Search only Vocabularies</label> </div>
-         <div><input id="1" value="1" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="1">Search only Datasets</label> </div>
-         <div><input id="2" value="2" type="radio" name="searchVocabularies" ng-model="searchVocabularies" checked> <label for="2">Search Datasets and Vocabularies</label></div>
+         <div><input id="1" value="1" type="radio" name="searchVocabularies" ng-model="searchVocabularies" checked> <label for="1">Search only Datasets</label> </div>
+         <div><input id="2" value="2" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="2">Search Datasets and Vocabularies</label></div>
           <!--<p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           -->
      </div>
      <div class="form-group">
@@ -103,7 +103,8 @@
           <input ng-change="getDatasetSimilarityStatistics()" type="text" ng-model="top" size="3"> regarding to
           <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalSimilaritiesOptions"></select> .
           <table class="table" style="margin-top: 20px">
-            <th>Dataset</th>
+          <th ng-show="(option.value!='badLinks')">Distribution</th>
+          <th ng-show="(option.value=='badLinks')">Dataset</th>
             <th>{{option.label}}</th>
             <th ng-show="(option.value!='strength')">Options</th>
             <tr ng-repeat="val in modalTopLinks">

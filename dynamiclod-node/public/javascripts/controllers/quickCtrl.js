@@ -11,7 +11,7 @@ main.controller('quickCtrl', ['$scope', '$http', 'generalData', function ($scope
 
   var proxyURL = $generalData.proxyUrl;
 
-  $scope.datasetAddress = "https://raw.githubusercontent.com/cirola2000/DynamicLOD/master/src/main/webapp/dataids_example/dataid-reuters128.ttl";
+  $scope.datasetAddress = "";
 
   $scope.startAPI = function () {
     $scope.apiResponse = {};

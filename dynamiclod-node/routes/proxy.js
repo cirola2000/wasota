@@ -4,7 +4,7 @@ var router = express.Router();
 
 
 // var serverURL = "http://localhost:9090/LODVader";
-var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9092/LODVader";
+var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9099/LODVader";
 // var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9090/dynlod";
 
 
@@ -17,7 +17,6 @@ router.get('/', function (req, res, next) {
   request(query, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       try {
-
         res.send(JSON.parse(body.toString()));
       } catch (E) {
         console.log(E);

@@ -12,7 +12,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $scope.similarityTableDataset2Title;  
   $scope.similarityTableData = [];
   $scope.topNLinksTableData = [];
-  $scope.searchVocabularies = 2; 
+  $scope.searchVocabularies = 1; 
   $scope.distributionList; 
   $scope.searchStatus = 0;
 
