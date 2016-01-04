@@ -3,22 +3,27 @@
 <script src="javascripts/d3.v3.min.js"></script>
 <script src="javascripts/pie-chart.js"></script>
 <style type="text/css">
-   th.hide_me, td.hide_me {display: none;}
+  th.hide_me,
+  td.hide_me {
+    display: none;
+  }
+  
   .arc path {
     stroke: #fff;
   }
   
- .dataTables_filter input { 
-   min-width: 300px;
-   }
+  .dataTables_filter input {
+    min-width: 300px;
+  }
 </style>
 <div class="page-header">
   <h1>{{appName}} Search and Analysis </h1>
 </div>
-<p>Here you can find datasets and vocabularies. Moreover, you can fetch for statistical data w.r.t. dataset similarities and top N resources.</p>
-<p>Number of datasets: {{stats.numberOfDatasets}}</p>
-<p>Number of vocabularies: {{stats.numberOfVocabularies}}</p>
-<p>Number of triples loaded: {{stats.numberOfTriples}}</p>
+<p>Here you can find datasets and vocabularies. Moreover, you can fetch for statistical data w.r.t. dataset similarities and
+  top N resources.</p>
+<p>Number of datasets: {{numberOfDatasets}}</p>
+<p>Number of vocabularies: {{numberOfVocabularies}}</p>
+<p>Number of triples loaded: {{numberOfTriples}}</p>
 <div class="page-header">
   <h3>List of streamed datasets:</h3>
 </div>
@@ -26,45 +31,63 @@
   <a style="cursor: pointer " id="advancedSearch"> Advanced Search </a>
   <div id="advancedSearchForm" class="well hidden">
     <div class="form-group">
-          <label for="searchSubject">Subject</label>
-          <input class="form-control" id="searchSubject" type="text" size="50">
-          <p class="help-block">E.g. http://dbpedia.org/resource/Hawaii </p>
-     </div>
-     <div class="form-group">
-          <label for="searchProperty">Property</label>
+      <label for="searchSubject">Subject</label>
+      <input class="form-control" id="searchSubject" type="text" size="50">
+      <p class="help-block">E.g. http://dbpedia.org/resource/Hawaii </p>
+    </div>
+    <div class="form-group">
+      <label for="searchProperty">Property</label>
 
-          <input class="form-control" id="searchProperty" type="text" size="50">
-          <p class="help-block">E.g. http://open.vocab.org/terms/defines </p>          
-     </div>
-     <div class="form-group">
-          <label for="searchObject">Object</label>
+      <input class="form-control" id="searchProperty" type="text" size="50">
+      <p class="help-block">E.g. http://open.vocab.org/terms/defines </p>
+    </div>
+    <div class="form-group">
+      <label for="searchObject">Object</label>
 
-          <input class="form-control" id="searchObject" type="text" size="50">
-          <p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam </p>           
-     </div>
-     <div>
-     <div class="form-group">
-         <div>
-           <label>Type of search:</label>
-         </div>
+      <input class="form-control" id="searchObject" type="text" size="50">
+      <p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam </p>
+    </div>
+    <div>
+      <div class="form-group">
+        <div>
+          <label>Type of search:</label>
+        </div>
 
-         <div><input id="0" value="0" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="0">Search only Vocabularies</label> </div>
-         <div><input id="1" value="1" type="radio" name="searchVocabularies" ng-model="searchVocabularies" checked> <label for="1">Search only Datasets</label> </div>
-         <div><input id="2" value="2" type="radio" name="searchVocabularies" ng-model="searchVocabularies"> <label for="2">Search Datasets and Vocabularies</label></div>
-          <!--<p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           -->
-     </div>
-     <div class="form-group">
-     <!--<div style="top:-120px; left: 370px; position: relative" class="form-group">-->
-         <div>
-           <label>Status:</label>
-         </div>
-         <div><input id="searchStatus0" value="0" type="radio" name="searchStatus" ng-model="searchStatus" checked> <label for="searchStatus0">Done</label> </div>
-         <div><input id="searchStatus1" value="1" type="radio" name="searchStatus" ng-model="searchStatus"> <label for="searchStatus1">Waiting to Stream</label> </div>
-         <div><input id="searchStatus2" value="2" type="radio" name="searchStatus" ng-model="searchStatus"> <label for="searchStatus2">Error</label> </div>
-     </div>
-     </div>
-     
-     <button onclick="updateTable()">Update</button>
+        <div>
+          <input id="0" value="true" type="radio" name="searchVocabularies" ng-model="searchVocabularies">
+          <label for="0">Search only Vocabularies</label>
+        </div>
+        <div>
+          <input id="1" value="false" type="radio" name="searchVocabularies" ng-model="searchVocabularies" checked>
+          <label for="1">Search only Datasets</label>
+        </div>
+        <div>
+          <input id="2" value="" type="radio" name="searchVocabularies" ng-model="searchVocabularies">
+          <label for="2">Search Datasets and Vocabularies</label>
+        </div>
+        <!--<p class="help-block">E.g. http://de.dbpedia.org/resource/Potsdam .</p>           -->
+      </div>
+      <div class="form-group">
+        <!--<div style="top:-120px; left: 370px; position: relative" class="form-group">-->
+        <div>
+          <label>Status:</label>
+        </div>
+        <div>
+          <input id="searchStatus0" value="DONE" type="radio" name="searchStatus" ng-model="searchStatus" checked>
+          <label for="searchStatus0">Done</label>
+        </div>
+        <div>
+          <input id="searchStatus1" value="WAITING_TO_STREAM" type="radio" name="searchStatus" ng-model="searchStatus">
+          <label for="searchStatus1">Waiting to Stream</label>
+        </div>
+        <div>
+          <input id="searchStatus2" value="ERROR" type="radio" name="searchStatus" ng-model="searchStatus">
+          <label for="searchStatus2">Error</label>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="updateTable()">Update</button>
   </div>
 </div>
 
@@ -91,33 +114,45 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"><b>Comparing dataset:</b> <i>{{datasetTitle}}</i></h4>
+        <h4 class="modal-title"><b>Comparing dataset:</b> <i>{{modalTopLinks.distribution.title}}</i></h4>
       </div>
       <div class="modal-body">
-        <p> Here you can compare the dataset <i>{{datasetTitle}}</i> with multiple datasets regarding to number of links and
+        <p> Here you can compare the distribution <i>{{modalTopLinks.distribution.title}}</i> with multiple distributions from other datasets regarding to number of links and
           similarities.
-          <p>Dataset Title: {{datasetTitle}}</p>
-          <p>Distribution Title: {{distributionTitle}}</p>
-          <p>Dump file: {{dumpFileURL}}</p>
-          Compare the top
-          <input ng-change="getDatasetSimilarityStatistics()" type="text" ng-model="top" size="3"> regarding to
-          <select ng-model="option" ng-change="getDatasetSimilarityStatistics()" ng-options="item.label for item in modalSimilaritiesOptions"></select> .
+          <p>Dataset Title: {{modalTopLinks.distribution.topDatasetTitle}}</p>
+          <p>Distribution Title: {{modalTopLinks.distribution.title}}</p>
+          <p>Dump file: {{modalTopLinks.distribution.downloadUrl}}</p>
+          <p>Compare the top
+          <input ng-change="getCompareList()" type="text" ng-model="top" size="3"> regarding to
+          <select ng-model="option" ng-change="getCompareList()" ng-options="item.label for item in modalSimilaritiesOptions"></select> . </p>
+          <p><label for="showDatasets"><input ng-model="showVocab"  ng-value="false" type="radio" name="filter" id="showDatasets"> Compare with datasets</label></p>
+          <p><label for="showVocabularies"><input ng-model="showVocab" ng-value="true" type="radio" name="filter" id="showVocabularies"> Compare with vocabularies</label></p>
+ 
           <table class="table" style="margin-top: 20px">
-          <th ng-show="(option.value!='badLinks')">Distribution</th>
-          <th ng-show="(option.value=='badLinks')">Dataset</th>
-
+            <th>Dataset</th>
+            <th ng-show="(option.value!='badLinks')">Distribution Title</th>
+            <th ng-show="(option.value!='badLinks')">Distribution URL</th>
             <th>{{option.label}}</th>
-            <th ng-show="(option.value!='strength')">Options</th>
-            <tr ng-repeat="val in modalTopLinks">
+            <th style="width: 25px" ng-show="(option.value!='strength')">Options</th>
+            <tr ng-show="(showVocab==true && val.distribution.isVocabulary==true) || (showVocab==false && val.distribution.isVocabulary==false)"  ng-repeat="val in modalTopLinks.distributions">
+            <!--<tr ng-repeat="val in modalTopLinks.distributions">-->
               <td>
-                <a href="{{ val[2] }}" target="_blank"> {{ val[0] }} </a>
+                {{val.distribution.topDatasetTitle}}
               </td>
-              <td>{{ val[1] }}</td>
+              <td ng-show="(option.value!='badLinks')">
+                {{val.distribution.title}}
+              </td>
+              <td ng-show="(option.value!='badLinks')">
+                {{val.distribution.downloadUrl}}
+              </td>
+              <td>
+                {{val.numberOfLinks}}
+              </td>
               <td ng-show="(option.value!='strength') && (option.value!='links')&& (option.value!='badLinks')">
-                <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="createSimilarityTable(val[4], val[0])">Details</a>
+                <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="getCompareSimilarityList(val.distribution.lodvaderID)">Details</a>
               </td>
-              <td ng-show="(option.value=='links') || (option.value=='badLinks')">
-                <a data-toggle="modal" style="cursor: pointer" data-target="#topNLinksModal" ng-click="createTopNModal(val[4], val[0])">Top 100</a>
+              <td ng-show="(option.value=='links') || (option.value=='badLinks')"> 
+                <a data-toggle="modal" style="cursor: pointer" data-target="#topNLinksModal" ng-click="getCompareTopN(val.distribution.lodvaderID)">Top N</a>
               </td>
             </tr>
           </table>
@@ -137,24 +172,26 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"><b>Comparing:</b> <i>{{distributionTitle}}</i> <b>with</b> <i>{{similarityTableDataset2Title}}</i></h4>
+        <h4 class="modal-title"><b>Comparing:</b> <i>{{similarityTableData.distribution1.title}}</i> <b>with</b> <i>{{similarityTableData.distribution2.title}}</i></h4>
       </div>
       <div class="modal-body">
-        <!--<p>Dump file 1: {{distributionTitle}}</p>
-        <p>Dump file 2: {{similarityTableDataset2Title}}</p>-->
+        <p>Dataset 1: {{similarityTableData.distribution1.topDatasetTitle}}</p>
+        <p>Dataset 2: {{similarityTableData.distribution2.topDatasetTitle}}</p>
+        <p>Distribution 1: {{similarityTableData.distribution1.title}}</p>
+        <p>Distribution 2: {{similarityTableData.distribution2.title}}</p>
         <table class="table" style="margin-top: 20px">
           <th>Predicate </th>
-          <th> {{distributionTitle}}</th>
-          <th>{{similarityTableDataset2Title}}</th>
-          <tr ng-repeat="val in similarityTableData">
+          <th>{{similarityTableData.distribution1.title}}</th>
+          <th>{{similarityTableData.distribution2.title}}</th>
+          <tr ng-repeat="val in similarityTableData.similarityTableData">
             <td>
-              {{val.val}}
+              {{val.url}}
             </td>
             <td>
-              {{val.dataset1}}
-              <td>
-                {{val.dataset2}}
-              </td>
+             {{val.link1}}
+            <td>
+             {{val.link2}}
+            </td>
           </tr>
         </table>
       </div>
@@ -177,14 +214,16 @@
         <h4 class="modal-title"><b>Top N links from:</b> <i>{{distributionTitle}}</i> <b>to</b> <i>{{similarityTableDataset2Title}}</i></h4>
       </div>
       <div class="modal-body">
-        <!--<p>Dump file 1: {{distributionTitle}}</p>
-        <p>Dump file 2: {{similarityTableDataset2Title}}</p>-->
+        <p>Dataset 1: {{topNLinksTableData.distribution1.topDatasetTitle}}</p>
+        <p>Dataset 2: {{topNLinksTableData.distribution2.topDatasetTitle}}</p>
+        <p ng-show="topNLinksTableData.type!='badLinks'">Distribution 1: {{topNLinksTableData.distribution1.title}}</p>
+        <p ng-show="topNLinksTableData.type!='badLinks'">Distribution 2: {{topNLinksTableData.distribution2.title}}</p>
         <table class="table" style="margin-top: 20px">
           <th>Resource</th>
           <th>Number of Links</th>
-          <tr ng-repeat="val in topNLinksTableData">
+          <tr  ng-repeat="val in topNLinksTableData.topNLinks">
             <td>
-              {{val.resource}}
+              {{val.url}}
             </td>
             <td>
               {{val.amount}}
@@ -208,26 +247,28 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Dataset: {{datasetTitle}}</h4>
+        <h4 class="modal-title">Dataset: {{distributionDetails.distribution.topDatasetTitle}}</h4>
       </div>
       <div class="modal-body">
-        <p>Dataset Title: {{distributionList.datasetTitle}}</p>
-        <p>Distribution Title: {{distributionList.distributionTitle}}</p>
-        <p>Number of triples: {{distributionList.distributionTriples}}</p>
-        <p>Is vocabulary: {{distributionList.isVocabulary}}</p>
-        <p>VoID Linkset description: <a target="_blank" href="{{distributionList.rdfURL}}" style="width:400px">{{distributionList.rdfURL}}</a></p>
-        <p>Dump file: {{dumpFileURL}}</p>
-        <p>Show top <input ng-change="getDatasetDetailsStatistics()" type="text" ng-model="detailsTop" size="3"> <select ng-model="optionDetails" ng-change="getDatasetDetailsStatistics()" ng-options="item.label for item in modalDetailsOptions"></select> .</p>
+        <p>Dataset Title: {{distributionDetails.distribution.topDatasetTitle}}</p>
+        <p>Distribution Title: {{distributionDetails.distribution.title}}</p>
+        <p>Number of triples: {{distributionDetails.distribution.triples}}</p>
+        <p>Is vocabulary: {{distributionDetails.distribution.isVocabulary}}</p>
+        <p>VoID Linkset description: <a target="_blank" href="{{distributionDetails.rdfURL}}" style="width:400px">{{distributionDetails.rdfURL}}</a></p>
+        <p>Dump file: {{distributionDetails.distribution.downloadUrl}}</p>
+        <p>Show top
+          <input ng-change="getDatasetDetailsStatistics()" type="text" ng-model="detailsTop" size="3">
+          <select ng-model="optionDetails" ng-change="getDatasetDetailsStatistics()" ng-options="item.label for item in modalDetailsOptions"></select> .</p>
         <table class="table" style="margin-top: 20px">
           <th>Resource</th>
           <th>Number of {{optionDetails.label}}</th>
-          <tr ng-repeat="val in modalTopLinks">
+          <tr ng-repeat="val in distributionDetails.topNList">
             <td>
-               {{ val[0] }} 
+              {{ val.resource }}
             </td>
             <td>
-              {{ val[1] }}
-              </td>
+              {{ val.amount }}
+            </td>
           </tr>
         </table>
       </div>
@@ -240,8 +281,7 @@
 
 
 <script>
-  
-    $('#advancedSearch').click(function (event) {
+  $('#advancedSearch').click(function (event) {
         $('#advancedSearchForm').toggleClass('hidden show');
     });
   
@@ -266,7 +306,7 @@
               "ontologies":  false,
               "oLanguage": { "sSearch": "Search by title or URL " },
               "ajax": {
-                  "url": "/partial/proxy/list",
+                  "url": "/partial/proxy/distribution/search",
                   "data": function ( d ) {
                       d.isVocabulary = false;
                       d.searchSubject = $('#searchSubject').val();
@@ -279,7 +319,7 @@
               "columnDefs": [ {
               "targets": -1,
               "data": null,
-              "defaultContent": "<button id='similarities'>Links and Similarities</button> <button id='detail'>Distribution Details</button>"
+              "defaultContent": "<button id='compareList'>Links and Similarities</button> <button id='detail'>Distribution Details</button>"
            },{
                 "targets":  4 ,
                 "sClass": "hide_me",
@@ -291,11 +331,11 @@
       });
       
       $('#distributions tbody').on( 'click', 'button', function () {
-         if($(this).attr("id") == 'similarities'){
+         if($(this).attr("id") == 'compareList'){
          var scope = angular.element("#datasetCompareModal").scope();
-           scope.dumpFile = $(this).parents('tr').children("td:eq(4)").text(); 
+           scope.distributionID = $(this).parents('tr').children("td:eq(4)").text(); 
            scope.dumpFileURL = $(this).parents('tr').children("td:eq(1)").text(); 
-           scope.getDatasetSimilarityStatistics();
+           scope.getCompareList();
            scope.$apply();
            $('#datasetCompareModal').modal({
             show: 'false',
@@ -303,7 +343,7 @@
        }
        else{
           var scope = angular.element("#datasetDetailsModal").scope();
-           scope.dumpFile = $(this).parents('tr').children("td:eq(4)").text(); 
+           scope.distributionID = $(this).parents('tr').children("td:eq(4)").text(); 
            scope.dumpFileURL = $(this).parents('tr').children("td:eq(1)").text(); 
            scope.getDatasetDetailsStatistics();
            scope.$apply();

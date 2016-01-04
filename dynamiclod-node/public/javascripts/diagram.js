@@ -204,7 +204,7 @@ var showAll = false;
 
 var requestLink;
 
-var baseRequestLink = "/partial/proxy/CreateD3JSONFormat2?";
+var baseRequestLink = "/partial/proxy/linkset/graph?";
 
 // if (typeof getUrlParameter("getAllDistributions") != 'undefined') {
 // requestLink = baseRequestLink + "getAllDistributions=" + "&";
@@ -223,7 +223,7 @@ function makeGraph(param) {
 	if (param != "") {
 		param = param.replace(new RegExp("#", "g"), '%23');
 		param = param.replace(new RegExp("_anchor", "g"), '');
-		requestLink = "/partial/proxy/CreateD3JSONFormat2?dataset=" + param;
+		requestLink = "/partial/proxy/linkset/graph?dataset=" + param;
 	}
 	if (showAll) {
 		requestLink = baseRequestLink + "getAllDistributions=" + "&";
@@ -448,7 +448,8 @@ function init() {
 		.on("mouseover", function (d) {
 			d3.select(this).style("stroke", "red");
 			if (d.value != "S")
-				tooltip.text("Links: " + d.value+" (click for details)");
+				// tooltip.text("Links: " + d.value+" (click for details)");
+				tooltip.text("Links: " + d.value);
 			else
 				tooltip.text("a dcat:subset .");
 			return tooltip.style("visibility", "visible");

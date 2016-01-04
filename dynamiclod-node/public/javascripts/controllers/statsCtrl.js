@@ -2,24 +2,27 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
 
   $scope.appName = $generalData.appName;
   $scope.serverURL = $generalData.serverURL;
-  $scope.dumpFile = "";
+  $scope.distributionID = "";
   $scope.dumpFileURL = "";
   $scope.top = 10;
   $scope.detailsTop = 10;
-  $scope.datasetTitle;
-  $scope.similarityTableDataset1;
-  $scope.similarityTableDataset2;
-  $scope.similarityTableDataset2Title;  
-  $scope.similarityTableData = [];
+  $scope.similarityTableData;
   $scope.topNLinksTableData = [];
-  $scope.searchVocabularies = 1; 
+  $scope.searchVocabularies = "false"; 
   $scope.distributionList; 
-  $scope.searchStatus = 0;
+  $scope.searchStatus = "DONE";
+  $scope.distributionDetails;
+  $scope.showVocab = false;
+  
+  
+  $scope.numberOfDatasets;
+  $scope.numberOfVocabularies;
+  $scope.numberOfTriples;
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },
    { "label": "Number of bad links", "value": "badLinks" },
-    { "label": "Number of links (normalized)", "value": "strength" },
+    // { "label": "Number of links (normalized)", "value": "strength" },
     { "label": "Similarity by predicates", "value": "predicates" },
     { "label": "Similarity by rdf:type", "value": "type" },
     { "label": "Similarity by owl:Class", "value": "class" },
@@ -41,88 +44,78 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
 
 
   var proxyURL = $generalData.proxyUrl;
-  $http.get("/partial/proxy?statistics").then(function (response) {
+  $http.get("/partial/proxy/distribution/size?searchVocabularies=true").then(function (response) {
     if (typeof response.data.error == 'undefined') {
-      $scope.stats = response.data.statistics;
+      $scope.numberOfVocabularies = response.data;
+    }
+  });
+  
+  $http.get("/partial/proxy/dataset/size").then(function (response) {
+    if (typeof response.data.error == 'undefined') {
+      $scope.numberOfDatasets = response.data;
+    }
+  });
+  
+  $http.get("/partial/proxy/distribution/triples/size").then(function (response) {
+    if (typeof response.data.error == 'undefined') {
+      $scope.numberOfTriples = response.data;
     }
   });
 
 
 
-  $scope.getDatasetSimilarityStatistics = function () {
-    var query = "/partial/proxy?datasetStatistics&dumpFile=" + $scope.dumpFile + "&topN=" + $scope.top + "&type=" + $scope.option.value;
+  $scope.getCompareList = function () {
+    var query = "/partial/proxy/distribution/compare/list?distribution=" + $scope.distributionID + "&topN=" + $scope.top + "&type=" + $scope.option.value;
     $http.get(query).then(function (response) {
       if (typeof response.data.error == 'undefined') {
-        $scope.modalTopLinks = response.data.distributionList.distributions;
-        $scope.datasetTitle = response.data.distributionList.datasetTitle;
-        $scope.distributionTitle = response.data.distributionList.distributionTitle;
-        $scope.similarityTableDataset1 = response.data.distributionList.distributionID;
+        $scope.modalTopLinks = response.data;
+        console.log(response.data);
       }
     });
   };
 
 
 
-  $scope.createSimilarityTable = function (datasetSimilarity2ID, datasetSimilarity2Title) {
-    $scope.similarityTableDataset2=datasetSimilarity2ID;
-    $scope.similarityTableDataset2Title=datasetSimilarity2Title;
+  $scope.getCompareSimilarityList = function (distributionID2) {
     $scope.similarityTableData = [];
-    var query = "/partial/proxy?compareDatasets&compareDataset1=" + $scope.similarityTableDataset1 + "&compareDataset2=" + $scope.similarityTableDataset2 + "&type=" + $scope.option.value +  "&topN=10" ;
+    var query = "/partial/proxy/distribution/compare/similarity/list?distribution1=" + $scope.distributionID + "&distribution2=" + distributionID2 + "&type=" + $scope.option.value +  "&topN=10" ;
     $http.get(query).then(function (response) {
-      if (typeof response.data.error == 'undefined') {
-        var data = response.data.distributionList.similarityTableData;
-        for(var i in data){
-          var val = data[i][0];
-          var dataset1;
-          var dataset2;
-          for(var e in data[i][1]){
-            dataset1=e;
-            dataset2=data[i][1][e];
-          }
-           $scope.similarityTableData.push({
-            "val": val,
-            "dataset1": dataset1,
-            "dataset2": dataset2,
-          }); 
-        }
-      }
+        $scope.similarityTableData = response.data;
+        console.log(response.data);
     });   
   }
   
-  
-  
-  
-    $scope.createTopNModal = function (datasetSimilarity2ID, datasetSimilarity2Title) {
-    $scope.similarityTableDataset2=datasetSimilarity2ID;
-    $scope.similarityTableDataset2Title=datasetSimilarity2Title;
-    $scope.topNLinksTableData = [];
-    var query = "/partial/proxy?topNLinks&compareDataset1=" + $scope.similarityTableDataset1 + "&compareDataset2=" + $scope.similarityTableDataset2 + "&type=" + $scope.option.value +  "&topN=10" ;
+  $scope.getCompareTopN = function (distributionID2) {
+    $scope.similarityTableData = [];
+    var query = "/partial/proxy/distribution/compare/topN?distribution1=" + $scope.distributionID + "&distribution2=" + distributionID2 + "&type=" + $scope.option.value ;
     $http.get(query).then(function (response) {
-      if (typeof response.data.error == 'undefined') {
-        var data = response.data.distributionList.topNLinks;
-        for(var i in data){
-           $scope.topNLinksTableData.push({
-            "resource": data[i].url,
-            "amount": data[i].amount,
-          }); 
-        }
-      }
+        $scope.topNLinksTableData = response.data;
+        console.log(response.data);
     });   
-  }
+  } 
   
+  
+  $scope.getDatasetDetailsStatistics = function (distributionID2) { 
+    $scope.similarityTableData = [];
+    var query = "/partial/proxy/distribution/detail?distribution=" + $scope.distributionID + "&type=" + $scope.optionDetails.value + "&topN=" + $scope.detailsTop;
+    $http.get(query).then(function (response) {
+        $scope.distributionDetails = response.data;
+        console.log(response.data);
+    });   
+  } 
   
 
   
-  $scope.getDatasetDetailsStatistics = function () {
-    var query = "/partial/proxy?datasetDetailsStatistics&dumpFile=" + 
-    $scope.dumpFile + "&topN=" + $scope.detailsTop + "&type=" + $scope.optionDetails.value;
-    $http.get(query).then(function (response) {
-      if (typeof response.data.error == 'undefined') {
-        $scope.modalTopLinks = response.data.distributionList.distributions;
-        $scope.distributionList = response.data.distributionList;
-      }
-    });
-  };
+  // $scope.getDatasetDetailsStatistics = function () {
+  //   var query = "/partial/proxy?datasetDetailsStatistics&dumpFile=" + 
+  //   $scope.distributionID + "&topN=" + $scope.detailsTop + "&type=" + $scope.optionDetails.value;
+  //   $http.get(query).then(function (response) {
+  //     if (typeof response.data.error == 'undefined') {
+  //       $scope.modalTopLinks = response.data.distributionList.distributions;
+  //       $scope.distributionList = response.data.distributionList;
+  //     }
+  //   });
+  // };
 
 
 
