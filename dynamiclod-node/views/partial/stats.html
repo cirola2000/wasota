@@ -21,9 +21,24 @@
 </div>
 <p>Here you can find datasets and vocabularies. Moreover, you can fetch for statistical data w.r.t. dataset similarities and
   top N resources.</p>
-<p>Number of datasets: {{numberOfDatasets}}</p>
-<p>Number of vocabularies: {{numberOfVocabularies}}</p>
-<p>Number of triples loaded: {{numberOfTriples}}</p>
+<table>
+  <tr>
+    <td style="width: 400px">
+      <p>Number of datasets: {{numberOfDatasets}}</p>
+    </td>
+    <td>
+      <p>Number of vocabularies: {{numberOfVocabularies}}</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Number of triples loaded: {{numberOfTriples}}</p>
+    </td>
+    <td>
+      <p>Number of links discovered: {{numberOfLinks}}</p>
+    </td>
+  </tr>
+</table>
 <div class="page-header">
   <h3>List of streamed datasets:</h3>
 </div>
@@ -117,25 +132,32 @@
         <h4 class="modal-title"><b>Comparing dataset:</b> <i>{{modalTopLinks.distribution.title}}</i></h4>
       </div>
       <div class="modal-body">
-        <p> Here you can compare the distribution <i>{{modalTopLinks.distribution.title}}</i> with multiple distributions from other datasets regarding to number of links and
-          similarities.
+        <p> Here you can compare the distribution <i>{{modalTopLinks.distribution.title}}</i> with multiple distributions from
+          other datasets regarding to number of links and similarities.
           <p>Dataset Title: {{modalTopLinks.distribution.topDatasetTitle}}</p>
           <p>Distribution Title: {{modalTopLinks.distribution.title}}</p>
           <p>Dump file: {{modalTopLinks.distribution.downloadUrl}}</p>
           <p>Compare the top
-          <input ng-change="getCompareList()" type="text" ng-model="top" size="3"> regarding to
-          <select ng-model="option" ng-change="getCompareList()" ng-options="item.label for item in modalSimilaritiesOptions"></select> . </p>
-          <p><label for="showDatasets"><input ng-model="showVocab"  ng-value="false" type="radio" name="filter" id="showDatasets"> Compare with datasets</label></p>
-          <p><label for="showVocabularies"><input ng-model="showVocab" ng-value="true" type="radio" name="filter" id="showVocabularies"> Compare with vocabularies</label></p>
- 
+            <input ng-change="getCompareList()" type="text" ng-model="top" size="3"> regarding to
+            <select ng-model="option" ng-change="getCompareList()" ng-options="item.label for item in modalSimilaritiesOptions"></select> . </p>
+          <p>
+            <label for="showDatasets">
+              <input ng-model="showVocab" ng-value="false" type="radio" name="filter" id="showDatasets"> Compare with datasets</label>
+          </p>
+          <p>
+            <label for="showVocabularies">
+              <input ng-model="showVocab" ng-value="true" type="radio" name="filter" id="showVocabularies"> Compare with vocabularies</label>
+          </p>
+
           <table class="table" style="margin-top: 20px">
             <th>Dataset</th>
             <th ng-show="(option.value!='badLinks')">Distribution Title</th>
             <th ng-show="(option.value!='badLinks')">Distribution URL</th>
             <th>{{option.label}}</th>
             <th style="width: 25px" ng-show="(option.value!='strength')">Options</th>
-            <tr ng-show="(showVocab==true && val.distribution.isVocabulary==true) || (showVocab==false && val.distribution.isVocabulary==false)"  ng-repeat="val in modalTopLinks.distributions">
-            <!--<tr ng-repeat="val in modalTopLinks.distributions">-->
+            <tr ng-show="(showVocab==true && val.distribution.isVocabulary==true) || (showVocab==false && val.distribution.isVocabulary==false)"
+            ng-repeat="val in modalTopLinks.distributions">
+              <!--<tr ng-repeat="val in modalTopLinks.distributions">-->
               <td>
                 {{val.distribution.topDatasetTitle}}
               </td>
@@ -151,7 +173,7 @@
               <td ng-show="(option.value!='strength') && (option.value!='links')&& (option.value!='badLinks')">
                 <a data-toggle="modal" style="cursor: pointer" data-target="#chartModal" ng-click="getCompareSimilarityList(val.distribution.lodvaderID)">Details</a>
               </td>
-              <td ng-show="(option.value=='links') || (option.value=='badLinks')"> 
+              <td ng-show="(option.value=='links') || (option.value=='badLinks')">
                 <a data-toggle="modal" style="cursor: pointer" data-target="#topNLinksModal" ng-click="getCompareTopN(val.distribution.lodvaderID)">Top N</a>
               </td>
             </tr>
@@ -188,10 +210,10 @@
               {{val.url}}
             </td>
             <td>
-             {{val.link1}}
-            <td>
-             {{val.link2}}
-            </td>
+              {{val.link1}}
+              <td>
+                {{val.link2}}
+              </td>
           </tr>
         </table>
       </div>
@@ -221,7 +243,7 @@
         <table class="table" style="margin-top: 20px">
           <th>Resource</th>
           <th>Number of Links</th>
-          <tr  ng-repeat="val in topNLinksTableData.topNLinks">
+          <tr ng-repeat="val in topNLinksTableData.topNLinks">
             <td>
               {{val.url}}
             </td>

@@ -7,28 +7,6 @@ var router = express.Router();
 // var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:9099/LODVader";
 var serverURL = "http://vmdbpedia.informatik.uni-leipzig.de:8090";
 
-
-// router.get('/', function (req, res, next) {
-
-//   var queryUrl = req.url.replace('/', '');
-//   queryUrl = queryUrl.replace('?', '&');
-//   var query = serverURL + "/api?" + queryUrl;
-
-//   request(query, function (error, response, body) {
-//     if (!error && response.statusCode == 200) {
-//       try {
-//         res.send(JSON.parse(body.toString()));
-//       } catch (E) {
-//         console.log(E);
-//       }
-//     }
-//     else {
-//       console.log(error);
-//       res.send({ error: error });
-//     }
-//   });
-// });
-
 router.get('/distribution/search', function (req, res, next) {
   var query = serverURL + req.url;
   request(query, function (error, response, body) {
@@ -59,141 +37,6 @@ router.get('/distribution/search', function (req, res, next) {
   });
 });
 
-router.get('/distribution/triples/size', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/dataset/size', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/distribution/size', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-
-router.get('/distribution/compare/list', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/distribution/detail', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/distribution/compare/similarity/list', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/distribution/compare/topN', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/dataset/add', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.get('/dataset/status', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.post('/linkset/tree', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-router.post('/linkset/graph', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
-    }
-  });
-});
-
-
-
 router.post('/CreateD3JSONFormat2', function (req, res, next) {
 
   var query = serverURL;
@@ -213,6 +56,30 @@ router.post('/CreateD3JSONFormat2', function (req, res, next) {
 
 router.get('/GetServerURL', function (req, res, next) {
   res.send({ "serverURL": serverURL });
+});
+
+router.get('/*', function (req, res, next) {
+  var query = serverURL + req.url;
+  request(query, function (error, response, body) {
+    try {
+      var data = body.toString();
+      res.send(data);
+    } catch (E) {
+      console.log(E);
+    }
+  });
+});
+
+router.post('/*', function (req, res, next) {
+  var query = serverURL + req.url;
+  request(query, function (error, response, body) {
+    try {
+      var data = body.toString();
+      res.send(data);
+    } catch (E) {
+      console.log(E);
+    }
+  });
 });
 
 

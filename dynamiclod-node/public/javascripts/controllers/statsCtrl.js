@@ -21,7 +21,7 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
 
   $scope.modalSimilaritiesOptions = [
     { "label": "Number of links", "value": "links" },
-   { "label": "Number of bad links", "value": "badLinks" },
+   { "label": "Number of invalid links", "value": "badLinks" },
     // { "label": "Number of links (normalized)", "value": "strength" },
     { "label": "Similarity by predicates", "value": "predicates" },
     { "label": "Similarity by rdf:type", "value": "type" },
@@ -59,6 +59,11 @@ main.controller('statsCtrl', ['$scope', '$http', 'generalData', function ($scope
   $http.get("/partial/proxy/distribution/triples/size").then(function (response) {
     if (typeof response.data.error == 'undefined') {
       $scope.numberOfTriples = response.data;
+    }
+  });
+    $http.get("/partial/proxy/linkset/links").then(function (response) {
+    if (typeof response.data.error == 'undefined') {
+      $scope.numberOfLinks = response.data;
     }
   });
 
