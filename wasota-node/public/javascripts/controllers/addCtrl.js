@@ -13,7 +13,7 @@ main.controller('addCtrl', ['$scope', '$http', 'generalData', function ($scope, 
   
   
   $scope.sendGraph = function(){
-    $http.put("/partial/proxy/add?graph-uri=" + $scope.graphURI).
+    $http.put("/proxy/add?graph-uri=" + $scope.graphURI).
       then(function (response) {
         console.log(response);
         // $scope.apiResponse = response.data;
