@@ -1,0 +1,209 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/diavgeia">
+    <owl:sameAs rdf:resource="urn:uuid:9cfb9a47-9679-45d6-a77e-1ad86f22947e"></owl:sameAs>
+    <dct:description>The Clarity program introduces for the first time in Greece the obligation to publish all the decisions on the Internet, with the exception of decisions that contain sensitive personal data and/or information on national security. It is quite an innovative program, even by European standards, aiming first of all to bring about the maximum publicity of the government policy and administrative action. The use of Internet guarantees wide publicity and access to information, progressively contributing to a culture change in the whole of the Public Administration.</dct:description>
+        <dcat:keyword>clarity</dcat:keyword>
+        <dcat:keyword>diavgeia</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>greece</dcat:keyword>
+        <dcat:keyword>greek</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>linked data</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>opendata</dcat:keyword>
+        <dcat:keyword>openspending</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/diavgeia"></foaf:homepage>
+    <rdfs:label>diavgeia</rdfs:label>
+    <dct:identifier>diavgeia</dct:identifier>
+    <dct:title>Diavgeia</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://diavgeia.math.auth.gr/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>CSV</rdf:value>
+                            <rdfs:label>CSV</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Diavgeia SPARQL endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.greek-lod.gr/DiavgeiaTreeMap/dapanes/General.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Spending Visualization - example #1</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T163756/Diavgeia_demo_RDF_XML.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Diavgeia / Example data item within the dataset (RDF/XML)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T164145/Diavgeia_demo_NTriples.nt"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>TXT</rdf:value>
+                            <rdfs:label>TXT</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Diavgeia / Example data item within the dataset (NTriples)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T164505/Diavgeia_demo_RDF_XML.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2012-08-27T164505/Diavgeia_demo_RDF_XML.rdf</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-09-27T161432/void.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD description file</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-02-08T154930/MinistriesSpending2012_1.csv"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XLS</rdf:value>
+                            <rdfs:label>XLS</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2013-02-08T154930/MinistriesSpending2012_1.csv</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2013-02-08T164424/PolicePerRegion_1.csv"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XLS</rdf:value>
+                            <rdfs:label>XLS</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>2013-02-08T164424/PolicePerRegion_1.csv</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Spiros Alexiou</foaf:name>
+        <foaf:mbox rdf:resource="mailto:spiros.alexiou@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Spiros Alexiou</foaf:name>
+        <foaf:mbox rdf:resource="mailto:spiros.alexiou@gmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by-sa"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>13</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia-el</rdfs:label>
+            <rdf:value>676</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:eurostat</rdfs:label>
+            <rdf:value>12</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:hellenic-fire-brigade</rdfs:label>
+            <rdf:value>156</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:hellenic-police</rdfs:label>
+            <rdf:value>45</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:kalikratis-municipalities</rdfs:label>
+            <rdf:value>355</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://diavgeia.math.auth.gr/resource/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>Diavgeia</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>48051108</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>716e53fd-2294-4b27-b4b8-2474fcee4a35</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/odc-population-2005">
+    <owl:sameAs rdf:resource="urn:uuid:9aa2f532-be2d-4ef8-b470-492b71b44cfc"></owl:sameAs>
+    <dct:description>The estimated total population (male and female, all ages) for each Lower layer Super Output Area for mid-year 2005.
+
+
+
+</dct:description>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/odc-population-2005"></foaf:homepage>
+    <rdfs:label>odc-population-2005</rdfs:label>
+    <dct:identifier>odc-population-2005</dct:identifier>
+    <dct:title>Estimated mid-year population 2005</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>http://www.ons.gov.uk</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://reference.data.gov.uk/id/open-government-licence"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/id/graph/population/2005</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2ff3495d-bc42-4a4e-a6e0-322e5acf26d6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

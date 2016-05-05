@@ -1,0 +1,100 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/tcga">
+    <owl:sameAs rdf:resource="urn:uuid:6751d465-ee9d-43c0-81e4-2214f2e15f9c"></owl:sameAs>
+    <dct:description>The RDF representation of TCGA was achieved by representing data elements from the TCGA dataset as statements from the S3DB Core Model (see S3DB Core Model for more information on the S3DB Core Model). As such, the RDF graph that fuels this endpoint is structured according the S3DB Core Model entities: Collections, Items, Rules and Statements. The advantage of this annotation is that entities that belong to the description of the domain are annotated as "Collections" (for example, "Sample" is a Collection) or Rules (for example, "GenomicCharacterization-obtainedFrom-Sample" is a Rule) and their instances are annotated as Items (for example, "TCGA-01-0001" is an Item of the collection "Samples) or Statements (for example, "TCGA-01-0001"-"provided"-"GC1234" is as Statement that uses the Rule "GenomicCharacterization-obtainedFrom-Sample"). For more information see Deus HF, DF Veiga, PR Freire, JN Weinstein, GB Mills, JS Almeida (2010) Exposing The Cancer Genome Atlas as a SPARQL endpoint. Journal Biomedical Informatics [PMID 20851208].</dct:description>
+        <dcat:keyword>cancer</dcat:keyword>
+        <dcat:keyword>gene</dcat:keyword>
+        <dcat:keyword>life</dcat:keyword>
+        <dcat:keyword>lifesciences</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>microarray</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>protein</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>tcga</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/tcga"></foaf:homepage>
+    <rdfs:label>tcga</rdfs:label>
+    <dct:identifier>tcga</dct:identifier>
+    <dct:title>The Cancer Genome Atlas</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://hcls.deri.org:8080/openrdf-sesame/repositories/tcga"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint for TCGA</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ibl.mdanderson.org/TCGA/I417388"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example Resource</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://commondatastorage.googleapis.com/ckannet-storage/2012-01-03T123420/TCGA.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Dump</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Helena F. Deus</foaf:name>
+        <foaf:mbox rdf:resource="mailto:helena.deus@deri.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>jalmeida@uab.edu</foaf:name>
+        <foaf:mbox rdf:resource="mailto:helena.deus@deri.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://ibl.mdanderson.org/TCGA/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>65470</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f87476fe-f867-481a-aff0-a8c0f2fec34b</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

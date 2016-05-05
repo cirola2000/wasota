@@ -1,0 +1,158 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/gutenberg">
+    <owl:sameAs rdf:resource="urn:uuid:0f584d1f-8881-443a-a623-bc17d84fc2d9"></owl:sameAs>
+    <dct:description>Overview: 
+
+Project Gutenberg is the first and largest single collection of free electronic books, or eBooks.
+
+Statistics: 
+Over 100,000 titles, some duplication, of course.
+
+License:
+Majority of works in public domain. Works posted with permission from copyright holders are licensed under the Project Gutenberg license.
+
+Formats:
+Most Project Gutenberg eBooks are available in plain text,
+just so they can be used with nearly any hardware/software,
+and many are also available in a variety of other formats.
+
+Over 30,000 eBooks in over 50 languages at gutenberg.org
+
+Over 75,000 eBooks in over 100 languages at gutenberg.cc
+
+
+This is my first attempt to rewrite this little blurb,
+so I will keep it brief for now to see what happens.
+
+
+Michael S. Hart
+Founder
+Project Gutenberg,
+Inventor of eBooks
+http://www.gutenberg.org/wiki/Michael_S._Hart</dct:description>
+        <dcat:keyword>access-bulk</dcat:keyword>
+        <dcat:keyword>access-ftp</dcat:keyword>
+        <dcat:keyword>access-http</dcat:keyword>
+        <dcat:keyword>access-rsync</dcat:keyword>
+        <dcat:keyword>bibliographic</dcat:keyword>
+        <dcat:keyword>book</dcat:keyword>
+        <dcat:keyword>ebook</dcat:keyword>
+        <dcat:keyword>format-dcam</dcat:keyword>
+        <dcat:keyword>format-dcmit</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-pgterms</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/gutenberg"></foaf:homepage>
+    <rdfs:label>gutenberg</rdfs:label>
+    <dct:identifier>gutenberg</dct:identifier>
+    <dct:title>Project Gutenberg</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.gutenberg.org/wiki/Gutenberg:Information_About_Robot_Access_to_our_Pages#Getting_All_EBook_Files"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.gutenberg.cc"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.gutenberg.org/feeds/catalog.rdf.bz2"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>bz2</rdf:value>
+                            <rdfs:label>bz2</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>metadata dump in RDFXML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.gutenberg.org/ebooks/12345.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Link to an example item</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Project Gutenberg</foaf:name>
+        <foaf:mbox rdf:resource="mailto:http://www.gutenberg.org/wiki/Gutenberg:Contact_Information"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Project Gutenberg</foaf:name>
+        <foaf:mbox rdf:resource="mailto:http://www.gutenberg.org/wiki/Gutenberg:Contact_Information"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>87d4cb33-ef14-43d4-aa42-490922c4f35a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://www.gutenberg.org/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>records</rdfs:label>
+            <rdf:value>526911</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>gutenberg</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>5450115</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>87d4cb33-ef14-43d4-aa42-490922c4f35a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

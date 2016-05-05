@@ -1,0 +1,167 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/tip">
+    <owl:sameAs rdf:resource="urn:uuid:858dc724-5a4b-440f-801f-547e7f0f074a"></owl:sameAs>
+    <dct:description>A SPARQL endpoint of Taiwan Indigenous People provides Taiwan Indigenous people information, including 6 major subjects : [Ethnic](http://lod.apc.gov.tw:8890/schemas/Ethnic_Introduction/), [Culture](http://lod.apc.gov.tw:8890/schemas/Cultural_Creative/), [Travel](http://lod.apc.gov.tw:8890/schemas/Travel/), [Gourmet](http://lod.apc.gov.tw:8890/schemas/Gourmet/), [Ceremony](http://lod.apc.gov.tw:8890/schemas/Ceremony/) and [Business] (http://lod.apc.gov.tw:8890/schemas/Business/).
+</dct:description>
+        <dcat:keyword>Indigenous People</dcat:keyword>
+        <dcat:keyword>Taiwan</dcat:keyword>
+        <dcat:keyword>aboriginal</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>indigenous</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/tip"></foaf:homepage>
+    <rdfs:label>tip</rdfs:label>
+    <dct:identifier>tip</dct:identifier>
+    <dct:title>TIP</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://lod.apc.gov.tw/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>SPARQL endpoint of Taiwan Indigenous People </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Tai-Ting Wu</foaf:name>
+        <foaf:mbox rdf:resource="mailto:taitingwu@itri.org.tw"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Tai-Ting Wu</foaf:name>
+        <foaf:mbox rdf:resource="mailto:taitingwu@itri.org.tw"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>Name</rdfs:label>
+            <rdf:value>"TIP"</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>Title</rdfs:label>
+            <rdf:value>"Taiwan Indigenous People"</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>URL</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>Version</rdfs:label>
+            <rdf:value>"2013-12-11"</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>314</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:freebase</rdfs:label>
+            <rdf:value>91</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>20</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:linkedgeodata</rdfs:label>
+            <rdf:value>6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:wikidata</rdfs:label>
+            <rdf:value>89</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:wikipediaontology</rdfs:label>
+            <rdf:value>11</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:yago-knowledge</rdfs:label>
+            <rdf:value>89</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace(Business)</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw:8890/schemas/Business/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace(Ceremony)</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw:8890/schemas/Ceremony/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace(Culture)</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw:8890/schemas/Cultural_Creative/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace(Ethnic)</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw:8890/schemas/Ethnic_Introduction/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace(Gourmet)</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw:8890/schemas/Gourmet/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace(Travel)</rdfs:label>
+            <rdf:value>http://lod.apc.gov.tw:8890/schemas/Travel/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>264034</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>7c30e9b2-504a-4c9f-bbfd-917169f3e989</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/jisc-openart">
+    <owl:sameAs rdf:resource="urn:uuid:a8c049c6-6bb8-4e35-b231-9af91429d6bc"></owl:sameAs>
+    <dct:description>A project of the University of York and the Tate to create linked data for a dataset of "The London Art World 1660-1735".
+
+Currently in progress, with the ODbL as forerunner for the eventual licence.</dct:description>
+        <dcat:keyword>art</dcat:keyword>
+        <dcat:keyword>dataset</dcat:keyword>
+        <dcat:keyword>linked-data</dcat:keyword>
+        <dcat:keyword>tate</dcat:keyword>
+        <dcat:keyword>uk</dcat:keyword>
+        <dcat:keyword>university-of-york</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/jisc-openart"></foaf:homepage>
+    <rdfs:label>jisc-openart</rdfs:label>
+    <dct:identifier>jisc-openart</dct:identifier>
+    <dct:title>JISC OpenART</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Julie Allinson</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-odbl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>9bd7ecae-9d65-4045-85fa-abd6b6c5467b</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

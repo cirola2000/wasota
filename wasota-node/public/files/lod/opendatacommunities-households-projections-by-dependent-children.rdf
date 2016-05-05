@@ -1,0 +1,20 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-households-projections-by-dependent-children">
+    <owl:sameAs rdf:resource="urn:uuid:93f7a09e-3354-4f47-8a01-2f4c9829fe52"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>format-cube</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sdmxa</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-households-projections-by-dependent-children"></foaf:homepage>
+    <rdfs:label>opendatacommunities-households-projections-by-dependent-children</rdfs:label>
+    <dct:identifier>opendatacommunities-households-projections-by-dependent-children</dct:identifier>
+    <dct:title>opendatacommunities-households-projections-by-dependent-children</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/data/households/projections/byDependentChildren/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,63 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/deustotech">
+    <owl:sameAs rdf:resource="urn:uuid:9341b0aa-a3bb-429d-aef2-39a20cefdc52"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;p&gt;
+Deusto Instituto de Tecnología, &lt;a href="http://www.deustotech.deusto.es/"&gt;DeustoTech&lt;/a&gt;, anteriormente Tecnológico Fundación Deusto, es un instituto de investigación perteneciente a la Fundación Deusto y la Universidad de Deusto en la Facultad de Ingeniería. DeustoTech ha sido creado con la misión de realizar investigación básica y aplicada en tecnologías de la informática y la información, frente a la transferencia de tecnología y apoyo a las empresas, y fomentar la formación y la excelencia en la educación.
+&lt;/p&gt;
+&lt;p&gt;
+DeustoTech trabaja con &lt;a href="http://gnoss.com/"&gt;software de GNOSS (RIAM Intelearning Lab)&lt;/a&gt;. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Este dataset presenta información sobre publicaciones, autores y proyectos de investigación de dos grupos pertenecientes a DeustoTech: &lt;a title="DeustoTech Computing," href="http://gescon.deusto.es:7877/servlet/Satellite/Page/1280393105788/_cast/#1284619588939%231280393105788/c0/UniversidadDeusto/Page/PaginaAsociacionDTTPL"&gt;DeustoTech Computing&lt;/a&gt; centrada en la inteligencia computacional aplicada a la seguridad y la optimización de procesos industriales, entre otros campos y
+&lt;a title="DeustoTech Internet" href="http://www.deustotech.deusto.es/servlet/Satellite/Page/1280393105780/_ingl/#1284619588939%231280393105780/c0/UniversidadDeusto/Page/PaginaAsociacionDTTPL"&gt;DeustoTech Internet&lt;/a&gt;, centrada en las soluciones móviles, la computación ubicua y la inteligencia ambiental. Esta información esta publicada en las comunidades gnoss
+&lt;a title="DeustoTech Internet" href="http://deusto.gnoss.com/comunidad/futureinternet"&gt;DeustoTech Internet&lt;/a&gt;
+y &lt;a href="http://deusto.gnoss.com/comunidad/deustotechcomputing"&gt;DeustoTech Computing&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Deusto Institute of Technology,
+&lt;a href="http://www.deustotech.deusto.es/"&gt;DeustoTech&lt;/a&gt;, Tecnológico Fundación Deusto previously, is a research institute belonging to the Fundación Deusto and the University of Deusto in the Faculty of Engineering. Deustotech has been created to conduct basic and apply research in information technologies, to transfer technology and business support, and to promote training and excellence in education.
+&lt;/p&gt;
+&lt;p&gt;
+DeustoTech works with
+&lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. This dataset provides information about publications, authors and research projects of two groups belonging to Deustotech: DeustoTech Computing, that focus on computational intelligence applied to security and optimization of industrial processes, among other fields; and Deustotech Internet, that focus on mobile solutions, ubiquitous computing and ambient intelligence. This information is posted on the gnoss communities &lt;a title="DeustoTech Internet" href="http://deusto.gnoss.com/comunidad/futureinternet"&gt;DeustoTech Internet&lt;/a&gt; and &lt;a href="http://deusto.gnoss.com/comunidad/deustotechcomputing"&gt;DeustoTech Computing&lt;/a&gt;.
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-tsioc</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/deustotech"></foaf:homepage>
+    <rdfs:label>deustotech</rdfs:label>
+    <dct:identifier>deustotech</dct:identifier>
+    <dct:title>DeustoTech (Deusto Institute of Technology)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>cbb845d1-a74f-4eab-aab7-49a408f9dc6a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,98 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/staff-organograms-and-pay-scottish-government">
+    <owl:sameAs rdf:resource="urn:uuid:557b4e09-b8ff-45d7-8170-71fc67a3e74f"></owl:sameAs>
+    <dct:description>A list of most Senior Civil Service posts in the Scottish Government including title, contact details, their line manager, and where disclosed, the name of the officer. Vacant posts are listed as "Vacant", and posts where the jobholder is not disclosed are listed as "N/D". Note that a number of officers are not listed for security reasons. This data has been updated with a snapshot of the organisation on 31/03/2011. The senior staff data is now presented in one CSV file. Positions that have been removed in between the exercises in October 2010 and spring 2011 are listed as "Eliminated".</dct:description>
+        <dcat:keyword>data.gov.uk</dcat:keyword>
+        <dcat:keyword>format-copmv</dcat:keyword>
+        <dcat:keyword>format-dct</dcat:keyword>
+        <dcat:keyword>format-dgu</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-gov</dcat:keyword>
+        <dcat:keyword>format-grade</dcat:keyword>
+        <dcat:keyword>format-opmv</dcat:keyword>
+        <dcat:keyword>format-org</dcat:keyword>
+        <dcat:keyword>format-organogram</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-payband</dcat:keyword>
+        <dcat:keyword>format-poststatus</dcat:keyword>
+        <dcat:keyword>format-qb</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sdmxa</dcat:keyword>
+        <dcat:keyword>format-sdmxc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-time</dcat:keyword>
+        <dcat:keyword>format-vcard</dcat:keyword>
+        <dcat:keyword>format-void</dcat:keyword>
+        <dcat:keyword>format-xsd</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.needsfixing</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/staff-organograms-and-pay-scottish-government"></foaf:homepage>
+    <rdfs:label>staff-organograms-and-pay-scottish-government</rdfs:label>
+    <dct:identifier>staff-organograms-and-pay-scottish-government</dct:identifier>
+    <dct:title>Organogram and staff pay data for The Scottish Government</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.scotland.gov.uk/Resource/Doc/930/0118325.txt"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://organogram.data.gov.uk/data/scotland/2011-03-31/March-2011-Organogram#person37"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Scottish Government</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://reference.data.gov.uk/id/open-government-licence"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://organogram.data.gov.uk/data/scotland/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>scottish-government-staff</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>fba23aca-15c2-4f53-a860-cfc65e46dde3</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

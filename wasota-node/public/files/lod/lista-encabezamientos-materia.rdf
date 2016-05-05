@@ -1,0 +1,52 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/lista-encabezamientos-materia">
+    <owl:sameAs rdf:resource="urn:uuid:d244fffe-ae9a-46a7-b11c-7e7da8ca6add"></owl:sameAs>
+    <dct:description>Este nuevo recurso informático que la Dirección General de Libro, Archivos y Bibliotecas pone a disposición del ciudadano supone un importante avnace tecnologico pueste que implica la tranformación de la Lista de Encabezamietos de Materia (LEM) al Simple Knowledge Organization System SKOS, uno de los pilares del Linked Open Data y de su adaptación a Europeana como uno de los namespaces constitutivos del Europeana Data Model. 
+Se ha establecido ademas, siempre que ha sido posible, un skos:closeMatch con los LCSH y se está progresando para proporcionar una funcionalidad análoga con RAMEAU o SWD.
+Incorpora además un fichero en zip de los registros MARC dea utoridades de materia, es decir aquellos basados en el campo 150 en los que se ha añadido las URI de las LEM y las del LCSH.
+
+---
+
+This new digital resource that the Dirección General del Libro, Archivos y Bibliotecas offers to its users represents a huge technological step forward, for it means the transformation of the Subject Headings List (Lista de Encabezamientos de Materia, LEM) to the Simple Knowledge Organization System (SKOS), one of the main pillars of Linked Open Data and of its adaptation to Europeana as one of the Europeana Data Model primary namespaces.
+skos:closeMatch links to LCSH have been defined whenever possible, and work is being done towards establishing similar links to RAMEAU and SWD.
+The list is also presented in a zipped MARC file of subject authorities (those based on field 150 in which LEM and LCSH URIs have been added).</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/lista-encabezamientos-materia"></foaf:homepage>
+    <rdfs:label>lista-encabezamientos-materia</rdfs:label>
+    <dct:identifier>lista-encabezamientos-materia</dct:identifier>
+    <dct:title>Lista de  Encabezamientos de Materia as Linked Open Data</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Ministerio de Educación, Cultura y Deporte - Gobierno de España</foaf:name>
+        <foaf:mbox rdf:resource="mailto:lemskos@mcu.es"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Subdirección General de Coordinación Bibliotecaria - Ministerio de Educación, Cultura y Deporte</foaf:name>
+        <foaf:mbox rdf:resource="mailto:lemskos@mcu.es"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2976e88e-74d8-4a64-b433-27c616628d12</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,224 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/kaken">
+    <owl:sameAs rdf:resource="urn:uuid:314fab37-f44b-4c75-b4ef-7c36d4b3a2cc"></owl:sameAs>
+    <dct:description>KAKEN, the database of Grants-in-Aid for Scientific Research, JAPAN contains the "Project Selected" documents and the research report summaries (incl. annual and final). The Grants-in-Aid for Scientific Research is granting whole field of science, and this database provides the latest information of the research projects in Japan.
+
+KAKEN is established and provided by the National Institute of Informatics (NII), JAPAN with support of the Ministry of Education, Culture, Sports, Science and Technology (MEXT) and the Japan Society for the Promotion of Science (JSPS).It is a part of "GeNii, the National Institute of Informatics academic content portal", established by NII.
+
+KAKEN defines two types of entity URIs, i.e., research project URI and researcher URI. Each URI consists of project number and registered researcher number.
+
+For example, the project of which project number is 18049069 refers to:
+&lt;pre&gt;
+http://kaken.nii.ac.jp/p/18049069 
+&lt;/pre&gt;
+The researcher whose  researcher number is 80143551 refers to:
+&lt;pre&gt;
+http://kaken.nii.ac.jp/r/80143551
+&lt;/pre&gt;
+You can check these URIs by the following unix command.
+&lt;pre&gt;
+$ curl --location --header "Accept: application/rdf+xml" "http://kaken.nii.ac.jp/p/18049069"
+&lt;/pre&gt;
+The KAKEN redirects to the generic document of project "18049069" which refers to:
+&lt;pre&gt;
+http://kaken.nii.ac.jp/d/p/18049069
+&lt;/pre&gt;
+, and content negotiate for mimetype application/rdf+xml as you can get by the "curl" command.
+
+As for the researcher, you can check the following command. 
+&lt;pre&gt;
+$ curl --location --header "Accept: application/rdf+xml" "http://kaken.nii.ac.jp/r/80143551"
+&lt;/pre&gt;
+The KAKEN redirects to the generic document of researcher "80143551" which refers to:
+&lt;pre&gt;
+http://kaken.nii.ac.jp/d/r/80143551
+&lt;/pre&gt;
+, and content negotiate for mimetype application/rdf+xml as you can get by the "curl" command.
+
+OpenSearch API is useful to search projects and researchers of KAKEN. KAKEN provides application/atom+xml and application/rss+xml format to response. application/rss+xml is recommended to LOD users because the format is written in RDF compatibility sence.
+You can examine OpenSearch API for projects, such as:
+&lt;pre&gt;
+$ curl "http://kaken.nii.ac.jp/x/opensearch/rss/p?q0=semantic&amp;count=20&amp;from=1"
+&lt;/pre&gt;
+
+You can also examine OpenSearch API for researchers, such as:
+&lt;pre&gt;
+$ curl "http://kaken.nii.ac.jp/x/opensearch/rss/r?q0=semantic&amp;count=20&amp;from=1"
+&lt;/pre&gt;</dct:description>
+        <dcat:keyword>awards</dcat:keyword>
+        <dcat:keyword>database</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>grants</dcat:keyword>
+        <dcat:keyword>japan</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>publications</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/kaken"></foaf:homepage>
+    <rdfs:label>kaken</rdfs:label>
+    <dct:identifier>kaken</dct:identifier>
+    <dct:title>KAKEN</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/p/18049069"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example resource of research project of Grants-in-Aid for Scientific Research, JAPAN. Content negotiate for HTML page</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/p/18049069"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example resource of research project of Grants-in-Aid for Scientific Research, JAPAN. Content negotiate for RDF/XML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/r/80143551"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example resource of researcher participating in a project of Grants-in-Aid for Scientific Research, JAPAN. Content negotiate for HTML page.</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/r/80143551"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example resource of researcher participating in a project of Grants-in-Aid for Scientific Research, JAPAN. Content negotiate for RDF/XML.</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/apispec/os_prj_desc.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XML</rdf:value>
+                            <rdfs:label>XML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>OpenSearch description document for research project search</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/apispec/os_res_desc.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XML</rdf:value>
+                            <rdfs:label>XML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>OpenSearch description document for researcher search</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/x/opensearch/rss/p"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RSS</rdf:value>
+                            <rdfs:label>RSS</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>OpenSearch API for reserch project</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/http://kaken.nii.ac.jp/x/opensearch/rss/r"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RSS</rdf:value>
+                            <rdfs:label>RSS</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>OpenSearch API for resercher</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/en/help/index.html#opensearch-form"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>OpenSearch parameters definition</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/ns"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>KAKEN vocaburary specification</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://kaken.nii.ac.jp/sitemap_index.xml"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/sitemap</rdf:value>
+                            <rdfs:label>meta/sitemap</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>XML Sitemap</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>National Institute of Informatics</foaf:name>
+        <foaf:mbox rdf:resource="mailto:kaken_fdbk@nii.ac.jp"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Kei Kurakawa</foaf:name>
+        <foaf:mbox rdf:resource="mailto:kurakawa@nii.ac.jp"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>ac4ee804-f0e4-44cd-9c2e-eb4800f37f4c</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

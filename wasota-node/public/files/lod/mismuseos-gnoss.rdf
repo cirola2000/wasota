@@ -1,0 +1,53 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/mismuseos-gnoss">
+    <owl:sameAs rdf:resource="urn:uuid:d20beef8-0ed6-4437-81d6-2a5bb0965b91"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;a href="http://mismuseos.net/en/community/museos"&gt;MisMuseos.net&lt;/a&gt; is a semantic index of artistic resources (museums, artists and artwork) powered by &lt;a href="http://gnoss.com/"&gt;GNOSS&lt;/a&gt;. MisMuseos.net structures, organizes and offers you, in accordance with the principles promoted by the Linked Data Project, an extensive catalog of works of art that museums publish on the Web. MisMuseos.net connects them with educational recommendations and contexts. &lt;p&gt; The information on public cultural goods comes from data published in the Europeana dataset as RDF (Resource Description Framework), CER.ES Collection (Red Digital de Colecciones de Museos de España) and online public museums collections in Spain not included in CER.ES. MisMuseos.net offers a selection of 8,947 resources (November 2012).&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Museos, Obras de Arte y Artistas componen la colección de &lt;a href="http://mismuseos.net/"&gt;MisMuseos.net&lt;/a&gt;, el gran índice de recursos artísticos en Internet promovido por 
+&lt;a href="http://gnoss.com/"&gt;GNOSS&lt;/a&gt; y destinado al enriquecimiento de la Web Semántica. MisMuseos.net estructura, organiza y pone a tu alcance, de acuerdo con los principios promovidos por el Linked Data Project, un extenso catálogo de las obras de arte que los museos publican en la Red conectándolo con otras bases de conocimiento educativas existentes en la iniciativa Linking Open permitiendo la generación de contextos educativos relacionados con los bienes culturales. &lt;/p&gt;
+&lt;p&gt; La información sobre bienes culturales públicos procede de los datos publicados en el Europeana dataset como RDF (Resource Description Framework), de la colección CER.ES (Red Digital de Colecciones de Museos de España), y de las colecciones online de los museos públicos de España no incluidos en CER.ES. MisMuseos.net dispone en la actualidad de 8.947 obras de arte (Noviembre 2012)&lt;/p&gt;</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/mismuseos-gnoss"></foaf:homepage>
+    <rdfs:label>mismuseos-gnoss</rdfs:label>
+    <dct:identifier>mismuseos-gnoss</dct:identifier>
+    <dct:title>Mis Museos, índice semántico de museos, artistas y obras de arte (GNOSS)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>261a6d0d-a55c-41e3-86cc-971387cac410</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

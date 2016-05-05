@@ -1,0 +1,107 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ub-mannheim-linked-data">
+    <owl:sameAs rdf:resource="urn:uuid:8fe70733-12b8-44e7-b96c-0e77c6e605b2"></owl:sameAs>
+    <dct:description>Publishes RDF for a number of bibliographic resources:
+
+* Bibliograhic data of the Südwestdeutscher Bibliotheksverbund (SWB)
+* Bibliographic data of the Hessisches Bibliotheksinformationssystem (HeBIS)
+* Classifications of the Regensburger Verbundklassifikation (RVK)
+* Bibliographic data of the Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (HBZ)</dct:description>
+        <dcat:keyword>bibliographic</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-xhtml</dcat:keyword>
+        <dcat:keyword>germany</dcat:keyword>
+        <dcat:keyword>library</dcat:keyword>
+        <dcat:keyword>lld</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>publications</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ub-mannheim-linked-data"></foaf:homepage>
+    <rdfs:label>ub-mannheim-linked-data</rdfs:label>
+    <dct:identifier>ub-mannheim-linked-data</dct:identifier>
+    <dct:title>Linked Data Service der Universitätsbibliothek Mannheim</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://data.bib.uni-mannheim.de/data/rvk/ST"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Mannheim University Library</foaf:name>
+        <foaf:mbox rdf:resource="mailto:philipp.zumstein@bib.uni-mannheim.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Kai Eckert, Philipp Zumstein</foaf:name>
+        <foaf:mbox rdf:resource="mailto:philipp.zumstein@bib.uni-mannheim.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dnb-gemeinsame-normdatei</rdfs:label>
+            <rdf:value>3839380</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:rdf-book-mashup</rdfs:label>
+            <rdf:value>1429424</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://data.bib.uni-mannheim.de/data/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>publishingInstitution</rdfs:label>
+            <rdf:value>http://lobid.org/organisation/DE-180</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>UB Mannheim</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>53415605</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>17f44ec0-c566-4738-ba0d-ff80940d4896</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,16 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-additional-affordable-dwellings">
+    <owl:sameAs rdf:resource="urn:uuid:a7e0423e-5504-4287-bd1d-7c8f11535e32"></owl:sameAs>
+    <dct:description></dct:description>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-additional-affordable-dwellings"></foaf:homepage>
+    <rdfs:label>opendatacommunities-additional-affordable-dwellings</rdfs:label>
+    <dct:identifier>opendatacommunities-additional-affordable-dwellings</dct:identifier>
+    <dct:title>opendatacommunities-additional-affordable-dwellings</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/data/additional-affordable-dwellings</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

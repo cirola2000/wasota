@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <meta charset="utf-8">
+  <script src="/javascripts/jquery-1.11.3.min.js">
+</script>
+  <script src="javascripts/angular.min.js">
+</script>
+  <script src="javascripts/angular-route.min.js">
+</script>
+  <script src="javascripts/mainApp.js">
+</script>
+  <script src="javascripts/controllers/addCtrl.js">
+</script>
+  <script src="javascripts/controllers/homeCtrl.js">
+</script>
+
+
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="javascripts/bootstrap.min.js"></script>
+  <title>WASOTA</title>
+  
+  <body style="position: relative: height: 100%">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="padding-top:15px;">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="http://aksw.org" class="logo"><img src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#/home" style="color:black">
+                        Main page
+                    </a>
+            </li>
+            <li>
+              <a href="#/add" style="color:black">
+                        Add 
+               </a>
+            </li>
+            <li>
+              <a href="#/search" style="color:black">
+                        Search 
+               </a>
+            </li>
+            <li>
+              <a href="http://aksw.org/About.html" style="color:black">
+                         AKSW Group
+                    </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper" style="margin-top: 55px">
+      <div ng-app="main" class="container">
+        <div ng-view></div>
+      </div>
+    </div>
+  </body>
+
+</html>

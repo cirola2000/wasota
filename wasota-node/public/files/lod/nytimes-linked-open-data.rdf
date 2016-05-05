@@ -1,0 +1,49 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/nytimes-linked-open-data">
+    <owl:sameAs rdf:resource="urn:uuid:1b6b31fa-6b36-4da5-afda-110f0c3e9be4"></owl:sameAs>
+    <dct:description>### About
+
+From website:
+
+&gt; For the last 150 years, The New York Times  has maintained  one of the most  authoritative news vocabularies  ever developed. In 2009, we began to publish this vocabulary as linked open data.</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-gn</dcat:keyword>
+        <dcat:keyword>format-nytimes</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/nytimes-linked-open-data"></foaf:homepage>
+    <rdfs:label>nytimes-linked-open-data</rdfs:label>
+    <dct:identifier>nytimes-linked-open-data</dct:identifier>
+    <dct:title>New York Times - Linked Open Data</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Evan Sandhaus, Rob Larson</foaf:name>
+        <foaf:mbox rdf:resource="mailto:evan@nytimes.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Evan Sandhaus</foaf:name>
+        <foaf:mbox rdf:resource="mailto:evan@nytimes.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>343944b5-d4f7-40ff-831f-7be21d9457a6</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

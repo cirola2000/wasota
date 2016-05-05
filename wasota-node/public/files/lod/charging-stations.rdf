@@ -1,0 +1,46 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/charging-stations">
+    <owl:sameAs rdf:resource="urn:uuid:d4af8f1a-1d51-4fd3-95d6-75db81ef5e5e"></owl:sameAs>
+    <dct:description>Enel Charging Stations in Italy (http://data.enel.com/node/5071).</dct:description>
+        <dcat:keyword>format-gn</dcat:keyword>
+        <dcat:keyword>format-gr</dcat:keyword>
+        <dcat:keyword>format-pos</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-vcard2006</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/charging-stations"></foaf:homepage>
+    <rdfs:label>charging-stations</rdfs:label>
+    <dct:identifier>charging-stations</dct:identifier>
+    <dct:title>Charging Stations</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Enel SpA</foaf:name>
+        <foaf:mbox rdf:resource="mailto:sharing@enel.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Enel SpA</foaf:name>
+        <foaf:mbox rdf:resource="mailto:sharing@enel.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>1c20bdb0-d589-4f26-974a-43534af122b5</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

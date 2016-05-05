@@ -1,0 +1,46 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eea">
+    <owl:sameAs rdf:resource="urn:uuid:91248a7b-5df1-4c53-ace9-9ce6c8783386"></owl:sameAs>
+    <dct:description>The European Environment Agency (EEA) is an agency of the European Union. Our task is to provide sound, independent information on the environment. We are a major information source for those involved in developing, adopting, implementing and evaluating environmental policy, and also the general public.
+
+The dataset contains metadata for various items published on the portal; reports, articles, speeches, datasets, indicators etc.</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-pos</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/eea"></foaf:homepage>
+    <rdfs:label>eea</rdfs:label>
+    <dct:identifier>eea</dct:identifier>
+    <dct:title>European Environment Agency Published Products</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Søren Roug</foaf:name>
+        <foaf:mbox rdf:resource="mailto:Soren.Roug@eea.europa.eu"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Antonio De Marinis</foaf:name>
+        <foaf:mbox rdf:resource="mailto:demarinis@eea.europa.eu"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>690d97fc-7a49-4f88-b705-7f375b367706</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

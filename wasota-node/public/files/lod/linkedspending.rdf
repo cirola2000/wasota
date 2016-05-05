@@ -1,0 +1,77 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linkedspending">
+    <owl:sameAs rdf:resource="urn:uuid:64341883-707e-4254-a00b-c111c33b3c1d"></owl:sameAs>
+    <dct:description>A transformation the openspending.org datasets to RDF using the RDF DataCube vocabulary. Available as browsable OntoWiki, SPARQL endpoint, and tar.gz compressed RDF/ntriple dump. There will also be a publication about it with more details.</dct:description>
+        <dcat:keyword>budget</dcat:keyword>
+        <dcat:keyword>finances</dcat:keyword>
+        <dcat:keyword>governement</dcat:keyword>
+        <dcat:keyword>openspending</dcat:keyword>
+        <dcat:keyword>public expenditure</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>transparency</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linkedspending"></foaf:homepage>
+    <rdfs:label>linkedspending</rdfs:label>
+    <dct:identifier>linkedspending</dct:identifier>
+    <dct:title>LinkedSpending: OpenSpending becomes Linked Open Data</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://linkedspending.aksw.org/extensions/page/page/export/lscomplete-0.1.tar.gz"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>.tar.gz</rdf:value>
+                            <rdfs:label>.tar.gz</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>LinkedSpending N-Triples Dump</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://linkedspending.aksw.org/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/ontowiki</rdf:value>
+                            <rdfs:label>api/ontowiki</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>LinkedSpending OntoWiki</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://linkedspending.aksw.org/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>LinkedSpending SPARQL Endpoint</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Konrad Höffner</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-pddl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>5055f24b-9818-40c4-a250-e40ed7bde64f</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

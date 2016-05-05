@@ -1,0 +1,221 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/http-health-tourism-cpe-ku-ac-th-huahin-hhtriple-healthtour-owl">
+    <owl:sameAs rdf:resource="urn:uuid:ab89e56d-9406-40ae-bf5d-025af76ad44e"></owl:sameAs>
+    <dct:description> We  design the ontology  of health tourism data in Hua Hin and Cha-am.    We focus on the health tourism where one of the popular kinds is the spa service. International SPA Association (ISPA) has divided spa services into six kinds : club spa, day spa, destination spa, medical spa, mineral springs spa and resort/hotel spa. In our prototype area, namely, Hua-Hin, there are four kinds. In this work we design the ontology focused on these four categories.
+
+
+•	Hotel and resort spa: a spa located within a resort or hotel providing wellness components.
+
+•	Destination spa: a facility with the main purpose is guided individual spa-goers to develop their healthy habits. 
+
+•	Day spa: a spa offers to clients a variety of professionally administered spa services on a day-use basis.
+
+•	Medical spa: a spa poses an on-site source of natural mineral, thermal or 
+seawater used in hydrotherapy treatments.
+</dct:description>
+        <dcat:keyword>Health tourism</dcat:keyword>
+        <dcat:keyword>Hua Hin</dcat:keyword>
+        <dcat:keyword>Thailand</dcat:keyword>
+        <dcat:keyword>format-bio</dcat:keyword>
+        <dcat:keyword>format-dbo</dcat:keyword>
+        <dcat:keyword>format-dbpedia</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-hhtour</dcat:keyword>
+        <dcat:keyword>format-nt</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-void</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>limited-sparql-endpoint</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lod-cloud</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>ontologies</dcat:keyword>
+        <dcat:keyword>pictures</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>schemata</dcat:keyword>
+        <dcat:keyword>topic-schemata</dcat:keyword>
+        <dcat:keyword>vocab-mappings</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/http-health-tourism-cpe-ku-ac-th-huahin-hhtriple-healthtour-owl"></foaf:homepage>
+    <rdfs:label>http-health-tourism-cpe-ku-ac-th-huahin-hhtriple-healthtour-owl</rdfs:label>
+    <dct:identifier>http-health-tourism-cpe-ku-ac-th-huahin-hhtriple-healthtour-owl</dct:identifier>
+    <dct:title>Hua Hin Health Tourism data set</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.info/huahin/index.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/owl</rdf:value>
+                            <rdfs:label>meta/owl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>HTML documents</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/validator-results.html"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Validator results</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/example/ntriples/healthtour.nt"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>nt</rdf:value>
+                            <rdfs:label>nt</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example Ntriples</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2014-05-24T15:34:07.017Z/interface.png"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>PNG</rdf:value>
+                            <rdfs:label>PNG</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example of the application </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="https://ckannet-storage.commondatastorage.googleapis.com/2014-05-24T16:02:58.163Z/sponsors.png"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>PNG</rdf:value>
+                            <rdfs:label>PNG</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Sponsors</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/example/rdf+xml/healthtour.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example RDF+XML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/index.html#floating-contact"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Download page</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/metadata/voidhealth-tourism.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>BIN</rdf:value>
+                            <rdfs:label>BIN</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/mapping/owl/healthtour.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>OWL</rdf:value>
+                            <rdfs:label>OWL</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>OWL Mapping</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/application/rdf+xml/healthtour.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Application RDF+XML</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/application/x-ntriples/healthtour.nt"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>application/x-ntriples</rdf:value>
+                            <rdfs:label>application/x-ntriples</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Application NT</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://health-tourism.cpe.ku.ac.th/huahin/text/turtle/healthtour.ttl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Application Text Turtle</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>chantana chantrapornchai</foaf:name>
+        <foaf:mbox rdf:resource="mailto:fengcnc@ku.ac.th"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>chantana chantrapornchai, chidchanok choksuchat</foaf:name>
+        <foaf:mbox rdf:resource="mailto:fengcnc@ku.ac.th, cchoksuchat@hotmail.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>0dc488e8-6801-455d-b49a-1dc50069a320</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/freebase_rdf_store">
+    <owl:sameAs rdf:resource="urn:uuid:6b43f31e-c9a4-4645-9d3f-ee17abd98778"></owl:sameAs>
+    <dct:description>**Duplicate of package:freebase**
+
+Data exposed: Freebase Views of Freebase Topics following the principles of Linked Data. The dataset extractions contain aggregated data from: Wikipedia, MusicBrainz, IMDB, TVDB, Flickr and more... (tab delimited file)
+Size of dump and data set: 505 Mbytes compressed in the Bzip2 format
+Notes: Freebase data dumps are complete, general-purpose extracts of the Freebase data in a variety of formats. Freebase Data Dumps are provided free of charge for any purpose with regular updates by Metaweb Technologies. They are distributed, like Freebase itself, under the Creative Commons Attribution (CC-BY) license and use is subject to the Freebase Terms of Service. If you include the data from these data dumps in a website or application, you must attribute us as described in our Licensing Policy.</dct:description>
+        <dcat:keyword>broken_link</dcat:keyword>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>genetics</dcat:keyword>
+        <dcat:keyword>meta.duplicate</dcat:keyword>
+        <dcat:keyword>wikipedia</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/freebase_rdf_store"></foaf:homepage>
+    <rdfs:label>freebase_rdf_store</rdfs:label>
+    <dct:identifier>freebase_rdf_store</dct:identifier>
+    <dct:title>Freebase RDF Store</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://download.freebase.com/datadumps/2009-03-23/freebase-datadump-tsv.tar.bz2"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>3ffa7130-dc8f-41e3-b60e-a16717edcde9</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

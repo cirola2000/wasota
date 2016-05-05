@@ -1,0 +1,115 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/cornetto">
+    <owl:sameAs rdf:resource="urn:uuid:6ddf4078-43fb-4d86-b74c-c2e217990228"></owl:sameAs>
+    <dct:description>[Dutch lexical database](http://www2.let.vu.nl/oz/cltl/cornetto/), similar to WordNet but with more semantic relations.
+Links to package:vu-wordnet and package:w3c-wordnet .
+
+When this dataset is used for research purposes, please cite:
+
+Vossen, P., Maks, I., Segers, R., van der Vliet, H.: Integrating lexical units, synsets and ontology in the Cornetto database. In: (ELRA), E.L.R.A. (ed.) Proceedings of the Sixth International Language Resources and Evaluation (LREC’08) (2008)</dct:description>
+        <dcat:keyword>broken_link</dcat:keyword>
+        <dcat:keyword>cornetto</dcat:keyword>
+        <dcat:keyword>crossdomain</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>dutch</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>language</dcat:keyword>
+        <dcat:keyword>linguistics</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>no-license-metadata</dcat:keyword>
+        <dcat:keyword>no-provenance-metadata</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>published-by-producer</dcat:keyword>
+        <dcat:keyword>vu</dcat:keyword>
+        <dcat:keyword>wordnet</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/cornetto"></foaf:homepage>
+    <rdfs:label>cornetto</rdfs:label>
+    <dct:identifier>cornetto</dct:identifier>
+    <dct:title>Cornetto1.2</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://purl.org/vocabularies/cornetto/synset-iets-2-noun"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>HTML</rdf:value>
+                            <rdfs:label>HTML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://purl.org/vocabularies/cornetto/synset-iets-2-noun.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>XML</rdf:value>
+                            <rdfs:label>XML</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>iets (eng: something)</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>RDF version by Jacco van Ossenbruggen</foaf:name>
+        <foaf:mbox rdf:resource="mailto:jacco.van.ossenbruggen@cwi.nl"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name> Jacco van Ossenbruggen</foaf:name>
+        <foaf:mbox rdf:resource="mailto:jacco.van.ossenbruggen@cwi.nl"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license-info</rdfs:label>
+            <rdf:value> http://tst-centrale.org/nl/producten/lexica/cornetto/7-56</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:vu-wordnet</rdfs:label>
+            <rdf:value>84473</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:w3c-wordnet</rdfs:label>
+            <rdf:value>85116</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://purl.org/vocabularies/cornetto/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>792747</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>a76674f1-a25a-4961-ad89-aef38a5a75ca</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

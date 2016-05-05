@@ -1,0 +1,26 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/sors">
+    <owl:sameAs rdf:resource="urn:uuid:fdf2db23-04bd-4072-9fa3-1f820dd70d13"></owl:sameAs>
+    <dct:description>Statistical Office of the Republic of Serbia
+</dct:description>
+        <dcat:keyword>format-cube</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/sors"></foaf:homepage>
+    <rdfs:label>sors</rdfs:label>
+    <dct:identifier>sors</dct:identifier>
+    <dct:title>SORS</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://elpo.stat.gov.rs/lod2/RS-DATA/National_accounts/GDP_usage_Collective_consumption_expenditure/data_2011_12_28"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+  </dcat:Dataset>
+</rdf:RDF>

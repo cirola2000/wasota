@@ -1,0 +1,89 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/mesh_ipsv_skos_rdf">
+    <owl:sameAs rdf:resource="urn:uuid:59bcc10d-7388-4874-a7ea-12afc0922aaa"></owl:sameAs>
+    <dct:description>### About
+
+Data exposed: (used by output of MeSH to SKOS conversion)
+Size of dump and data set: 2.2 KB
+Notes: released without contract
+
+### Openness
+
+[Copyright](http://thesauri.cs.vu.nl/eswc06/) notice:
+
+&gt; Integrated Public Service Vocabulary (IPSV) © Crown copyright. We wish to encourage the re-use of the IPSV. It may be downloaded by individuals and organisations for incorporation in products and services that are made available to others without requiring a licence or payment of fees. Anyone who includes the IPSV in a product or service should ensure that they do not alter the data or its presentation in any way that damages the integrity of the IPSV. We shall not be liable for any losses due to errors or omissions in the IPSV. In addition esd-toolkit requires that the data is not used in a derogatory manner or in a misleading context. The source of the material must be acknowledged as esd-toolkit and the title referring to Integrated Public Sector Vocabulary should appear on all documents and must be included when being reproduced as part of other publications or services. </dct:description>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>crossdomain</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>no-deref-vocab</dcat:keyword>
+        <dcat:keyword>ontology</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+        <dcat:keyword>vu</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/mesh_ipsv_skos_rdf"></foaf:homepage>
+    <rdfs:label>mesh_ipsv_skos_rdf</rdfs:label>
+    <dct:identifier>mesh_ipsv_skos_rdf</dct:identifier>
+    <dct:title>MeSH, IPSV - SKOS RDF</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://purl.org/hcls/2007/kb-sources/mesh07-eswc06.rdfs"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://thesauri.cs.vu.nl/eswc06/mesh/rdf/meshdata.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.nlm.nih.gov/mesh/2006#D000001"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Mark van Assem</foaf:name>
+        <foaf:mbox rdf:resource="mailto:Mark van Assem"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Mark van Assem</foaf:name>
+        <foaf:mbox rdf:resource="mailto:Mark van Assem"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>be7693d1-f612-48b4-8245-bd9a57f4168a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/fu-berlin-eurostat">
+    <owl:sameAs rdf:resource="urn:uuid:eea1b42d-b63c-4035-8fac-f178bf160336"></owl:sameAs>
+    <dct:description>This dataset contains several statistical indicators for European countries and NUTS Level-2 Regions (NUTS: Nomenclature of Territorial Units for Statistics). Most statistical data are time series, therefore only the latest availabe value is provided here.
+
+### Issues
+
+Date of extraction: 06-14-2007; hence this dataset is seriously outdated.
+
+links:ontologycentral-eurostat: 424</dct:description>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/fu-berlin-eurostat"></foaf:homepage>
+    <rdfs:label>fu-berlin-eurostat</rdfs:label>
+    <dct:identifier>fu-berlin-eurostat</dct:identifier>
+    <dct:title>Eurostat in RDF (FU Berlin)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Christian Bizer</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>8860a9a9-0b94-40fc-9c66-e3cffb05dba0</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

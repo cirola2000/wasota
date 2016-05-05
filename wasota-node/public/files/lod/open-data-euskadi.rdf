@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/open-data-euskadi">
+    <owl:sameAs rdf:resource="urn:uuid:3055a0c3-68e0-412c-875a-488495fa236b"></owl:sameAs>
+    <dct:description>### About
+
+Open Data Euskadi is a catalogue of public data of the Basque Government in reusable format.
+
+Catalog and multiple datasets are availabe in multiple formats (including RDF). 
+
+### Useful URL
+
+Direct link to catalogue http://opendata.euskadi.net/w79-buscador/es/contenidos/informacion/form_busquedas/es_form/formulario_busqueda.html</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/open-data-euskadi"></foaf:homepage>
+    <rdfs:label>open-data-euskadi</rdfs:label>
+    <dct:identifier>open-data-euskadi</dct:identifier>
+    <dct:title>Open Data Euskadi</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Basque Government Administration</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>a3924588-70bf-4156-b151-e46080404cb7</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

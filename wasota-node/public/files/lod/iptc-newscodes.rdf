@@ -1,0 +1,73 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/iptc-newscodes">
+    <owl:sameAs rdf:resource="urn:uuid:c592b6a7-846d-4905-97f3-06dcf72537d7"></owl:sameAs>
+    <dct:description>The IPTC not only provides news exchange formats to the news industry but also creates and maintains sets of concepts to be assigned as metadata values to news objects like text, photographs, graphics, audio- and video files and streams. This allows for a consistent coding of news metadata over the course of time - that's the reason why we call them IPTC NewsCodes.
+
+The universe of NewsCodes is currently split into many different sets - taxonomies - for increased manageability as topics usually relate to a specific area. A taxonomy is also likely to be used exclusively in a specific metadata property of a news exchange format.
+
+To provide an easy overview of our taxonomies further we grouped them into four main areas:
+
+* Descriptive NewsCodes: This is a group of taxonomies to describe the content of news items properly.
+* Administrative NewsCodes: This is a group of taxonomies for proper administration of news items.
+* Transmission NewsCodes: This is a group of taxonomies with controlled values for the transmission process.
+* Exchange Format NewsCodes: This is a group of taxonomies with values to support specific functionalities of the different IPTC news exchange format standards. NewsML 1.x, NewsML-G2, EventsML-G2 and SportsML-G2 make use of this feature. 
+
+Find more details about our taxonomies on the [Overview page](http://www.iptc.org/cms/site/index.html?channel=CH0102).
+
+Any NewsCode provided by the IPTC can be used at any stage of a news workflow without any royalty fee. But if one includes IPTC NewsCodes into an application the intellectual property and the copyright of the IPTC must be explicitly included.
+</dct:description>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/iptc-newscodes"></foaf:homepage>
+    <rdfs:label>iptc-newscodes</rdfs:label>
+    <dct:identifier>iptc-newscodes</dct:identifier>
+    <dct:title>IPTC NewsCodes</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>International Press Telecommunications Council</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4b29ffb3-5228-467a-ac9b-b9fdb92b237a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://cv.iptc.org/newscodes/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4b29ffb3-5228-467a-ac9b-b9fdb92b237a</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

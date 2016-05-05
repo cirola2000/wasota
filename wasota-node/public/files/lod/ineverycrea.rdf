@@ -1,0 +1,253 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ineverycrea">
+    <owl:sameAs rdf:resource="urn:uuid:15245eda-4edf-49c3-b728-e992912eb956"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;a href="http://ineverycrea.net/"&gt;IneveryCREA (Santillana)&lt;/a&gt; is the community of educational creativity for teachers and education professionals to create, develop and share original educational resources in Spain.
+&lt;/p&gt;
+&lt;p&gt;
+Santillana is the leading textbook and general-interest publishing group in Spain and Latin America, and the most prestigious publisher of literary works in Spanish. With more than 108 million books sold in 2010, the company has been synonymous with quality, innovation and service to teaching staff since its inception in 1960.
+&lt;/p&gt;
+&lt;p&gt;
+IneveryCREA (Santillana) works with &lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. IneveryCREA offers a selection of 2,554 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://ineverycrea.net/"&gt;IneveryCREA (Santillana)&lt;/a&gt; es la comunidad de la creatividad educativa para profesores y profesionales de la educación que crean, desarrollan y comparten recursos educativos originales.
+&lt;/p&gt;
+&lt;p&gt; Santillana es el grupo editorial líder en texto escolar y ediciones generales en España y América Latina, y la referencia en el campo de la creación literaria en lengua española. Con más de 108 millones de libros vendidos en el año 2010, es sinónimo de calidad, innovación y servicio al profesorado desde su creación en 1960.&lt;/p&gt;
+&lt;p&gt;
+IneveryCREA (Santillana) trabaja con &lt;a href="http://gnoss.com/"&gt;software de GNOSS (RIAM Intelearning Lab)&lt;/a&gt;. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. IneveryCREA ofrece en este caso una selección de 2.554 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>ESO</dcat:keyword>
+        <dcat:keyword>actividades interactivas</dcat:keyword>
+        <dcat:keyword>bachillerato</dcat:keyword>
+        <dcat:keyword>country-spain</dcat:keyword>
+        <dcat:keyword>country.es</dcat:keyword>
+        <dcat:keyword>creatividad educativa</dcat:keyword>
+        <dcat:keyword>dc</dcat:keyword>
+        <dcat:keyword>educación</dcat:keyword>
+        <dcat:keyword>educación 2.0</dcat:keyword>
+        <dcat:keyword>educación infantil</dcat:keyword>
+        <dcat:keyword>educación primaria</dcat:keyword>
+        <dcat:keyword>escuela 2.0</dcat:keyword>
+        <dcat:keyword>foaf</dcat:keyword>
+        <dcat:keyword>format-cc</dcat:keyword>
+        <dcat:keyword>format-dc</dcat:keyword>
+        <dcat:keyword>format-dcam</dcat:keyword>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfg</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-skos</dcat:keyword>
+        <dcat:keyword>format-tsioc</dcat:keyword>
+        <dcat:keyword>format-wot</dcat:keyword>
+        <dcat:keyword>herramientas 2.0</dcat:keyword>
+        <dcat:keyword>innovación educativa</dcat:keyword>
+        <dcat:keyword>language-spa</dcat:keyword>
+        <dcat:keyword>license-metadata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>material educativo</dcat:keyword>
+        <dcat:keyword>no-proprietary-vocab</dcat:keyword>
+        <dcat:keyword>no-vocab-mappings</dcat:keyword>
+        <dcat:keyword>pedagogía</dcat:keyword>
+        <dcat:keyword>pizarra digital</dcat:keyword>
+        <dcat:keyword>plataforma educativa</dcat:keyword>
+        <dcat:keyword>profesores</dcat:keyword>
+        <dcat:keyword>provenance-metadata</dcat:keyword>
+        <dcat:keyword>proyecto colaborativo</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>recursos educativos originales</dcat:keyword>
+        <dcat:keyword>red educativa</dcat:keyword>
+        <dcat:keyword>schemata</dcat:keyword>
+        <dcat:keyword>sioc</dcat:keyword>
+        <dcat:keyword>skos</dcat:keyword>
+        <dcat:keyword>socialweb</dcat:keyword>
+        <dcat:keyword>sp</dcat:keyword>
+        <dcat:keyword>spain</dcat:keyword>
+        <dcat:keyword>unidades didácticas</dcat:keyword>
+        <dcat:keyword>usergeneratedcontent</dcat:keyword>
+        <dcat:keyword>videos educativos</dcat:keyword>
+        <dcat:keyword>wrapper</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ineverycrea"></foaf:homepage>
+    <rdfs:label>ineverycrea</rdfs:label>
+    <dct:identifier>ineverycrea</dct:identifier>
+    <dct:title>IneveryCREA, la comunidad de la creatividad educativa</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ineverycrea.net/comunidad/ineverycrea/recurso/Tecnicas-de-desarrollo-de-la-Creatividad-Mapas-Me/4a196d2c-a32a-4cef-9d07-dced34ef05e6?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ineverycrea.net/comunidad/ineverycrea/recurso/Trabajas-en-tu-aula-con-herramientas-del-entorno-/a56fcf5f-86c9-44fd-8a34-27cfc8936cd8?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML resource example 2</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ineverycrea.net/en/community/ineverycrea/advanced-search/tag/TIC?rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/rdf+xml</rdf:value>
+                            <rdfs:label>example/rdf+xml</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>RDF/XML search example </dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://gnoss.com/gnoss.owl"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/owl</rdf:value>
+                            <rdfs:label>meta/owl</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>Gnoss Ontology</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ineverycrea.net/voidIneveryCREAGNOSS.n3"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>meta/void</rdf:value>
+                            <rdfs:label>meta/void</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>voiD description</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f9208e48-cee9-48a7-8eb4-e9abc1429e91</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>license_link</rdfs:label>
+            <rdf:value>http://gnoss.com/en/terms-of-use</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>1279</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:didactalia</rdfs:label>
+            <rdf:value>18245</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:freebase</rdfs:label>
+            <rdf:value>3709</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>143</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:gnoss</rdfs:label>
+            <rdf:value>1327</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:ineverycrea-argentina</rdfs:label>
+            <rdf:value>12140</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:nytimes-linked-open-data</rdfs:label>
+            <rdf:value>1115</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://ineverycrea.net/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>shortname</rdfs:label>
+            <rdf:value>IneveryCREA España (Santillana)</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>3494839</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f9208e48-cee9-48a7-8eb4-e9abc1429e91</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

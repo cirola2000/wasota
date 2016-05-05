@@ -1,0 +1,45 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/semantic-web-dog-food">
+    <owl:sameAs rdf:resource="urn:uuid:d29fd308-1ab8-4363-9cea-082a906fc820"></owl:sameAs>
+    <dct:description>### About
+
+Data exposed: Metadata (papers, presentations, people) for several semantic web related conferences and workshops, including the most recent ISWC, ESWC and WWW events.
+
+Notes: The dump locations can be found in the site's semantic sitemap
+
+### Openness
+
+No information found.</dct:description>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-swc</dcat:keyword>
+        <dcat:keyword>format-swrc</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/semantic-web-dog-food"></foaf:homepage>
+    <rdfs:label>semantic-web-dog-food</rdfs:label>
+    <dct:identifier>semantic-web-dog-food</dct:identifier>
+    <dct:title>Semantic Web Dog Food Corpus</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Knud Möller</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>76e486f4-5618-4cdb-bd07-8c35f0822351</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

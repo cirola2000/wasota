@@ -1,0 +1,137 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linked-periodicals">
+    <owl:sameAs rdf:resource="urn:uuid:acba395d-b9d7-4528-8a7e-a2c42c1f5ef2"></owl:sameAs>
+    <dct:description>The Linked Periodicals Database is a data set from the [Data Incubator](http://dataincubator.org/) which aggregates journal metadata provided by [CrossRef](http://crossref.org), [Highwire Press](http://highwire.stanford.edu/) and the [National Library of Medicine](http://www.nlm.nih.gov).
+
+Included in the data are resources for journals and publishers which are available as RDF and JSON. </dct:description>
+        <dcat:keyword>academic</dcat:keyword>
+        <dcat:keyword>articles</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>journals</dcat:keyword>
+        <dcat:keyword>library</dcat:keyword>
+        <dcat:keyword>lld</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/linked-periodicals"></foaf:homepage>
+    <rdfs:label>linked-periodicals</rdfs:label>
+    <dct:identifier>linked-periodicals</dct:identifier>
+    <dct:title>Linked Periodicals Database</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/journal/nature"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>n/a</rdf:value>
+                            <rdfs:label>n/a</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/journal/nature.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/journal/nature.turtle"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/journal/nature.json"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>JSON</rdf:value>
+                            <rdfs:label>JSON</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/organization/nature-publishing-group"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>n/a</rdf:value>
+                            <rdfs:label>n/a</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/organization/nature-publishing-group.rdf"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>RDF</rdf:value>
+                            <rdfs:label>RDF</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/organization/nature-publishing-group.turtle"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://periodicals.dataincubator.org/organization/nature-publishing-group.json"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>JSON</rdf:value>
+                            <rdfs:label>JSON</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://api.talis.com/stores/periodicals/services/sparql"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>100000000</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>4ccc4ced-ed05-4349-bbc1-ad25c6ac4ae0</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ngcoba">
+    <owl:sameAs rdf:resource="urn:uuid:6388f1c6-c978-4405-955b-1878ae9c5e8b"></owl:sameAs>
+    <dct:description>A catalog all deceased authors, all authors of books published before 1964, and at least some more recent authors, including their full name(s), date of death, date of birth, pseudonyms, sex &amp; nationality (for those who died from 1920 onwards), and their books published before 1964.
+
+This is a large project, and is only partially complete.  The online webpages currently catalog over 139 000 authors out of what is estimated to be at least 500 000 deceased authors, and over 250 000 (32 000 of them online) out of what is estimated to be at least 2 500 000 books published before 1964.
+
+### Openness: Open
+
+Philip Harper the creator of the site and the extractor of the data provided the dump linked in the resource to Rufus Pollock in 2009 and has kindly agreed for it to be made available openly available under the license designated for this dataset.
+
+He requests citation of the form:
+
+Extract of NGCOBA, dated 2009 March; provided by P K S Harper.</dct:description>
+        <dcat:keyword>bibliographic</dcat:keyword>
+        <dcat:keyword>bibliography</dcat:keyword>
+        <dcat:keyword>death-dates</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/ngcoba"></foaf:homepage>
+    <rdfs:label>ngcoba</rdfs:label>
+    <dct:identifier>ngcoba</dct:identifier>
+    <dct:title>New General Catalog of Old Books &amp; Authors</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://ckan.net/storage/f/file/e696d857-e997-41c8-be08-408697168ca8"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>TXT</rdf:value>
+                            <rdfs:label>TXT</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+               <dct:title>NGCOBA dump March 2009</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Phillip Harper</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Rufus Pollock</foaf:name>
+        <foaf:mbox rdf:resource="mailto:rufus.pollock@okfn.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-pddl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>442536f1-e0f2-4048-9073-9bb1c86ebf37</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

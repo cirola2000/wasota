@@ -1,0 +1,130 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/beneficiaries-of-the-european-commission">
+    <owl:sameAs rdf:resource="urn:uuid:353b5a89-f04b-41d4-b52b-506783370a93"></owl:sameAs>
+    <dct:description>The names of the beneficiaries of ca. €10 billion of grants and other forms of support, awarded (in budgetary terms: 'committed') by the Commission every year, either directly or through 'executive agencies' set up to help it run EU funded programmes. The site also contains certain procurement contracts, excluding for the moment those linked to administrative expenditure of the Commission.
+This information is separate from information on funds managed by EU or non-EU national governments or other parties on the behalf of the Commission.
+The original site of the European Commission shows only lists of awarded amounts and beneficiaries - it does not provide amounts consolidated per country, budget line, etc. .
+The original dataset can be found at EU Commission Financial Transparency System which is also listed at ckan.</dct:description>
+        <dcat:keyword>budget</dcat:keyword>
+        <dcat:keyword>business</dcat:keyword>
+        <dcat:keyword>date-2007</dcat:keyword>
+        <dcat:keyword>date-2008</dcat:keyword>
+        <dcat:keyword>date-2009</dcat:keyword>
+        <dcat:keyword>deref-vocab</dcat:keyword>
+        <dcat:keyword>eu</dcat:keyword>
+        <dcat:keyword>european-commission</dcat:keyword>
+        <dcat:keyword>finance</dcat:keyword>
+        <dcat:keyword>financial</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-html</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>fts</dcat:keyword>
+        <dcat:keyword>government</dcat:keyword>
+        <dcat:keyword>latc</dcat:keyword>
+        <dcat:keyword>linked-data</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>ontowiki</dcat:keyword>
+        <dcat:keyword>procurement</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+        <dcat:keyword>region-eu</dcat:keyword>
+        <dcat:keyword>system</dcat:keyword>
+        <dcat:keyword>transparency</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/beneficiaries-of-the-european-commission"></foaf:homepage>
+    <rdfs:label>beneficiaries-of-the-european-commission</rdfs:label>
+    <dct:identifier>beneficiaries-of-the-european-commission</dct:identifier>
+    <dct:title>EU: fintrans.publicdata.eu</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://fintrans.publicdata.eu/sparql"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>api/sparql</rdf:value>
+                            <rdfs:label>api/sparql</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://fintrans.publicdata.eu/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>html+rdfa</rdf:value>
+                            <rdfs:label>html+rdfa</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://fintrans.publicdata.eu/ec/"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>html+rdfa</rdf:value>
+                            <rdfs:label>html+rdfa</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://fintrans.publicdata.eu/ec/resource/su/SCR.706541.1"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>example/ntriples</rdf:value>
+                            <rdfs:label>example/ntriples</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Michael Martin</foaf:name>
+        <foaf:mbox rdf:resource="mailto:martin@informatik.uni-leipzig.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Agile Knowledge and Semantic Web Research Group (AKSW)</foaf:name>
+        <foaf:mbox rdf:resource="mailto:aksw@informatik.uni-leipzig.de"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-by"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>199168</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://fintrans.publicdata.eu/ec/resource/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>1897840</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>e7363f34-f351-4287-a625-4f290710f121</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

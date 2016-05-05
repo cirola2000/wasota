@@ -1,0 +1,85 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/artenuevosmedios-gnoss">
+    <owl:sameAs rdf:resource="urn:uuid:ab800a5b-339b-4efc-8317-c67b991cc33c"></owl:sameAs>
+    <dct:description>&lt;p&gt;
+&lt;a href="http://red.gnoss.com/comunidad/Interactivos"&gt;Entornos Interactivos. Arte en los nuevos medios&lt;/a&gt;
+ is a community promoted by Jaime Munárriz Ortiz, Professor and Associate Dean for Research and Graduate School of Fine Arts at the University Complutense of Madrid, for the subject Image Synthesis and Interactive Environments, of the Research Master in Art and Creation. The community works with 
+&lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;
+. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Green Competitiveness offers a selection of 135 resources (November 2012). It includes a facet-based engine search and enriched contexts. Both are developments by GNOSS.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://red.gnoss.com/comunidad/Interactivos"&gt;Entornos Interactivos. Arte en los nuevos medios&lt;/a&gt;
+ es una comunidad promovida por Jaime Munárriz Ortiz, profesor y Vicedecano de Investigación y Posgrado de la
+&lt;a href="http://www.bellasartes.ucm.es/"&gt;Facultad de Bellas Artes&lt;/a&gt;
+de la Universidad Complutense de Madrid, para la asignatura Imagen de Síntesis y Entornos Interactivos, del Máster en Investigación en Arte y Creación. La comunidad trabaja con software de 
+&lt;a href="http://gnoss.com/"&gt;GNOSS software (RIAM Intelearning Lab)&lt;/a&gt;
+. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. NextWeb ofrece en este caso una selección de 135 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+&lt;/p&gt;</dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-sioc</dcat:keyword>
+        <dcat:keyword>format-tsioc</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/artenuevosmedios-gnoss"></foaf:homepage>
+    <rdfs:label>artenuevosmedios-gnoss</rdfs:label>
+    <dct:identifier>artenuevosmedios-gnoss</dct:identifier>
+    <dct:title>Entornos interactivos. Arte en los nuevos medios (GNOSS)</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>GNOSS Team</foaf:name>
+        <foaf:mbox rdf:resource="mailto:gnoss@gnoss.com"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://creativecommons.org/licenses/by-nc/2.0/"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2259d86e-1aa0-4c60-8264-e1fdd07e5fd8</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://red.gnoss.com/en/community/Interactivos/</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>2259d86e-1aa0-4c60-8264-e1fdd07e5fd8</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

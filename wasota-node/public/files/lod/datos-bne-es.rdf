@@ -1,0 +1,63 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/datos-bne-es">
+    <owl:sameAs rdf:resource="urn:uuid:78cd19c3-0f70-4f4b-a455-fdeeb95bf4fc"></owl:sameAs>
+    <dct:description>Open bibliographic linked data from the Spanish National LIbrary including 4 million authority records, 2.4 million bibliographic records resulting in over 58 million triples.
+
+The Spanish data are modelled using IFLA vocabularies.  For the migration and linkage, we used Marimba, a particular tool developed by us and designed for being used by librarians.
+
+### Data
+
+* 4 Million authority records
+* 2.4 million of bibliographic records
+* 58 million of RDF triples
+* 600K links with other resources (VIAF, SUDOC, GND (German national library), Libris, DBpedia)
+
+More detail is provided at: &lt;http://www.bne.es/es/Catalogos/DatosEnlazados/FuentesDatos/&gt;
+
+&gt; The data are taken from the catalog bibliographic and authority of the National Library of Spain. 3,900,000 have been extracted bibliographic resource records, papers belonging to modern, old, electronic resources, manuscripts, periodicals, maps, prints, photographs, printed music, sound and audiovisual recordings.
+&gt; 
+&gt; Have also been extracted 4,200,000 authority records of persons, entities, conferences, uniform titles and subjects, which are used in bibliographic records. Both sets of records are coded according to the MARC21 format.
+&gt; 
+&gt; So far it has become a very representative subset of the library catalog, consisting of 2.4 million bibliographic records of monographs modern formats, old printed music and sound recordings.</dct:description>
+        <dcat:keyword>format-frbrer</dcat:keyword>
+        <dcat:keyword>format-hartigprov</dcat:keyword>
+        <dcat:keyword>format-prvt</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/datos-bne-es"></foaf:homepage>
+    <rdfs:label>datos-bne-es</rdfs:label>
+    <dct:identifier>datos-bne-es</dct:identifier>
+    <dct:title>datos.bne.es</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dvila@fi.upm.es"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Daniel Vila-Suero and Boris Villazón-Terrazas</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dvila@fi.upm.es"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/cc-zero"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>6955a592-8b27-4bea-8eba-9afffcae645b</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

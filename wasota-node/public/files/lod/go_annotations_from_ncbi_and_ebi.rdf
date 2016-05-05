@@ -1,0 +1,49 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/go_annotations_from_ncbi_and_ebi">
+    <owl:sameAs rdf:resource="urn:uuid:15a07acf-de30-468d-b5ad-c4931a2b3092"></owl:sameAs>
+    <dct:description>Data exposed: GO annotations from National Center for Biotechnology Information (NCBI) and European Bioinformatics Institute (EBI)
+Size of dump and data set: 73 MB
+
+### Openness
+
+Derived from EBI and NCBI.
+
+[EBI terms of use](http://www.ebi.ac.uk/Information/termsofuse.html) page states:
+
+&gt; The public databases of the EBI are freely available by any individual and for any purpose.
+
+[NCBI Copyright and Disclaimers](http://www.ncbi.nlm.nih.gov/About/disclaimer.html) page states:
+
+&gt; Information that is created by or for the US government on this site is within the public domain. Public domain information on the National Library of Medicine (NLM) Web pages may be freely distributed and copied. However, it is requested that in any subsequent use of this work, NLM be given appropriate acknowledgment.</dct:description>
+        <dcat:keyword>biotech</dcat:keyword>
+        <dcat:keyword>ckanupload.esw.200910</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>linkeddata</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>lodcloud.nolinks</dcat:keyword>
+        <dcat:keyword>lodcloud.unconnected</dcat:keyword>
+        <dcat:keyword>rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/go_annotations_from_ncbi_and_ebi"></foaf:homepage>
+    <rdfs:label>go_annotations_from_ncbi_and_ebi</rdfs:label>
+    <dct:identifier>go_annotations_from_ncbi_and_ebi</dct:identifier>
+    <dct:title>GO annotations from National Center for Biotechnology Information (NCBI) and European Bioinformatics Institute (EBI)</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>1f419e1c-1b52-4305-88a3-c38660384558</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

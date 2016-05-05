@@ -1,0 +1,42 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/jamendo-dbtune">
+    <owl:sameAs rdf:resource="urn:uuid:2bb17c00-c44b-4b51-b2ec-14859975b702"></owl:sameAs>
+    <dct:description>### Description
+
+The package holds data from package:jamendo converted to RDF, available under the same license than the raw Jamendo data itself.
+
+The package also holds links towards Geonames and Musicbrainz. The links are available under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License] (subject to change).
+
+This is part of package:dbtune.</dct:description>
+        <dcat:keyword>format-hg</dcat:keyword>
+        <dcat:keyword>format-mo</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/jamendo-dbtune"></foaf:homepage>
+    <rdfs:label>jamendo-dbtune</rdfs:label>
+    <dct:identifier>jamendo-dbtune</dct:identifier>
+    <dct:title>DBTune.org Jamendo RDF Server</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Yves Raimond</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>928fd3a0-0af4-4f51-86e9-47ac39973b29</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

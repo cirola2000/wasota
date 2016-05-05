@@ -1,0 +1,86 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/bioportal-carelex">
+    <owl:sameAs rdf:resource="urn:uuid:620ade0a-70c7-4fa5-be8a-5729a5929775"></owl:sameAs>
+    <dct:description>Categories and terms used to classify content (documents, images, etc) in electronic content repositories for life science / BioPharma.  Initial version contains content model for use with clinical trial electronic Trial Master Files or eTMF's.  A Content model contains content classification categories (classes) and metadata properties (data properties).  Metadata Properties are shown as a class for convenience.  In implementation, metadata properties should be assigned to each Content Type.   Instances of Content Types can contain actual content items (documents, etc).   The CareLex Ontology is described in specification published at www.CareLex.org/publications.</dct:description>
+        <dcat:keyword>biomedicine</dcat:keyword>
+        <dcat:keyword>bioportal</dcat:keyword>
+        <dcat:keyword>format-owl</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>ontology</dcat:keyword>
+        <dcat:keyword>published-by-third-party</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/bioportal-carelex"></foaf:homepage>
+    <rdfs:label>bioportal-carelex</rdfs:label>
+    <dct:identifier>bioportal-carelex</dct:identifier>
+    <dct:title>CareLex</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://www.bioontology.org/wiki/index.php/BioPortal_REST_services"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://sparql.bioontology.org/"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://rest.bioontology.org/bioportal/ontologies/download/47410?apikey=BP_API_KEY"></dcat:accessURL>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Zack Schmidt</foaf:name>
+        <foaf:mbox rdf:resource="mailto:"></foaf:mbox>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>BioPortal project on behalf of ontology owner.</foaf:name>
+        <foaf:mbox rdf:resource="mailto:support@bioontology.org"></foaf:mbox>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:bioportal-ncit</rdfs:label>
+            <rdf:value>43</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>published-via</rdfs:label>
+            <rdf:value>http://sparql.bioontology.org</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>sparql-named-graph</rdfs:label>
+            <rdf:value>http://bioportal.bioontology.org/ontologies/CARELEX</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>4140</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>9cb20f98-21b2-4c3c-8f4d-f0e8ab459a96</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

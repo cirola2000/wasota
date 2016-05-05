@@ -1,0 +1,17 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/indexwrap-ontologycentral">
+    <owl:sameAs rdf:resource="urn:uuid:2dce1da2-cf4f-409c-99e7-97e2670b2d94"></owl:sameAs>
+    <dct:description>Information on market indices as Linked Data. </dct:description>
+        <dcat:keyword>government</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/indexwrap-ontologycentral"></foaf:homepage>
+    <rdfs:label>indexwrap-ontologycentral</rdfs:label>
+    <dct:identifier>indexwrap-ontologycentral</dct:identifier>
+    <dct:title>IndexWrap(Ontologycentral)</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://indexwrap.ontologycentral.com/dax#id"></dcat:accessURL>
+               <dct:title>Example</dct:title>
+            </dcat:Distribution>
+        </dcat:distribution>
+  </dcat:Dataset>
+</rdf:RDF>

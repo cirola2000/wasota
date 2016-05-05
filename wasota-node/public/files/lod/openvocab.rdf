@@ -1,0 +1,51 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/openvocab">
+    <owl:sameAs rdf:resource="urn:uuid:f6ead6e2-a60c-492d-b4f0-a654685c85f6"></owl:sameAs>
+    <dct:description>### About
+
+From [website](http://open.vocab.org/about)
+
+&gt; OpenVocab is a community maintained vocabulary intended for use on the Semantic Web
+
+&gt; OpenVocab is ideal for properties and classes that don't warrant the effort of creating or maintaining a full schema. OpenVocab allows anyone to create and modify vocabulary terms using their web browser. Each term is described using appropriate elements of RDF, RDFS and OWL. OpenVocab allows you to create any properties and classes; assign labels, comments and descriptions; declare domains and ranges and much more.
+
+### Re-use/openness
+
+From [about](http://open.vocab.org/about) page:
+
+&gt; All text and data available via this site are in the Public Domain.</dct:description>
+        <dcat:keyword>access-www</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>schema</dcat:keyword>
+        <dcat:keyword>semantic</dcat:keyword>
+        <dcat:keyword>semantic-web</dcat:keyword>
+        <dcat:keyword>vocabulary</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/openvocab"></foaf:homepage>
+    <rdfs:label>openvocab</rdfs:label>
+    <dct:identifier>openvocab</dct:identifier>
+    <dct:title>OpenVocab</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Ian Davis</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>d45aa7a2-c9f8-4bb7-b03d-73832da483b4</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

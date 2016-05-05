@@ -1,0 +1,42 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/osm-semantic-network">
+    <owl:sameAs rdf:resource="urn:uuid:4442c93a-8588-465d-aabc-878d1a73a1ab"></owl:sameAs>
+    <dct:description>The **OSM Semantic Network** is a Semantic Web resource extracted from the [OpenStreetMap Wiki website](http://wiki.openstreetmap.org), encoded as a SKOS vocabulary. It contains a machine-readable representation of the tags (i.e. terms) used to describe [map features](http://wiki.openstreetmap.org/wiki/Map_Features) in OSM, and several semantic relations between them. The OSM terms are linked to [LinkedGeoData](http://datahub.io/dataset/linkedgeodata) and WordNet.
+
+Author &amp; Maintaner: [Andrea Ballatore](https://sites.google.com/site/andreaballatore)</dct:description>
+        <dcat:keyword>format-skos</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/osm-semantic-network"></foaf:homepage>
+    <rdfs:label>osm-semantic-network</rdfs:label>
+    <dct:identifier>osm-semantic-network</dct:identifier>
+    <dct:title>OSM Semantic Network</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Andrea Ballatore</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Andrea Ballatore</foaf:name>
+      </rdf:Description>
+    </dct:contributor>
+    <dct:rights rdf:resource="http://www.opendefinition.org/licenses/odc-odbl"></dct:rights>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>06a6af3b-8b37-41ca-80e2-637e785cf857</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

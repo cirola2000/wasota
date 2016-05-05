@@ -1,0 +1,24 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/statusnet-ldn-fai-net">
+    <owl:sameAs rdf:resource="urn:uuid:5b7acc88-c0ae-4924-981f-1a25263c37c8"></owl:sameAs>
+    <dct:description>StatusNet instance hosted at http://ldn-fai.net</dct:description>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/statusnet-ldn-fai-net"></foaf:homepage>
+    <rdfs:label>statusnet-ldn-fai-net</rdfs:label>
+    <dct:identifier>statusnet-ldn-fai-net</dct:identifier>
+    <dct:title>statusnet-ldn-fai-net</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://status.ldn-fai.net</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

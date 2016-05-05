@@ -1,0 +1,24 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/statusnet-sebseb01-net">
+    <owl:sameAs rdf:resource="urn:uuid:77a59218-4dbe-43e1-87c7-5d77d8a98d43"></owl:sameAs>
+    <dct:description>StatusNet instance hosted at http://sebseb01.net</dct:description>
+        <dcat:keyword>format-foaf</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/statusnet-sebseb01-net"></foaf:homepage>
+    <rdfs:label>statusnet-sebseb01-net</rdfs:label>
+    <dct:identifier>statusnet-sebseb01-net</dct:identifier>
+    <dct:title>statusnet-sebseb01-net</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:geonames-semantic-web</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://statusnet.sebseb01.net</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

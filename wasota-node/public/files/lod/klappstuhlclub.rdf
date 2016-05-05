@@ -1,0 +1,91 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/klappstuhlclub">
+    <owl:sameAs rdf:resource="urn:uuid:e7dba441-4786-40a3-b607-9090ad5aac97"></owl:sameAs>
+    <dct:description>##Klappstuhlclub
+http://klappstuhlclub.de 
+The Klappstuhlclub (Folding chair club) is meeting every week (mostly Wednesday evening) in cities around the globe. The focus is on Germany currently (Leipzig over 300 meetings, Berlin over 200 meetings), but also Lisbon, France and USA.
+
+### Get involved
+Please email if:  
+1. You want to join the Klappstuhlclub or you want to create a Klappstuhlclub in your city . (kurzum@googlemail.com)
+2. You want to know how we made a simple Wordpress blog Linked Data ready and all that. (hellmann@informatik.uni-leipzig.de )
+
+### License 
+Data is protected for privacy issues.
+
+### Semantic Wiki Wordpress
+The data was created with a Wordpress plugin see
+http://bitbucket.org/aksw/rdf2wp/overview
+
+Each Blogpost is available as Linked Data. User enter data the same way as in Wikipedia infoboxes (with a Wiki template)
+
+SPARQL endpoint (Virtuoso) is here:
+http://klappstuhlclub.de/sparql
+
+</dct:description>
+        <dcat:keyword>klappstuhlclub</dcat:keyword>
+        <dcat:keyword>ksc</dcat:keyword>
+        <dcat:keyword>lod</dcat:keyword>
+        <dcat:keyword>rdf2wp</dcat:keyword>
+        <dcat:keyword>semantic-web</dcat:keyword>
+        <dcat:keyword>usergeneratedcontent</dcat:keyword>
+        <dcat:keyword>wiki</dcat:keyword>
+        <dcat:keyword>wikipedia</dcat:keyword>
+        <dcat:keyword>wordpress</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/klappstuhlclub"></foaf:homepage>
+    <rdfs:label>klappstuhlclub</rdfs:label>
+    <dct:identifier>klappstuhlclub</dct:identifier>
+    <dct:title>Klappstuhlclub</dct:title>
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:accessURL rdf:resource="http://klappstuhlclub.de/wp/wp-content/plugins/RDF2WP/Output/EntireBlogExporter.php?format=text/plain"></dcat:accessURL>
+                    <dct:format>
+                        <dct:IMT>
+                            <rdf:value>text/turtle</rdf:value>
+                            <rdfs:label>text/turtle</rdfs:label>
+                        </dct:IMT>
+                    </dct:format>
+            </dcat:Distribution>
+        </dcat:distribution>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Sebastian Hellmann</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+    <dct:contributor>
+      <rdf:Description>
+        <foaf:name>Sebastian Hellmann</foaf:name>
+      </rdf:Description>
+    </dct:contributor>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:dbpedia</rdfs:label>
+            <rdf:value>50</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>triples</rdfs:label>
+            <rdf:value>1032</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>3963a524-33ff-45a2-930c-ad0fa79a675e</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

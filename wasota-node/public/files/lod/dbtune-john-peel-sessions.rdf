@@ -1,0 +1,34 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dbtune-john-peel-sessions">
+    <owl:sameAs rdf:resource="urn:uuid:8850e95c-e17c-4fb5-97f4-65d414a08866"></owl:sameAs>
+    <dct:description>RDF conversion of a dataset released by the BBC, about the [John Peel sessions](http://en.wikipedia.org/wiki/John_Peel#Peel_sessions), a long-lived series of live music performances on BBC Radio 1, hosted by DJ John Peel.</dct:description>
+        <dcat:keyword>format-owl</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/dbtune-john-peel-sessions"></foaf:homepage>
+    <rdfs:label>dbtune-john-peel-sessions</rdfs:label>
+    <dct:identifier>dbtune-john-peel-sessions</dct:identifier>
+    <dct:title>DBTune.org John Peel sessions RDF server</dct:title>
+    <dct:creator>
+      <rdf:Description>
+        <foaf:name>Yves Raimond</foaf:name>
+      </rdf:Description>
+    </dct:creator>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_object_id</rdfs:label>
+            <rdf:value>f067fc6c-22d5-4109-a478-4e4185e5f026</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_id</rdfs:label>
+            <rdf:value>10a3a7b4-d7c6-4813-ac08-b7106e272574</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>harvest_source_title</rdfs:label>
+            <rdf:value>ckanlod</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

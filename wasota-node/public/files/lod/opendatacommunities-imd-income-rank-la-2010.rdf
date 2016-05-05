@@ -1,0 +1,32 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-imd-income-rank-la-2010">
+    <owl:sameAs rdf:resource="urn:uuid:3a3b98ac-2ab4-4450-b799-edd754bd9f97"></owl:sameAs>
+    <dct:description></dct:description>
+        <dcat:keyword>format-dcterm</dcat:keyword>
+        <dcat:keyword>format-rdf</dcat:keyword>
+        <dcat:keyword>format-rdfs</dcat:keyword>
+        <dcat:keyword>format-void</dcat:keyword>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatacommunities-imd-income-rank-la-2010"></foaf:homepage>
+    <rdfs:label>opendatacommunities-imd-income-rank-la-2010</rdfs:label>
+    <dct:identifier>opendatacommunities-imd-income-rank-la-2010</dct:identifier>
+    <dct:title>opendatacommunities-imd-income-rank-la-2010</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:opendatacommunities-societal-wellbeing-deprivation-imd-income-rank-la-2010</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>links:reference-data-gov-uk</rdfs:label>
+            <rdf:value>1</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://opendatacommunities.org/data/imd-income-rank-la-2010</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>

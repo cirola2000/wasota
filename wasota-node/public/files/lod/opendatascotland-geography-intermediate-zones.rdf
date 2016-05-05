@@ -1,0 +1,16 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/">
+  <dcat:Dataset rdf:about="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatascotland-geography-intermediate-zones">
+    <owl:sameAs rdf:resource="urn:uuid:e89f57ee-083d-4e47-ad8c-45827d07062a"></owl:sameAs>
+    <dct:description></dct:description>
+    <foaf:homepage rdf:resource="http://wifo5-36.informatik.uni-mannheim.de:5000/dataset/opendatascotland-geography-intermediate-zones"></foaf:homepage>
+    <rdfs:label>opendatascotland-geography-intermediate-zones</rdfs:label>
+    <dct:identifier>opendatascotland-geography-intermediate-zones</dct:identifier>
+    <dct:title>opendatascotland-geography-intermediate-zones</dct:title>
+        <dct:relation>
+          <rdf:Description>
+            <rdfs:label>namespace</rdfs:label>
+            <rdf:value>http://data.opendatascotland.org/data/geography/intermediate-zones</rdf:value>
+          </rdf:Description>
+        </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>
