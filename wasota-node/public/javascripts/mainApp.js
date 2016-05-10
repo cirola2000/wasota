@@ -1,4 +1,4 @@
-var main = angular.module('main', ["ngRoute"]);
+var main = angular.module('main', ["ngRoute", "ngTable"]);
 
 main.config(['$routeProvider',
   function ($routeProvider) {
@@ -11,6 +11,10 @@ main.config(['$routeProvider',
       when('/add', {
         templateUrl: '/partial/add',
         controller: 'addCtrl'
+      }).
+      when('/search', {
+        templateUrl: '/partial/search',
+        controller: 'searchCtrl'
       }).
       when('/wiki', {
         templateUrl: '/partial/wiki',

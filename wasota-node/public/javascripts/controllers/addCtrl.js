@@ -9,18 +9,30 @@ main.controller('addCtrl', ['$scope', '$http', 'generalData', function ($scope, 
 
   $scope.choosenFormat = $scope.formats[0];
   
-  $scope.datasetAddress = "";
+  $scope.graphIdentifier = "";
+  
   
   
   $scope.sendGraph = function(){
-    $http.put("/proxy/add?graph-uri=" + $scope.graphURI).
+    $http.post("/proxy/datset/query",{namedGraph:$scope.graphIdentifier}).
       then(function (response) {
         console.log(response);
-        // $scope.apiResponse = response.data;
-        // $scope.showApiResponseColor = "black";
-        // $scope.showApiResponse = true;
-        // $scope.showLoading = false;
     }, function (response) {
+        $scope.apiResponse = "Error: " + response.data;
+        $scope.showApiResponse = true;
+
+      });
+  };
+  
+  
+  $scope.sendGraph = function(){
+    $http.post("/proxy/dataset/add?namedGraph=" + $scope.graphIdentifier + "&format=" + $scope.choosenFormat.format, {graph : $scope.graph}).
+      then(function (response) {
+        console.log(response);
+        $scope.showApiResponse = true;
+        $scope.coreMsg = "Graph added!";
+    }, function (response) {
+              $scope.showApiResponse = true;
         $scope.apiResponse = "Error: " + response.data;
         $scope.showApiResponse = true;
 

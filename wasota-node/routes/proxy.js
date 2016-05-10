@@ -2,90 +2,47 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 
-var serverURL = "http://cirola2000.cloudapp.net:8890/";
+var fs = require('fs');
 
-
+var serverURL = "http://localhost:8190"
 
 
 router.put('/*', function (req, res, next) {
-  var query = serverURL +"/sparql-graph-crud-auth"+ req.url;
-  console.log("aoisd")
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      console.log(data);
-      console.log(data);
-      res.send(data);
-    } catch (E) {
-      console.log(E);
+  var query = serverURL + "/dataset/add?namedGraph=ciro&format=ttl";
+
+  console.log(query);
+
+  request(
+    
+     { 
+       method: 'POST',
+      uri: query,
+      namedGraph: "http://ciro/graph",
+      format: "ttl",
+      headers: {'Content-type': 'text/turtle',
+      'User-Agent': 'curl/7.43.0'},
+      body: fs.createReadStream(__dirname + '/../files/1.ttl') 
+      
     }
+  , function (error, response, body) {
+    if (error) {
+      return console.error('upload failed:', error);
+    }
+    console.log('Server responded with:' + body);
   });
+  
 });
 
 
-
-
-
-
-
-
-router.get('/distribution/search', function (req, res, next) {
-  var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      try {
-        var data = JSON.parse(body.toString());
-        console.log(data);
-        var table = [];
-        for (var i in data.distributions) {
-          var line = [];
-          line[0] = data.distributions[i].topDatasetTitle;
-          line[1] = data.distributions[i].downloadUrl;
-          line[2] = data.distributions[i].status;
-          line[3] = data.distributions[i].lastTimeStreamed;
-          line[4] = data.distributions[i].lodvaderID;
-          line[5] = data.distributions[i].lastMsg;
-          table[i] = line;
-        }
-      res.send({ "draw": req.query.draw, "recordsFiltered": data.totalSize, "recordsTotal": data.totalSize, "data": table });
-      } catch (E) {
-        console.log(E);
-      }
-    }
-    else {
-      console.log(error);
-      res.send({ error: error });
-    }
-  });
-});
-
-router.post('/CreateD3JSONFormat2', function (req, res, next) {
-
-  var query = serverURL;
-  var resp;
-
-  request(query + req.url, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      // console.log(body);
-      resp = JSON.parse(body);
-      res.send(resp);
-    }
-    else {
-      console.log(error);
-    }
-  });
-});
-
-router.get('/GetServerURL', function (req, res, next) {
-  res.send({ "serverURL": serverURL });
-});
 
 router.get('/*', function (req, res, next) {
   var query = serverURL + req.url;
+  console.log(query);
   request(query, function (error, response, body) {
     try {
-      var data = body.toString();
-      res.send(data);
+      var data = body;
+      console.log(JSON.parse(data));
+      res.send((JSON.parse(data)));
     } catch (E) {
       console.log(E);
     }
@@ -94,14 +51,28 @@ router.get('/*', function (req, res, next) {
 
 router.post('/*', function (req, res, next) {
   var query = serverURL + req.url;
-  request(query, function (error, response, body) {
-    try {
-      var data = body.toString();
-      res.send(data);
-    } catch (E) {
-      console.log(E);
+
+
+  console.log(query);
+  console.log(req.body);
+
+  request(
+    
+     { 
+       method: 'POST',
+      uri: query,
+      body: JSON.stringify(req.body),     
+      headers: {'Content-type': 'text/plain',
+      'User-Agent': 'curl/7.43.0'}, 
     }
+  , function (error, response, body) {
+    if (error) {
+      return console.error('error:', error);
+    }
+          res.send((JSON.parse(body)));
+
   });
+  
 });
 
 
