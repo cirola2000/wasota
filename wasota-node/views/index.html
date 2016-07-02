@@ -1,7 +1,13 @@
 <!doctype html>
 <html>
   <meta charset="utf-8">
-  <script src="/javascripts/jquery-1.11.3.min.js">
+  <script src="javascripts/bootstrap301/jquery-1.7.2.min.js">
+</script>
+  <script src="javascripts/bootstrap301/bootstrap-slider.js">
+</script>
+  <script src="javascripts/bootstrap301/script.js">
+</script>
+  <script src="javascripts/bootstrap301/jquery-loader.js">
 </script>
   <script src="javascripts/angular.min.js">
 </script>
@@ -15,53 +21,66 @@
 </script>
   <script src="javascripts/controllers/searchCtrl.js">
 </script>
-<script src="javascripts/ng-table//ng-table.min.js"></script>
+<script src="javascripts/ng-table/ng-table.min.js"></script>
 
 
-  <link rel="stylesheet" href="https://cdn.rawgit.com/esvit/ng-table/v1.0.0/dist/ng-table.min.css">
-  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <script src="javascripts/bootstrap.min.js"></script>
-  <title>WASOTA</title>
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/esvit/ng-table/v1.0.0/dist/ng-table.min.css"> -->
+  <link rel="stylesheet" href="stylesheets/bootstrap301/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap301/loader-style.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap301/style.css">
+  <link rel="icon" type="image/png" href="https://s3.eu-central-1.amazonaws.com/tommaso-soru/files/aksw-logo.png" />
+  <script src="javascripts/bootstrap301/bootstrap.min.js"></script>
+  <title>WASOTA - What Are the States Of The Art?</title>
   
-  <body style="position: relative: height: 100%">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="padding-top:15px;">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="http://aksw.org" class="logo"><img src="http://aksw.org/extensions/site/sites//local/images/logo-aksw.png" /></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#/home" style="color:black">
-                        Main page
-                    </a>
-            </li>
-            <li>
-              <a href="#/add" style="color:black">
-                        Add 
-               </a>
-            </li>
-            <li>
-              <a href="#/search" style="color:black">
-                        Search 
-               </a>
-            </li>
-            <li>
-              <a href="http://aksw.org/About.html" style="color:black">
-                         AKSW Group
-                    </a>
-            </li>
-          </ul>
+  <body>
+
+  <div id="header">
+      	<!--  include your header file or uncomment the include below and create header.xhtml in this directory --><div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="header">
+        <div id="menu" class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./"><img src="https://s3.eu-central-1.amazonaws.com/tommaso-soru/files/aksw-logo.png" width="60" border="0" /></a>
+          </div>
+          <div class="navbar-collapse collapse">
+  	      <ul class="nav navbar-nav">
+  	        <li><a class="align-text" href="./">Overview</a></li>
+  	        <li><a class="align-text" href="./#/add">Upload results</a></li>
+  	        <li><a class="align-text" href="./#/search">Search</a></li>
+  	        <li><a class="align-text" target="_blank" href="https://github.com/cirola2000/wasota/wiki">Wiki</a></li>
+  	        <li><a class="align-text" target="_blank" href="https://github.com/cirola2000/wasota">Code</a></li>
+  	        <li><a class="align-text" target="_blank" href="http://aksw.org/">AKSW Group</a></li>
+  	      </ul>
+          </div><!--/.navbar-collapse -->
         </div>
       </div>
-    </div>
-    <div class="wrapper" style="margin-top: 55px">
-      <div ng-app="main" class="container">
-        <div ng-view></div>
-      </div>
-    </div>
+  </div>
+
+
+  <div id="facet_content" ng-app="main">
+		<div ng-view>
+     		
+		</div>
+				
+  </div>
+
+  <div id="footer">
+      	<!--  include your header file or uncomment the include below and create footer.xhtml in this directory -->
+ 	
+   	<div class="container">
+        <hr />
+        <footer>
+          <p class="lato">Updated 2016-07-01 - Developed and maintained by <a href="http://aksw.org">AKSW</a>, University of Leipzig.</p>
+        </footer>
+
+  	</div>
+  </div>
+
   </body>
 
 </html>
