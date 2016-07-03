@@ -7,14 +7,13 @@ main.controller('searchCtrl', ['$scope', '$http',"NgTableParams", 'generalData',
     { name: "nt", format: "nt" }
   ];
 
-  // $scope.choosenFormat = $scope.context;
 
-  $scope.contextList = ["loading..."];
+ $scope.contextList = ["loading..."];
   
  $scope.updatePerformance = function(){
-    $http.post("/proxy/performance/getAll", JSON.stringify({context: $scope.context})).
+    $http.post("/proxy/performance", JSON.stringify({context: $scope.context})).
     then(function (response) {
-      $scope.precisionList=response.data.precisionListFinal;
+      $scope.performanceList=response.data.performanceList;
     }, function (response) {
       $scope.apiResponse = "Error: " + response.data;
       $scope.showApiResponse = true;
@@ -23,10 +22,9 @@ main.controller('searchCtrl', ['$scope', '$http',"NgTableParams", 'generalData',
   }
   
    $scope.updateTable = function(){
-    $http.post("/proxy/performance/get", JSON.stringify({context: $scope.context, precision: $scope.precision})).
+    $http.post("/proxy/performance/get", JSON.stringify({context: $scope.context, performance: $scope.performance})).
     then(function (response) {
-      // $scope.precisionList=response.data.precisionListFinal;
-      console.log(response.data.precisionListFinal)
+      console.log(response.data.performanceListFinal)
 
 function sortByKey(array, key) {
     return array.sort(function(a, b) {
@@ -35,11 +33,7 @@ function sortByKey(array, key) {
     });
 }
 
-$scope.results = sortByKey(response.data.precisionListFinal, 'value');
-
-// $scope.results =response.data.precisionListFinal;
-
-
+$scope.results = sortByKey(response.data.performanceListFinal, 'value');
     }, function (response) {
       $scope.apiResponse = "Error: " + response.data;
       $scope.showApiResponse = true;
@@ -48,9 +42,9 @@ $scope.results = sortByKey(response.data.precisionListFinal, 'value');
   }
 
 
-  $http.get("/proxy/context/getAll").
+$http.get("/proxy/context").
     then(function (response) {
-      $scope.contextList=response.data.context;
+      $scope.contextList=response.data;
     }, function (response) {
       $scope.apiResponse = "Error: " + response.data;
       $scope.showApiResponse = true;
@@ -58,7 +52,6 @@ $scope.results = sortByKey(response.data.precisionListFinal, 'value');
  );
     
     
-// var self = this;
 var data = $scope.results;
 this.tableParams = new NgTableParams({        sorting: {
             value: 'asc'     
@@ -66,7 +59,3 @@ this.tableParams = new NgTableParams({        sorting: {
     
 }]);
     
-
-// ultimo exec_c0_mex_exec_d12_conf_1_1523833047
-// penultimo this:exec_c0_mex_exec_d12_conf_1_1523833047
-// experimet is:experiment_1523833047

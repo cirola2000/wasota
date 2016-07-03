@@ -16,7 +16,7 @@
 		<h4 style="margin-top: 35px">Performance Measure</h4>
 
 		<div>
-			<select ng-change="updateTable()" ng-model="precision" ng-options="k for k in precisionList">
+			<select ng-change="updateTable()" ng-model="performance" ng-options="k for k in performanceList">
 			</select>
 
 		</div>
@@ -35,14 +35,14 @@
 		        <td title="'Experiment Title'" filter="{ experimentTitle: 'text'}" sortable="'experimentTitle'">
 		            {{result.experimentTitle}}</td>
             
-		        <td title="'Measure'" filter="{ measure: 'text'}" sortable="'measure'">
-		            {{result.measure}}</td>
+		        <td title="'Measure'" filter="{ performance: 'text'}" sortable="'performance'">
+		            {{result.performance}}</td>
             
 		        <td title="'User'" filter="{ userMail: 'text'}" sortable="'userMail'">
 		            {{result.userMail}}</td>            
                         
-		        <td title="'Value'" filter="{ value: 'number'}" sortable="'value'">
-		            {{result.value}}</td>
+		        <td title="'Value'" filter="{ performanceValue: 'number'}" sortable="'performanceValue'">
+		            {{result.performanceValue}}</td>
 
 
    

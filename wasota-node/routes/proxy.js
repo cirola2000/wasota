@@ -4,44 +4,17 @@ var router = express.Router();
 
 var fs = require('fs');
 
-var serverURL = "http://localhost:8190"
-
-
-router.put('/*', function (req, res, next) {
-  var query = serverURL + "/dataset/add?namedGraph=ciro&format=ttl";
-
-  console.log(query);
-
-  request(
-    
-     { 
-       method: 'POST',
-      uri: query,
-      namedGraph: "http://ciro/graph",
-      format: "ttl",
-      headers: {'Content-type': 'text/turtle',
-      'User-Agent': 'curl/7.43.0'},
-      body: fs.createReadStream(__dirname + '/../files/1.ttl') 
-      
-    }
-  , function (error, response, body) {
-    if (error) {
-      return console.error('upload failed:', error);
-    }
-    console.log('Server responded with:' + body);
-  });
-  
-});
-
+// var wasotaAPI = "http://wasota.aksw.org/api";
+var wasotaAPI = "http://localhost:8090"
 
 
 router.get('/*', function (req, res, next) {
-  var query = serverURL + req.url;
+  var query = wasotaAPI + req.url;
   console.log(query);
   request(query, function (error, response, body) {
     try {
       var data = body;
-      console.log(JSON.parse(data));
+      console.log("API response: "+data);
       res.send((JSON.parse(data)));
     } catch (E) {
       console.log(E);
@@ -50,29 +23,48 @@ router.get('/*', function (req, res, next) {
 });
 
 router.post('/*', function (req, res, next) {
-  var query = serverURL + req.url;
-
-
+  var query = wasotaAPI + req.url;
   console.log(query);
-  console.log(req.body);
-
   request(
-    
      { 
-       method: 'POST',
-      uri: query,
-      body: JSON.stringify(req.body),     
-      headers: {'Content-type': 'text/plain',
-      'User-Agent': 'curl/7.43.0'}, 
+        method: 'POST',
+        uri: query,
+        body: JSON.stringify(req.body),     
+        headers: {'Content-type': 'text/plain',
+        'User-Agent': 'curl/7.43.0'}, 
     }
   , function (error, response, body) {
     if (error) {
-      return console.error('error:', error);
+        return console.error('error:', error);
     }
-          res.send((JSON.parse(body)));
+    console.log("API response: "+body);
+    
+    res.send((JSON.parse(body)));
 
   });
-  
+});
+
+
+router.put('/*', function (req, res, next) {
+  var query = wasotaAPI + req.url;
+  console.log(query);
+  request(
+     { 
+        method: 'PUT',
+        uri: query,
+        body: JSON.stringify(req.body),     
+        headers: {'Content-type': 'text/plain',
+        'User-Agent': 'curl/7.43.0'}, 
+    }
+  , function (error, response, body) {
+    if (error) {
+        return console.error('error:', error);
+    }
+    console.log("API response: "+body);
+    
+    res.send((JSON.parse(body)));
+
+  });
 });
 
 
