@@ -1,40 +1,26 @@
-<!-- All the files that are required -->
-<link href="login-wasota/style.css" rel="stylesheet">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
-<div align="center" style="width:50%">
-<!-- Where all the magic happens -->
-<!-- LOGIN FORM -->
-<div class="text-center" style="padding:50px 0">
-	<div class="logo">
-	  <p>WASOTA - MEX</p>
-	  <p>Please, put your login.</p>
-</div>
-	<!-- Main Form -->
-	<div class="login-form-1">
-		<form id="login-form" class="text-left">
-			<div class="login-form-main-message"></div>
-			<div class="main-login-form">
-				<div class="login-group">
-					<div class="form-group">
-						<p>Username:</p>
-						<input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
-					</div>
-					<div class="form-group">
-						<p>Password:</p>
-						<input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
-					</div>
-				</div>
-                <button ng-click="getUser()">Login!</button>
-			</div>
-			<div class="etc-login-form">
+<div id="content" class="container">
+  <div class="row">
+    <div class="col-md-12">
+		<div class="page-header" style="margin-top: 70px;">
+			<h1>WASOTA Login</h1>
+		</div>
+		<p>Username:</p>
+		<div>
+			<input type="text" ng-model="userName" size="80">
+		</div>
+		</br>
+		<div>
+		<p>Password:</p>
+		<div>
+			<input type="password" ng-model="userPassword" size="80">
+		</div>
+		</br>
+		<div>
+		<div style="margin-top: 15px">
+			<button ng-click="getUser()">Login!</button>
+		</div>
+        <div class="etc-login-form">
 				<p>new user? <a href="/#/register">create new account</a></p>
 			</div>
-		</form>
-	</div>
-	<!-- end:Main Form -->
-</div>
-<script type="text/javascript" src="login-wasota/func.js"></script>
-</div>
+  </div>
 </div>
