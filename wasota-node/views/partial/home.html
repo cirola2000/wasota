@@ -40,7 +40,7 @@
   				        </div>
   				        <div class="col-md-4">
   				          <h3><span class="glyphicon glyphicon-th"></span>&nbsp;&nbsp;A semantic, light-weight aggregator.</h3>
-  				          <p>Use WASOTA to search through 627,814 experiments and compare your results with other experiment configurations.</p>
+  				          <p>Use WASOTA to search through <span id="n-experiments"><img src="images/loader.gif" border="0"/></span> experiments and compare your results with other experiment configurations.</p>
   				        </div>
   				        <div class="col-md-4">
   				          <h3><span class="glyphicon glyphicon-wrench"></span>&nbsp;&nbsp;Gather information via API.</h3>
@@ -54,3 +54,23 @@
   				      </div>
   				</div>
 
+				<script type="text/javascript">
+				
+					function fill_n_exp() {
+						var jqxhr = $.ajax( "http://wasota.aksw.org/api/experiments/size" )
+						.done(function(res) {
+							// console.log(res);
+							var answer;
+							if(res["status"] == "ok") {
+								answer = res["data"];
+							} else {
+								answer = "#ERROR#";
+							}
+							$("#n-experiments").html(answer);
+						});
+					}
+					$(function() {
+						fill_n_exp();
+					});
+	
+				</script>
