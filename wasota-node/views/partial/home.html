@@ -57,7 +57,7 @@
 				<script type="text/javascript">
 				
 					function fill_n_exp() {
-						var jqxhr = $.ajax( "http://wasota.aksw.org/api/experiments/size" )
+						var jqxhr = $.ajax( "/proxy/experiments/size" )
 						.done(function(res) {
 							// console.log(res);
 							var answer;
