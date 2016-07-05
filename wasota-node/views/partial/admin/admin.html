@@ -6,17 +6,17 @@
     <title>WASOTA admin area</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../admin/style.css" rel="stylesheet">
+    <link href="../login-wasota/admin/style.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-   <script type="text/javascript" src="../admin/func.js"></script>
+   <script type="text/javascript" src="../login-wasota/admin/func.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="javascripts/controllers/addCtrl.js">
+  <script src="../../../../login-wasota/admin/javascripts/controllers/addCtrl.js">
 </script>
-  <script src="javascripts/controllers/homeCtrl.js">
+  <script src="../../../../login-wasota/admin/javascripts/controllers/homeCtrl.js">
 </script>
-  <script src="javascripts/controllers/searchCtrl.js">
+  <script src="../../../../login-wasota/admin/javascripts/controllers/searchCtrl.js">
 </script>
-<script src="javascripts/ng-table//ng-table.min.js"></script>
+<script src="../../../../login-wasota/admin/javascripts/ng-table/ng-table.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top">
@@ -137,7 +137,6 @@
 	<h1>My experiments</h1>
 </div>
 <h4 style="margin-top: 35px">Types</h4>
-
 <div>
 	<select  ng-change="updatePerformance()" ng-model="context" ng-options="Recommendation System">
     <option>Recommendation System</option>
@@ -151,10 +150,11 @@
 	<select ng-change="updateTable()" ng-model="precision" ng-options="k for k in precisionList">
     <option>http://mex.aksw.org/mex-perf#accuracy</option>
 	</select>
-
 </div>
 
-<table ng-table="vm.tableParams" class="table ng-scope ng-table" show-filter="false"><!-- ngInclude: templates.header --><thead ng-include="templates.header" class="ng-scope"><!-- ngIf: params.hasGroup() --> <tr class="ng-table-sort-header"> <!-- ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Algorithm</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Algorithm Class</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Experiment ID</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Experiment Title</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Measure</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">User</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Value</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --> </tr> </thead>
+<table ng-table="vm.tableParams" class="table ng-scope ng-table" show-filter="false"><!-- ngInclude: templates.header --><thead ng-include="templates.header" class="ng-scope"><!-- ngIf: params.hasGroup() --> <tr class="ng-table-sort-header"> <!-- ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Algorithm</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Algorithm Class</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Experiment ID</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Experiment Title</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Measure</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">User</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th><!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --><!-- ngIf: $column.show(this) --><th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable"> <!-- ngIf: !template --><div ng-if="!template" class="ng-table-header ng-scope" ng-class="{'sort-indicator': params.settings().sortingIndicator=='div'}"> <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator=='span'}" class="ng-binding sort-indicator">Value</span> </div><!-- end ngIf: !template --> <!-- ngIf: template --> </th>
+  <th title="" ng-repeat="$column in $columns" ng-class="{ 'sortable': $column.sortable(this), 'sort-asc': params.sorting()[$column.sortable(this)]=='asc', 'sort-desc': params.sorting()[$column.sortable(this)]=='desc' }" ng-click="sortBy($column, $event)" ng-if="$column.show(this)" ng-init="template=$column.headerTemplateURL(this)" class="header  sortable">Public</th>
+  <!-- end ngIf: $column.show(this) --><!-- end ngRepeat: $column in $columns --> </tr> </thead>
     <tbody><!-- ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
         <td title="'Algorithm'" filter="{ algorithmLbl: 'text'}" sortable="'algorithmLbl'" data-title-text="Algorithm" class="ng-binding">
             Train</td>
@@ -175,10 +175,12 @@
                         
         <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding">
             0.96</td>
+        <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding"><input type="checkbox" name="check" value="yes"></td>
 
 
    
-    </tr><!-- end ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
+    </tr>
+      <!-- end ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
         <td title="'Algorithm'" filter="{ algorithmLbl: 'text'}" sortable="'algorithmLbl'" data-title-text="Algorithm" class="ng-binding">
             Support Vector Machines</td>
         <td title="'Algorithm Class'" filter="{ algorithmClass: 'text'}" sortable="'algorithmClass'" data-title-text="Algorithm Class" class="ng-binding">
@@ -198,10 +200,12 @@
                         
         <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding">
             0.96</td>
+        <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding"><input type="checkbox" name="check2" value="yes"></td>
 
 
    
-    </tr><!-- end ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
+      </tr>
+      <!-- end ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
         <td title="'Algorithm'" filter="{ algorithmLbl: 'text'}" sortable="'algorithmLbl'" data-title-text="Algorithm" class="ng-binding">
             HyperParameter Collection</td>
         <td title="'Algorithm Class'" filter="{ algorithmClass: 'text'}" sortable="'algorithmClass'" data-title-text="Algorithm Class" class="ng-binding">
@@ -221,10 +225,12 @@
                         
         <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding">
             0.83</td>
+        <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding"><input type="checkbox" name="check3" value="yes"></td>
 
 
    
-    </tr><!-- end ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
+      </tr>
+      <!-- end ngRepeat: result in results --><tr ng-repeat="result in results" class="ng-scope">
         <td title="'Algorithm'" filter="{ algorithmLbl: 'text'}" sortable="'algorithmLbl'" data-title-text="Algorithm" class="ng-binding">
             HyperParameter Collection</td>
         <td title="'Algorithm Class'" filter="{ algorithmClass: 'text'}" sortable="'algorithmClass'" data-title-text="Algorithm Class" class="ng-binding">
@@ -244,10 +250,12 @@
                         
         <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding">
             0.83</td>
+        <td title="'Value'" filter="{ value: 'number'}" sortable="'value'" data-title-text="Value" class="ng-binding"><input type="checkbox" name="check4" value="yes"></td>
 
 
    
-    </tr><!-- end ngRepeat: result in results -->
+      </tr>
+      <!-- end ngRepeat: result in results -->
 </tbody></table>
         </div>
 </div>

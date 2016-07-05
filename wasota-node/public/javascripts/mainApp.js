@@ -16,6 +16,14 @@ main.config(['$routeProvider',
         templateUrl: '/partial/search',
         controller: 'searchCtrl'
       }).
+	   when('/login', {
+        templateUrl: '/partial/login',
+        controller: 'loginCtrl'
+      }).
+	   when('/register', {
+        templateUrl: '/partial/register',
+        controller: 'registerCtrl'
+      }).
       when('/wiki', {
         templateUrl: '/partial/wiki',
         controller: 'wikiCtrl'

@@ -9,6 +9,8 @@ var routes = require('./routes/index');
 var home = require('./routes/home');
 var add = require('./routes/add');
 var search = require('./routes/search');
+var login = require('./routes/login');
+var register = require('./routes/register');
 var proxy = require('./routes/proxy');
 
 var app = express();
@@ -31,6 +33,8 @@ app.use('/', routes);
 app.use('/partial/home', home);
 app.use('/partial/add', add);
 app.use('/partial/search', search);
+app.use('/partial/login', login);
+app.use('/partial/register', register);
 app.use('/proxy', proxy);
 
 // catch 404 and forward to error handler
