@@ -23,6 +23,9 @@
 		<div style="margin-top: 15px">
 			<button ng-click="sendUser()">Register!</button>
 		</div>
+        <div class="etc-login-form">
+				<p>already have an account? <a href="/#/login">login here</a></p>
+		</div>
 		<div style="margin-top: 15px"><span ng-show="showApiCall"><p>API call: <a href="{{apiResponse.apiCall}}" target="_blank">{{apiResponse.apiCall}}</a></p></span></div>
 		<span style="color: {{showApiResponseColor}}" ng-show="showApiResponse">
 		<p>API response: {{coreMsg}}</p>

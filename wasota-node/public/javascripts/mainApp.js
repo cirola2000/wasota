@@ -28,6 +28,10 @@ main.config(['$routeProvider',
         templateUrl: '/partial/wiki',
         controller: 'wikiCtrl'
       }).
+	   when('/admin', {
+        templateUrl: '/partial/admin/area',
+        controller: 'adminCtrl'
+      }).
       otherwise({
         redirectTo: '/home'
       });
