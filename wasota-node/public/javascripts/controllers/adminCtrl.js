@@ -25,7 +25,7 @@ var values = sId.split('~');
 var username = values[0];
 var password = values[1];
 
-document.getElementById("MyEdit").innerHTML = sId;
+document.getElementById("MyEdit").innerHTML = username;
 
 
 // SEND USER GRAPH
@@ -75,7 +75,7 @@ document.getElementById("MyEdit").innerHTML = sId;
   }
   
    $scope.updateTable = function(){
-    $http.post("/proxy/performance/user/get", { user: username, password: password},JSON.stringify({context: $scope.context, performance: $scope.performance})).
+    $http.get("/proxy/user/performance", { user: username, password: password},JSON.stringify({context: $scope.context, performance: $scope.performance})).
     then(function (response) {
       console.log(response.data.performanceListFinal)
 
