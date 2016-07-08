@@ -30,7 +30,7 @@ main.config(['$routeProvider',
       }).
 	   when('/admin', {
         templateUrl: '/partial/admin/area',
-        controller: 'adminCtrl',
+        controller: 'adminCtrl'
       }).
       otherwise({
         redirectTo: '/home'

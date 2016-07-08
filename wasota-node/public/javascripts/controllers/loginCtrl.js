@@ -10,16 +10,12 @@ main.controller('loginCtrl', ['$scope', '$http', 'generalData', function ($scope
         console.log(response.data);
         if (response.data.status == "405") {
           $scope.coreMsg = "user exist";
-          window.location.href = "/#/admin";
+		
+		  function writeCookie(name,value,days) {
 		  
-        }
-        else {
-          $scope.coreMsg = "Error user doesn't exist.";
-        }
-      }, 
-	  
-	  function writeCookie(name,value,days) {
-          var date, expires;
+          var user,pass,date, expires;
+		  user = $scope.userName;
+		  pass = $scope.userPassword;
           if (days) {
           date = new Date();
           date.setTime(date.getTime()+(days*24*60*60*1000));
@@ -27,9 +23,18 @@ main.controller('loginCtrl', ['$scope', '$http', 'generalData', function ($scope
             }else{
           expires = "";
     }
-    document.cookie = name + "=" + $scope.userName + value + expires + "; path=/#/admin";
-	  },
-	  window.alert(name),
+    document.cookie = name + "=" + $scope.userName + value + expires + "; path=/";
+	  }
+	  
+	  var sId = "~" + $scope.userPassword;
+      writeCookie('sessionId', sId, 3);
+	  
+		  window.location.href = "/#/admin";
+        }
+        else {
+          $scope.coreMsg = "Error user doesn't exist.";
+        }
+      }, 
 	  function (response) {
         $scope.showApiResponse = true;
         $scope.apiResponse = "Error: " + response.data;
