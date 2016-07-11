@@ -1,4 +1,6 @@
 main.controller('loginCtrl', ['$scope', '$http', 'generalData', function ($scope, $http, $generalData) {
+  
+
 
   $scope.serverURL = $generalData.serverURL;
 
@@ -25,7 +27,7 @@ main.controller('loginCtrl', ['$scope', '$http', 'generalData', function ($scope
     }
     document.cookie = name + "=" + $scope.userName + value + expires + "; path=/";
 	  }
-	  
+	    $("#menu2").show();
 	  var sId = "~" + $scope.userPassword;
       writeCookie('sessionId', sId, 3);
 	  

@@ -56,7 +56,7 @@
 		Welcome! Share your experiments in WASOTA Portal
     </div>
             
-             <div class="col-md-9 well admin-content" id="add">
+             <div class="col-md-9 well admin-content" id="add" style="width: 1200px">
 <div id="content" class="container">
   <div class="row">
     <div class="col-md-12">
@@ -107,11 +107,11 @@
         </div>
         
         
-       <div class="col-md-9 well admin-content" id="experiments">
+       <div class="col-md-9 well admin-content" id="experiments" style="width: 1200px">
              <div id="content" class="container">
   <div class="row">
     <div class="col-md-12">
-
+<!--
 		<div class="page-header" style="margin-top: 70px;">
 			<h1>Search</h1>
 		</div>
@@ -129,7 +129,7 @@
 			<select ng-change="updateTable()" ng-model="performance" ng-options="k for k in performanceList">
 			</select>
 
-		</div>
+		</div>-->
 
 
 		<table ng-table="vm.tableParams" class="table" show-filter="false">
@@ -154,9 +154,9 @@
 		        <td title="'Value'" filter="{ performanceValue: 'number'}" sortable="'performanceValue'">
 		            {{result.performanceValue}}</td>
                     
-                <td title="'Publi'">
+                <td title="'Public'">
+					<input type="checkbox" ng-checked="result.visible" ng-click="changeExperiment(result)" />
 		            </td>
-
 
    
 		    </tr>
@@ -166,23 +166,6 @@
   </div>
 </div>
 
-<!--<table ng-table="vm.tableParams" class="table" show-filter="true">
-    <tr ng-repeat="user in data">
-        <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
-            {{user.name}}</td>
-        <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
-            {{user.age}}</td>
-    </tr>
-</table>-->
-
-
-
-<!--<div style="margin-top: 15px"><span ng-show="showApiCall"><p>API call: <a href="{{apiResponse.apiCall}}" target="_blank">{{apiResponse.apiCall}}</a></p></span></div>
-<span style="color: {{showApiResponseColor}}" ng-show="showApiResponse">
-<p>API response: {{apiResponse.coreMsg}}</p>
-<p style="color: {{apiResponse.error ? 'red' : 'black'}}">API parser response: {{apiResponse.parserMsg}}</p>
-</span>
-<h5 ng-show="showLoading" class="label btn-success">Loading... </h5>-->
        </div>
   		</div>
   		<footer class="pull-left footer">

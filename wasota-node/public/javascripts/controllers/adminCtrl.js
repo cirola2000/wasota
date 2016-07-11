@@ -40,7 +40,7 @@ document.getElementById("MyEdit").innerHTML = username;
   
   $scope.sendUserGraph = function () {
     $http.put("/proxy/user/graph/add/",
-    { user: username, password: password, user: username, graphName: $scope.graphUserIdentifier, format: $scope.choosenFormat.format, graph: $scope.userGraph}).
+    { user: username, password: password, graphName: $scope.graphUserIdentifier, format: $scope.choosenFormat.format, graph: $scope.userGraph}).
       then(function (response) {
         $scope.showApiResponse = true;
         console.log(response.data);
@@ -74,40 +74,55 @@ document.getElementById("MyEdit").innerHTML = username;
  );
   }
   
-   $scope.updateTable = function(){
-    $http.get("/proxy/user/performance", { user: username, password: password},JSON.stringify({context: $scope.context, performance: $scope.performance})).
+   // $scope.updateTable = function(){
+    $http.post("/proxy/user/performance", { user: username, password: password},JSON.stringify({context: $scope.context, performance: $scope.performance})).
     then(function (response) {
-      console.log(response.data.performanceListFinal)
+      $scope.results = (response.data);
+      var data = $scope.results;
+this.tableParams = new NgTableParams( { dataset: data});
 
-function sortByKey(array, key) {
-    return array.sort(function(a, b) {
-        var x = a[key]; var y = b[key];
-        return ((x < y) ? 1 : ((x > y) ? -1 : 0));
-    });
+// function sortByKey(array, key) {
+//     return array.sort(function(a, b) {
+//         var x = a[key]; var y = b[key];
+//         return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+//     });
+// }
+
+  // $scope.results = sortByKey(response.data.performanceListFinal, 'value');
+    }, function (response) {
+      $scope.apiResponse = "Error: " + response.data;
+      $scope.showApiResponse = true;
+      }
+ );
+  // }
+
+
+// $http.get("/proxy/context").
+//     then(function (response) {
+//       $scope.contextList=response.data;
+//     }, function (response) {
+//       $scope.apiResponse = "Error: " + response.data;
+//       $scope.showApiResponse = true;
+//       }
+//  );
+    
+    
+// var data = $scope.results;
+// this.tableParams = new NgTableParams({        sorting: {
+//             value: 'asc'     
+//         }}, { dataset: data});
+
+
+$scope.changeExperiment = function(experiment){
+    var ex = JSON.stringify(experiment.url);
+    $http.put("/proxy/user/changeExperiment",{ user: username, password: password, experimentURI: experiment.url}).
+    then(function (response) {
+      console.log(response);
+
+    }, function (response) {
+      $scope.apiResponse = "Error: " + response.data;
+      }
+ );
 }
-
-$scope.results = sortByKey(response.data.performanceListFinal, 'value');
-    }, function (response) {
-      $scope.apiResponse = "Error: " + response.data;
-      $scope.showApiResponse = true;
-      }
- );
-  }
-
-
-$http.get("/proxy/context").
-    then(function (response) {
-      $scope.contextList=response.data;
-    }, function (response) {
-      $scope.apiResponse = "Error: " + response.data;
-      $scope.showApiResponse = true;
-      }
- );
-    
-    
-var data = $scope.results;
-this.tableParams = new NgTableParams({        sorting: {
-            value: 'asc'     
-        }}, { dataset: data});
 
 }]);

@@ -4,7 +4,7 @@ main.controller('registerCtrl', ['$scope', '$http', 'generalData', function ($sc
   
   $scope.sendUser = function () {
     $http.put("/proxy/user/add", 
-    { user: $scope.userName, password: $scope.userPassword, email: $scope.userEmail }).
+    { registerUser: $scope.userName, registerPassword: $scope.userPassword, registerEmail: $scope.userEmail }).
       then(function (response) {
         $scope.showApiResponse = true;
         console.log(response.data);
