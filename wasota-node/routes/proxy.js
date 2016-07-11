@@ -5,8 +5,8 @@ var router = express.Router();
 var fs = require('fs');
 var sess = [];
 
-// var wasotaAPI = "http://wasota.aksw.org/api";
-var wasotaAPI = "http://localhost:8090"
+var wasotaAPI = "http://wasota.aksw.org/api";
+// var wasotaAPI = "http://localhost:8090"
 
 
 router.get('/*', function (req, res, next) {
